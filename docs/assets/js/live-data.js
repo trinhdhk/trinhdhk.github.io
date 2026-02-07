@@ -65,6 +65,24 @@
       const data = await fetchWithFallback(url, fallback);
       console.info("Profile payload", data);
       const profile = data.profile || {};
+      // Prefer fields from repository `data/profile.yml` when available
+      let localProfile = {};
+      try {
+        localProfile = await fetchYaml("data/profile.yml");
+      } catch (e) {
+        localProfile = {};
+      }
+      const displayName = (localProfile && localProfile.name) ? localProfile.name : profile.name;
+      const displayRole = (localProfile && localProfile.role) ? localProfile.role : profile.role;
+      const displayAffiliation = (localProfile && localProfile.affiliation) ? localProfile.affiliation : profile.affiliation;
+      const displayEmail = (localProfile && localProfile.email) ? localProfile.email : profile.email;
+      const displayLocation = (localProfile && localProfile.location) ? localProfile.location : profile.location;
+      const displayPhotoUrl = (localProfile && localProfile.photo_url) ? localProfile.photo_url : (profile.photo_url || defaultPhoto);
+      const displayPhotoAlt = (localProfile && localProfile.photo_alt) ? localProfile.photo_alt : (profile.photo_alt || defaultPhotoAlt);
+      const displayBio = (localProfile && localProfile.bio) ? localProfile.bio : profile.bio;
+      const displayInterests = Array.isArray(localProfile.research_interests)
+        ? localProfile.research_interests
+        : (Array.isArray(profile.research_interests) ? profile.research_interests : (profile.research_interests ? [profile.research_interests] : []));
       const metrics = data.metrics || {};
       const metricRows = [
         { label: "Citations", value: metrics.citations },
@@ -72,19 +90,15 @@
         { label: "i10-index", value: metrics.i10_index }
       ].filter((item) => item.value);
       const metricHtml = metricRows
-        .map((item) => {
-          return `<div class="metric"><span>${escapeHtml(item.label)}: </span><span> ${escapeHtml(item.value)}</span></div>`;
-        })
+        .map((item) => `<div class="metric"><span>${escapeHtml(item.label)}: </span><span> ${escapeHtml(item.value)}</span></div>`)
         .join("");
 
-      const photoUrl = profile.photo_url || defaultPhoto;
+      const photoUrl = displayPhotoUrl || defaultPhoto;
       const photoHtml = photoUrl
-        ? `<img class="profile-photo" src="${escapeHtml(photoUrl)}" alt="${escapeHtml(profile.photo_alt || defaultPhotoAlt)}">`
+        ? `<img class="profile-photo" src="${escapeHtml(photoUrl)}" alt="${escapeHtml(displayPhotoAlt)}">`
         : "";
-      const bioHtml = profile.bio ? `<div class="bio">${escapeHtml(profile.bio)}</div>` : "";
-      const interests = Array.isArray(profile.research_interests)
-        ? profile.research_interests
-        : (profile.research_interests ? [profile.research_interests] : []);
+      const bioHtml = displayBio ? `<div class="bio">${escapeHtml(displayBio)}</div>` : "";
+      const interests = displayInterests || [];
       const interestsHtml = interests.length
         ? `<div class="interests"><strong>Research interests:</strong> ${escapeHtml(interests.join(", "))}</div>`
         : "";
@@ -115,7 +129,7 @@
             </div>
             <div style="display: inline-table">
               ${escapeHtml(profile.role || "")}
-              ${profile.name ? `<br><strong>${escapeHtml(profile.name)}</strong>` : ""}
+              ${displayName ? `<br><strong>${escapeHtml(displayName)}</strong>` : ""}
               ${profile.affiliation ? `<br>${escapeHtml(profile.affiliation)}` : ""}
               ${profile.email ? `<br><a href="mailto:${escapeHtml(profile.email)}">${escapeHtml(profile.email)}</a>` : ""}
               ${profile.location ? `<br>${escapeHtml(profile.location)}` : ""}
