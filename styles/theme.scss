@@ -2,6 +2,29 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&family=Space+Grotesk:wght@400;600&display=swap");
 
 :root {
+  /* Default: dark theme */
+  --ink: #e3e8f0;
+  --sky: #0f1726;
+  --silver: #121a2c;
+  --accent: #74b3ff;
+  --paper: #0a1220;
+  --muted: #9aa8ba;
+}
+
+/* If the device prefers light, switch variables to the light palette */
+@media (prefers-color-scheme: light) {
+  :root {
+    --ink: #0b1320;
+    --sky: #f2f6ff;
+    --silver: #edf1f6;
+    --accent: #1b6ff2;
+    --paper: #ffffff;
+    --muted: #5b6b80;
+  }
+}
+
+/* When Quarto forces light theme via body.quarto-light, ensure light variables are used */
+body.quarto-light {
   --ink: #0b1320;
   --sky: #f2f6ff;
   --silver: #edf1f6;

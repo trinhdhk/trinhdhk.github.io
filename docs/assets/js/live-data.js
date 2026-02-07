@@ -128,11 +128,11 @@
               ${photoHtml}
             </div>
             <div style="display: inline-table">
-              ${escapeHtml(profile.role || "")}
+              ${escapeHtml(displayRole || "")}
               ${displayName ? `<br><strong>${escapeHtml(displayName)}</strong>` : ""}
-              ${profile.affiliation ? `<br>${escapeHtml(profile.affiliation)}` : ""}
-              ${profile.email ? `<br><a href="mailto:${escapeHtml(profile.email)}">${escapeHtml(profile.email)}</a>` : ""}
-              ${profile.location ? `<br>${escapeHtml(profile.location)}` : ""}
+              ${displayAffiliation ? `<br>${escapeHtml(displayAffiliation)}` : ""}
+              ${displayEmail ? `<br><a href="mailto:${escapeHtml(displayEmail)}">${escapeHtml(displayEmail)}</a>` : ""}
+              ${displayLocation ? `<br>${escapeHtml(displayLocation)}` : ""}
               ${bioHtml}
               ${interestsHtml}
               ${linksHtml ? `<div class="profile-links">${linksHtml}</div>` : ""}
