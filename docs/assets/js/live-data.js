@@ -40,13 +40,97 @@
       return data;
     } catch (err) {
       console.warn("Live data fetch failed", { url: primaryUrl, error: err?.message || String(err) });
+
+      // If primary is a raw.githubusercontent URL that returned 404, try swapping branch name main<->master
+      try {
+        const errMsg = err?.message || String(err);
+        if (errMsg.includes("404") && primaryUrl.includes("raw.githubusercontent.com")) {
+          let alt = null;
+          if (primaryUrl.includes("/main/")) alt = primaryUrl.replace("/main/", "/master/");
+          else if (primaryUrl.includes("/master/")) alt = primaryUrl.replace("/master/", "/main/");
+          if (alt) {
+            try {
+              const altData = await fetchData(alt);
+              console.info("Live data fetched (branch swap)", { url: alt, ok: true });
+              return altData;
+            } catch (e) {
+              console.warn("Branch-swap fetch also failed", { url: alt, error: e?.message || String(e) });
+            }
+          }
+        }
+      } catch (e) {
+        console.warn("Error during branch-swap attempt", e?.message || String(e));
+      }
+
       if (!fallbackUrl || fallbackUrl === primaryUrl) {
         throw err;
       }
-      const data = await fetchData(fallbackUrl);
-      console.info("Live data fetched (fallback)", { url: fallbackUrl, ok: true });
-      return data;
+
+      // Try configured fallback first
+      let fallbackTried = false;
+      try {
+        const data = await fetchData(fallbackUrl);
+        console.info("Live data fetched (fallback)", { url: fallbackUrl, ok: true });
+        return data;
+      } catch (e) {
+        console.warn("Fallback fetch failed", { url: fallbackUrl, error: e?.message || String(e) });
+        fallbackTried = true;
+      }
+
+      // If fallback is a repo-relative path, also try an absolute path from current origin
+      try {
+        if (!fallbackUrl.match(/^https?:\/\//) && (fallbackUrl.startsWith("data/") || fallbackUrl.startsWith("/data/"))) {
+          const abs = (fallbackUrl.startsWith("/")) ? `${window.location.origin}${fallbackUrl}` : `${window.location.origin}/${fallbackUrl}`;
+          const data2 = await fetchData(abs);
+          console.info("Live data fetched (absolute fallback)", { url: abs, ok: true });
+          return data2;
+        }
+      } catch (e2) {
+        console.warn("Absolute-fallback fetch failed", { url: fallbackUrl, error: e2?.message || String(e2) });
+      }
+
+      if (fallbackTried) throw err;
+      throw err;
     }
+  };
+
+  // Cache local profile so all render functions can access it
+  let localProfileCache = {};
+  const loadLocalProfile = async () => {
+    const candidates = [];
+    const liveProfileEl = document.getElementById("live-profile");
+    if (liveProfileEl) {
+      const explicitProfileUrl = liveProfileEl.getAttribute("data-profile-url");
+      if (explicitProfileUrl) {
+        candidates.push(explicitProfileUrl);
+      }
+      const crawlUrl = liveProfileEl.getAttribute("data-crawl-url");
+      if (crawlUrl && crawlUrl.includes("/data/crawl/")) {
+        candidates.push(crawlUrl.replace("/data/crawl/crawl.yml", "/data/profile.yml"));
+      }
+    }
+    candidates.push(
+      "data/profile.yml",
+      "../data/profile.yml",
+      "/data/profile.yml",
+      "/docs/data/profile.yml",
+      window.location.origin + "/data/profile.yml",
+      window.location.origin + "/docs/data/profile.yml"
+    );
+    for (const c of candidates) {
+      try {
+        const p = c.includes("raw.githubusercontent.com")
+          ? await fetchWithFallback(c, null)
+          : await fetchYaml(c);
+        if (p && Object.keys(p).length) {
+          localProfileCache = p;
+          return;
+        }
+      } catch (e) {
+        // ignore and try next
+      }
+    }
+    localProfileCache = {};
   };
 
   const renderProfile = async () => {
@@ -56,6 +140,7 @@
     const fallback = el.getAttribute("data-fallback");
     const defaultPhoto = el.getAttribute("data-default-photo");
     const defaultPhotoAlt = el.getAttribute("data-default-photo-alt") || "Profile photo";
+    const profileRoleOverride = el.getAttribute("data-profile-role");
     const linkScholar = el.getAttribute("data-link-scholar");
     const linkOrcid = el.getAttribute("data-link-orcid");
     const linkGithub = el.getAttribute("data-link-github");
@@ -65,24 +150,24 @@
       const data = await fetchWithFallback(url, fallback);
       console.info("Profile payload", data);
       const profile = data.profile || {};
-      // Prefer fields from repository `data/profile.yml` when available
-      let localProfile = {};
-      try {
-        localProfile = await fetchYaml("data/profile.yml");
-      } catch (e) {
-        localProfile = {};
-      }
+      // Prefer fields from repository `data/profile.yml` when available (from cached load)
+      const localProfile = localProfileCache || {};
       const displayName = (localProfile && localProfile.name) ? localProfile.name : profile.name;
-      const displayRole = (localProfile && localProfile.role) ? localProfile.role : profile.role;
+      let displayRole = "";
+      if (profileRoleOverride) {
+        displayRole = profileRoleOverride;
+      } else if (localProfile && typeof localProfile.role === "string") {
+        displayRole = localProfile.role;
+      }
       const displayAffiliation = (localProfile && localProfile.affiliation) ? localProfile.affiliation : profile.affiliation;
       const displayEmail = (localProfile && localProfile.email) ? localProfile.email : profile.email;
       const displayLocation = (localProfile && localProfile.location) ? localProfile.location : profile.location;
       const displayPhotoUrl = (localProfile && localProfile.photo_url) ? localProfile.photo_url : (profile.photo_url || defaultPhoto);
       const displayPhotoAlt = (localProfile && localProfile.photo_alt) ? localProfile.photo_alt : (profile.photo_alt || defaultPhotoAlt);
       const displayBio = (localProfile && localProfile.bio) ? localProfile.bio : profile.bio;
-      const displayInterests = Array.isArray(localProfile.research_interests)
-        ? localProfile.research_interests
-        : (Array.isArray(profile.research_interests) ? profile.research_interests : (profile.research_interests ? [profile.research_interests] : []));
+      const displayKeywords = Array.isArray(localProfile.keywords)
+        ? localProfile.keywords
+        : [];
       const metrics = data.metrics || {};
       const metricRows = [
         { label: "Citations", value: metrics.citations },
@@ -90,22 +175,22 @@
         { label: "i10-index", value: metrics.i10_index }
       ].filter((item) => item.value);
       const metricHtml = metricRows
-        .map((item) => `<div class="metric"><span>${escapeHtml(item.label)}: </span><span> ${escapeHtml(item.value)}</span></div>`)
+        .map((item) => `<div class=\"metric\"><span>${escapeHtml(item.label)}: </span><span> ${escapeHtml(item.value)}</span></div>`)
         .join("");
 
       const photoUrl = displayPhotoUrl || defaultPhoto;
       const photoHtml = photoUrl
-        ? `<img class="profile-photo" src="${escapeHtml(photoUrl)}" alt="${escapeHtml(displayPhotoAlt)}">`
+        ? `<img class=\"profile-photo\" src=\"${escapeHtml(photoUrl)}\" alt=\"${escapeHtml(displayPhotoAlt)}\">`
         : "";
-      const bioHtml = displayBio ? `<div class="bio">${escapeHtml(displayBio)}</div>` : "";
-      const interests = displayInterests || [];
-      const interestsHtml = interests.length
-        ? `<div class="interests"><strong>Research interests:</strong> ${escapeHtml(interests.join(", "))}</div>`
+      const bioHtml = displayBio ? `<div class=\"bio\">${escapeHtml(displayBio)}</div>` : "";
+      const keywords = displayKeywords || [];
+      const keywordsHtml = keywords.length
+        ? `<div class=\"keywords\"><strong>Keywords:</strong> ${escapeHtml(keywords.join(", "))}</div>`
         : "";
       const linksHtml = [
-        linkScholar ? `<a href="${escapeHtml(linkScholar)}" target="_blank" rel="noopener">Google Scholar</a>` : "",
-        linkOrcid ? `<a href="${escapeHtml(linkOrcid)}" target="_blank" rel="noopener">ORCID</a>` : "",
-        linkGithub ? `<a href="${escapeHtml(linkGithub)}" target="_blank" rel="noopener">GitHub</a>` : ""
+        linkScholar ? `<a href=\"${escapeHtml(linkScholar)}\" target=\"_blank\" rel=\"noopener\">Google Scholar</a>` : "",
+        linkOrcid ? `<a href=\"${escapeHtml(linkOrcid)}\" target=\"_blank\" rel=\"noopener\">ORCID</a>` : "",
+        linkGithub ? `<a href=\"${escapeHtml(linkGithub)}\" target=\"_blank\" rel=\"noopener\">GitHub</a>` : ""
       ].filter(Boolean).join("");
 
       const updatedAt = data.generated_at ? new Date(data.generated_at) : null;
@@ -122,28 +207,28 @@
         : "";
 
       el.innerHTML = `
-        <div class="profile-hero">
-          <div class="profile-layout">
+        <div class=\"profile-hero\">
+          <div class=\"profile-layout\">
             <div>
               ${photoHtml}
             </div>
-            <div style="display: inline-table">
-              ${escapeHtml(displayRole || "")}
+            <div class=\"profile-meta\">
               ${displayName ? `<br><strong>${escapeHtml(displayName)}</strong>` : ""}
+              ${displayRole ? `<br>${escapeHtml(displayRole)}` : ""}
               ${displayAffiliation ? `<br>${escapeHtml(displayAffiliation)}` : ""}
-              ${displayEmail ? `<br><a href="mailto:${escapeHtml(displayEmail)}">${escapeHtml(displayEmail)}</a>` : ""}
+              ${displayEmail ? `<br><a href=\"mailto:${escapeHtml(displayEmail)}\">${escapeHtml(displayEmail)}</a>` : ""}
               ${displayLocation ? `<br>${escapeHtml(displayLocation)}` : ""}
               ${bioHtml}
-              ${interestsHtml}
-              ${linksHtml ? `<div class="profile-links">${linksHtml}</div>` : ""}
+              ${keywordsHtml}
+              ${linksHtml ? `<div class=\"profile-links\">${linksHtml}</div>` : ""}
             </div>
-            <aside class="profile-metrics">
+            <aside class=\"profile-metrics\">
               <strong>Metrics</strong>
-              ${metricHtml ? `<div class="metrics">${metricHtml}</div>` : ""}
+              ${metricHtml ? `<div class=\"metrics\">${metricHtml}</div>` : ""}
             </aside>
           </div>
         </div>
-        <div class="live-card" style="margin-top: 0.75rem;">
+        <div class=\"live-card\" style=\"margin-top: 0.75rem;\">
           <strong>Last updated:</strong> ${escapeHtml(updatedLabel)}
         </div>
       `;
@@ -181,7 +266,7 @@
         .map((item) => `<li>${escapeHtml(item)}</li>`)
         .join("");
 
-      el.innerHTML = `<ul class="interest-list">${list}</ul>`;
+      el.innerHTML = `<ul class=\"interest-list\">${list}</ul>`;
     } catch (err) {
       el.textContent = "Failed to load research interests.";
     }
@@ -213,7 +298,7 @@
       }
 
       const list = items.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
-      el.innerHTML = `<ul class="interest-list">${list}</ul>`;
+      el.innerHTML = `<ul class=\"interest-list\">${list}</ul>`;
     } catch (err) {
       el.textContent = "Failed to load focus areas.";
     }
@@ -242,7 +327,7 @@
       }
 
       const list = listItems.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
-      el.innerHTML = `<ul class="interest-list">${list}</ul>`;
+      el.innerHTML = `<ul class=\"interest-list\">${list}</ul>`;
     } catch (err) {
       el.textContent = "Failed to load qualifications.";
     }
@@ -274,7 +359,7 @@
             ? item.sources
             : (item.source ? [item.source] : []);
           const sourceLabel = sources.length ? sources.map(escapeHtml).join(", ") : "";
-          const link = item.url ? `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener">Link</a>` : "";
+          const link = item.url ? `<a href=\"${escapeHtml(item.url)}\" target=\"_blank\" rel=\"noopener\">Link</a>` : "";
 
           return `
             <li>
@@ -354,7 +439,7 @@
 
           return `
             <li>
-              <a href="${escapeHtml(repo.html_url)}" target="_blank" rel="noopener">${name}</a>
+              <a href=\"${escapeHtml(repo.html_url)}\" target=\"_blank\" rel=\"noopener\">${name}</a>
               ${desc ? `<br>${desc}` : ""}
               ${topics ? `<br><small>Topics: ${topics}</small>` : ""}
               ${updated ? `<br><small>Updated: ${escapeHtml(updated)}</small>` : ""}
@@ -369,11 +454,15 @@
     }
   };
 
-  renderProfile();
-  renderFocusAreas();
-  renderWorkHistory();
-  renderInterests();
-  renderQualifications();
-  renderPublications();
-  renderRepos();
+  // Load local profile once, then render sections
+  (async () => {
+    await loadLocalProfile();
+    await renderProfile();
+    renderFocusAreas();
+    renderWorkHistory();
+    renderInterests();
+    renderQualifications();
+    renderPublications();
+    renderRepos();
+  })();
 })();

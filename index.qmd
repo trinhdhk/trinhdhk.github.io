@@ -25,7 +25,7 @@ qual_attr <- if (!is.null(qual_defaults)) paste(qual_defaults, collapse = ", ") 
 
 ::: {.section-block}
 
-<div id="live-profile" data-crawl-url="`r sections$crawl$profile`" data-fallback="data/crawl/crawl.yml" data-default-photo="`r profile$photo_url`" data-default-photo-alt="`r profile$photo_alt`" data-link-scholar="`r sections$links$scholar`" data-link-orcid="`r sections$links$orcid`" data-link-github="`r sections$links$github`">
+<div id="live-profile" data-crawl-url="`r sections$crawl$profile`" data-profile-url="`r sub('/data/crawl/crawl.yml$', '/data/profile.yml', sections$crawl$profile)`" data-profile-role="`r profile$role`" data-fallback="data/crawl/crawl.yml" data-default-photo="`r profile$photo_url`" data-default-photo-alt="`r profile$photo_alt`" data-link-scholar="`r sections$links$scholar`" data-link-orcid="`r sections$links$orcid`" data-link-github="`r sections$links$github`">
 Loading live profile data...
 </div>
 :::
@@ -38,13 +38,6 @@ Loading live profile data...
 `r intro$intro$note`
 :::
 
-::: {.section-block}
-## Focus Areas
-
-<div id="live-focus" data-crawl-url="`r sections$crawl$profile`" data-fallback="data/crawl/crawl.yml" data-default-focus="`r interest_attr`">
-Loading focus areas...
-</div>
-:::
 
 ```{r}
 # render biography from profile.yml (fallback) or live crawl
