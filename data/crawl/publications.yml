@@ -1,5 +1,157 @@
-generated_at: '2026-02-07T18:01:43Z'
+generated_at: '2026-02-07T18:34:50Z'
 items:
+- title: 'Xpert MTB/RIF Ultra versus Xpert MTB/RIF for the diagnosis of tuberculous
+    meningitis: a prospective, randomised, diagnostic accuracy study'
+  authors: J Donovan, NH Phu, VTM Dung, TP Quang, HDT Nghia, PKN Oanh, ...
+  venue: The Lancet infectious diseases 20 (3), 299-307, 2020
+  year: '2020'
+  citations: '161'
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:d1gkVwhDpl0C
+  sources:
+  - Scholar
+  - orcid
+- title: Adjunctive dexamethasone for tuberculous meningitis in HIV-positive adults
+  authors: J Donovan, ND Bang, D Imran, HDT Nghia, E Burhan, DTT Huong, ...
+  venue: New England Journal of Medicine 389 (15), 1357-1367, 2023
+  year: '2023'
+  citations: '85'
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:_FxGoFyzp5QC
+  sources:
+  - Scholar
+  - orcid
+- title: Clinical benefit of AI-assisted lung ultrasound in a resource-limited intensive
+    care unit
+  authors: PTH Nhat, N Van Hao, PV Tho, H Kerdegari, L Pisani, LNM Thu, ...
+  venue: Critical Care 27 (1), 257, 2023
+  year: '2023'
+  citations: '55'
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:Y0pCki6q_DkC
+  sources: Scholar
+- title: 'Effectiveness of continuous endotracheal cuff pressure control for the prevention
+    of ventilator-associated respiratory infections: an open-label randomized, controlled
+    trial'
+  authors: VQ Dat, L Minh Yen, H Thi Loan, V Dinh Phu, N Thien Binh, RB Geskus, ...
+  venue: Clinical Infectious Diseases 74 (10), 1795-1803, 2022
+  year: '2022'
+  citations: '41'
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:u5HHmVD_uO8C
+  sources:
+  - Scholar
+  - orcid
+- title: Direct medical costs of tetanus, dengue, and sepsis patients in an intensive
+    care unit in Vietnam
+  authors: TM Hung, N Van Hao, LM Yen, A McBride, VQ Dat, HR van Doorn, ...
+  venue: Frontiers in public health 10, 893200, 2022
+  year: '2022'
+  citations: '19'
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:UeHWp8X0CEIC
+  sources: Scholar
+- title: 'New technologies to improve healthcare in low-and middle-income countries:
+    global grand challenges satellite event, Oxford University clinical research unit,
+    Ho Chi Minh City …'
+  authors: MN Dinh, J Nygate, CL Thwaites, GGCEV Group
+  venue: Wellcome Open Research 5, 142, 2020
+  year: '2020'
+  citations: '19'
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:IjCSPb-OGe4C
+  sources: Scholar
+- title: Clinical evaluation of AI-assisted muscle ultrasound for monitoring muscle
+    wasting in ICU patients
+  authors: PTH Nhat, N Van Hao, LM Yen, NH Anh, DP Khiem, H Kerdegari, ...
+  venue: Scientific reports 14 (1), 14798, 2024
+  year: '2024'
+  citations: '13'
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:Tyk-4Ss8FVUC
+  sources: Scholar
+- title: Computer-aided prognosis of tuberculous meningitis combining imaging and
+    non-imaging data
+  authors: LS Canas, THK Dong, D Beasley, J Donovan, JO Cleary, R Brown, ...
+  venue: Scientific Reports 14 (1), 17581, 2024
+  year: '2024'
+  citations: '9'
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:WF5omc3nYNoC
+  sources:
+  - Scholar
+  - orcid
+- title: A novel diagnostic model for tuberculous meningitis using Bayesian latent
+    class analysis
+  authors: THK Dong, J Donovan, NM Ngoc, DDA Thu, HDT Nghia, PKN Oanh, ...
+  venue: BMC infectious diseases 24 (1), 163, 2024
+  year: '2024'
+  citations: '8'
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:zYLM7Y9cAGgC
+  sources:
+  - Scholar
+  - orcid
+- title: A statistical analysis plan for the Adjunctive Corticosteroids for Tuberculous
+    meningitis in HIV-positive adults (ACT HIV) clinical trial
+  authors: J Donovan, TDH Khanh, GE Thwaites, RB Geskus
+  venue: Wellcome open research 6, 280, 2022
+  year: '2022'
+  citations: '4'
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:2osOgNQ5qMEC
+  sources:
+  - Scholar
+  - orcid
+- title: Convolutional neural network using magnetic resonance brain imaging to predict
+    outcome from tuberculosis meningitis
+  authors: THK Dong, LS Canas, J Donovan, D Beasley, NT Thuong-Thuong, ...
+  venue: PloS one 20 (5), e0321655, 2025
+  year: '2025'
+  citations: '2'
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:W7OEmFMy1HYC
+  sources:
+  - Scholar
+  - orcid
+- title: Statistical analysis plan for the LAST ACT clinical trial; a Leukotriene
+    A4 hydrolase Stratified non-inferiority Trial of Adjunctive Corticosteroids for
+    HIV-negative adults …
+  authors: J Donovan, M Wolbers, NTT Thuong, DHK Trinh, LTH Nhat, GE Thwaites, ...
+  venue: Wellcome open research 9, 695, 2025
+  year: '2025'
+  citations: '2'
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:YsMSGLbcyi4C
+  sources: Scholar
+- title: 'Severe dengue in adults: Clinical features from the 2022 dengue outbreak
+    at a Vietnamese tertiary hospital'
+  authors: OK Pham, TB Duong, TV Phan, TN Truong, DTH Ha, HV Nguyen, ...
+  venue: PLOS Neglected Tropical Diseases 19 (10), e0013589, 2025
+  year: '2025'
+  citations: ''
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:roLk4NBRz8UC
+  sources:
+  - Scholar
+  - orcid
+- title: 'Tuberculous meningitis: understanding and improving diagnosis and prognosis
+    using novel tools and approaches'
+  authors: DHK Trinh
+  venue: ''
+  year: '2024'
+  citations: ''
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:LkGwnXOMwfcC
+  sources: Scholar
+- title: Reply to Kataoka
+  authors: VQ Dat, RB Geskus, DHK Trinh, B Nadjm, HR van Doorn, CL Thwaites
+  venue: Clinical Infectious Diseases 74 (10), 1884-1885, 2022
+  year: '2022'
+  citations: ''
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:u-x6o8ySG0sC
+  sources: Scholar
+- title: Reply to Dr. Kataoka
+  authors: VQ Dat, RB Geskus, DHK Trinh, B Nadjm
+  venue: ''
+  year: '2021'
+  citations: ''
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:qjMakFHDy7sC
+  sources: Scholar
+- title: Human monoclonal antibodies from convalescent H7N9 patients in China and
+    Taiwan
+  authors: P Rijal, K Huang, L Schimanski, T Powell, B Wang, T Dong, X Li, ...
+  venue: IMMUNOLOGY 143, 2014
+  year: '2014'
+  citations: ''
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:ufrVoPGSRksC
+  sources: Scholar
 - title: 'Genotype-stratified adjunctive dexamethasone for tuberculous meningitis
     in HIV-negative adults: a randomized controlled phase 3 trial'
   authors: ''
@@ -7,22 +159,6 @@ items:
   year: '2026'
   citations: ''
   url: https://doi.org/10.1038/s41591-025-04138-z
-  sources: orcid
-- title: Convolutional neural network using magnetic resonance brain imaging to predict
-    outcome from tuberculosis meningitis
-  authors: ''
-  venue: PLOS One
-  year: '2025'
-  citations: ''
-  url: https://doi.org/10.1371/journal.pone.0321655
-  sources: orcid
-- title: 'Severe dengue in adults: Clinical features from the 2022 dengue outbreak
-    at a Vietnamese tertiary hospital'
-  authors: ''
-  venue: Plos Neglected Tropical Diseases
-  year: '2025'
-  citations: ''
-  url: https://www.scopus.com/inward/record.url?eid=2-s2.0-105018500925&partnerID=MN8TOARS
   sources: orcid
 - title: Statistical analysis plan for the LAST ACT clinical trial; a Leukotriene
     A4 hydrolase Stratified non-inferiority Trial of Adjunctive Corticosteroids for
@@ -33,14 +169,6 @@ items:
   citations: ''
   url: http://dx.doi.org/10.12688/wellcomeopenres.22498.1
   sources: orcid
-- title: A novel diagnostic model for tuberculous meningitis using Bayesian latent
-    class analysis
-  authors: ''
-  venue: BMC Infectious Diseases
-  year: '2024'
-  citations: ''
-  url: http://dx.doi.org/10.1186/s12879-024-08992-z
-  sources: orcid
 - title: 'Acceptance and User Experiences of a Wearable Device for the Management
     of Hospitalized Patients in COVID-19-Designated Wards in Ho Chi Minh City, Vietnam:
     Action Learning Project'
@@ -50,38 +178,6 @@ items:
   citations: ''
   url: https://www.scopus.com/inward/record.url?eid=2-s2.0-85183997092&partnerID=MN8TOARS
   sources: orcid
-- title: Computer-aided prognosis of tuberculous meningitis combining imaging and
-    non-imaging data
-  authors: ''
-  venue: Scientific Reports
-  year: '2024'
-  citations: ''
-  url: https://www.scopus.com/inward/record.url?eid=2-s2.0-85200198115&partnerID=MN8TOARS
-  sources: orcid
-- title: Adjunctive Dexamethasone for Tuberculous Meningitis in HIV-Positive Adults
-  authors: ''
-  venue: New England Journal of Medicine
-  year: '2023'
-  citations: ''
-  url: http://dx.doi.org/10.1056/nejmoa2216218
-  sources: orcid
-- title: A statistical analysis plan for the Adjunctive Corticosteroids for Tuberculous
-    meningitis in HIV-positive adults (ACT HIV) clinical trial
-  authors: ''
-  venue: Wellcome Open Research
-  year: '2022'
-  citations: ''
-  url: http://dx.doi.org/10.12688/wellcomeopenres.17154.2
-  sources: orcid
-- title: 'Effectiveness of Continuous Endotracheal Cuff Pressure Control for the Prevention
-    of Ventilator-Associated Respiratory Infections: An Open-Label Randomized, Controlled
-    Trial'
-  authors: ''
-  venue: Clinical Infectious Diseases
-  year: '2022'
-  citations: ''
-  url: http://dx.doi.org/10.1093/cid/ciab724
-  sources: orcid
 - title: 'Digital Health Policy and Programs for Hospital Care in Vietnam: Scoping
     Review'
   authors: ''
@@ -89,12 +185,4 @@ items:
   year: '2022'
   citations: ''
   url: https://www.scopus.com/inward/record.url?eid=2-s2.0-85124324561&partnerID=MN8TOARS
-  sources: orcid
-- title: 'Xpert MTB/RIF Ultra versus Xpert MTB/RIF for the diagnosis of tuberculous
-    meningitis: a prospective, randomised, diagnostic accuracy study'
-  authors: ''
-  venue: The Lancet Infectious Diseases
-  year: '2020'
-  citations: ''
-  url: http://dx.doi.org/10.1016/s1473-3099(19)30649-8
   sources: orcid

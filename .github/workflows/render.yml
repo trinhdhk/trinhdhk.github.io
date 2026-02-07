@@ -92,18 +92,20 @@ jobs:
             done
           fi
 
-      - name: Render site
+      - name: Render site to repository root
         run: |
-          quarto render
+          # Render site output to repository root instead of `docs/`
+          quarto render --output-dir .
 
-      - name: Commit and push built site (docs/)
+      - name: Commit and push built site (root)
         env:
           GIT_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
           GIT_NAME: github-actions[bot]
         run: |
           git config user.name "$GIT_NAME"
           git config user.email "$GIT_EMAIL"
-          git add docs || true
+          # Stage generated site files at repository root
+          git add . || true
           if ! git diff --staged --quiet; then
             git commit -m "chore: render site (CI) [skip ci]" || true
             git push

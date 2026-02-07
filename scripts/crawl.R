@@ -2,6 +2,7 @@ suppressPackageStartupMessages({
   library(rvest)
   library(xml2)
   library(httr2)
+  library(jsonlite)
   library(yaml)
   library(stringr)
 })
@@ -35,28 +36,8 @@ orcid_employment_url <- "https://pub.orcid.org/v3.0/0000-0003-4281-4929/employme
 
 ncl_doc <- tryCatch(fetch_html(ncl_url), error = function(e) NULL)
 
-ncl_name <- if (!is.null(ncl_doc)) {
-  # Try multiple selectors and fallbacks for the displayed name/title
-  name_selectors <- c(
-    "h1",
-    ".profile__name",
-    ".person-name",
-    ".profile-name",
-    ".profile h1",
-    ".page-title",
-    ".profile__title"
-  )
-  name_val <- collect_text(ncl_doc, name_selectors)
-  if (!nzchar(name_val)) {
-    meta_node <- html_element(ncl_doc, "meta[property='og:title']")
-    if (!is.null(meta_node)) name_val <- html_attr(meta_node, "content")
-  }
-  if (!nzchar(name_val)) {
-    title_node <- html_element(ncl_doc, "title")
-    name_val <- try_or_empty(if (!is.null(title_node)) html_text2(title_node, trim = TRUE) else "")
-  }
-  if (is.null(name_val) || !nzchar(name_val)) "" else name_val
-} else ""
+# placeholder for name; actual extraction happens after helper functions are defined
+ncl_name <- ""
 
 ncl_role <- if (!is.null(ncl_doc)) {
   nodes <- html_elements(ncl_doc, ".profile-title, .person-title, .profile__jobTitle, .profile__title")
@@ -122,6 +103,71 @@ collect_image <- function(doc, selectors, base_url) {
     }
   }
   ""
+}
+
+# Extract name from NCL page using helpers defined above
+if (!is.null(ncl_doc)) {
+  name_selectors <- c(
+    "h1",
+    ".profile__name",
+    ".person-name",
+    ".profile-name",
+    ".profile h1",
+    ".page-title",
+    ".profile__title"
+  )
+  name_val <- collect_text(ncl_doc, name_selectors)
+  if (!nzchar(name_val)) {
+    meta_node <- html_element(ncl_doc, "meta[property='og:title']")
+    if (!is.null(meta_node)) name_val <- html_attr(meta_node, "content")
+  }
+  if (!nzchar(name_val)) {
+    meta_auth <- html_element(ncl_doc, "meta[name='author'], meta[name='citation_author'], meta[name='DC.creator'], meta[name='dc.creator']")
+    if (!is.null(meta_auth)) name_val <- html_attr(meta_auth, "content")
+  }
+  if (!nzchar(name_val)) {
+    jsonld_nodes <- html_elements(ncl_doc, "script[type='application/ld+json']")
+    if (length(jsonld_nodes) > 0) {
+      for (node in jsonld_nodes) {
+        txt <- try_or_empty(html_text2(node))
+        if (!nzchar(txt)) next
+        j <- tryCatch(jsonlite::fromJSON(txt, simplifyVector = FALSE), error = function(e) NULL)
+        if (is.null(j)) next
+        if (is.list(j)) {
+          candidate <- NULL
+          if (!is.null(j$name)) candidate <- j$name
+          else if (!is.null(j[[1]]$name)) candidate <- j[[1]]$name
+          if (!is.null(candidate) && nzchar(as.character(candidate))) {
+            name_val <- as.character(candidate)
+            break
+          }
+        }
+      }
+    }
+  }
+  if (!nzchar(name_val)) {
+    title_node <- html_element(ncl_doc, "title")
+    name_val <- try_or_empty(if (!is.null(title_node)) html_text2(title_node, trim = TRUE) else "")
+  }
+
+  generic_titles <- c("staff profile", "profile", "people profile", "person profile", "staff", "profile page")
+  if (nzchar(name_val) && tolower(str_squish(name_val)) %in% generic_titles) {
+    meta_site <- html_element(ncl_doc, "meta[property='og:site_name']")
+    if (!is.null(meta_site)) {
+      candidate <- html_attr(meta_site, "content")
+      if (nzchar(candidate)) name_val <- candidate
+    }
+    if (!nzchar(name_val)) {
+      alt_node <- html_element(ncl_doc, "header h1, .profile__header h1, .profile h1, h2")
+      if (!is.null(alt_node)) {
+        alt_text <- safe_text(alt_node)
+        if (nzchar(alt_text) && !tolower(str_squish(alt_text)) %in% generic_titles) name_val <- alt_text
+      }
+    }
+  }
+  ncl_name <- if (is.null(name_val) || !nzchar(name_val)) "" else name_val
+} else {
+  ncl_name <- ""
 }
 
 ncl_bio <- if (!is.null(ncl_doc)) {

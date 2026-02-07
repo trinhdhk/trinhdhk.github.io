@@ -65,6 +65,14 @@
       const data = await fetchWithFallback(url, fallback);
       console.info("Profile payload", data);
       const profile = data.profile || {};
+      // Prefer name from repository `data/profile.yml` when available
+      let localProfile = {};
+      try {
+        localProfile = await fetchYaml("data/profile.yml");
+      } catch (e) {
+        localProfile = {};
+      }
+      const displayName = (localProfile && localProfile.name) ? localProfile.name : profile.name;
       const metrics = data.metrics || {};
       const metricRows = [
         { label: "Citations", value: metrics.citations },
@@ -115,7 +123,7 @@
             </div>
             <div style="display: inline-table">
               ${escapeHtml(profile.role || "")}
-              ${profile.name ? `<br><strong>${escapeHtml(profile.name)}</strong>` : ""}
+              ${displayName ? `<br><strong>${escapeHtml(displayName)}</strong>` : ""}
               ${profile.affiliation ? `<br>${escapeHtml(profile.affiliation)}` : ""}
               ${profile.email ? `<br><a href="mailto:${escapeHtml(profile.email)}">${escapeHtml(profile.email)}</a>` : ""}
               ${profile.location ? `<br>${escapeHtml(profile.location)}` : ""}
