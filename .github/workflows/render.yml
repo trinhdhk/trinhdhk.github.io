@@ -37,6 +37,16 @@ jobs:
             httr2
             stringr
             yaml
+            
+      - name: Dispatch crawl workflow
+        uses: peter-evans/workflow-dispatch@v1
+        with:
+          workflow: "Crawl live data"
+          ref: ${{ github.ref_name }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          wait-for-completion: true
+          wait-for-completion-interval-seconds: 10
+          wait-for-completion-timeout-seconds: 600
 
       - name: Setup Quarto
         uses: quarto-dev/quarto-action@v2
