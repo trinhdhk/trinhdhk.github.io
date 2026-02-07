@@ -38,7 +38,7 @@ jobs:
             stringr
             yaml
             
-      - name: Dispatch crawl workflow (via API) and wait
+      - name: Dispatch crawl workflow
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
@@ -86,10 +86,22 @@ jobs:
 
       - name: Install Quarto CLI
         run: |
+          set -euo pipefail
           sudo apt-get update
-          sudo apt-get install -y wget gdebi-core
+          sudo apt-get install -y wget ca-certificates gnupg lsb-release jq
           wget -qO quarto.deb https://github.com/quarto-dev/quarto-cli/releases/latest/download/quarto-linux-amd64.deb
-          sudo gdebi -n quarto.deb || sudo dpkg -i quarto.deb || sudo apt-get -f install -y
+          # Try dpkg, then fix missing deps and retry
+          sudo dpkg -i quarto.deb || true
+          sudo apt-get install -f -y || true
+          sudo dpkg -i quarto.deb || true
+          if command -v quarto >/dev/null 2>&1; then
+            quarto --version
+          else
+            echo "Quarto CLI installation failed; exiting with error." >&2
+            ls -l quarto.deb || true
+            dpkg -I quarto.deb || true
+            exit 1
+          fi
 
       - name: Render site
         run: |
