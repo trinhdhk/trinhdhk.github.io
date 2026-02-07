@@ -7,7 +7,7 @@ This repository contains a Quarto-based personal website powered by R/knitr. The
 - `index.qmd` / `publications.qmd` / `projects.qmd`: Website pages
 - `data/profile.yml`: Editable metadata (summary, keywords, etc.)
 - `data/sections.yml`: External links and live data endpoints
-- `data/crawl/*.json`: Crawled data stored in-repo
+- `data/crawl/*.yml`: Crawled data stored in-repo
 - `scripts/crawl.R`: Crawler script
 - `.github/workflows/crawl.yml`: Scheduled crawler
 
