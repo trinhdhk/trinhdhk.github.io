@@ -1,4 +1,4 @@
-@import"https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&family=Space+Grotesk:wght@400;600&display=swap";@import"https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap";:root{--ink: #0b1320;--sky: #f2f6ff;--silver: #edf1f6;--accent: #1b6ff2;--paper: #ffffff;--muted: #5b6b80}/*!
+@import"https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&family=Space+Grotesk:wght@400;600&display=swap";@import"https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap";:root{--ink: #e3e8f0;--sky: #0f1726;--silver: #121a2c;--accent: #74b3ff;--paper: #0a1220;--muted: #9aa8ba}@media(prefers-color-scheme: light){:root{--ink: #0b1320;--sky: #f2f6ff;--silver: #edf1f6;--accent: #1b6ff2;--paper: #ffffff;--muted: #5b6b80}}body.quarto-light{--ink: #0b1320;--sky: #f2f6ff;--silver: #edf1f6;--accent: #1b6ff2;--paper: #ffffff;--muted: #5b6b80}/*!
  * Bootstrap  v5.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
