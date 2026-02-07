@@ -207,7 +207,7 @@ body.quarto-light .interests {
   color: var(--ink);
   text-decoration: none;
   font-size: 0.85rem;
-  min-width: 180px;
+  min-width: 100px;
   justify-content: center;
   display: inline-flex;
   transition: all 0.5s ease;
@@ -222,13 +222,19 @@ body.quarto-light .interests {
   display: grid;
   --profile-photo-col: 220px;
   --profile-metrics-col: 240px;
-  grid-template-columns: minmax(160px, var(--profile-photo-col)) minmax(220px, clamp(340px, 32vw, 460px));
+  grid-template-columns: minmax(160px, var(--profile-photo-col)) minmax(0, 1fr);
+  grid-template-areas: "photo meta metrics";
   gap: 1rem;
   align-items: start;
 }
 
+.profile-layout > :first-child {
+  grid-area: photo;
+}
+
 .profile-meta {
-  width: 100%;
+  grid-area: meta;
+  width: min(100%, clamp(320px, 42vw, 520px));
   min-width: 0;
 }
 
@@ -242,7 +248,9 @@ body.quarto-light .interests {
 }
 
 .profile-metrics {
+  grid-area: metrics;
   display: block;
+  align-self: start;
   padding: 0.75rem 1rem;
   border-radius: 10px;
   background: rgba(237, 241, 246, 0.9);
@@ -280,12 +288,22 @@ body.quarto-light .interests {
   margin: 0.25rem 0 0 1rem;
 }
 
+@media (max-width: 1200px) {
+  .profile-layout {
+    grid-template-columns: minmax(160px, var(--profile-photo-col)) minmax(0, 1fr);
+    grid-template-areas: "photo meta" "metrics meta";
+  }
+}
 @media (max-width: 980px) {
   .profile-layout {
+    grid-template-areas: "metrics" "meta";
     grid-template-columns: 1fr;
   }
+  .profile-layout > :first-child {
+    display: none;
+  }
   .profile-metrics {
-    order: 3;
+    width: 100%;
   }
 }
 @media (prefers-color-scheme: dark) {

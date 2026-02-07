@@ -222,10 +222,10 @@
               ${keywordsHtml}
               ${linksHtml ? `<div class=\"profile-links\">${linksHtml}</div>` : ""}
             </div>
-            <aside class=\"profile-metrics\">
+            <div class=\"profile-metrics\">
               <strong>Metrics</strong>
               ${metricHtml ? `<div class=\"metrics\">${metricHtml}</div>` : ""}
-            </aside>
+            </div>
           </div>
         </div>
         <div class=\"live-card\" style=\"margin-top: 0.75rem;\">
