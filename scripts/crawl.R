@@ -36,7 +36,26 @@ orcid_employment_url <- "https://pub.orcid.org/v3.0/0000-0003-4281-4929/employme
 ncl_doc <- tryCatch(fetch_html(ncl_url), error = function(e) NULL)
 
 ncl_name <- if (!is.null(ncl_doc)) {
-  try_or_empty(html_element(ncl_doc, "h1")) |> safe_text()
+  # Try multiple selectors and fallbacks for the displayed name/title
+  name_selectors <- c(
+    "h1",
+    ".profile__name",
+    ".person-name",
+    ".profile-name",
+    ".profile h1",
+    ".page-title",
+    ".profile__title"
+  )
+  name_val <- collect_text(ncl_doc, name_selectors)
+  if (!nzchar(name_val)) {
+    meta_node <- html_element(ncl_doc, "meta[property='og:title']")
+    if (!is.null(meta_node)) name_val <- html_attr(meta_node, "content")
+  }
+  if (!nzchar(name_val)) {
+    title_node <- html_element(ncl_doc, "title")
+    name_val <- try_or_empty(if (!is.null(title_node)) html_text2(title_node, trim = TRUE) else "")
+  }
+  if (is.null(name_val) || !nzchar(name_val)) "" else name_val
 } else ""
 
 ncl_role <- if (!is.null(ncl_doc)) {
