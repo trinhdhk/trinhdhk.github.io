@@ -1,0 +1,48 @@
+generated_at: '2026-02-07T16:33:50Z'
+profile:
+  name: Trinh Dong
+  role: ''
+  affiliation: Newcastle University
+  email: trinh.dong@ncl.ac.uk
+  location: ''
+  bio: ''
+  research_interests: []
+  photo_url: https://includes.ncl.ac.uk/cmswebservices/myimpact/2020ws/picture/picture.php?wk=newcastleuniversity&pk=trinh.dong
+  photo_alt: Trinh Dong
+metrics:
+  citations: '418'
+  h_index: '8'
+  i10_index: '7'
+work_history:
+- role: Research Associate
+  organization: University of Newcastle upon Tyne
+  start_date: '2025-11-10'
+  end_date: ''
+- role: Postdoctorant
+  organization: Université de Bordeaux
+  start_date: '2024-11-01'
+  end_date: '2025-12-31'
+- role: DPhil student
+  organization: King's College London
+  start_date: '2020-10-01'
+  end_date: '2025-06-01'
+- role: DPhil student
+  organization: Oxford University Clinical Research Unit
+  start_date: '2020-06-01'
+  end_date: '2025-05-01'
+- role: Research Assistant
+  organization: Oxford University Clinical Research Unit
+  start_date: '2018-09-06'
+  end_date: '2020-05-31'
+- role: Doctor
+  organization: Children Hospital No.1
+  start_date: '2017-11-15'
+  end_date: '2018-07-31'
+qualifications:
+- Doctor of Medicine, Vietnam
+- DPhil in Biomedical engineering, UK
+sources:
+- https://www.ncl.ac.uk/medical-sciences/people/profile/trinhdong.html
+- https://scholar.google.com/citations?user=8VPRg4kAAAAJ&hl=en&oi=ao
+- https://pub.orcid.org/v3.0/0000-0003-4281-4929/works
+- https://pub.orcid.org/v3.0/0000-0003-4281-4929/employments

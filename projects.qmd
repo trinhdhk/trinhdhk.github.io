@@ -1,0 +1,16 @@
+---
+title: "Projects"
+---
+
+```{r}
+sections <- yaml::read_yaml("data/sections.yml")
+```
+
+::: {.section-block}
+## Live GitHub Repositories
+
+<div id="live-repos" data-github-user="`r sections$links$github_user`">
+Loading repositories...
+</div>
+
+:::

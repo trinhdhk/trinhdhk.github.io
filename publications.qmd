@@ -1,0 +1,14 @@
+---
+title: "Publications"
+---
+
+```{r}
+sections <- yaml::read_yaml("data/sections.yml")
+```
+
+::: {.section-block}
+<div id="live-publications" data-pubs-url="`r sections$crawl$publications`" data-fallback="data/crawl/publications.yml">
+Loading publications...
+</div>
+
+:::

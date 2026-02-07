@@ -1,0 +1,82 @@
+---
+title: "Home"
+---
+
+```{r}
+profile <- yaml::read_yaml("data/profile.yml")
+sections <- yaml::read_yaml("data/sections.yml")
+intro <- yaml::read_yaml("data/sections_intro.yml")
+extra <- yaml::read_yaml("data/sections_extra.yml")
+interests <- profile$research_interests
+if (is.null(interests)) {
+  interests <- profile$keywords
+}
+interest_attr <- if (!is.null(interests)) paste(interests, collapse = ", ") else ""
+qual_defaults <- NULL
+if (!is.null(extra$sections)) {
+  for (section in extra$sections) {
+    if (!is.null(section$id) && section$id == "qualification") {
+      qual_defaults <- section$items
+    }
+  }
+}
+qual_attr <- if (!is.null(qual_defaults)) paste(qual_defaults, collapse = ", ") else ""
+```
+
+::: {.section-block}
+
+<div id="live-profile" data-crawl-url="`r sections$crawl$profile`" data-fallback="data/crawl/crawl.yml" data-default-photo="`r profile$photo_url`" data-default-photo-alt="`r profile$photo_alt`" data-link-scholar="`r sections$links$scholar`" data-link-orcid="`r sections$links$orcid`" data-link-github="`r sections$links$github`">
+Loading live profile data...
+</div>
+:::
+
+::: {.hero}
+
+`r profile$summary`
+
+**`r intro$intro$headline`**  
+`r intro$intro$note`
+:::
+
+::: {.section-block}
+## Focus Areas
+
+<div id="live-focus" data-crawl-url="`r sections$crawl$profile`" data-fallback="data/crawl/crawl.yml" data-default-focus="`r interest_attr`">
+Loading focus areas...
+</div>
+:::
+
+```{r}
+# render biography from profile.yml (fallback) or live crawl
+crawl <- tryCatch(yaml::read_yaml("data/crawl/crawl.yml"), error = function(e) NULL)
+```
+
+::: {.section-block}
+## Research interests
+
+<div id="live-interests" data-crawl-url="`r sections$crawl$profile`" data-fallback="data/crawl/crawl.yml" data-default-interests="`r interest_attr`">
+Loading research interests...
+</div>
+:::
+
+::: {.section-block}
+## Work history
+
+<div id="live-history" data-crawl-url="`r sections$crawl$profile`" data-fallback="data/crawl/crawl.yml">
+Loading work history...
+</div>
+:::
+
+::: {.section-block}
+## Qualification
+
+<div id="live-qualifications" data-crawl-url="`r sections$crawl$profile`" data-fallback="data/crawl/crawl.yml" data-default-qualifications="`r qual_attr`">
+Loading qualifications...
+</div>
+:::
+
+## Quick Links
+
+- [GitHub](`r sections$links$github`)
+- [Publications](publications.qmd)
+- [Projects](projects.qmd)

@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - data/crawl/*.yml
+    - data/crawl/*.yaml
+
+website:
+  title: "Trinh Dong"
+  site-url: "https://trinhdhk.github.io"
+  repo-url: "https://github.com/trinhdhk"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: publications.qmd
+        text: Publications
+      - href: projects.qmd
+        text: Projects
+    right:
+      - icon: github
+        href: "https://github.com/trinhdhk"
+        aria-label: GitHub
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles/theme.scss]
+      dark: [darkly, styles/theme.scss]
+    toc: true
+    page-layout: full
+    include-after-body: includes/after-body.html
+
+execute:
+  engine: knitr
+  echo: false
+  warning: false
+  message: false

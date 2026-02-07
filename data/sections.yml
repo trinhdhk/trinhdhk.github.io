@@ -1,0 +1,10 @@
+links:
+  github: "https://github.com/trinhdhk"
+  github_user: "trinhdhk"
+  scholar: "https://scholar.google.com/citations?user=8VPRg4kAAAAJ&hl=en&oi=ao"
+  orcid: "https://orcid.org/0000-0003-4281-4929"
+  ncl_profile: "https://www.ncl.ac.uk/medical-sciences/people/profile/trinhdong.html"
+
+crawl:
+  profile: "https://raw.githubusercontent.com/trinhdhk/trinhdhk.github.io/main/data/crawl/crawl.yml"
+  publications: "https://raw.githubusercontent.com/trinhdhk/trinhdhk.github.io/main/data/crawl/publications.yml"
