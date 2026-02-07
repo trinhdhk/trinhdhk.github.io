@@ -38,20 +38,58 @@ jobs:
             stringr
             yaml
             
-      - name: Dispatch crawl workflow
-        uses: peter-evans/workflow-dispatch@v1
-        with:
-          workflow: "Crawl live data"
-          ref: ${{ github.ref_name }}
-          token: ${{ secrets.GITHUB_TOKEN }}
-          wait-for-completion: true
-          wait-for-completion-interval-seconds: 10
-          wait-for-completion-timeout-seconds: 600
+      - name: Dispatch crawl workflow (via API) and wait
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          REF: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          WORKFLOW_FILE=crawl.yml
+          echo "Dispatching $WORKFLOW_FILE on $REPO ref $REF"
+          curl -s -X POST \
+            -H "Authorization: token $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/$REPO/actions/workflows/$WORKFLOW_FILE/dispatches" \
+            -d "{\"ref\":\"$REF\"}"
 
-      - name: Setup Quarto
-        uses: quarto-dev/quarto-action@v2
-        with:
-          install: true
+          echo "Waiting for workflow run to appear..."
+          for i in $(seq 1 30); do
+            RUN_ID=$(curl -s -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/$REPO/actions/workflows/$WORKFLOW_FILE/runs?branch=$REF&per_page=1" | jq -r '.workflow_runs[0].id') || true
+            if [ -n "$RUN_ID" ] && [ "$RUN_ID" != "null" ]; then
+              break
+            fi
+            sleep 2
+          done
+
+          if [ -z "$RUN_ID" ] || [ "$RUN_ID" = "null" ]; then
+            echo "No workflow run detected; proceeding without waiting."
+          else
+            echo "Found run $RUN_ID; polling status..."
+            while true; do
+              RUN_JSON=$(curl -s -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" \
+                "https://api.github.com/repos/$REPO/actions/runs/$RUN_ID")
+              STATUS=$(echo "$RUN_JSON" | jq -r '.status')
+              CONCLUSION=$(echo "$RUN_JSON" | jq -r '.conclusion')
+              echo "Status: $STATUS, Conclusion: $CONCLUSION"
+              if [ "$STATUS" = "completed" ]; then
+                if [ "$CONCLUSION" != "success" ]; then
+                  echo "Crawl workflow failed with conclusion $CONCLUSION" >&2
+                  exit 1
+                fi
+                break
+              fi
+              sleep 5
+            done
+          fi
+
+      - name: Install Quarto CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget gdebi-core
+          wget -qO quarto.deb https://github.com/quarto-dev/quarto-cli/releases/latest/download/quarto-linux-amd64.deb
+          sudo gdebi -n quarto.deb || sudo dpkg -i quarto.deb || sudo apt-get -f install -y
 
       - name: Render site
         run: |
