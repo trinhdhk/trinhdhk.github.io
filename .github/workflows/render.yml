@@ -95,7 +95,7 @@ jobs:
       - name: Render site to repository root
         run: |
           # Render site output to repository root instead of `docs/`
-          quarto render --output-dir .
+          quarto render
 
       - name: Commit and push built site (root)
         env:
