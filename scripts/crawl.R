@@ -15,13 +15,17 @@ fetch_html_raw <- function(url, raw_path, error_path) {
   tryCatch({
     req <- request(url) |> req_user_agent(user_agent) |> req_timeout(60)
     resp <- req_perform(req)
+    status <- resp_status(resp)
     raw <- list(
       url = url,
-      status = resp_status(resp),
+      status = status,
       content_type = resp_header(resp, "content-type"),
       body = resp_body_string(resp)
     )
     write_yaml(raw, raw_path)
+    if (status >= 400) {
+      return(NULL)
+    }
     resp_body_html(resp)
   }, error = function(e) {
     write_yaml(list(url = url, error = as.character(e$message)), error_path)
@@ -237,9 +241,14 @@ if (!is.null(sections_extra$sections)) {
   }
 }
 
-scholar_doc <- fetch_html_raw(scholar_url, "data/crawl/scholar_raw.yml", "data/crawl/scholar_raw.yml")
-if (is.null(scholar_doc)) {
-  warning("Scholar crawl failed; raw response saved to data/crawl/scholar_raw.yml")
+if (tolower(Sys.getenv("GITHUB_ACTIONS")) == "true") {
+  warning("Skipping Scholar crawl on GitHub Actions to avoid 403 blocking")
+  scholar_doc <- NULL
+} else {
+  scholar_doc <- fetch_html_raw(scholar_url, "data/crawl/scholar_raw.yml", "data/crawl/scholar_raw.yml")
+  if (is.null(scholar_doc)) {
+    warning("Scholar crawl failed; raw response saved to data/crawl/scholar_raw.yml")
+  }
 }
 
 scholar_name <- if (!is.null(scholar_doc)) {
@@ -249,6 +258,7 @@ scholar_name <- if (!is.null(scholar_doc)) {
 scholar_metrics <- list(citations = "", h_index = "", i10_index = "")
 
 previous_crawl <- tryCatch(read_yaml("data/crawl/crawl.yml"), error = function(e) NULL)
+previous_pubs <- tryCatch(read_yaml("data/crawl/publications.yml"), error = function(e) NULL)
 
 if (!is.null(scholar_doc)) {
   rows <- html_elements(scholar_doc, "#gsc_rsb_st tr")
@@ -511,6 +521,13 @@ pub_out <- list(
   generated_at = crawl_out$generated_at,
   items = all_items
 )
+if (is.null(scholar_doc) && !is.null(previous_pubs$items)) {
+  warning("Scholar crawl unavailable; keeping previous publications.yml")
+  pub_out <- previous_pubs
+  if (is.null(pub_out$generated_at)) {
+    pub_out$generated_at <- crawl_out$generated_at
+  }
+}
 
 overrides <- tryCatch(read_yaml("data/overrides.yml"), error = function(e) list())
 
