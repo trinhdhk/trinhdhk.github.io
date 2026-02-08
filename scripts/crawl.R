@@ -98,6 +98,20 @@ first_non_empty <- function(values) {
   ""
 }
 
+max_non_empty <- function(values) {
+  numeric_values <- c()
+  for (value in values) {
+    if (!is.null(value) && nzchar(value)) {
+      num <- suppressWarnings(as.numeric(value))
+      if (!is.na(num)) {
+        numeric_values <- c(numeric_values, num)
+      }
+    }
+  }
+  if (length(numeric_values) == 0) return("")
+  as.character(max(numeric_values))
+}
+
 clean_scalar <- function(value) {
   if (is.null(value) || length(value) == 0 || is.na(value)) return("")
   text <- as.character(value)
@@ -542,23 +556,23 @@ if (!is.null(semanticscholar_papers_json) && !is.null(semanticscholar_papers_jso
   }
 }
 
-# Merge metrics from all sources (prefer Scholar > OpenAlex > SemanticScholar > previous)
+# Merge metrics from all sources (use maximum value from all available sources)
 combined_metrics <- list(
-  citations = first_non_empty(c(
+  citations = max_non_empty(c(
     scholar_metrics$citations,
     openalex_metrics$citations,
     semanticscholar_metrics$citations
   )),
-  h_index = first_non_empty(c(
+  h_index = max_non_empty(c(
     scholar_metrics$h_index,
     openalex_metrics$h_index,
     semanticscholar_metrics$h_index
   )),
-  i10_index = first_non_empty(c(
+  i10_index = max_non_empty(c(
     scholar_metrics$i10_index,
     openalex_metrics$i10_index
   )),
-  works_count = first_non_empty(c(
+  works_count = max_non_empty(c(
     openalex_metrics$works_count,
     semanticscholar_metrics$papers_count
   ))
