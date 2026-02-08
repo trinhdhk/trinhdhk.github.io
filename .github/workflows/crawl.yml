@@ -2,7 +2,7 @@ name: Crawl live data
 
 on:
   schedule:
-    - cron: "17 3 * * *"
+    - cron: "0 14 * * 1"
   workflow_dispatch:
 
 permissions:
