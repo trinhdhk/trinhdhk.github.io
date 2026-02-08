@@ -423,7 +423,34 @@ merge_publications <- function(items) {
   merged
 }
 
-all_items <- merge_publications(c(pub_items, orcid_items))
+normalize_previous_items <- function(items) {
+  if (is.null(items) || length(items) == 0) return(list())
+  lapply(items, function(item) {
+    sources <- item$sources
+    if (is.null(sources) || length(sources) == 0) {
+      sources <- item$source
+    }
+    if (is.null(sources) || length(sources) == 0) {
+      sources <- ""
+    }
+    list(
+      title = clean_scalar(item$title),
+      authors = clean_scalar(item$authors),
+      venue = clean_scalar(item$venue),
+      year = clean_scalar(item$year),
+      citations = clean_scalar(item$citations),
+      url = clean_scalar(item$url),
+      source = as.character(sources[[1]])
+    )
+  })
+}
+
+if (is.null(scholar_doc)) {
+  base_items <- normalize_previous_items(previous_pubs$items)
+  all_items <- merge_publications(c(base_items, orcid_items))
+} else {
+  all_items <- merge_publications(c(pub_items, orcid_items))
+}
 
 format_orcid_date <- function(date_node) {
   if (is.null(date_node)) return("")
@@ -521,12 +548,8 @@ pub_out <- list(
   generated_at = crawl_out$generated_at,
   items = all_items
 )
-if (is.null(scholar_doc) && !is.null(previous_pubs$items)) {
-  warning("Scholar crawl unavailable; keeping previous publications.yml")
-  pub_out <- previous_pubs
-  if (is.null(pub_out$generated_at)) {
-    pub_out$generated_at <- crawl_out$generated_at
-  }
+if (is.null(scholar_doc)) {
+  warning("Scholar crawl unavailable; keeping previous Scholar items and merging ORCID")
 }
 
 overrides <- tryCatch(read_yaml("data/overrides.yml"), error = function(e) list())
