@@ -9,8 +9,28 @@ suppressPackageStartupMessages({
 
 user_agent <- "Mozilla/5.0 (compatible; TrinhDongCrawl/1.0; +https://github.com/trinhdhk)"
 
+dir.create("data/crawl", recursive = TRUE, showWarnings = FALSE)
+
+fetch_html_raw <- function(url, raw_path, error_path) {
+  tryCatch({
+    req <- request(url) |> req_user_agent(user_agent) |> req_timeout(60)
+    resp <- req_perform(req)
+    raw <- list(
+      url = url,
+      status = resp_status(resp),
+      content_type = resp_header(resp, "content-type"),
+      body = resp_body_string(resp)
+    )
+    write_yaml(raw, raw_path)
+    resp_body_html(resp)
+  }, error = function(e) {
+    write_yaml(list(url = url, error = as.character(e$message)), error_path)
+    NULL
+  })
+}
+
 fetch_html <- function(url) {
-  req <- request(url) |> req_user_agent(user_agent) |> req_timeout(30)
+  req <- request(url) |> req_user_agent(user_agent) |> req_timeout(60)
   resp <- req_perform(req)
   resp_body_html(resp)
 }
@@ -34,7 +54,10 @@ scholar_url <- "https://scholar.google.com/citations?user=8VPRg4kAAAAJ&hl=en&oi=
 orcid_url <- "https://pub.orcid.org/v3.0/0000-0003-4281-4929/works"
 orcid_employment_url <- "https://pub.orcid.org/v3.0/0000-0003-4281-4929/employments"
 
-ncl_doc <- tryCatch(fetch_html(ncl_url), error = function(e) NULL)
+ncl_doc <- fetch_html_raw(ncl_url, "data/crawl/ncl_raw.yml", "data/crawl/ncl_raw.yml")
+if (is.null(ncl_doc)) {
+  warning("NCL profile crawl failed; raw response saved to data/crawl/ncl_raw.yml")
+}
 
 # placeholder for name; actual extraction happens after helper functions are defined
 ncl_name <- ""
@@ -63,6 +86,13 @@ first_non_empty <- function(values) {
     }
   }
   ""
+}
+
+clean_scalar <- function(value) {
+  if (is.null(value) || length(value) == 0 || is.na(value)) return("")
+  text <- as.character(value)
+  if (!nzchar(text)) return("")
+  text
 }
 
 collect_text <- function(doc, selectors) {
@@ -169,6 +199,9 @@ if (!is.null(ncl_doc)) {
 } else {
   ncl_name <- ""
 }
+if (!nzchar(ncl_name)) {
+  warning("NCL name extraction empty; check data/crawl/ncl_raw.yml")
+}
 
 ncl_bio <- if (!is.null(ncl_doc)) {
   collect_text(ncl_doc, c(
@@ -204,13 +237,18 @@ if (!is.null(sections_extra$sections)) {
   }
 }
 
-scholar_doc <- tryCatch(fetch_html(scholar_url), error = function(e) NULL)
+scholar_doc <- fetch_html_raw(scholar_url, "data/crawl/scholar_raw.yml", "data/crawl/scholar_raw.yml")
+if (is.null(scholar_doc)) {
+  warning("Scholar crawl failed; raw response saved to data/crawl/scholar_raw.yml")
+}
 
 scholar_name <- if (!is.null(scholar_doc)) {
   safe_text(html_element(scholar_doc, "#gsc_prf_in"))
 } else ""
 
 scholar_metrics <- list(citations = "", h_index = "", i10_index = "")
+
+previous_crawl <- tryCatch(read_yaml("data/crawl/crawl.yml"), error = function(e) NULL)
 
 if (!is.null(scholar_doc)) {
   rows <- html_elements(scholar_doc, "#gsc_rsb_st tr")
@@ -220,13 +258,20 @@ if (!is.null(scholar_doc)) {
     all_time <- if (length(values) >= 1) safe_text(values[[1]]) else ""
 
     if (label == "citations") {
-      scholar_metrics$citations <- all_time
+      scholar_metrics$citations <- clean_scalar(all_time)
     } else if (label == "h-index") {
-      scholar_metrics$h_index <- all_time
+      scholar_metrics$h_index <- clean_scalar(all_time)
     } else if (label == "i10-index") {
-      scholar_metrics$i10_index <- all_time
+      scholar_metrics$i10_index <- clean_scalar(all_time)
     }
   }
+}
+
+if (all(nzchar(unlist(scholar_metrics)) == FALSE) && !is.null(previous_crawl$metrics)) {
+  scholar_metrics <- previous_crawl$metrics
+}
+if (all(nzchar(unlist(scholar_metrics)) == FALSE)) {
+  warning("Scholar metrics empty; possible blocking or HTML change")
 }
 
 pub_items <- list()
@@ -439,16 +484,18 @@ if (!is.null(orcid_employment_json)) {
   }
 }
 
+local_profile <- tryCatch(read_yaml("data/profile.yml"), error = function(e) list())
+
 profile_out <- list(
-  name = ifelse(nzchar(scholar_name), scholar_name, ncl_name),
-  role = ncl_role,
-  affiliation = ncl_affiliation,
-  email = ncl_email,
-  location = ncl_location,
-  bio = ncl_bio,
+  name = first_non_empty(c(clean_scalar(scholar_name), clean_scalar(ncl_name), clean_scalar(local_profile$name))),
+  role = first_non_empty(c(clean_scalar(ncl_role), clean_scalar(local_profile$role))),
+  affiliation = first_non_empty(c(clean_scalar(ncl_affiliation), clean_scalar(local_profile$affiliation))),
+  email = first_non_empty(c(clean_scalar(ncl_email), clean_scalar(local_profile$email))),
+  location = first_non_empty(c(clean_scalar(ncl_location), clean_scalar(local_profile$location))),
+  bio = first_non_empty(c(clean_scalar(ncl_bio), clean_scalar(local_profile$bio))),
   research_interests = ncl_interests,
-  photo_url = ncl_photo,
-  photo_alt = "Trinh Dong"
+  photo_url = first_non_empty(c(clean_scalar(ncl_photo), clean_scalar(local_profile$photo_url))),
+  photo_alt = first_non_empty(c(clean_scalar(local_profile$photo_alt), "Trinh Dong"))
 )
 
 crawl_out <- list(
