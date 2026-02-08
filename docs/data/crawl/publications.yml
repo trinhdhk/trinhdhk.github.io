@@ -1,4 +1,4 @@
-generated_at: '2026-02-08T09:26:29Z'
+generated_at: '2026-02-08T09:58:30Z'
 items:
 - title: 'Xpert MTB/RIF Ultra versus Xpert MTB/RIF for the diagnosis of tuberculous
     meningitis: a prospective, randomised, diagnostic accuracy study'
@@ -10,6 +10,8 @@ items:
   sources:
   - Scholar
   - orcid
+  - OpenAlex
+  - SemanticScholar
 - title: Adjunctive dexamethasone for tuberculous meningitis in HIV-positive adults
   authors: J Donovan, ND Bang, D Imran, HDT Nghia, E Burhan, DTT Huong, ...
   venue: New England Journal of Medicine 389 (15), 1357-1367, 2023
@@ -26,7 +28,10 @@ items:
   year: '2023'
   citations: '55'
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:Y0pCki6q_DkC
-  sources: Scholar
+  sources:
+  - Scholar
+  - OpenAlex
+  - SemanticScholar
 - title: 'Effectiveness of continuous endotracheal cuff pressure control for the prevention
     of ventilator-associated respiratory infections: an open-label randomized, controlled
     trial'
@@ -38,6 +43,8 @@ items:
   sources:
   - Scholar
   - orcid
+  - OpenAlex
+  - SemanticScholar
 - title: Direct medical costs of tetanus, dengue, and sepsis patients in an intensive
     care unit in Vietnam
   authors: TM Hung, N Van Hao, LM Yen, A McBride, VQ Dat, HR van Doorn, ...
@@ -62,7 +69,10 @@ items:
   year: '2024'
   citations: '13'
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:Tyk-4Ss8FVUC
-  sources: Scholar
+  sources:
+  - Scholar
+  - OpenAlex
+  - SemanticScholar
 - title: Computer-aided prognosis of tuberculous meningitis combining imaging and
     non-imaging data
   authors: LS Canas, THK Dong, D Beasley, J Donovan, JO Cleary, R Brown, ...
@@ -73,6 +83,8 @@ items:
   sources:
   - Scholar
   - orcid
+  - OpenAlex
+  - SemanticScholar
 - title: A novel diagnostic model for tuberculous meningitis using Bayesian latent
     class analysis
   authors: THK Dong, J Donovan, NM Ngoc, DDA Thu, HDT Nghia, PKN Oanh, ...
@@ -83,6 +95,7 @@ items:
   sources:
   - Scholar
   - orcid
+  - OpenAlex
 - title: A statistical analysis plan for the Adjunctive Corticosteroids for Tuberculous
     meningitis in HIV-positive adults (ACT HIV) clinical trial
   authors: J Donovan, TDH Khanh, GE Thwaites, RB Geskus
@@ -93,6 +106,7 @@ items:
   sources:
   - Scholar
   - orcid
+  - OpenAlex
 - title: Convolutional neural network using magnetic resonance brain imaging to predict
     outcome from tuberculosis meningitis
   authors: THK Dong, LS Canas, J Donovan, D Beasley, NT Thuong-Thuong, ...
@@ -103,6 +117,7 @@ items:
   sources:
   - Scholar
   - orcid
+  - OpenAlex
 - title: Statistical analysis plan for the LAST ACT clinical trial; a Leukotriene
     A4 hydrolase Stratified non-inferiority Trial of Adjunctive Corticosteroids for
     HIV-negative adults …
@@ -117,11 +132,12 @@ items:
   authors: OK Pham, TB Duong, TV Phan, TN Truong, DTH Ha, HV Nguyen, ...
   venue: PLOS Neglected Tropical Diseases 19 (10), e0013589, 2025
   year: '2025'
-  citations: ''
+  citations: '0'
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:roLk4NBRz8UC
   sources:
   - Scholar
   - orcid
+  - OpenAlex
 - title: 'Tuberculous meningitis: understanding and improving diagnosis and prognosis
     using novel tools and approaches'
   authors: DHK Trinh
@@ -134,16 +150,20 @@ items:
   authors: VQ Dat, RB Geskus, DHK Trinh, B Nadjm, HR van Doorn, CL Thwaites
   venue: Clinical Infectious Diseases 74 (10), 1884-1885, 2022
   year: '2022'
-  citations: ''
+  citations: '0'
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:u-x6o8ySG0sC
-  sources: Scholar
+  sources:
+  - Scholar
+  - OpenAlex
 - title: Reply to Dr. Kataoka
   authors: VQ Dat, RB Geskus, DHK Trinh, B Nadjm
-  venue: ''
+  venue: Clinical Infectious Diseases
   year: '2021'
-  citations: ''
+  citations: '0'
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:qjMakFHDy7sC
-  sources: Scholar
+  sources:
+  - Scholar
+  - SemanticScholar
 - title: Human monoclonal antibodies from convalescent H7N9 patients in China and
     Taiwan
   authors: P Rijal, K Huang, L Schimanski, T Powell, B Wang, T Dong, X Li, ...
@@ -154,21 +174,33 @@ items:
   sources: Scholar
 - title: 'Genotype-stratified adjunctive dexamethasone for tuberculous meningitis
     in HIV-negative adults: a randomized controlled phase 3 trial'
-  authors: ''
+  authors: Joseph Donovan, Nguyen Duc Bang, Huu Khanh Trinh Dong, Dang Trung Nghia
+    Ho, Thi Anh Thu Nguyen, Thi Thu Hiep Nguyen, Hong Bao Ngoc Lam, Vo Khac Nguyen
+    Phung, Truc T. Nguyen, Huy Hoang Nguyen, Kevin Pham, Do Dang Anh Thu, Nguyen Thi
+    Mai Trang, Thi Minh Ha Dang, Huu Lan Nguyen, Văn Vĩnh Châu Nguyễn, Thanh H. Hoang,
+    Dinh Dinh Tran, Khánh Lâm Phùng, Lalita Ramakrishnan, Thanh Hoang Nhat Le, Thuy
+    Thuong Thuong Nguyen, Marcel Wolbers, Evelyne Kestelyn, Ronald Bestus Geskus,
+    Hoan Phu Nguyen, Guy E. Thwaites
   venue: Nature Medicine
   year: '2026'
-  citations: ''
+  citations: '0'
   url: https://doi.org/10.1038/s41591-025-04138-z
-  sources: orcid
+  sources:
+  - orcid
+  - OpenAlex
 - title: Statistical analysis plan for the LAST ACT clinical trial; a Leukotriene
     A4 hydrolase Stratified non-inferiority Trial of Adjunctive Corticosteroids for
     HIV-negative adults with Tuberculous meningitis
-  authors: ''
+  authors: Joseph Donovan, Marcel Wolbers, Nguyễn Thụy Thương Thương, Dong Huu Khanh
+    Trinh, Le Thanh Hoang Nhat, Guy Thwaites, Ronald B. Geskus
   venue: Wellcome Open Research
   year: '2024'
-  citations: ''
+  citations: '1'
   url: http://dx.doi.org/10.12688/wellcomeopenres.22498.1
-  sources: orcid
+  sources:
+  - orcid
+  - OpenAlex
+  - SemanticScholar
 - title: 'Acceptance and User Experiences of a Wearable Device for the Management
     of Hospitalized Patients in COVID-19-Designated Wards in Ho Chi Minh City, Vietnam:
     Action Learning Project'
@@ -186,3 +218,60 @@ items:
   citations: ''
   url: https://www.scopus.com/inward/record.url?eid=2-s2.0-85124324561&partnerID=MN8TOARS
   sources: orcid
+- title: The First 100 Days of Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2)
+    Control in Vietnam
+  authors: Phạm Quang Thái, Maia A. Rabaa, Duong Huy Luong, Dang Quang Tan, Tran Dai
+    Quang, Ha‐Linh Quach, Thi Ngoc Anh Hoang, Phung Cong Dinh, Ngu Duy Nghia, Trần
+    Anh Tú, La Ngoc Quang, Tran My Phuc, Vinh Q. Chau, Khanh Cong Nguyen, Đặng Đức
+    Anh, Trần Như Dương, Guy Thwaites, H. Rogier van Doorn, Marc Choisy, Mary Chambers,
+    Marc Choisy, Jeremy Day, Dong Huu Khanh Trinh, Dong Thi Hoai Tam, Joseph Donovan,
+    Du Hong Duc, Ronald B. Geskus, Ho Quang Chanh, Hien Ho Van, Huong Dang Thao, Huynh
+    Le Anh Huy, Huynh Ngan Ha, Huynh Trung Trieu, Huynh Xuan Yen, Evelyne Kestelyn,
+    Thomas Kesteman, Lam Anh Nguyet, Lam Minh Yen, Katrina Lawson, Le Kim Thanh, Le
+    Nguyen Truc Nhu, Le Thanh Hoang Nhat, Le Thi Hoang Lan, Le Van Tan, Sonia Lewycka,
+    Nguyen Bao Tran, Nguyet Minh Nguyen, Nguyen Than Ha Quyen, Nguyễn Thanh Ngọc,
+    Nguyen Thi Han Ny, Nguyễn Thụy Thương Thương, Nguyễn Thị Huyền Trang, Nguyen Thi
+    Kim Tuyen, Diep Nguyen, Nguyễn Thị Phương Dung, Nguyễn Thị Thanh Tâm, Nguyen Thi
+    Thu Hong, Nguyễn Thu Trang, Vinh Chau, Nguyen Xuan Truong, Ninh Thi Thanh Van,
+    Phan Nguyen Quoc Khanh, Phung Khanh Lam, Phung Le Kim Yen, Phung Tran Huy Nhat,
+    Maia A. Rabaa, Nguyễn Thụy Thương Thương, Guy Thwaites, Louise Thwaites, Tran
+    My Phuc, Tran Tan Thanh, Trần Thị Bích Ngọc, Tran Tinh Hien, Doorn H Rogier van,
+    Nuil Jennifer van, Vinh Q. Chau, Vũ Thị Ngọc Bích, Vu Thi Ty Hang, Sophie Yacoub
+  venue: Clinical Infectious Diseases
+  year: '2020'
+  citations: '78'
+  url: https://doi.org/10.1093/cid/ciaa1130
+  sources:
+  - OpenAlex
+  - SemanticScholar
+- title: Detection of co-infection and recombination cases with Omicron and local
+    Delta variants of SARS-CoV-2 in Vietnam
+  authors: Nguyễn Thu Trang, Trịnh Công Điển, Nguyễn Thị Thanh Tâm, Phan Manh Cuong,
+    Lê Văn Duyệt, Nguyễn Thụy Thương Thương, Van Dinh Trang, Phạm Ngọc Thạch, H. Rogier
+    van Doorn, Thomas Kesteman, Chambers Mary, Choisy Marc, Dong Huu Khanh Trinh,
+    Dong Thi Hoai Tam, Du Hong Duc, Dung Tien Viet Vu, Fisher Jaom, Flower Barney,
+    Geskus Ronald, Hang Vu Thi Kim, Ho Quang Chanh, Ho Thi Bich Hai, Ho Van Hien,
+    Hung Vu Bao, Huong Dang Thao, Huynh Le Anh Huy, Huynh Ngan Ha, Huynh Trung Trieu,
+    Huynh Xuan Yen, Kestelyn Evelyne, K. Thomas, Lam Anh Nguyet, Lawson Katrina, Leigh
+    Jones, Le Kim Thanh, Le Dinh Van Khoa, Le Thanh Hoang Nhat, Le Van Tan, Lewycka
+    Sonia Odette, Lam Minh Yen, Le Nguyen Truc Nhu, Le Thi Hoang Lan, Nam Vinh Nguyen,
+    Ngô Thị Hoa, Nguyen Bao Tran, Nguyen Duc Manh, Nguyen Hoang Yen, Nguyen Le Thao
+    My, Nguyet Minh Nguyen, Nguyen To Anh, Nguyễn Thanh Hà, Nguyen Than Ha Quyen,
+    Nguyễn Thanh Ngọc, Nguyễn Thanh Thùy Nhiên, Nguyen Thi Han Ny, Nguyễn Thụy Thương
+    Thương, Nguyen Thi Hong Yen, Nguyễn Thị Huyền Trang, Nguyen Thi Kim Ngoc, Nguyen
+    Thi Kim Tuyen, Diep Nguyen, Nguyễn Thị Phương Dung, Nguyễn Thị Thanh Tâm, Nguyen
+    Thi Thu Hong, Nguyễn Thu Trang, Nguyễn Thụy Thương Thương, Nguyễn Xuân Trường,
+    Nhung Doan Phuong, Ninh Thi Thanh Van, Phuc Thinh Ong, Phạm Ngọc Thanh, Phan Nguyen
+    Quoc Khanh, P. Kim, Phung Khanh Lam, Phung Le Kim Yen, Phung Tran Huy Nhat, Rahman
+    Motiur, Thuong Huyen, Thwaites Guy, Louise Thwaites, Tran Bang Huyen, Tran Dong
+    Thai Han, Tran Kim Van Anh, Tran Minh Hien, Trần Phương Thảo, Tran Tan Thanh,
+    Trần Thị Bích Ngọc, Trần Thị Như Hằng, Tran Tinh Hien, Trinh Son Tung, van Doorn
+    H. Rogier, Van Nuil Jennifer, Vidaillac Celine Pascale, Vũ Thị Ngọc Bích, Vu Thi
+    Ty Hang, Yacoub Sophie
+  venue: Scientific Reports
+  year: '2024'
+  citations: '6'
+  url: https://doi.org/10.1038/s41598-024-64898-5
+  sources:
+  - OpenAlex
+  - SemanticScholar
