@@ -1,4 +1,4 @@
-generated_at: '2026-02-08T09:26:29Z'
+generated_at: '2026-02-08T09:56:17Z'
 profile:
   name: Trinh Dong
   role: Research Associate
@@ -13,6 +13,7 @@ metrics:
   citations: '418'
   h_index: '8'
   i10_index: '7'
+  works_count: '18'
 work_history:
 - role: Research Associate
   organization: University of Newcastle upon Tyne
@@ -46,3 +47,7 @@ sources:
 - https://scholar.google.com/citations?user=8VPRg4kAAAAJ&hl=en&oi=ao
 - https://pub.orcid.org/v3.0/0000-0003-4281-4929/works
 - https://pub.orcid.org/v3.0/0000-0003-4281-4929/employments
+- https://api.openalex.org/works?filter=authorships.author.id:a5073343908|a5123129713&per-page=200
+- https://api.openalex.org/authors/a5073343908
+- https://api.semanticscholar.org/graph/v1/author/1482423031?fields=name,hIndex,citationCount,paperCount
+- https://api.semanticscholar.org/graph/v1/author/1482423031/papers?fields=title,authors,year,venue,citationCount,url&limit=200

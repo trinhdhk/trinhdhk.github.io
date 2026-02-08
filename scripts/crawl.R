@@ -57,6 +57,12 @@ ncl_url <- "https://www.ncl.ac.uk/medical-sciences/people/profile/trinhdong.html
 scholar_url <- "https://scholar.google.com/citations?user=8VPRg4kAAAAJ&hl=en&oi=ao"
 orcid_url <- "https://pub.orcid.org/v3.0/0000-0003-4281-4929/works"
 orcid_employment_url <- "https://pub.orcid.org/v3.0/0000-0003-4281-4929/employments"
+openalex_author_ids <- c("a5073343908", "a5123129713")
+openalex_works_url <- paste0("https://api.openalex.org/works?filter=authorships.author.id:", paste(openalex_author_ids, collapse = "|"), "&per-page=200")
+openalex_author_url <- paste0("https://api.openalex.org/authors/", openalex_author_ids[1])
+semanticscholar_author_id <- "1482423031"
+semanticscholar_author_url <- paste0("https://api.semanticscholar.org/graph/v1/author/", semanticscholar_author_id, "?fields=name,hIndex,citationCount,paperCount")
+semanticscholar_papers_url <- paste0("https://api.semanticscholar.org/graph/v1/author/", semanticscholar_author_id, "/papers?fields=title,authors,year,venue,citationCount,url&limit=200")
 
 ncl_doc <- fetch_html_raw(ncl_url, "data/crawl/ncl_raw.yml", "data/crawl/ncl_raw.yml")
 if (is.null(ncl_doc)) {
@@ -280,9 +286,6 @@ if (!is.null(scholar_doc)) {
 if (all(nzchar(unlist(scholar_metrics)) == FALSE) && !is.null(previous_crawl$metrics)) {
   scholar_metrics <- previous_crawl$metrics
 }
-if (all(nzchar(unlist(scholar_metrics)) == FALSE)) {
-  warning("Scholar metrics empty; possible blocking or HTML change")
-}
 
 pub_items <- list()
 
@@ -319,6 +322,27 @@ orcid_items <- list()
 fetch_orcid_json <- function(url, raw_path) {
   tryCatch({
     req <- request(url) |> req_user_agent(user_agent) |> req_headers(Accept = "application/json")
+    resp <- req_perform(req)
+    raw <- list(
+      url = url,
+      status = resp_status(resp),
+      content_type = resp_header(resp, "content-type"),
+      body = resp_body_string(resp)
+    )
+    write_yaml(raw, raw_path)
+    resp_body_json(resp, simplifyVector = TRUE)
+  }, error = function(e) {
+    write_yaml(list(url = url, error = as.character(e$message)), raw_path)
+    NULL
+  })
+}
+
+fetch_api_json <- function(url, raw_path) {
+  tryCatch({
+    req <- request(url) |> 
+      req_user_agent(user_agent) |> 
+      req_headers(Accept = "application/json") |>
+      req_timeout(60)
     resp <- req_perform(req)
     raw <- list(
       url = url,
@@ -374,6 +398,176 @@ if (!is.null(orcid_json) && !is.null(orcid_json$group)) {
       )
     }
   }
+}
+
+# Fetch OpenAlex data
+openalex_works_json <- fetch_api_json(openalex_works_url, "data/crawl/openalex_works_raw.yml")
+openalex_author_json <- fetch_api_json(openalex_author_url, "data/crawl/openalex_author_raw.yml")
+
+openalex_items <- list()
+openalex_metrics <- list(
+  citations = "",
+  works_count = "",
+  h_index = "",
+  i10_index = ""
+)
+
+if (!is.null(openalex_author_json)) {
+  openalex_metrics$citations <- clean_scalar(openalex_author_json$cited_by_count)
+  openalex_metrics$works_count <- clean_scalar(openalex_author_json$works_count)
+  openalex_metrics$h_index <- clean_scalar(openalex_author_json$summary_stats$h_index)
+  openalex_metrics$i10_index <- clean_scalar(openalex_author_json$summary_stats$i10_index)
+}
+
+if (!is.null(openalex_works_json) && !is.null(openalex_works_json$results)) {
+  works <- openalex_works_json$results
+  if (is.data.frame(works)) {
+    works <- split(works, seq_len(nrow(works)))
+  }
+  
+  for (work in works) {
+    title <- work$title
+    year <- work$publication_year
+    venue <- work$primary_location$source$display_name
+    if (is.null(venue) || is.na(venue)) {
+      venue <- work$host_venue$display_name
+    }
+    citations <- work$cited_by_count
+    url <- work$doi
+    if (!is.null(url) && !is.na(url) && nzchar(url)) {
+      url <- paste0("https://doi.org/", gsub("^https?://doi.org/", "", url))
+    } else {
+      url <- work$id
+    }
+    
+    authors_list <- work$authorships
+    authors_str <- ""
+    if (!is.null(authors_list) && length(authors_list) > 0) {
+      if (is.data.frame(authors_list)) {
+        if ("author" %in% names(authors_list)) {
+          if (is.data.frame(authors_list$author)) {
+            authors_names <- authors_list$author$display_name
+          } else {
+            authors_names <- character(0)
+          }
+        } else {
+          authors_names <- character(0)
+        }
+      } else if (is.list(authors_list)) {
+        authors_names <- sapply(authors_list, function(a) {
+          tryCatch({
+            if (!is.null(a$author) && !is.null(a$author$display_name)) {
+              as.character(a$author$display_name)
+            } else {
+              ""
+            }
+          }, error = function(e) "")
+        })
+      } else {
+        authors_names <- character(0)
+      }
+      authors_names <- authors_names[!is.na(authors_names) & nzchar(authors_names)]
+      authors_str <- paste(authors_names, collapse = ", ")
+    }
+    
+    openalex_items[[length(openalex_items) + 1]] <- list(
+      title = ifelse(is.null(title), "", title),
+      authors = authors_str,
+      venue = ifelse(is.null(venue), "", venue),
+      year = ifelse(is.null(year), "", as.character(year)),
+      citations = ifelse(is.null(citations), "", as.character(citations)),
+      url = ifelse(is.null(url), "", url),
+      source = "OpenAlex"
+    )
+  }
+}
+
+# Fetch Semantic Scholar data
+semanticscholar_author_json <- fetch_api_json(semanticscholar_author_url, "data/crawl/semanticscholar_author_raw.yml")
+semanticscholar_papers_json <- fetch_api_json(semanticscholar_papers_url, "data/crawl/semanticscholar_papers_raw.yml")
+
+semanticscholar_items <- list()
+semanticscholar_metrics <- list(
+  citations = "",
+  h_index = "",
+  papers_count = ""
+)
+
+if (!is.null(semanticscholar_author_json)) {
+  semanticscholar_metrics$citations <- clean_scalar(semanticscholar_author_json$citationCount)
+  semanticscholar_metrics$h_index <- clean_scalar(semanticscholar_author_json$hIndex)
+  semanticscholar_metrics$papers_count <- clean_scalar(semanticscholar_author_json$paperCount)
+}
+
+if (!is.null(semanticscholar_papers_json) && !is.null(semanticscholar_papers_json$data)) {
+  papers <- semanticscholar_papers_json$data
+  if (is.data.frame(papers)) {
+    papers <- split(papers, seq_len(nrow(papers)))
+  }
+  
+  for (paper in papers) {
+    title <- paper$title
+    year <- paper$year
+    venue <- paper$venue
+    citations <- paper$citationCount
+    url <- paper$url
+    
+    authors_list <- paper$authors
+    authors_str <- ""
+    if (!is.null(authors_list) && length(authors_list) > 0) {
+      if (is.data.frame(authors_list)) {
+        authors_names <- authors_list$name
+      } else if (is.list(authors_list)) {
+        authors_names <- sapply(authors_list, function(a) {
+          tryCatch({
+            if (!is.null(a$name)) as.character(a$name) else ""
+          }, error = function(e) "")
+        })
+      } else {
+        authors_names <- character(0)
+      }
+      authors_names <- authors_names[!is.na(authors_names) & nzchar(authors_names)]
+      authors_str <- paste(authors_names, collapse = ", ")
+    }
+    
+    semanticscholar_items[[length(semanticscholar_items) + 1]] <- list(
+      title = ifelse(is.null(title), "", title),
+      authors = authors_str,
+      venue = ifelse(is.null(venue), "", venue),
+      year = ifelse(is.null(year), "", as.character(year)),
+      citations = ifelse(is.null(citations), "", as.character(citations)),
+      url = ifelse(is.null(url), "", url),
+      source = "SemanticScholar"
+    )
+  }
+}
+
+# Merge metrics from all sources (prefer Scholar > OpenAlex > SemanticScholar > previous)
+combined_metrics <- list(
+  citations = first_non_empty(c(
+    scholar_metrics$citations,
+    openalex_metrics$citations,
+    semanticscholar_metrics$citations
+  )),
+  h_index = first_non_empty(c(
+    scholar_metrics$h_index,
+    openalex_metrics$h_index,
+    semanticscholar_metrics$h_index
+  )),
+  i10_index = first_non_empty(c(
+    scholar_metrics$i10_index,
+    openalex_metrics$i10_index
+  )),
+  works_count = first_non_empty(c(
+    openalex_metrics$works_count,
+    semanticscholar_metrics$papers_count
+  ))
+)
+
+scholar_metrics <- combined_metrics
+
+if (all(nzchar(unlist(scholar_metrics)) == FALSE)) {
+  warning("All metrics sources empty; possible blocking or API changes")
 }
 
 normalize_title <- function(title) {
@@ -447,9 +641,9 @@ normalize_previous_items <- function(items) {
 
 if (is.null(scholar_doc)) {
   base_items <- normalize_previous_items(previous_pubs$items)
-  all_items <- merge_publications(c(base_items, orcid_items))
+  all_items <- merge_publications(c(base_items, orcid_items, openalex_items, semanticscholar_items))
 } else {
-  all_items <- merge_publications(c(pub_items, orcid_items))
+  all_items <- merge_publications(c(pub_items, orcid_items, openalex_items, semanticscholar_items))
 }
 
 format_orcid_date <- function(date_node) {
@@ -541,7 +735,16 @@ crawl_out <- list(
   metrics = scholar_metrics,
   work_history = work_history,
   qualifications = default_qualifications,
-  sources = list(ncl_url, scholar_url, orcid_url, orcid_employment_url)
+  sources = list(
+    ncl_url, 
+    scholar_url, 
+    orcid_url, 
+    orcid_employment_url,
+    openalex_works_url,
+    openalex_author_url,
+    semanticscholar_author_url,
+    semanticscholar_papers_url
+  )
 )
 
 pub_out <- list(

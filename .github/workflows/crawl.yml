@@ -27,6 +27,7 @@ jobs:
             xml2
             httr2
             stringr
+            yaml
 
       - name: Crawl sources
         run: Rscript scripts/crawl.R

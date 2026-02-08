@@ -4,6 +4,8 @@ links:
   scholar: "https://scholar.google.com/citations?user=8VPRg4kAAAAJ&hl=en&oi=ao"
   orcid: "https://orcid.org/0000-0003-4281-4929"
   ncl_profile: "https://www.ncl.ac.uk/medical-sciences/people/profile/trinhdong.html"
+  openalex: "https://openalex.org/authors/a5073343908"
+  semanticscholar: "https://www.semanticscholar.org/author/Dong-Huu-Khanh-Trinh/1482423031"
 
 crawl:
   profile: "https://raw.githubusercontent.com/trinhdhk/trinhdhk.github.io/main/data/crawl/crawl.yml"
