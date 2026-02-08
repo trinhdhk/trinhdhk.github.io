@@ -1,18 +1,18 @@
-generated_at: '2026-02-08T05:13:34Z'
+generated_at: '2026-02-08T08:56:24Z'
 profile:
-  name: .na.character
-  role: ''
+  name: Trinh Dong
+  role: Research Associate
   affiliation: Newcastle University
   email: trinh.dong@ncl.ac.uk
-  location: ''
+  location: Newcastle upon Tyne, UK
   bio: ''
   research_interests: []
   photo_url: https://includes.ncl.ac.uk/cmswebservices/myimpact/2020ws/picture/picture.php?wk=newcastleuniversity&pk=trinh.dong
   photo_alt: Trinh Dong
 metrics:
-  citations: ''
-  h_index: ''
-  i10_index: ''
+  citations: '418'
+  h_index: '8'
+  i10_index: '7'
 work_history:
 - role: Research Associate
   organization: University of Newcastle upon Tyne
