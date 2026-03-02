@@ -2,4 +2,4 @@ url: https://api.semanticscholar.org/graph/v1/author/1482423031?fields=name,hInd
 status: 200
 content_type: application/json
 body: |
-  {"authorId": "1482423031", "name": "Dong Huu Khanh Trinh", "paperCount": 9, "citationCount": 246, "hIndex": 6}
+  {"authorId": "1482423031", "name": "Dong Huu Khanh Trinh", "paperCount": 9, "citationCount": 247, "hIndex": 6}
