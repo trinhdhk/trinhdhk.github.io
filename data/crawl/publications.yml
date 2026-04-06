@@ -1,4 +1,4 @@
-generated_at: '2026-03-30T15:26:03Z'
+generated_at: '2026-04-06T14:44:38Z'
 items:
 - title: 'Xpert MTB/RIF Ultra versus Xpert MTB/RIF for the diagnosis of tuberculous
     meningitis: a prospective, randomised, diagnostic accuracy study'
@@ -96,6 +96,7 @@ items:
   - Scholar
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: A statistical analysis plan for the Adjunctive Corticosteroids for Tuberculous
     meningitis in HIV-positive adults (ACT HIV) clinical trial
   authors: J Donovan, TDH Khanh, GE Thwaites, RB Geskus
@@ -107,6 +108,7 @@ items:
   - Scholar
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: Convolutional neural network using magnetic resonance brain imaging to predict
     outcome from tuberculosis meningitis
   authors: THK Dong, LS Canas, J Donovan, D Beasley, NT Thuong-Thuong, ...
@@ -118,6 +120,7 @@ items:
   - Scholar
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: Statistical analysis plan for the LAST ACT clinical trial; a Leukotriene
     A4 hydrolase Stratified non-inferiority Trial of Adjunctive Corticosteroids for
     HIV-negative adults …
@@ -138,6 +141,7 @@ items:
   - Scholar
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: 'Tuberculous meningitis: understanding and improving diagnosis and prognosis
     using novel tools and approaches'
   authors: DHK Trinh
@@ -188,6 +192,7 @@ items:
   sources:
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: Statistical analysis plan for the LAST ACT clinical trial; a Leukotriene
     A4 hydrolase Stratified non-inferiority Trial of Adjunctive Corticosteroids for
     HIV-negative adults with Tuberculous meningitis
