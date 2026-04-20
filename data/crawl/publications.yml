@@ -1,4 +1,4 @@
-generated_at: '2026-04-13T15:23:48Z'
+generated_at: '2026-04-20T15:12:38Z'
 items:
 - title: 'Xpert MTB/RIF Ultra versus Xpert MTB/RIF for the diagnosis of tuberculous
     meningitis: a prospective, randomised, diagnostic accuracy study'
@@ -107,7 +107,6 @@ items:
   sources:
   - Scholar
   - orcid
-  - OpenAlex
   - SemanticScholar
 - title: Convolutional neural network using magnetic resonance brain imaging to predict
     outcome from tuberculosis meningitis
