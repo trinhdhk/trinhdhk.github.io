@@ -1,4 +1,4 @@
-generated_at: '2026-02-08T10:48:44Z'
+generated_at: '2026-05-04T14:34:23Z'
 profile:
   name: Trinh Dong
   role: Research Associate
@@ -10,10 +10,10 @@ profile:
   photo_url: https://includes.ncl.ac.uk/cmswebservices/myimpact/2020ws/picture/picture.php?wk=newcastleuniversity&pk=trinh.dong
   photo_alt: Trinh Dong
 metrics:
-  citations: '418'
+  citations: '454'
   h_index: '8'
-  i10_index: '7'
-  works_count: '18'
+  i10_index: '8'
+  works_count: '17'
 work_history:
 - role: Research Associate
   organization: University of Newcastle upon Tyne
