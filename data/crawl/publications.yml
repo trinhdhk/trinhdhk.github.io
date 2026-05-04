@@ -1,4 +1,4 @@
-generated_at: '2026-02-08T10:48:44Z'
+generated_at: '2026-04-27T16:02:25Z'
 items:
 - title: 'Xpert MTB/RIF Ultra versus Xpert MTB/RIF for the diagnosis of tuberculous
     meningitis: a prospective, randomised, diagnostic accuracy study'
@@ -96,6 +96,7 @@ items:
   - Scholar
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: A statistical analysis plan for the Adjunctive Corticosteroids for Tuberculous
     meningitis in HIV-positive adults (ACT HIV) clinical trial
   authors: J Donovan, TDH Khanh, GE Thwaites, RB Geskus
@@ -106,7 +107,7 @@ items:
   sources:
   - Scholar
   - orcid
-  - OpenAlex
+  - SemanticScholar
 - title: Convolutional neural network using magnetic resonance brain imaging to predict
     outcome from tuberculosis meningitis
   authors: THK Dong, LS Canas, J Donovan, D Beasley, NT Thuong-Thuong, ...
@@ -118,6 +119,7 @@ items:
   - Scholar
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: Statistical analysis plan for the LAST ACT clinical trial; a Leukotriene
     A4 hydrolase Stratified non-inferiority Trial of Adjunctive Corticosteroids for
     HIV-negative adults …
@@ -138,6 +140,7 @@ items:
   - Scholar
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: 'Tuberculous meningitis: understanding and improving diagnosis and prognosis
     using novel tools and approaches'
   authors: DHK Trinh
@@ -188,6 +191,7 @@ items:
   sources:
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: Statistical analysis plan for the LAST ACT clinical trial; a Leukotriene
     A4 hydrolase Stratified non-inferiority Trial of Adjunctive Corticosteroids for
     HIV-negative adults with Tuberculous meningitis
@@ -275,3 +279,37 @@ items:
   sources:
   - OpenAlex
   - SemanticScholar
+- title: 'Predictive value of ventriculo-arterial coupling for hypotension after induction
+    of anaesthesia: a prospective observational cohort study'
+  authors: Hồng Chính Lê, Chau Bich Ha Tran, Thi Thu Trang Nguyen, Tôn Ngọc Vũ Phan,
+    Duc Nam Nguyen, Trung Hiếu Dương, Tran Huy Nhat Phung, Huu Khanh Trinh Dong, Yvon
+    Deryck, Minh Khoi Le
+  venue: Intensive Care Medicine Experimental
+  year: '2026'
+  citations: '0'
+  url: https://doi.org/10.1186/s40635-026-00899-0
+  sources:
+  - orcid
+  - OpenAlex
+- title: 'Additional file 2 of Predictive value of ventriculo-arterial coupling for
+    hypotension after induction of anaesthesia: a prospective observational cohort
+    study'
+  authors: Hồng Chính Lê, Chau Bich Ha Tran, Thi Thu Trang Nguyen, Tôn Ngọc Vũ Phan,
+    Duc Nam Nguyen, Trung Hiếu Dương, Tran Huy Nhat Phung, Huu Khanh Trinh Dong, Yvon
+    Deryck, Minh Khoi Le
+  venue: Figshare
+  year: '2026'
+  citations: '0'
+  url: https://doi.org/10.6084/m9.figshare.32070915.v1
+  sources: OpenAlex
+- title: 'Additional file 1 of Predictive value of ventriculo-arterial coupling for
+    hypotension after induction of anaesthesia: a prospective observational cohort
+    study'
+  authors: Hồng Chính Lê, Chau Bich Ha Tran, Thi Thu Trang Nguyen, Tôn Ngọc Vũ Phan,
+    Duc Nam Nguyen, Trung Hiếu Dương, Tran Huy Nhat Phung, Huu Khanh Trinh Dong, Yvon
+    Deryck, Minh Khoi Le
+  venue: Figshare
+  year: '2026'
+  citations: '0'
+  url: https://doi.org/10.6084/m9.figshare.32070912
+  sources: OpenAlex
