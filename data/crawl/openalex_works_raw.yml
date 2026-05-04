@@ -1,7 +1,7 @@
 url: https://api.openalex.org/works?filter=authorships.author.id:a5073343908|a5123129713&per-page=200
 status: 200
 content_type: application/json
-body: '{"meta": {"count": 24, "db_response_time_ms": 34, "page": 1, "per_page": 200,
+body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 200,
   "groups_count": null, "cost_usd": 0.0001}, "results": [{"id": "https://openalex.org/W3000453407",
   "doi": "https://doi.org/10.1016/s1473-3099(19)30649-8", "title": "Xpert MTB/RIF
   Ultra versus Xpert MTB/RIF for the diagnosis of tuberculous meningitis: a prospective,
@@ -495,21 +495,21 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 34, "page": 1, "per_page": 
   "host_organization_lineage_names": ["Elsevier BV"], "type": "journal"}, "license":
   "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version": "publishedVersion",
   "is_accepted": true, "is_published": true, "raw_source_name": "The Lancet Infectious
-  Diseases", "raw_type": "journal-article"}, "sustainable_development_goals": [{"display_name":
-  "Good health and well-being", "score": 0.8199999928474426, "id": "https://metadata.un.org/sdg/3"}],
-  "awards": [{"id": "https://openalex.org/G1658089987", "display_name": "Viet Nam
-  Major Overseas Programme core grant renewal 2015-2020.", "funder_award_id": "106680",
+  Diseases", "raw_type": "journal-article"}, "sustainable_development_goals": [{"id":
+  "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being", "score":
+  0.8199999928474426}], "awards": [{"id": "https://openalex.org/G1658089987", "display_name":
+  "Viet Nam Major Overseas Programme core grant renewal 2015-2020.", "funder_award_id":
+  "106680", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
+  "Wellcome Trust"}, {"id": "https://openalex.org/G3287491477", "display_name": "The
+  translational potential of mass spectrometry and next-generation sequencing in patients
+  with central nervous system infections in Vietnam", "funder_award_id": "204904",
   "funder_id": "https://openalex.org/F4320311904", "funder_display_name": "Wellcome
-  Trust"}, {"id": "https://openalex.org/G3287491477", "display_name": "The translational
-  potential of mass spectrometry and next-generation sequencing in patients with central
-  nervous system infections in Vietnam", "funder_award_id": "204904", "funder_id":
-  "https://openalex.org/F4320311904", "funder_display_name": "Wellcome Trust"}, {"id":
-  "https://openalex.org/G5295003640", "display_name": null, "funder_award_id": "106680/B/14/Z",
-  "funder_id": "https://openalex.org/F4320311904", "funder_display_name": "Wellcome
-  Trust"}, {"id": "https://openalex.org/G6581169472", "display_name": null, "funder_award_id":
-  "204904/Z/16/Z", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
-  "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}, {"id": "https://openalex.org/F4320320290",
+  Trust"}, {"id": "https://openalex.org/G5295003640", "display_name": null, "funder_award_id":
+  "106680/B/14/Z", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
+  "Wellcome Trust"}, {"id": "https://openalex.org/G6581169472", "display_name": null,
+  "funder_award_id": "204904/Z/16/Z", "funder_id": "https://openalex.org/F4320311904",
+  "funder_display_name": "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904",
+  "display_name": "Wellcome Trust", "ror": "https://ror.org/029chgv08"}, {"id": "https://openalex.org/F4320320290",
   "display_name": "University of Oxford", "ror": "https://ror.org/052gg0110"}], "has_content":
   {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3000453407.pdf",
   "grobid_xml": "https://content.openalex.org/works/W3000453407.grobid-xml"}, "referenced_works_count":
@@ -1406,11 +1406,11 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 34, "page": 1, "per_page": 
   ["Oxford University Press", "University of Oxford"], "type": "journal"}, "license":
   "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version": "publishedVersion",
   "is_accepted": true, "is_published": true, "raw_source_name": "Clinical Infectious
-  Diseases", "raw_type": "journal-article"}, "sustainable_development_goals": [{"display_name":
-  "Good health and well-being", "score": 0.41999998688697815, "id": "https://metadata.un.org/sdg/3"}],
-  "awards": [], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
-  true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3046463923.pdf",
+  Diseases", "raw_type": "journal-article"}, "sustainable_development_goals": [{"id":
+  "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being", "score":
+  0.41999998688697815}], "awards": [], "funders": [{"id": "https://openalex.org/F4320311904",
+  "display_name": "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content":
+  {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3046463923.pdf",
   "grobid_xml": "https://content.openalex.org/works/W3046463923.grobid-xml"}, "referenced_works_count":
   29, "referenced_works": ["https://openalex.org/W1844981334", "https://openalex.org/W1978453912",
   "https://openalex.org/W2004573151", "https://openalex.org/W2096800088", "https://openalex.org/W2153416121",
@@ -3497,13 +3497,13 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 34, "page": 1, "per_page": 
   ["Oxford University Press", "University of Oxford"], "type": "journal"}, "license":
   "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version": "publishedVersion",
   "is_accepted": true, "is_published": true, "raw_source_name": "Clinical Infectious
-  Diseases", "raw_type": "journal-article"}, "sustainable_development_goals": [{"display_name":
-  "Good health and well-being", "score": 0.8700000047683716, "id": "https://metadata.un.org/sdg/3"}],
-  "awards": [{"id": "https://openalex.org/G5295003640", "display_name": null, "funder_award_id":
-  "106680/B/14/Z", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
-  "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
-  true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3194782510.pdf",
+  Diseases", "raw_type": "journal-article"}, "sustainable_development_goals": [{"id":
+  "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being", "score":
+  0.8700000047683716}], "awards": [{"id": "https://openalex.org/G5295003640", "display_name":
+  null, "funder_award_id": "106680/B/14/Z", "funder_id": "https://openalex.org/F4320311904",
+  "funder_display_name": "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904",
+  "display_name": "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content":
+  {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3194782510.pdf",
   "grobid_xml": "https://content.openalex.org/works/W3194782510.grobid-xml"}, "referenced_works_count":
   32, "referenced_works": ["https://openalex.org/W1978159568", "https://openalex.org/W1980980484",
   "https://openalex.org/W1992464091", "https://openalex.org/W1995667320", "https://openalex.org/W1995839475",
@@ -4841,10 +4841,10 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 34, "page": 1, "per_page": 
   Portfolio", "Springer Nature"], "type": "journal"}, "license": "cc-by", "license_id":
   "https://openalex.org/licenses/cc-by", "version": "publishedVersion", "is_accepted":
   true, "is_published": true, "raw_source_name": "Scientific Reports", "raw_type":
-  "journal-article"}, "sustainable_development_goals": [{"display_name": "Good health
-  and well-being", "score": 0.49000000953674316, "id": "https://metadata.un.org/sdg/3"}],
-  "awards": [{"id": "https://openalex.org/G2884997024", "display_name": "Translational
-  Resource Award ''Flagship Translational Resource: Critical Care/Fever", "funder_award_id":
+  "journal-article"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 0.49000000953674316}], "awards":
+  [{"id": "https://openalex.org/G2884997024", "display_name": "Translational Resource
+  Award ''Flagship Translational Resource: Critical Care/Fever", "funder_award_id":
   "217650", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
   "Wellcome Trust"}, {"id": "https://openalex.org/G305152554", "display_name": null,
   "funder_award_id": "217650/Z/19/Z", "funder_id": "https://openalex.org/F4320311904",
@@ -6220,9 +6220,9 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 34, "page": 1, "per_page": 
   Portfolio", "Springer Nature"], "type": "journal"}, "license": "cc-by", "license_id":
   "https://openalex.org/licenses/cc-by", "version": "publishedVersion", "is_accepted":
   true, "is_published": true, "raw_source_name": "Scientific Reports", "raw_type":
-  "journal-article"}, "sustainable_development_goals": [{"display_name": "Good health
-  and well-being", "score": 0.8600000143051147, "id": "https://metadata.un.org/sdg/3"}],
-  "awards": [{"id": "https://openalex.org/G1322964166", "display_name": null, "funder_award_id":
+  "journal-article"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 0.8600000143051147}], "awards":
+  [{"id": "https://openalex.org/G1322964166", "display_name": null, "funder_award_id":
   "203148/Z/16/Z", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
   "Wellcome Trust"}, {"id": "https://openalex.org/G1595280774", "display_name": "JADE:
   Joint Academic Data science Endeavour - 2", "funder_award_id": "EP/T022205/1", "funder_id":
@@ -7483,10 +7483,10 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 34, "page": 1, "per_page": 
   Portfolio", "Springer Nature"], "type": "journal"}, "license": "cc-by", "license_id":
   "https://openalex.org/licenses/cc-by", "version": "publishedVersion", "is_accepted":
   true, "is_published": true, "raw_source_name": "Scientific Reports", "raw_type":
-  "journal-article"}, "sustainable_development_goals": [{"display_name": "Good health
-  and well-being", "score": 0.8199999928474426, "id": "https://metadata.un.org/sdg/3"}],
-  "awards": [{"id": "https://openalex.org/G6217528405", "display_name": "National
-  COVID Testing Africa AAPs/Centre", "funder_award_id": "222574", "funder_id": "https://openalex.org/F4320311904",
+  "journal-article"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 0.8199999928474426}], "awards":
+  [{"id": "https://openalex.org/G6217528405", "display_name": "National COVID Testing
+  Africa AAPs/Centre", "funder_award_id": "222574", "funder_id": "https://openalex.org/F4320311904",
   "funder_display_name": "Wellcome Trust"}, {"id": "https://openalex.org/G937613659",
   "display_name": null, "funder_award_id": "222574/Z/21/Z", "funder_id": "https://openalex.org/F4320311904",
   "funder_display_name": "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904",
@@ -8058,10 +8058,10 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 34, "page": 1, "per_page": 
   "host_organization_lineage_names": ["Wellcome"], "type": "journal"}, "license":
   "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version": "publishedVersion",
   "is_accepted": true, "is_published": true, "raw_source_name": "Wellcome Open Research",
-  "raw_type": "journal-article"}, "sustainable_development_goals": [{"display_name":
-  "Good health and well-being", "score": 0.8700000047683716, "id": "https://metadata.un.org/sdg/3"}],
-  "awards": [{"id": "https://openalex.org/G7076209523", "display_name": "Personalised
-  adjunctive anti-inflammatory therapy to reduce deaths from tuberculosis.", "funder_award_id":
+  "raw_type": "journal-article"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 0.8700000047683716}], "awards":
+  [{"id": "https://openalex.org/G7076209523", "display_name": "Personalised adjunctive
+  anti-inflammatory therapy to reduce deaths from tuberculosis.", "funder_award_id":
   "110179", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
   "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
   "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
@@ -9198,81 +9198,81 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 34, "page": 1, "per_page": 
   Portfolio", "Springer Nature"], "type": "journal"}, "license": "cc-by", "license_id":
   "https://openalex.org/licenses/cc-by", "version": "publishedVersion", "is_accepted":
   true, "is_published": true, "raw_source_name": "Nature Medicine", "raw_type": "journal-article"},
-  "sustainable_development_goals": [{"display_name": "Good health and well-being",
-  "score": 0.8302780389785767, "id": "https://metadata.un.org/sdg/3"}], "awards":
-  [{"id": "https://openalex.org/G5308251994", "display_name": null, "funder_award_id":
-  "110179/Z/15/Z", "funder_id": "https://openalex.org/F4320307874", "funder_display_name":
-  "Wellcome"}], "funders": [{"id": "https://openalex.org/F4320307874", "display_name":
-  "Wellcome", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
-  false, "pdf": false}, "content_urls": null, "referenced_works_count": 36, "referenced_works":
-  ["https://openalex.org/W1965974931", "https://openalex.org/W1967607476", "https://openalex.org/W1968632660",
-  "https://openalex.org/W1972605644", "https://openalex.org/W1979936739", "https://openalex.org/W1986514504",
-  "https://openalex.org/W1986607793", "https://openalex.org/W2059831659", "https://openalex.org/W2088438114",
-  "https://openalex.org/W2092587768", "https://openalex.org/W2126184459", "https://openalex.org/W2128471563",
-  "https://openalex.org/W2138207763", "https://openalex.org/W2150492824", "https://openalex.org/W2161911863",
-  "https://openalex.org/W2169353806", "https://openalex.org/W2169456326", "https://openalex.org/W2179438025",
-  "https://openalex.org/W2228757293", "https://openalex.org/W2605862201", "https://openalex.org/W2607348542",
-  "https://openalex.org/W2758427704", "https://openalex.org/W2792649023", "https://openalex.org/W3000453407",
-  "https://openalex.org/W3120635211", "https://openalex.org/W3134084577", "https://openalex.org/W3204933617",
-  "https://openalex.org/W4200120549", "https://openalex.org/W4206815970", "https://openalex.org/W4223940163",
-  "https://openalex.org/W4384558907", "https://openalex.org/W4387521979", "https://openalex.org/W4391130822",
-  "https://openalex.org/W4402884302", "https://openalex.org/W4404755442", "https://openalex.org/W7081667696"],
-  "related_works": [], "abstract_inverted_index": {"Adjunctive": [0], "corticosteroids":
-  [1, 326], "such": [2], "as": [3], "dexamethasone": [4, 81, 104, 116, 155, 298, 307],
-  "are": [5], "recommended": [6], "in": [7, 33, 39, 46, 54, 107, 151, 203, 210, 233,
-  248, 265, 285], "tuberculous": [8, 34, 67, 295, 313], "meningitis": [9, 314], "treatment,":
-  [10], "despite": [11], "modest": [12, 302], "and": [13, 28, 50, 74, 117, 132, 156,
-  196, 206, 240, 258, 270, 291, 297, 303], "heterogeneous": [14, 304], "survival":
-  [15, 101], "benefit.": [16], "Leukotriene": [17], "A4": [18], "hydrolase": [19],
-  "(LTA4H)": [20], "genotypes": [21], "associate": [22], "with": [23, 36, 66, 294],
-  "distinct": [24], "intracerebral": [25], "inflammatory": [26], "phenotypes": [27],
-  "may": [29], "determine": [30], "corticosteroid": [31], "response": [32], "meningitis,":
-  [35, 68, 296], "benefit": [37, 45, 102, 305], "observed": [38, 176, 221], "hyperinflammatory":
-  [40], "TT": [41], "genotype": [42, 212], "but": [43], "uncertain": [44], "lower":
-  [47], "inflammation": [48], "CC": [49, 205, 239], "CT": [51, 207, 241], "genotypes.":
-  [52], "Here,": [53], "a": [55], "phase": [56], "3,": [57], "placebo-controlled":
-  [58], "trial": [59], "of": [60, 80, 88, 93, 103, 123, 138, 163, 175, 217, 281, 306,
-  312], "human": [61, 286], "immunodeficiency": [62, 287], "virus-negative": [63,
-  288], "Vietnamese": [64], "adults": [65, 293], "we": [69], "randomized": [70], "613":
-  [71], "LTA4H": [72, 108, 289], "CC-": [73, 131, 252, 257, 290], "CT-genotype": [75,
-  133, 254, 259, 292], "participants": [76, 112, 126, 250, 269], "to": [77, 85, 190,
-  238], "6-8": [78], "weeks": [79], "or": [82, 95, 141, 209, 215, 253], "placebo,":
-  [83], "aiming": [84], "show": [86], "noninferiority": [87, 199, 278], "placebo":
-  [89, 160, 282], "(hazard": [90, 161], "ratio": [91, 162], "margin": [92], "0.75)":
-  [94], "its": [96], "superiority.": [97], "Given": [98], "the": [99, 135, 183, 192,
-  204, 229], "significant": [100], "previously": [105], "seen": [106], "TT-genotype":
-  [109, 111, 125, 227, 249], "individuals,": [110], "all": [113], "received": [114,
-  127], "open-label": [115, 128], "were": [118, 244], "not": [119, 201, 220, 245],
-  "randomized.": [120], "A": [121], "total": [122], "89": [124], "dexamethasone.":
-  [129], "In": [130, 226, 256, 275], "participants,": [134, 228, 236, 260], "primary":
-  [136, 177, 230], "endpoint": [137, 231], "all-cause": [139], "death": [140], "new":
-  [142], "neurological": [143], "event": [144], "over": [145], "12": [146], "months":
-  [147], "from": [148], "randomization": [149], "occurred": [150, 232, 264], "108/305":
-  [152], "(35.4%)": [153], "given": [154, 159], "110/308": [157], "(35.7%)": [158],
-  "0.99,": [164], "96%": [165], "confidence": [166], "interval": [167], "(adjusted":
-  [168], "for": [169], "multiple": [170], "testing)": [171], "0.748-1.31).": [172],
-  "The": [173, 301], "number": [174, 185], "endpoints": [178], "(n": [179, 186], "=":
-  [180, 187], "218)": [181], "exceeded": [182], "prespecified": [184, 224], "184)":
-  [188], "used": [189], "calculate": [191], "trial''s": [193], "sample": [194], "size":
-  [195], "power.": [197], "Placebo": [198], "was": [200, 219, 283, 299], "established":
-  [202, 284], "population": [208], "individual": [211], "subpopulations.": [213],
-  "Benefit": [214], "heterogeneity": [216], "effect": [218], "by": [222], "any": [223],
-  "subgroup.": [225], "28/89": [234], "(31.5%)": [235], "similar": [237], "participants.":
-  [242, 255, 274], "Outcomes": [243], "significantly": [246], "better": [247, 319],
-  "versus": [251], "serious": [261], "adverse": [262], "events": [263], "161/305":
-  [266], "(52.8%)": [267], "dexamethasone-treated": [268], "160/308": [271], "(51.9%)":
-  [272], "placebo-treated": [273], "conclusion,": [276], "neither": [277], "nor":
-  [279], "superiority": [280], "safe.": [300], "indicates": [308], "that": [309],
-  "greater": [310], "understanding": [311], "pathophysiology": [315], "is": [316],
-  "needed,": [317], "alongside": [318], "targeted,": [320], "more": [321], "effective":
-  [322], "anti-inflammatory": [323], "agents": [324], "than": [325], "(ClinicalTrials.gov":
-  [327], "NCT03100786": [328], ").": [329]}, "counts_by_year": [{"year": 2026, "cited_by_count":
-  1}], "updated_date": "2026-05-03T08:25:01.440150", "created_date": "2026-01-16T00:00:00"},
-  {"id": "https://openalex.org/W4391574296", "doi": "https://doi.org/10.1186/s12879-024-08992-z",
-  "title": "A novel diagnostic model for tuberculous meningitis using Bayesian latent
-  class analysis", "display_name": "A novel diagnostic model for tuberculous meningitis
-  using Bayesian latent class analysis", "publication_year": 2024, "publication_date":
-  "2024-02-06", "ids": {"openalex": "https://openalex.org/W4391574296", "doi": "https://doi.org/10.1186/s12879-024-08992-z",
+  "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3", "display_name":
+  "Good health and well-being", "score": 0.8302780389785767}], "awards": [{"id": "https://openalex.org/G5308251994",
+  "display_name": null, "funder_award_id": "110179/Z/15/Z", "funder_id": "https://openalex.org/F4320307874",
+  "funder_display_name": "Wellcome"}], "funders": [{"id": "https://openalex.org/F4320307874",
+  "display_name": "Wellcome", "ror": "https://ror.org/029chgv08"}], "has_content":
+  {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+  36, "referenced_works": ["https://openalex.org/W1965974931", "https://openalex.org/W1967607476",
+  "https://openalex.org/W1968632660", "https://openalex.org/W1972605644", "https://openalex.org/W1979936739",
+  "https://openalex.org/W1986514504", "https://openalex.org/W1986607793", "https://openalex.org/W2059831659",
+  "https://openalex.org/W2088438114", "https://openalex.org/W2092587768", "https://openalex.org/W2126184459",
+  "https://openalex.org/W2128471563", "https://openalex.org/W2138207763", "https://openalex.org/W2150492824",
+  "https://openalex.org/W2161911863", "https://openalex.org/W2169353806", "https://openalex.org/W2169456326",
+  "https://openalex.org/W2179438025", "https://openalex.org/W2228757293", "https://openalex.org/W2605862201",
+  "https://openalex.org/W2607348542", "https://openalex.org/W2758427704", "https://openalex.org/W2792649023",
+  "https://openalex.org/W3000453407", "https://openalex.org/W3120635211", "https://openalex.org/W3134084577",
+  "https://openalex.org/W3204933617", "https://openalex.org/W4200120549", "https://openalex.org/W4206815970",
+  "https://openalex.org/W4223940163", "https://openalex.org/W4384558907", "https://openalex.org/W4387521979",
+  "https://openalex.org/W4391130822", "https://openalex.org/W4402884302", "https://openalex.org/W4404755442",
+  "https://openalex.org/W7081667696"], "related_works": [], "abstract_inverted_index":
+  {"Adjunctive": [0], "corticosteroids": [1, 326], "such": [2], "as": [3], "dexamethasone":
+  [4, 81, 104, 116, 155, 298, 307], "are": [5], "recommended": [6], "in": [7, 33,
+  39, 46, 54, 107, 151, 203, 210, 233, 248, 265, 285], "tuberculous": [8, 34, 67,
+  295, 313], "meningitis": [9, 314], "treatment,": [10], "despite": [11], "modest":
+  [12, 302], "and": [13, 28, 50, 74, 117, 132, 156, 196, 206, 240, 258, 270, 291,
+  297, 303], "heterogeneous": [14, 304], "survival": [15, 101], "benefit.": [16],
+  "Leukotriene": [17], "A4": [18], "hydrolase": [19], "(LTA4H)": [20], "genotypes":
+  [21], "associate": [22], "with": [23, 36, 66, 294], "distinct": [24], "intracerebral":
+  [25], "inflammatory": [26], "phenotypes": [27], "may": [29], "determine": [30],
+  "corticosteroid": [31], "response": [32], "meningitis,": [35, 68, 296], "benefit":
+  [37, 45, 102, 305], "observed": [38, 176, 221], "hyperinflammatory": [40], "TT":
+  [41], "genotype": [42, 212], "but": [43], "uncertain": [44], "lower": [47], "inflammation":
+  [48], "CC": [49, 205, 239], "CT": [51, 207, 241], "genotypes.": [52], "Here,": [53],
+  "a": [55], "phase": [56], "3,": [57], "placebo-controlled": [58], "trial": [59],
+  "of": [60, 80, 88, 93, 103, 123, 138, 163, 175, 217, 281, 306, 312], "human": [61,
+  286], "immunodeficiency": [62, 287], "virus-negative": [63, 288], "Vietnamese":
+  [64], "adults": [65, 293], "we": [69], "randomized": [70], "613": [71], "LTA4H":
+  [72, 108, 289], "CC-": [73, 131, 252, 257, 290], "CT-genotype": [75, 133, 254, 259,
+  292], "participants": [76, 112, 126, 250, 269], "to": [77, 85, 190, 238], "6-8":
+  [78], "weeks": [79], "or": [82, 95, 141, 209, 215, 253], "placebo,": [83], "aiming":
+  [84], "show": [86], "noninferiority": [87, 199, 278], "placebo": [89, 160, 282],
+  "(hazard": [90, 161], "ratio": [91, 162], "margin": [92], "0.75)": [94], "its":
+  [96], "superiority.": [97], "Given": [98], "the": [99, 135, 183, 192, 204, 229],
+  "significant": [100], "previously": [105], "seen": [106], "TT-genotype": [109, 111,
+  125, 227, 249], "individuals,": [110], "all": [113], "received": [114, 127], "open-label":
+  [115, 128], "were": [118, 244], "not": [119, 201, 220, 245], "randomized.": [120],
+  "A": [121], "total": [122], "89": [124], "dexamethasone.": [129], "In": [130, 226,
+  256, 275], "participants,": [134, 228, 236, 260], "primary": [136, 177, 230], "endpoint":
+  [137, 231], "all-cause": [139], "death": [140], "new": [142], "neurological": [143],
+  "event": [144], "over": [145], "12": [146], "months": [147], "from": [148], "randomization":
+  [149], "occurred": [150, 232, 264], "108/305": [152], "(35.4%)": [153], "given":
+  [154, 159], "110/308": [157], "(35.7%)": [158], "0.99,": [164], "96%": [165], "confidence":
+  [166], "interval": [167], "(adjusted": [168], "for": [169], "multiple": [170], "testing)":
+  [171], "0.748-1.31).": [172], "The": [173, 301], "number": [174, 185], "endpoints":
+  [178], "(n": [179, 186], "=": [180, 187], "218)": [181], "exceeded": [182], "prespecified":
+  [184, 224], "184)": [188], "used": [189], "calculate": [191], "trial''s": [193],
+  "sample": [194], "size": [195], "power.": [197], "Placebo": [198], "was": [200,
+  219, 283, 299], "established": [202, 284], "population": [208], "individual": [211],
+  "subpopulations.": [213], "Benefit": [214], "heterogeneity": [216], "effect": [218],
+  "by": [222], "any": [223], "subgroup.": [225], "28/89": [234], "(31.5%)": [235],
+  "similar": [237], "participants.": [242, 255, 274], "Outcomes": [243], "significantly":
+  [246], "better": [247, 319], "versus": [251], "serious": [261], "adverse": [262],
+  "events": [263], "161/305": [266], "(52.8%)": [267], "dexamethasone-treated": [268],
+  "160/308": [271], "(51.9%)": [272], "placebo-treated": [273], "conclusion,": [276],
+  "neither": [277], "nor": [279], "superiority": [280], "safe.": [300], "indicates":
+  [308], "that": [309], "greater": [310], "understanding": [311], "pathophysiology":
+  [315], "is": [316], "needed,": [317], "alongside": [318], "targeted,": [320], "more":
+  [321], "effective": [322], "anti-inflammatory": [323], "agents": [324], "than":
+  [325], "(ClinicalTrials.gov": [327], "NCT03100786": [328], ").": [329]}, "counts_by_year":
+  [{"year": 2026, "cited_by_count": 1}], "updated_date": "2026-05-03T08:25:01.440150",
+  "created_date": "2026-01-16T00:00:00"}, {"id": "https://openalex.org/W4391574296",
+  "doi": "https://doi.org/10.1186/s12879-024-08992-z", "title": "A novel diagnostic
+  model for tuberculous meningitis using Bayesian latent class analysis", "display_name":
+  "A novel diagnostic model for tuberculous meningitis using Bayesian latent class
+  analysis", "publication_year": 2024, "publication_date": "2024-02-06", "ids": {"openalex":
+  "https://openalex.org/W4391574296", "doi": "https://doi.org/10.1186/s12879-024-08992-z",
   "pmid": "https://pubmed.ncbi.nlm.nih.gov/38321395"}, "language": "en", "primary_location":
   {"id": "doi:10.1186/s12879-024-08992-z", "is_oa": true, "landing_page_url": "https://doi.org/10.1186/s12879-024-08992-z",
   "pdf_url": "https://bmcinfectdis.biomedcentral.com/counter/pdf/10.1186/s12879-024-08992-z",
@@ -9672,10 +9672,10 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 34, "page": 1, "per_page": 
   Central", "Springer Nature"], "type": "journal"}, "license": "cc-by", "license_id":
   "https://openalex.org/licenses/cc-by", "version": "publishedVersion", "is_accepted":
   true, "is_published": true, "raw_source_name": "BMC Infectious Diseases", "raw_type":
-  "journal-article"}, "sustainable_development_goals": [{"display_name": "Good health
-  and well-being", "score": 0.5600000023841858, "id": "https://metadata.un.org/sdg/3"}],
-  "awards": [{"id": "https://openalex.org/G2884997024", "display_name": "Translational
-  Resource Award ''Flagship Translational Resource: Critical Care/Fever", "funder_award_id":
+  "journal-article"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 0.5600000023841858}], "awards":
+  [{"id": "https://openalex.org/G2884997024", "display_name": "Translational Resource
+  Award ''Flagship Translational Resource: Critical Care/Fever", "funder_award_id":
   "217650", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
   "Wellcome Trust"}, {"id": "https://openalex.org/G305152554", "display_name": null,
   "funder_award_id": "217650/Z/19/Z", "funder_id": "https://openalex.org/F4320311904",
@@ -10119,12 +10119,12 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 34, "page": 1, "per_page": 
   ["https://openalex.org/P4310315706"], "host_organization_lineage_names": ["Public
   Library of Science"], "type": "journal"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
   "version": "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
-  "PLOS One", "raw_type": "journal-article"}, "sustainable_development_goals": [{"display_name":
-  "Good health and well-being", "score": 0.8700000047683716, "id": "https://metadata.un.org/sdg/3"}],
-  "awards": [{"id": "https://openalex.org/G305152554", "display_name": null, "funder_award_id":
-  "217650/Z/19/Z", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
-  "Wellcome Trust"}, {"id": "https://openalex.org/G4906042428", "display_name": null,
-  "funder_award_id": "EP/T022205/1", "funder_id": "https://openalex.org/F4320337314",
+  "PLOS One", "raw_type": "journal-article"}, "sustainable_development_goals": [{"id":
+  "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being", "score":
+  0.8700000047683716}], "awards": [{"id": "https://openalex.org/G305152554", "display_name":
+  null, "funder_award_id": "217650/Z/19/Z", "funder_id": "https://openalex.org/F4320311904",
+  "funder_display_name": "Wellcome Trust"}, {"id": "https://openalex.org/G4906042428",
+  "display_name": null, "funder_award_id": "EP/T022205/1", "funder_id": "https://openalex.org/F4320337314",
   "funder_display_name": "Centre For Medical Engineering, King\u2019s College London"},
   {"id": "https://openalex.org/G5296857752", "display_name": null, "funder_award_id":
   "203148/Z/16/Z", "funder_id": "https://openalex.org/F4320337314", "funder_display_name":
@@ -10403,8 +10403,8 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 34, "page": 1, "per_page": 
   [], "type": "repository"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
   "version": "acceptedVersion", "is_accepted": true, "is_published": false, "raw_source_name":
   "Research Square", "raw_type": "posted-content"}, "sustainable_development_goals":
-  [{"display_name": "Good health and well-being", "score": 0.7900000214576721, "id":
-  "https://metadata.un.org/sdg/3"}], "awards": [{"id": "https://openalex.org/G2884997024",
+  [{"id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being",
+  "score": 0.7900000214576721}], "awards": [{"id": "https://openalex.org/G2884997024",
   "display_name": null, "funder_award_id": "217650", "funder_id": "https://openalex.org/F4320311904",
   "funder_display_name": "Wellcome Trust"}, {"id": "https://openalex.org/G305152554",
   "display_name": null, "funder_award_id": "217650/Z/19/Z", "funder_id": "https://openalex.org/F4320311904",
@@ -10942,9 +10942,9 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 34, "page": 1, "per_page": 
   [], "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
   "license_id": "https://openalex.org/licenses/cc-by", "version": "acceptedVersion",
   "is_accepted": true, "is_published": false, "raw_source_name": "Research Square",
-  "raw_type": "posted-content"}, "sustainable_development_goals": [{"display_name":
-  "Good health and well-being", "score": 0.8700000047683716, "id": "https://metadata.un.org/sdg/3"}],
-  "awards": [{"id": "https://openalex.org/G1322964166", "display_name": null, "funder_award_id":
+  "raw_type": "posted-content"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 0.8700000047683716}], "awards":
+  [{"id": "https://openalex.org/G1322964166", "display_name": null, "funder_award_id":
   "203148/Z/16/Z", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
   "Wellcome Trust"}, {"id": "https://openalex.org/G1595280774", "display_name": "JADE:
   Joint Academic Data science Endeavour - 2", "funder_award_id": "EP/T022205/1", "funder_id":
@@ -11644,10 +11644,10 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 34, "page": 1, "per_page": 
   Central", "Springer Nature"], "type": "journal"}, "license": "cc-by", "license_id":
   "https://openalex.org/licenses/cc-by", "version": "publishedVersion", "is_accepted":
   true, "is_published": true, "raw_source_name": "BMC Medical Ethics", "raw_type":
-  "journal-article"}, "sustainable_development_goals": [{"display_name": "Good health
-  and well-being", "score": 0.42751845717430115, "id": "https://metadata.un.org/sdg/3"}],
-  "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false},
-  "content_urls": null, "referenced_works_count": 24, "referenced_works": ["https://openalex.org/W1566125242",
+  "journal-article"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 0.42751845717430115}], "awards":
+  [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false}, "content_urls":
+  null, "referenced_works_count": 24, "referenced_works": ["https://openalex.org/W1566125242",
   "https://openalex.org/W1989224082", "https://openalex.org/W2045853031", "https://openalex.org/W2148183484",
   "https://openalex.org/W2485540656", "https://openalex.org/W2887820101", "https://openalex.org/W2983441955",
   "https://openalex.org/W3007382231", "https://openalex.org/W3012027760", "https://openalex.org/W3021879836",
@@ -12634,8 +12634,8 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 34, "page": 1, "per_page": 
   "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
   "license_id": "https://openalex.org/licenses/cc-by", "version": null, "is_accepted":
   false, "is_published": false, "raw_source_name": null, "raw_type": "article-journal"},
-  "sustainable_development_goals": [{"display_name": "Zero hunger", "score": 0.5143677592277527,
-  "id": "https://metadata.un.org/sdg/2"}], "awards": [], "funders": [], "has_content":
+  "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/2", "display_name":
+  "Zero hunger", "score": 0.5143677592277527}], "awards": [], "funders": [], "has_content":
   {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
   0, "referenced_works": [], "related_works": [], "abstract_inverted_index": {"Supplementary":
   [0], "Material": [1], "1.": [2]}, "counts_by_year": [], "updated_date": "2026-04-23T06:20:18.424754",
@@ -13063,8 +13063,8 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 34, "page": 1, "per_page": 
   "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
   "license_id": "https://openalex.org/licenses/cc-by", "version": null, "is_accepted":
   false, "is_published": false, "raw_source_name": null, "raw_type": "article-journal"},
-  "sustainable_development_goals": [{"display_name": "Zero hunger", "score": 0.5143677592277527,
-  "id": "https://metadata.un.org/sdg/2"}], "awards": [], "funders": [], "has_content":
+  "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/2", "display_name":
+  "Zero hunger", "score": 0.5143677592277527}], "awards": [], "funders": [], "has_content":
   {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
   0, "referenced_works": [], "related_works": [], "abstract_inverted_index": {"Supplementary":
   [0], "Material": [1], "1.": [2]}, "counts_by_year": [], "updated_date": "2026-04-23T06:20:18.424754",
