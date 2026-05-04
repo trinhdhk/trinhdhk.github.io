@@ -358,12 +358,21 @@ fetch_api_json <- function(url, raw_path) {
       req_headers(Accept = "application/json") |>
       req_timeout(60)
     resp <- req_perform(req)
+    
+    # Check if this is a Semantic Scholar URL - don't save body content
+    is_semanticscholar <- grepl("semanticscholar\\.org", url, ignore.case = TRUE)
+    
     raw <- list(
       url = url,
       status = resp_status(resp),
-      content_type = resp_header(resp, "content-type"),
-      body = resp_body_string(resp)
+      content_type = resp_header(resp, "content-type")
     )
+    
+    # Only include body for non-Semantic Scholar APIs
+    if (!is_semanticscholar) {
+      raw$body <- resp_body_string(resp)
+    }
+    
     write_yaml(raw, raw_path)
     resp_body_json(resp, simplifyVector = TRUE)
   }, error = function(e) {
