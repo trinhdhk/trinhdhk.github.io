@@ -1,7 +1,7 @@
 url: https://api.openalex.org/works?filter=authorships.author.id:a5073343908|a5123129713&per-page=200
 status: 200
 content_type: application/json
-body: '{"meta": {"count": 24, "db_response_time_ms": 32, "page": 1, "per_page": 200,
+body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 200,
   "groups_count": null, "cost_usd": 0.0001}, "results": [{"id": "https://openalex.org/W3000453407",
   "doi": "https://doi.org/10.1016/s1473-3099(19)30649-8", "title": "Xpert MTB/RIF
   Ultra versus Xpert MTB/RIF for the diagnosis of tuberculous meningitis: a prospective,
@@ -1410,7 +1410,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 32, "page": 1, "per_page": 
   "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being", "score":
   0.41999998688697815}], "awards": [], "funders": [{"id": "https://openalex.org/F4320311904",
   "display_name": "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content":
-  {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3046463923.pdf",
+  {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3046463923.pdf",
   "grobid_xml": "https://content.openalex.org/works/W3046463923.grobid-xml"}, "referenced_works_count":
   29, "referenced_works": ["https://openalex.org/W1844981334", "https://openalex.org/W1978453912",
   "https://openalex.org/W2004573151", "https://openalex.org/W2096800088", "https://openalex.org/W2153416121",
@@ -3503,7 +3503,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 32, "page": 1, "per_page": 
   null, "funder_award_id": "106680/B/14/Z", "funder_id": "https://openalex.org/F4320311904",
   "funder_display_name": "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904",
   "display_name": "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content":
-  {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3194782510.pdf",
+  {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3194782510.pdf",
   "grobid_xml": "https://content.openalex.org/works/W3194782510.grobid-xml"}, "referenced_works_count":
   32, "referenced_works": ["https://openalex.org/W1978159568", "https://openalex.org/W1980980484",
   "https://openalex.org/W1992464091", "https://openalex.org/W1995667320", "https://openalex.org/W1995839475",
@@ -9203,7 +9203,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 32, "page": 1, "per_page": 
   "display_name": null, "funder_award_id": "110179/Z/15/Z", "funder_id": "https://openalex.org/F4320307874",
   "funder_display_name": "Wellcome"}], "funders": [{"id": "https://openalex.org/F4320307874",
   "display_name": "Wellcome", "ror": "https://ror.org/029chgv08"}], "has_content":
-  {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
+  {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
   36, "referenced_works": ["https://openalex.org/W1965974931", "https://openalex.org/W1967607476",
   "https://openalex.org/W1968632660", "https://openalex.org/W1972605644", "https://openalex.org/W1979936739",
   "https://openalex.org/W1986514504", "https://openalex.org/W1986607793", "https://openalex.org/W2059831659",
@@ -11646,7 +11646,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 32, "page": 1, "per_page": 
   true, "is_published": true, "raw_source_name": "BMC Medical Ethics", "raw_type":
   "journal-article"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
   "display_name": "Good health and well-being", "score": 0.42751845717430115}], "awards":
-  [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
+  [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false}, "content_urls":
   null, "referenced_works_count": 24, "referenced_works": ["https://openalex.org/W1566125242",
   "https://openalex.org/W1989224082", "https://openalex.org/W2045853031", "https://openalex.org/W2148183484",
   "https://openalex.org/W2485540656", "https://openalex.org/W2887820101", "https://openalex.org/W2983441955",
@@ -12636,7 +12636,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 32, "page": 1, "per_page": 
   false, "is_published": false, "raw_source_name": null, "raw_type": "article-journal"},
   "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/2", "display_name":
   "Zero hunger", "score": 0.5143677592277527}], "awards": [], "funders": [], "has_content":
-  {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
+  {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
   0, "referenced_works": [], "related_works": [], "abstract_inverted_index": {"Supplementary":
   [0], "Material": [1], "1.": [2]}, "counts_by_year": [], "updated_date": "2026-04-23T06:20:18.424754",
   "created_date": "2026-04-23T00:00:00"}, {"id": "https://openalex.org/W7155193550",
@@ -13065,7 +13065,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 32, "page": 1, "per_page": 
   false, "is_published": false, "raw_source_name": null, "raw_type": "article-journal"},
   "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/2", "display_name":
   "Zero hunger", "score": 0.5143677592277527}], "awards": [], "funders": [], "has_content":
-  {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
+  {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
   0, "referenced_works": [], "related_works": [], "abstract_inverted_index": {"Supplementary":
   [0], "Material": [1], "1.": [2]}, "counts_by_year": [], "updated_date": "2026-04-23T06:20:18.424754",
   "created_date": "2026-04-23T00:00:00"}, {"id": "https://openalex.org/W7155236017",
