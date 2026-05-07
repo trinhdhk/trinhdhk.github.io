@@ -104,7 +104,7 @@ jobs:
           git config user.name "$GIT_NAME"
           git config user.email "$GIT_EMAIL"
           # Stage generated site files at repository root
-          git add * || true
+          git add . || true
           if ! git diff --staged --quiet; then
             git commit -m "render site" || true
             git push
