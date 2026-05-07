@@ -94,7 +94,6 @@ jobs:
 
       - name: Render site to repository root
         run: |
-          # Render site output to repository root instead of `docs/`
           quarto render
 
       - name: Commit and push built site (root)
@@ -105,9 +104,9 @@ jobs:
           git config user.name "$GIT_NAME"
           git config user.email "$GIT_EMAIL"
           # Stage generated site files at repository root
-          git add . || true
+          git add * || true
           if ! git diff --staged --quiet; then
-            git commit -m "chore: render site (CI) [skip ci]" || true
+            git commit -m "render site" || true
             git push
           else
             echo "No changes to commit"
