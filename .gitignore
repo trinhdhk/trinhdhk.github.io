@@ -8,6 +8,5 @@ _freeze/
 Thumbs.db
 
 /.quarto/
-docs/
 **/*.quarto_ipynb
 scholar_raw.yml
