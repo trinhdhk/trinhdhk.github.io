@@ -1,7 +1,7 @@
 url: https://api.openalex.org/works?filter=authorships.author.id:a5073343908|a5123129713&per-page=200
 status: 200
 content_type: application/json
-body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 200,
+body: '{"meta": {"count": 24, "db_response_time_ms": 26, "page": 1, "per_page": 200,
   "groups_count": null, "cost_usd": 0.0001}, "results": [{"id": "https://openalex.org/W3000453407",
   "doi": "https://doi.org/10.1016/s1473-3099(19)30649-8", "title": "Xpert MTB/RIF
   Ultra versus Xpert MTB/RIF for the diagnosis of tuberculous meningitis: a prospective,
@@ -1249,9 +1249,9 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   ["https://openalex.org/A5033797047"], "corresponding_institution_ids": ["https://openalex.org/I40120149",
   "https://openalex.org/I4210150114"], "apc_list": {"value": 4320, "currency": "USD",
   "value_usd": 4320}, "apc_paid": {"value": 4320, "currency": "USD", "value_usd":
-  4320}, "fwci": 2.275, "has_fulltext": false, "cited_by_count": 78, "citation_normalized_percentile":
+  4320}, "fwci": 2.275, "has_fulltext": false, "cited_by_count": 79, "citation_normalized_percentile":
   {"value": 0.91868224, "is_in_top_1_percent": false, "is_in_top_10_percent": true},
-  "cited_by_percentile_year": {"min": 98, "max": 100}, "biblio": {"volume": "72",
+  "cited_by_percentile_year": {"min": 96, "max": 100}, "biblio": {"volume": "72",
   "issue": "9", "first_page": "e334", "last_page": "e342"}, "is_retracted": false,
   "is_paratext": false, "is_xpac": false, "primary_topic": {"id": "https://openalex.org/T10410",
   "display_name": "COVID-19 epidemiological studies", "score": 0.9104999899864197,
@@ -1410,7 +1410,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being", "score":
   0.41999998688697815}], "awards": [], "funders": [{"id": "https://openalex.org/F4320311904",
   "display_name": "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content":
-  {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3046463923.pdf",
+  {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3046463923.pdf",
   "grobid_xml": "https://content.openalex.org/works/W3046463923.grobid-xml"}, "referenced_works_count":
   29, "referenced_works": ["https://openalex.org/W1844981334", "https://openalex.org/W1978453912",
   "https://openalex.org/W2004573151", "https://openalex.org/W2096800088", "https://openalex.org/W2153416121",
@@ -1469,15 +1469,15 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   [234], "restrictions.": [235], "value": [237], "these": [239], "interventions":
   [240], "is": [241], "supported": [242], "high": [245], "cases,": [251], "evidence":
   [253], "substantial": [255], "transmission.": [257]}, "counts_by_year": [{"year":
-  2025, "cited_by_count": 6}, {"year": 2024, "cited_by_count": 7}, {"year": 2023,
-  "cited_by_count": 16}, {"year": 2022, "cited_by_count": 15}, {"year": 2021, "cited_by_count":
-  23}, {"year": 2020, "cited_by_count": 11}], "updated_date": "2026-05-04T08:30:34.212998",
-  "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4382795683",
-  "doi": "https://doi.org/10.1186/s13054-023-04548-w", "title": "Clinical benefit
-  of AI-assisted lung ultrasound in a resource-limited intensive care unit", "display_name":
-  "Clinical benefit of AI-assisted lung ultrasound in a resource-limited intensive
-  care unit", "publication_year": 2023, "publication_date": "2023-07-01", "ids": {"openalex":
-  "https://openalex.org/W4382795683", "doi": "https://doi.org/10.1186/s13054-023-04548-w",
+  2026, "cited_by_count": 1}, {"year": 2025, "cited_by_count": 6}, {"year": 2024,
+  "cited_by_count": 7}, {"year": 2023, "cited_by_count": 16}, {"year": 2022, "cited_by_count":
+  15}, {"year": 2021, "cited_by_count": 23}, {"year": 2020, "cited_by_count": 11}],
+  "updated_date": "2026-05-09T13:55:54.758798", "created_date": "2025-10-10T00:00:00"},
+  {"id": "https://openalex.org/W4382795683", "doi": "https://doi.org/10.1186/s13054-023-04548-w",
+  "title": "Clinical benefit of AI-assisted lung ultrasound in a resource-limited
+  intensive care unit", "display_name": "Clinical benefit of AI-assisted lung ultrasound
+  in a resource-limited intensive care unit", "publication_year": 2023, "publication_date":
+  "2023-07-01", "ids": {"openalex": "https://openalex.org/W4382795683", "doi": "https://doi.org/10.1186/s13054-023-04548-w",
   "pmid": "https://pubmed.ncbi.nlm.nih.gov/37393330"}, "language": "en", "primary_location":
   {"id": "doi:10.1186/s13054-023-04548-w", "is_oa": true, "landing_page_url": "https://doi.org/10.1186/s13054-023-04548-w",
   "pdf_url": "https://ccforum.biomedcentral.com/counter/pdf/10.1186/s13054-023-04548-w",
@@ -2616,8 +2616,8 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   "corresponding_institution_ids": ["https://openalex.org/I183935753", "https://openalex.org/I4210119896",
   "https://openalex.org/I4210150114"], "apc_list": {"value": 2390, "currency": "GBP",
   "value_usd": 2931}, "apc_paid": {"value": 2390, "currency": "GBP", "value_usd":
-  2931}, "fwci": 10.279, "has_fulltext": true, "cited_by_count": 51, "citation_normalized_percentile":
-  {"value": 0.98999574, "is_in_top_1_percent": false, "is_in_top_10_percent": true},
+  2931}, "fwci": 10.2191, "has_fulltext": true, "cited_by_count": 51, "citation_normalized_percentile":
+  {"value": 0.98999681, "is_in_top_1_percent": false, "is_in_top_10_percent": true},
   "cited_by_percentile_year": {"min": 99, "max": 100}, "biblio": {"volume": "27",
   "issue": "1", "first_page": "257", "last_page": "257"}, "is_retracted": false, "is_paratext":
   false, "is_xpac": false, "primary_topic": {"id": "https://openalex.org/T11738",
@@ -2775,11 +2775,11 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   care unit'', Critical Care, vol. 27, no. 1, 257. https://doi.org/10.1186/s13054-023-04548-w",
   "raw_type": "info:eu-repo/semantics/publishedVersion"}, {"id": "pmh:oai:doaj.org/article:6650279ac092493194f4bac81a89f212",
   "is_oa": true, "landing_page_url": "https://doaj.org/article/6650279ac092493194f4bac81a89f212",
-  "pdf_url": null, "source": {"id": "https://openalex.org/S112646816", "display_name":
-  "SHILAP Revista de lepidopterolog\u00eda", "issn_l": "0300-5267", "issn": ["0300-5267",
-  "2340-4078"], "is_oa": true, "is_in_doaj": true, "is_core": false, "host_organization":
-  null, "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
-  [], "type": "journal"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
+  "pdf_url": null, "source": {"id": "https://openalex.org/S4306401280", "display_name":
+  "DOAJ (DOAJ: Directory of Open Access Journals)", "issn_l": null, "issn": null,
+  "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization": null,
+  "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
+  [], "type": "repository"}, "license": "cc-by-sa", "license_id": "https://openalex.org/licenses/cc-by-sa",
   "version": "submittedVersion", "is_accepted": false, "is_published": false, "raw_source_name":
   "Critical Care, Vol 27, Iss 1, Pp 1-8 (2023)", "raw_type": "article"}, {"id": "pmh:oai:kclpure.kcl.ac.uk:openaire/6d3ce36c-f019-4a61-9efe-54eeee002571",
   "is_oa": true, "landing_page_url": "https://kclpure.kcl.ac.uk/portal/en/publications/6d3ce36c-f019-4a61-9efe-54eeee002571",
@@ -2927,7 +2927,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   [343], "improve": [345], "features": [351], "more": [352, 354, 357], "accurately,":
   [353], "quickly": [355], "confidently.": [358]}, "counts_by_year": [{"year": 2026,
   "cited_by_count": 7}, {"year": 2025, "cited_by_count": 24}, {"year": 2024, "cited_by_count":
-  20}], "updated_date": "2026-04-30T09:15:22.047038", "created_date": "2025-10-10T00:00:00"},
+  20}], "updated_date": "2026-05-06T08:25:59.206177", "created_date": "2025-10-10T00:00:00"},
   {"id": "https://openalex.org/W3194782510", "doi": "https://doi.org/10.1093/cid/ciab724",
   "title": "Effectiveness of Continuous Endotracheal Cuff Pressure Control for the
   Prevention of Ventilator-Associated Respiratory Infections: An Open-Label Randomized,
@@ -3503,7 +3503,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   null, "funder_award_id": "106680/B/14/Z", "funder_id": "https://openalex.org/F4320311904",
   "funder_display_name": "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904",
   "display_name": "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content":
-  {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3194782510.pdf",
+  {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3194782510.pdf",
   "grobid_xml": "https://content.openalex.org/works/W3194782510.grobid-xml"}, "referenced_works_count":
   32, "referenced_works": ["https://openalex.org/W1978159568", "https://openalex.org/W1980980484",
   "https://openalex.org/W1992464091", "https://openalex.org/W1995667320", "https://openalex.org/W1995839475",
@@ -4555,8 +4555,8 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   ["https://openalex.org/A5071608103"], "corresponding_institution_ids": ["https://openalex.org/I183935753",
   "https://openalex.org/I4210119896", "https://openalex.org/I4210150114"], "apc_list":
   {"value": 1890, "currency": "EUR", "value_usd": 2190}, "apc_paid": {"value": 1890,
-  "currency": "EUR", "value_usd": 2190}, "fwci": 3.859, "has_fulltext": true, "cited_by_count":
-  10, "citation_normalized_percentile": {"value": 0.93844378, "is_in_top_1_percent":
+  "currency": "EUR", "value_usd": 2190}, "fwci": 3.8163, "has_fulltext": true, "cited_by_count":
+  10, "citation_normalized_percentile": {"value": 0.93758415, "is_in_top_1_percent":
   false, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 98, "max":
   99}, "biblio": {"volume": "14", "issue": "1", "first_page": "14798", "last_page":
   "14798"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -4786,11 +4786,11 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   muscle wasting in ICU patients'', Scientific reports, vol. 14, no. 1, 14798. https://doi.org/10.1038/s41598-024-64564-w",
   "raw_type": "info:eu-repo/semantics/publishedVersion"}, {"id": "pmh:oai:doaj.org/article:a57ad77f59cf43128c6e019d56da4e7a",
   "is_oa": true, "landing_page_url": "https://doaj.org/article/a57ad77f59cf43128c6e019d56da4e7a",
-  "pdf_url": null, "source": {"id": "https://openalex.org/S112646816", "display_name":
-  "SHILAP Revista de lepidopterolog\u00eda", "issn_l": "0300-5267", "issn": ["0300-5267",
-  "2340-4078"], "is_oa": true, "is_in_doaj": true, "is_core": false, "host_organization":
-  null, "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
-  [], "type": "journal"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
+  "pdf_url": null, "source": {"id": "https://openalex.org/S4306401280", "display_name":
+  "DOAJ (DOAJ: Directory of Open Access Journals)", "issn_l": null, "issn": null,
+  "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization": null,
+  "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
+  [], "type": "repository"}, "license": "cc-by-sa", "license_id": "https://openalex.org/licenses/cc-by-sa",
   "version": "submittedVersion", "is_accepted": false, "is_published": false, "raw_source_name":
   "Scientific Reports, Vol 14, Iss 1, Pp 1-9 (2024)", "raw_type": "article"}, {"id":
   "pmh:oai:kclpure.kcl.ac.uk:openaire/3fa5e233-4b5c-4eca-9015-8a9052978cc2", "is_oa":
@@ -4903,7 +4903,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   [235], "saves": [237], "time.": [238], "system": [240], "may": [241], "aid": [242],
   "monitoring": [243], "size": [245], "assisting": [249], "rehabilitation": [250],
   "programmes.": [251]}, "counts_by_year": [{"year": 2025, "cited_by_count": 10}],
-  "updated_date": "2026-04-30T09:15:22.047038", "created_date": "2024-06-27T00:00:00"},
+  "updated_date": "2026-05-06T08:25:59.206177", "created_date": "2024-06-27T00:00:00"},
   {"id": "https://openalex.org/W4401108518", "doi": "https://doi.org/10.1038/s41598-024-68308-8",
   "title": "Computer-aided prognosis of tuberculous meningitis combining imaging and
   non-imaging data", "display_name": "Computer-aided prognosis of tuberculous meningitis
@@ -5913,8 +5913,8 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   104, "corresponding_author_ids": ["https://openalex.org/A5023117088"], "corresponding_institution_ids":
   ["https://openalex.org/I183935753", "https://openalex.org/I4210119896"], "apc_list":
   {"value": 1890, "currency": "EUR", "value_usd": 2190}, "apc_paid": {"value": 1890,
-  "currency": "EUR", "value_usd": 2190}, "fwci": 4.2886, "has_fulltext": true, "cited_by_count":
-  8, "citation_normalized_percentile": {"value": 0.94631227, "is_in_top_1_percent":
+  "currency": "EUR", "value_usd": 2190}, "fwci": 4.2104, "has_fulltext": true, "cited_by_count":
+  8, "citation_normalized_percentile": {"value": 0.94491954, "is_in_top_1_percent":
   false, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 98, "max":
   99}, "biblio": {"volume": "14", "issue": "1", "first_page": "17581", "last_page":
   "17581"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -6203,11 +6203,11 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   vol. 14, no. 1, 17581. https://doi.org/10.1038/s41598-024-68308-8", "raw_type":
   "info:eu-repo/semantics/publishedVersion"}, {"id": "pmh:oai:doaj.org/article:08a080fc43a44141b75690f09cfec498",
   "is_oa": true, "landing_page_url": "https://doaj.org/article/08a080fc43a44141b75690f09cfec498",
-  "pdf_url": null, "source": {"id": "https://openalex.org/S112646816", "display_name":
-  "SHILAP Revista de lepidopterolog\u00eda", "issn_l": "0300-5267", "issn": ["0300-5267",
-  "2340-4078"], "is_oa": true, "is_in_doaj": true, "is_core": false, "host_organization":
-  null, "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
-  [], "type": "journal"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
+  "pdf_url": null, "source": {"id": "https://openalex.org/S4306401280", "display_name":
+  "DOAJ (DOAJ: Directory of Open Access Journals)", "issn_l": null, "issn": null,
+  "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization": null,
+  "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
+  [], "type": "repository"}, "license": "cc-by-sa", "license_id": "https://openalex.org/licenses/cc-by-sa",
   "version": "submittedVersion", "is_accepted": false, "is_published": false, "raw_source_name":
   "Scientific Reports, Vol 14, Iss 1, Pp 1-13 (2024)", "raw_type": "article"}], "best_oa_location":
   {"id": "doi:10.1038/s41598-024-68308-8", "is_oa": true, "landing_page_url": "https://doi.org/10.1038/s41598-024-68308-8",
@@ -6306,7 +6306,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   "data,": [252], "model.": [257], "has": [260], "potential": [262], "accurately":
   [264], "progression": [267], "timely": [270], "intervention.": [272]}, "counts_by_year":
   [{"year": 2026, "cited_by_count": 2}, {"year": 2025, "cited_by_count": 6}], "updated_date":
-  "2026-05-03T08:25:01.440150", "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4399859342",
+  "2026-05-11T08:15:01.531666", "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4399859342",
   "doi": "https://doi.org/10.1038/s41598-024-64898-5", "title": "Detection of co-infection
   and recombination cases with Omicron and local Delta variants of SARS-CoV-2 in Vietnam",
   "display_name": "Detection of co-infection and recombination cases with Omicron
@@ -7226,8 +7226,8 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   96, "corresponding_author_ids": ["https://openalex.org/A5101671864"], "corresponding_institution_ids":
   ["https://openalex.org/I4210150114"], "apc_list": {"value": 1890, "currency": "EUR",
   "value_usd": 2190}, "apc_paid": {"value": 1890, "currency": "EUR", "value_usd":
-  2190}, "fwci": 2.222, "has_fulltext": true, "cited_by_count": 6, "citation_normalized_percentile":
-  {"value": 0.87674663, "is_in_top_1_percent": false, "is_in_top_10_percent": false},
+  2190}, "fwci": 2.2012, "has_fulltext": true, "cited_by_count": 6, "citation_normalized_percentile":
+  {"value": 0.8752784, "is_in_top_1_percent": false, "is_in_top_10_percent": false},
   "cited_by_percentile_year": {"min": 90, "max": 98}, "biblio": {"volume": "14", "issue":
   "1", "first_page": "14225", "last_page": "14225"}, "is_retracted": false, "is_paratext":
   false, "is_xpac": false, "primary_topic": {"id": "https://openalex.org/T10118",
@@ -7456,11 +7456,11 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   "is_accepted": false, "is_published": false, "raw_source_name": "Sci Rep", "raw_type":
   "Text"}, {"id": "pmh:oai:doaj.org/article:44e84a25b88d4ab896a84167d31025b1", "is_oa":
   true, "landing_page_url": "https://doaj.org/article/44e84a25b88d4ab896a84167d31025b1",
-  "pdf_url": null, "source": {"id": "https://openalex.org/S112646816", "display_name":
-  "SHILAP Revista de lepidopterolog\u00eda", "issn_l": "0300-5267", "issn": ["0300-5267",
-  "2340-4078"], "is_oa": true, "is_in_doaj": true, "is_core": false, "host_organization":
-  null, "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
-  [], "type": "journal"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
+  "pdf_url": null, "source": {"id": "https://openalex.org/S4306401280", "display_name":
+  "DOAJ (DOAJ: Directory of Open Access Journals)", "issn_l": null, "issn": null,
+  "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization": null,
+  "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
+  [], "type": "repository"}, "license": "cc-by-sa", "license_id": "https://openalex.org/licenses/cc-by-sa",
   "version": "submittedVersion", "is_accepted": false, "is_published": false, "raw_source_name":
   "Scientific Reports, Vol 14, Iss 1, Pp 1-8 (2024)", "raw_type": "article"}, {"id":
   "pmh:oai:ora.ox.ac.uk:uuid:fb0dc1b1-5cf1-437f-b2df-18ef1ce18c93", "is_oa": true,
@@ -7535,7 +7535,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   "rapid": [179], "identification": [180], "changes": [183], "that": [184], "may":
   [185], "affect": [186], "properties": [188], "evolutionary": [190], "events.": [191]},
   "counts_by_year": [{"year": 2025, "cited_by_count": 5}, {"year": 2024, "cited_by_count":
-  1}], "updated_date": "2026-05-01T08:36:08.643496", "created_date": "2025-10-10T00:00:00"},
+  1}], "updated_date": "2026-05-06T08:25:59.206177", "created_date": "2025-10-10T00:00:00"},
   {"id": "https://openalex.org/W4407157314", "doi": "https://doi.org/10.12688/wellcomeopenres.22498.2",
   "title": "Statistical analysis plan for the LAST ACT clinical trial; a Leukotriene
   A4 hydrolase Stratified non-inferiority Trial of Adjunctive Corticosteroids for
@@ -7673,8 +7673,8 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   7, "corresponding_author_ids": ["https://openalex.org/A5071781127"], "corresponding_institution_ids":
   ["https://openalex.org/I40120149", "https://openalex.org/I4210089966", "https://openalex.org/I4210150114"],
   "apc_list": {"value": 920, "currency": "GBP", "value_usd": 1128}, "apc_paid": {"value":
-  920, "currency": "GBP", "value_usd": 1128}, "fwci": 3.5095, "has_fulltext": true,
-  "cited_by_count": 2, "citation_normalized_percentile": {"value": 0.89758209, "is_in_top_1_percent":
+  920, "currency": "GBP", "value_usd": 1128}, "fwci": 3.3388, "has_fulltext": true,
+  "cited_by_count": 2, "citation_normalized_percentile": {"value": 0.89309051, "is_in_top_1_percent":
   false, "is_in_top_10_percent": false}, "cited_by_percentile_year": {"min": 91, "max":
   98}, "biblio": {"volume": "9", "issue": null, "first_page": "695", "last_page":
   "695"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -7741,11 +7741,11 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   null, "version": "submittedVersion", "is_accepted": false, "is_published": false,
   "raw_source_name": null, "raw_type": "PeerReviewed"}, {"id": "pmh:oai:doaj.org/article:99df0b0d17f54fa49384a7006f80d183",
   "is_oa": true, "landing_page_url": "https://doaj.org/article/99df0b0d17f54fa49384a7006f80d183",
-  "pdf_url": null, "source": {"id": "https://openalex.org/S112646816", "display_name":
-  "SHILAP Revista de lepidopterolog\u00eda", "issn_l": "0300-5267", "issn": ["0300-5267",
-  "2340-4078"], "is_oa": true, "is_in_doaj": true, "is_core": false, "host_organization":
-  null, "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
-  [], "type": "journal"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
+  "pdf_url": null, "source": {"id": "https://openalex.org/S4306401280", "display_name":
+  "DOAJ (DOAJ: Directory of Open Access Journals)", "issn_l": null, "issn": null,
+  "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization": null,
+  "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
+  [], "type": "repository"}, "license": "cc-by-sa", "license_id": "https://openalex.org/licenses/cc-by-sa",
   "version": "submittedVersion", "is_accepted": false, "is_published": false, "raw_source_name":
   "Wellcome Open Research, Vol 9 (2025)", "raw_type": "article"}], "best_oa_location":
   {"id": "doi:10.12688/wellcomeopenres.22498.2", "is_oa": true, "landing_page_url":
@@ -7757,8 +7757,9 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   ["Wellcome"], "type": "journal"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
   "version": "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
   "Wellcome Open Research", "raw_type": "journal-article"}, "sustainable_development_goals":
-  [], "awards": [{"id": "https://openalex.org/G7076209523", "display_name": null,
-  "funder_award_id": "110179", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
+  [], "awards": [{"id": "https://openalex.org/G7076209523", "display_name": "Personalised
+  adjunctive anti-inflammatory therapy to reduce deaths from tuberculosis.", "funder_award_id":
+  "110179", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
   "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
   "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": false,
   "grobid_xml": false}, "content_urls": null, "referenced_works_count": 19, "referenced_works":
@@ -7812,7 +7813,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   [225], "analysis": [226, 233], "plan": [227, 234], "expands": [228], "updates":
   [231], "outlined": [235], "published": [238], "study": [239], "protocol.": [240],
   "</ns3:p>": [241]}, "counts_by_year": [{"year": 2026, "cited_by_count": 1}, {"year":
-  2025, "cited_by_count": 1}], "updated_date": "2026-03-27T05:58:40.876381", "created_date":
+  2025, "cited_by_count": 1}], "updated_date": "2026-05-06T08:25:59.206177", "created_date":
   "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4404755442", "doi": "https://doi.org/10.12688/wellcomeopenres.22498.1",
   "title": "Statistical analysis plan for the LAST ACT clinical trial; a Leukotriene
   A4 hydrolase Stratified non-inferiority Trial of Adjunctive Corticosteroids for
@@ -7949,8 +7950,8 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   7, "corresponding_author_ids": ["https://openalex.org/A5071781127"], "corresponding_institution_ids":
   ["https://openalex.org/I40120149", "https://openalex.org/I4210089966", "https://openalex.org/I4210150114"],
   "apc_list": {"value": 920, "currency": "GBP", "value_usd": 1128}, "apc_paid": {"value":
-  920, "currency": "GBP", "value_usd": 1128}, "fwci": 0.5396, "has_fulltext": true,
-  "cited_by_count": 1, "citation_normalized_percentile": {"value": 0.72088547, "is_in_top_1_percent":
+  920, "currency": "GBP", "value_usd": 1128}, "fwci": 0.531, "has_fulltext": true,
+  "cited_by_count": 1, "citation_normalized_percentile": {"value": 0.7189068, "is_in_top_1_percent":
   false, "is_in_top_10_percent": false}, "cited_by_percentile_year": {"min": 96, "max":
   98}, "biblio": {"volume": "9", "issue": null, "first_page": "695", "last_page":
   "695"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -8034,11 +8035,11 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   "is_accepted": false, "is_published": false, "raw_source_name": "Wellcome Open Res",
   "raw_type": "Text"}, {"id": "pmh:oai:doaj.org/article:595ea5cdd06e40d0b2ae4b3dc6095491",
   "is_oa": true, "landing_page_url": "https://doaj.org/article/595ea5cdd06e40d0b2ae4b3dc6095491",
-  "pdf_url": null, "source": {"id": "https://openalex.org/S112646816", "display_name":
-  "SHILAP Revista de lepidopterolog\u00eda", "issn_l": "0300-5267", "issn": ["0300-5267",
-  "2340-4078"], "is_oa": true, "is_in_doaj": true, "is_core": false, "host_organization":
-  null, "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
-  [], "type": "journal"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
+  "pdf_url": null, "source": {"id": "https://openalex.org/S4306401280", "display_name":
+  "DOAJ (DOAJ: Directory of Open Access Journals)", "issn_l": null, "issn": null,
+  "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization": null,
+  "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
+  [], "type": "repository"}, "license": "cc-by-sa", "license_id": "https://openalex.org/licenses/cc-by-sa",
   "version": "submittedVersion", "is_accepted": false, "is_published": false, "raw_source_name":
   "Wellcome Open Research, Vol 9 (2024)", "raw_type": "article"}, {"id": "pmh:oai:ora.ox.ac.uk:uuid:a538c9d2-a197-4218-8822-63751d8e3631",
   "is_oa": false, "landing_page_url": null, "pdf_url": null, "source": {"id": "https://openalex.org/S4306402636",
@@ -8093,7 +8094,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   [86], "This": [87], "statistical": [88], "analysis": [89, 96], "plan": [90, 97],
   "expands": [91], "upon": [92], "and": [93], "updates": [94], "outlined": [98], "published":
   [101], "study": [102], "protocol.": [103]}, "counts_by_year": [{"year": 2026, "cited_by_count":
-  1}], "updated_date": "2026-04-28T14:05:53.105641", "created_date": "2024-11-28T00:00:00"},
+  1}], "updated_date": "2026-05-06T08:25:59.206177", "created_date": "2024-11-28T00:00:00"},
   {"id": "https://openalex.org/W4414787932", "doi": "https://doi.org/10.1371/journal.pntd.0013589",
   "title": "Severe dengue in adults: Clinical features from the 2022 dengue outbreak
   at a Vietnamese tertiary hospital", "display_name": "Severe dengue in adults: Clinical
@@ -8270,8 +8271,8 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   ["https://openalex.org/I2802508454", "https://openalex.org/I40120149", "https://openalex.org/I4210115343",
   "https://openalex.org/I4210150114", "https://openalex.org/I4210155479"], "apc_list":
   {"value": 2495, "currency": "USD", "value_usd": 2495}, "apc_paid": {"value": 2495,
-  "currency": "USD", "value_usd": 2495}, "fwci": 1.6628, "has_fulltext": false, "cited_by_count":
-  1, "citation_normalized_percentile": {"value": 0.86834812, "is_in_top_1_percent":
+  "currency": "USD", "value_usd": 2495}, "fwci": 1.6194, "has_fulltext": false, "cited_by_count":
+  1, "citation_normalized_percentile": {"value": 0.86521625, "is_in_top_1_percent":
   false, "is_in_top_10_percent": false}, "cited_by_percentile_year": {"min": 96, "max":
   98}, "biblio": {"volume": "19", "issue": "10", "first_page": "e0013589", "last_page":
   "e0013589"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -8454,11 +8455,11 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   "is_accepted": true, "is_published": true, "raw_source_name": "PLoS neglected tropical
   diseases", "raw_type": null}, {"id": "pmh:oai:doaj.org/article:5522d7da2abf44a5933335a701ffabf4",
   "is_oa": true, "landing_page_url": "https://doaj.org/article/5522d7da2abf44a5933335a701ffabf4",
-  "pdf_url": null, "source": {"id": "https://openalex.org/S112646816", "display_name":
-  "SHILAP Revista de lepidopterolog\u00eda", "issn_l": "0300-5267", "issn": ["0300-5267",
-  "2340-4078"], "is_oa": true, "is_in_doaj": true, "is_core": false, "host_organization":
-  null, "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
-  [], "type": "journal"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
+  "pdf_url": null, "source": {"id": "https://openalex.org/S4306401280", "display_name":
+  "DOAJ (DOAJ: Directory of Open Access Journals)", "issn_l": null, "issn": null,
+  "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization": null,
+  "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
+  [], "type": "repository"}, "license": "cc-by-sa", "license_id": "https://openalex.org/licenses/cc-by-sa",
   "version": "submittedVersion", "is_accepted": false, "is_published": false, "raw_source_name":
   "PLoS Neglected Tropical Diseases, Vol 19, Iss 10, p e0013589 (2025)", "raw_type":
   "article"}, {"id": "pmh:oai:europepmc.org:11321357", "is_oa": true, "landing_page_url":
@@ -8544,7 +8545,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   [281], "different": [284], "host": [285], "these": [289], "features,": [290], "will":
   [291], "contribute": [292], "formulating": [294], "suitable": [295], "treatment":
   [296], "guidelines": [297], "this": [299], "at-risk": [300], "population.": [301]},
-  "counts_by_year": [{"year": 2026, "cited_by_count": 1}], "updated_date": "2026-04-28T06:04:28.489925",
+  "counts_by_year": [{"year": 2026, "cited_by_count": 1}], "updated_date": "2026-05-06T08:25:59.206177",
   "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W7124277710",
   "doi": "https://doi.org/10.1038/s41591-025-04138-z", "title": "Genotype-stratified
   adjunctive dexamethasone for tuberculous meningitis in HIV-negative adults: a randomized
@@ -8589,7 +8590,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   Oxford, UK. jdonovan@oucru.org", "institution_ids": ["https://openalex.org/I40120149"]},
   {"raw_affiliation_string": "Oxford University Clinical Research Unit, Ho Chi Minh
   City, Vietnam. jdonovan@oucru.org", "institution_ids": ["https://openalex.org/I4210150114"]}]},
-  {"author_position": "middle", "author": {"id": "https://openalex.org/A5123143594",
+  {"author_position": "middle", "author": {"id": "https://openalex.org/A5113661597",
   "display_name": "Nguyen Duc Bang", "orcid": null}, "institutions": [{"id": "https://openalex.org/I4210163004",
   "display_name": "Pham Ngoc Thach Hospital", "ror": "https://ror.org/05yevm258",
   "country_code": "VN", "type": "healthcare", "lineage": ["https://openalex.org/I4210163004"]}],
@@ -9006,8 +9007,8 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   ["https://openalex.org/A5071781127"], "corresponding_institution_ids": ["https://openalex.org/I124357947",
   "https://openalex.org/I40120149", "https://openalex.org/I4210089966", "https://openalex.org/I4210150114"],
   "apc_list": {"value": 9750, "currency": "EUR", "value_usd": 11690}, "apc_paid":
-  {"value": 9750, "currency": "EUR", "value_usd": 11690}, "fwci": 26.1123, "has_fulltext":
-  false, "cited_by_count": 1, "citation_normalized_percentile": {"value": 0.9766839,
+  {"value": 9750, "currency": "EUR", "value_usd": 11690}, "fwci": 26.1479, "has_fulltext":
+  false, "cited_by_count": 1, "citation_normalized_percentile": {"value": 0.97652755,
   "is_in_top_1_percent": false, "is_in_top_10_percent": true}, "cited_by_percentile_year":
   {"min": 96, "max": 98}, "biblio": {"volume": "32", "issue": "3", "first_page": "849",
   "last_page": "858"}, "is_retracted": false, "is_paratext": false, "is_xpac": false,
@@ -9203,7 +9204,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   "display_name": null, "funder_award_id": "110179/Z/15/Z", "funder_id": "https://openalex.org/F4320307874",
   "funder_display_name": "Wellcome"}], "funders": [{"id": "https://openalex.org/F4320307874",
   "display_name": "Wellcome", "ror": "https://ror.org/029chgv08"}], "has_content":
-  {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+  {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
   36, "referenced_works": ["https://openalex.org/W1965974931", "https://openalex.org/W1967607476",
   "https://openalex.org/W1968632660", "https://openalex.org/W1972605644", "https://openalex.org/W1979936739",
   "https://openalex.org/W1986514504", "https://openalex.org/W1986607793", "https://openalex.org/W2059831659",
@@ -9266,7 +9267,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   [315], "is": [316], "needed,": [317], "alongside": [318], "targeted,": [320], "more":
   [321], "effective": [322], "anti-inflammatory": [323], "agents": [324], "than":
   [325], "(ClinicalTrials.gov": [327], "NCT03100786": [328], ").": [329]}, "counts_by_year":
-  [{"year": 2026, "cited_by_count": 1}], "updated_date": "2026-05-03T08:25:01.440150",
+  [{"year": 2026, "cited_by_count": 1}], "updated_date": "2026-05-05T08:41:31.759640",
   "created_date": "2026-01-16T00:00:00"}, {"id": "https://openalex.org/W4391574296",
   "doi": "https://doi.org/10.1186/s12879-024-08992-z", "title": "A novel diagnostic
   model for tuberculous meningitis using Bayesian latent class analysis", "display_name":
@@ -9484,8 +9485,8 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   13, "corresponding_author_ids": ["https://openalex.org/A5073343908"], "corresponding_institution_ids":
   ["https://openalex.org/I4210150114"], "apc_list": {"value": 1690, "currency": "GBP",
   "value_usd": 2072}, "apc_paid": {"value": 1690, "currency": "GBP", "value_usd":
-  2072}, "fwci": 2.1493, "has_fulltext": true, "cited_by_count": 4, "citation_normalized_percentile":
-  {"value": 0.85692208, "is_in_top_1_percent": false, "is_in_top_10_percent": false},
+  2072}, "fwci": 2.1242, "has_fulltext": true, "cited_by_count": 4, "citation_normalized_percentile":
+  {"value": 0.85533199, "is_in_top_1_percent": false, "is_in_top_10_percent": false},
   "cited_by_percentile_year": {"min": 94, "max": 96}, "biblio": {"volume": "24", "issue":
   "1", "first_page": "163", "last_page": "163"}, "is_retracted": false, "is_paratext":
   false, "is_xpac": false, "primary_topic": {"id": "https://openalex.org/T11381",
@@ -9655,11 +9656,11 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   null, "version": "submittedVersion", "is_accepted": false, "is_published": false,
   "raw_source_name": null, "raw_type": "PeerReviewed"}, {"id": "pmh:oai:doaj.org/article:37362129d3004cc6911f5d8f62d8354d",
   "is_oa": true, "landing_page_url": "https://doaj.org/article/37362129d3004cc6911f5d8f62d8354d",
-  "pdf_url": null, "source": {"id": "https://openalex.org/S112646816", "display_name":
-  "SHILAP Revista de lepidopterolog\u00eda", "issn_l": "0300-5267", "issn": ["0300-5267",
-  "2340-4078"], "is_oa": true, "is_in_doaj": true, "is_core": false, "host_organization":
-  null, "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
-  [], "type": "journal"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
+  "pdf_url": null, "source": {"id": "https://openalex.org/S4306401280", "display_name":
+  "DOAJ (DOAJ: Directory of Open Access Journals)", "issn_l": null, "issn": null,
+  "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization": null,
+  "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
+  [], "type": "repository"}, "license": "cc-by-sa", "license_id": "https://openalex.org/licenses/cc-by-sa",
   "version": "submittedVersion", "is_accepted": false, "is_published": false, "raw_source_name":
   "BMC Infectious Diseases, Vol 24, Iss 1, Pp 1-13 (2024)", "raw_type": "article"}],
   "best_oa_location": {"id": "doi:10.1186/s12879-024-08992-z", "is_oa": true, "landing_page_url":
@@ -9750,7 +9751,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   "analysis,": [266], "combining": [267], "factors.": [273], "Models": [274], "accurate,":
   [276], "well-calibrated,": [277], "support": [280], "both": [281], "practice": [283],
   "research.": [285]}, "counts_by_year": [{"year": 2025, "cited_by_count": 2}, {"year":
-  2024, "cited_by_count": 2}], "updated_date": "2026-04-29T09:16:38.111599", "created_date":
+  2024, "cited_by_count": 2}], "updated_date": "2026-05-06T08:25:59.206177", "created_date":
   "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4410631163", "doi": "https://doi.org/10.1371/journal.pone.0321655",
   "title": "Convolutional neural network using magnetic resonance brain imaging to
   predict outcome from tuberculosis meningitis", "display_name": "Convolutional neural
@@ -9914,8 +9915,8 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   "https://openalex.org/I40120149", "https://openalex.org/I4210089966", "https://openalex.org/I4210150114",
   "https://openalex.org/I4210155479"], "apc_list": {"value": 1805, "currency": "USD",
   "value_usd": 1805}, "apc_paid": {"value": 1805, "currency": "USD", "value_usd":
-  1805}, "fwci": 3.4348, "has_fulltext": false, "cited_by_count": 2, "citation_normalized_percentile":
-  {"value": 0.9136704, "is_in_top_1_percent": false, "is_in_top_10_percent": true},
+  1805}, "fwci": 3.3388, "has_fulltext": false, "cited_by_count": 2, "citation_normalized_percentile":
+  {"value": 0.91105827, "is_in_top_1_percent": false, "is_in_top_10_percent": true},
   "cited_by_percentile_year": {"min": 95, "max": 96}, "biblio": {"volume": "20", "issue":
   "5", "first_page": "e0321655", "last_page": "e0321655"}, "is_retracted": false,
   "is_paratext": false, "is_xpac": false, "primary_topic": {"id": "https://openalex.org/T11381",
@@ -10095,11 +10096,11 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   null, "version": "publishedVersion", "is_accepted": true, "is_published": true,
   "raw_source_name": "PloS one", "raw_type": null}, {"id": "pmh:oai:doaj.org/article:d65d7f39c31043b9a44b9c87d6198a21",
   "is_oa": true, "landing_page_url": "https://doaj.org/article/d65d7f39c31043b9a44b9c87d6198a21",
-  "pdf_url": null, "source": {"id": "https://openalex.org/S112646816", "display_name":
-  "SHILAP Revista de lepidopterolog\u00eda", "issn_l": "0300-5267", "issn": ["0300-5267",
-  "2340-4078"], "is_oa": true, "is_in_doaj": true, "is_core": false, "host_organization":
-  null, "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
-  [], "type": "journal"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
+  "pdf_url": null, "source": {"id": "https://openalex.org/S4306401280", "display_name":
+  "DOAJ (DOAJ: Directory of Open Access Journals)", "issn_l": null, "issn": null,
+  "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization": null,
+  "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
+  [], "type": "repository"}, "license": "cc-by-sa", "license_id": "https://openalex.org/licenses/cc-by-sa",
   "version": "submittedVersion", "is_accepted": false, "is_published": false, "raw_source_name":
   "PLoS ONE, Vol 20, Iss 5, p e0321655 (2025)", "raw_type": "article"}, {"id": "pmh:oai:pubmedcentral.nih.gov:12101703",
   "is_oa": true, "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12101703",
@@ -10200,7 +10201,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   [278], "information": [279], "can": [280], "provide": [281], "added": [282], "unwanted":
   [286], "outcomes": [287], "TBM.": [289], "However,": [290], "confirm": [292], "this":
   [293], "finding,": [294], "larger": [296], "dataset": [297], "needed.": [299]},
-  "counts_by_year": [{"year": 2025, "cited_by_count": 2}], "updated_date": "2026-04-29T09:16:38.111599",
+  "counts_by_year": [{"year": 2025, "cited_by_count": 2}], "updated_date": "2026-05-06T08:25:59.206177",
   "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4384696586",
   "doi": "https://doi.org/10.21203/rs.3.rs-3139645/v1", "title": "A novel diagnostic
   model for Tuberculous meningitis using Bayesian Latent class analysis", "display_name":
@@ -11116,9 +11117,9 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   Minh City, Vietnam"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string":
   "Oxford University Clinical Research Unit, 764 Vo Van Kiet, Quan 5, T.P, Ho Chi
   Minh City, Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}]},
-  {"author_position": "middle", "author": {"id": "https://openalex.org/A5127804142",
-  "display_name": "Claus Bogh", "orcid": null}, "institutions": [], "countries": [],
-  "is_corresponding": false, "raw_author_name": "Claus Bogh", "raw_affiliation_strings":
+  {"author_position": "middle", "author": {"id": "https://openalex.org/A5013418177",
+  "display_name": "Claus B\u00f8gh", "orcid": null}, "institutions": [], "countries":
+  [], "is_corresponding": false, "raw_author_name": "Claus Bogh", "raw_affiliation_strings":
   ["Sumba Foundation, Sumba, Indonesia"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string":
   "Sumba Foundation, Sumba, Indonesia", "institution_ids": []}]}, {"author_position":
   "middle", "author": {"id": "https://openalex.org/A5030197858", "display_name": "Phong
@@ -11369,21 +11370,22 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   "display_name": "Nguy\u1ec5n Th\u1ecb Qu\u1ef3nh Trang", "orcid": null}, "institutions":
   [], "countries": [], "is_corresponding": false, "raw_author_name": "Nguyen Thi Huyen
   Trang", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations": []}, {"author_position":
-  "middle", "author": {"id": "https://openalex.org/A5127814448", "display_name": "Nguyen
-  Thi Kim Ngoc", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
-  false, "raw_author_name": "Nguyen Thi Kim Ngoc", "raw_affiliation_strings": [],
+  "middle", "author": {"id": "https://openalex.org/A5005699355", "display_name": "Nguyen
+  Thi Kim Ngoc", "orcid": "https://orcid.org/0009-0002-5634-7866"}, "institutions":
+  [], "countries": [], "is_corresponding": false, "raw_author_name": "Nguyen Thi Kim
+  Ngoc", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations": []}, {"author_position":
+  "middle", "author": {"id": "https://openalex.org/A5127837000", "display_name": "Nguyen
+  Thi Kim Tuyen", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+  false, "raw_author_name": "Nguyen Thi Kim Tuyen", "raw_affiliation_strings": [],
   "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
-  {"id": "https://openalex.org/A5127837000", "display_name": "Nguyen Thi Kim Tuyen",
-  "orcid": null}, "institutions": [], "countries": [], "is_corresponding": false,
-  "raw_author_name": "Nguyen Thi Kim Tuyen", "raw_affiliation_strings": [], "raw_orcid":
-  null, "affiliations": []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5108063659",
-  "display_name": "Nguy\u1ec5n Th\u1ecb Ng\u1ecdc Di\u1ec7p", "orcid": "https://orcid.org/0009-0000-8571-0113"},
-  "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
-  "Nguyen Thi Ngoc Diep", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
-  []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5127861906",
-  "display_name": "Nguyen Thi Phuong Dung", "orcid": null}, "institutions": [], "countries":
-  [], "is_corresponding": false, "raw_author_name": "Nguyen Thi Phuong Dung", "raw_affiliation_strings":
-  [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
+  {"id": "https://openalex.org/A5108063659", "display_name": "Nguy\u1ec5n Th\u1ecb
+  Ng\u1ecdc Di\u1ec7p", "orcid": "https://orcid.org/0009-0000-8571-0113"}, "institutions":
+  [], "countries": [], "is_corresponding": false, "raw_author_name": "Nguyen Thi Ngoc
+  Diep", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations": []}, {"author_position":
+  "middle", "author": {"id": "https://openalex.org/A5127861906", "display_name": "Nguyen
+  Thi Phuong Dung", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+  false, "raw_author_name": "Nguyen Thi Phuong Dung", "raw_affiliation_strings": [],
+  "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
   {"id": "https://openalex.org/A5127780146", "display_name": "Nguyen Thanh Tam", "orcid":
   null}, "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
   "Nguyen Thi Tam", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
@@ -11462,28 +11464,29 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   {"id": "https://openalex.org/A5127807177", "display_name": "Tran Minh Hien", "orcid":
   null}, "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
   "Tran Minh Hien", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
-  []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5109379078",
-  "display_name": "Tran Thanh", "orcid": null}, "institutions": [], "countries": [],
-  "is_corresponding": false, "raw_author_name": "Tran Tan Thanh", "raw_affiliation_strings":
-  [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
-  {"id": "https://openalex.org/A5101806544", "display_name": "Tr\u1ea7n Th\u1ecb B\u00edch
-  Ng\u1ecdc", "orcid": "https://orcid.org/0000-0002-4129-9024"}, "institutions": [],
-  "countries": [], "is_corresponding": false, "raw_author_name": "Tran Thi Bich Ngoc",
+  []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5047172085",
+  "display_name": "Tran Tan Thanh", "orcid": "https://orcid.org/0000-0002-8096-7750"},
+  "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+  "Tran Tan Thanh", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
+  []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5101806544",
+  "display_name": "Tr\u1ea7n Th\u1ecb B\u00edch Ng\u1ecdc", "orcid": "https://orcid.org/0000-0002-4129-9024"},
+  "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+  "Tran Thi Bich Ngoc", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
+  []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5127865742",
+  "display_name": "Tr\u1ea7n Th\u1ecb H\u1eb1ng", "orcid": null}, "institutions":
+  [], "countries": [], "is_corresponding": false, "raw_author_name": "Tran Thi Hang",
   "raw_affiliation_strings": [], "raw_orcid": null, "affiliations": []}, {"author_position":
-  "middle", "author": {"id": "https://openalex.org/A5127865742", "display_name": "Tr\u1ea7n
-  Th\u1ecb H\u1eb1ng", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
-  false, "raw_author_name": "Tran Thi Hang", "raw_affiliation_strings": [], "raw_orcid":
-  null, "affiliations": []}, {"author_position": "middle", "author": {"id": null,
-  "display_name": "Tran Tinh Hien", "orcid": null}, "institutions": [], "countries":
-  [], "is_corresponding": false, "raw_author_name": "Tran Tinh Hien", "raw_affiliation_strings":
-  [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
-  {"id": "https://openalex.org/A5109666784", "display_name": "Tr\u1ecbnh S\u01a1n
-  T\u00f9ng", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
-  false, "raw_author_name": "Trinh Son Tung", "raw_affiliation_strings": [], "raw_orcid":
-  null, "affiliations": []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5099295303",
-  "display_name": "van Doorn H. Rogier", "orcid": null}, "institutions": [], "countries":
-  [], "is_corresponding": false, "raw_author_name": "van Doorn H. Rogier", "raw_affiliation_strings":
-  [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
+  "middle", "author": {"id": null, "display_name": "Tran Tinh Hien", "orcid": null},
+  "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+  "Tran Tinh Hien", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
+  []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5109666784",
+  "display_name": "Tr\u1ecbnh S\u01a1n T\u00f9ng", "orcid": null}, "institutions":
+  [], "countries": [], "is_corresponding": false, "raw_author_name": "Trinh Son Tung",
+  "raw_affiliation_strings": [], "raw_orcid": null, "affiliations": []}, {"author_position":
+  "middle", "author": {"id": "https://openalex.org/A5099295303", "display_name": "van
+  Doorn H. Rogier", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+  false, "raw_author_name": "van Doorn H. Rogier", "raw_affiliation_strings": [],
+  "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
   {"id": "https://openalex.org/A5109735612", "display_name": "Vidaillac Celine Pascale",
   "orcid": null}, "institutions": [], "countries": [], "is_corresponding": false,
   "raw_author_name": "Vidaillac Celine Pascale", "raw_affiliation_strings": [], "raw_orcid":
@@ -11528,7 +11531,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   "https://openalex.org/I4210150114"], "apc_list": {"value": 1190, "currency": "GBP",
   "value_usd": 1459}, "apc_paid": {"value": 1190, "currency": "GBP", "value_usd":
   1459}, "fwci": 0.0, "has_fulltext": true, "cited_by_count": 0, "citation_normalized_percentile":
-  {"value": 0.39471377, "is_in_top_1_percent": false, "is_in_top_10_percent": false},
+  {"value": 0.37938225, "is_in_top_1_percent": false, "is_in_top_10_percent": false},
   "cited_by_percentile_year": null, "biblio": {"volume": "27", "issue": "1", "first_page":
   null, "last_page": null}, "is_retracted": false, "is_paratext": false, "is_xpac":
   false, "primary_topic": {"id": "https://openalex.org/T10168", "display_name": "COVID-19
@@ -11619,11 +11622,11 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   "is_accepted": true, "is_published": true, "raw_source_name": "BMC medical ethics",
   "raw_type": null}, {"id": "pmh:oai:doaj.org/article:d0d7986fb99f4f9b83d3dbc92ed8c307",
   "is_oa": true, "landing_page_url": "https://doaj.org/article/d0d7986fb99f4f9b83d3dbc92ed8c307",
-  "pdf_url": null, "source": {"id": "https://openalex.org/S112646816", "display_name":
-  "SHILAP Revista de lepidopterolog\u00eda", "issn_l": "0300-5267", "issn": ["0300-5267",
-  "2340-4078"], "is_oa": true, "is_in_doaj": true, "is_core": false, "host_organization":
-  null, "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
-  [], "type": "journal"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
+  "pdf_url": null, "source": {"id": "https://openalex.org/S4306401280", "display_name":
+  "DOAJ (DOAJ: Directory of Open Access Journals)", "issn_l": null, "issn": null,
+  "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization": null,
+  "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
+  [], "type": "repository"}, "license": "cc-by-sa", "license_id": "https://openalex.org/licenses/cc-by-sa",
   "version": "submittedVersion", "is_accepted": false, "is_published": false, "raw_source_name":
   "BMC Medical Ethics, Vol 27, Iss 1 (2026)", "raw_type": "article"}, {"id": "pmh:oai:pubmedcentral.nih.gov:13059250",
   "is_oa": true, "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13059250/",
@@ -11646,7 +11649,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   true, "is_published": true, "raw_source_name": "BMC Medical Ethics", "raw_type":
   "journal-article"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
   "display_name": "Good health and well-being", "score": 0.42751845717430115}], "awards":
-  [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false}, "content_urls":
+  [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls":
   null, "referenced_works_count": 24, "referenced_works": ["https://openalex.org/W1566125242",
   "https://openalex.org/W1989224082", "https://openalex.org/W2045853031", "https://openalex.org/W2148183484",
   "https://openalex.org/W2485540656", "https://openalex.org/W2887820101", "https://openalex.org/W2983441955",
@@ -11709,7 +11712,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   [313], "than": [314], "relying": [315], "groupings": [317], "impacted": [319], "people.":
   [320], "An": [321], "understanding": [322], "context": [326], "is": [327], "essential":
   [329], "improve": [331], "uptake": [333], "effectiveness": [335], "measures.": [339]},
-  "counts_by_year": [], "updated_date": "2026-05-04T08:30:34.212998", "created_date":
+  "counts_by_year": [], "updated_date": "2026-05-06T08:25:59.206177", "created_date":
   "2026-03-03T00:00:00"}, {"id": "https://openalex.org/W7154964006", "doi": "https://doi.org/10.1186/s40635-026-00899-0",
   "title": "Predictive value of ventriculo-arterial coupling for hypotension after
   induction of anaesthesia: a prospective observational cohort study", "display_name":
@@ -11862,7 +11865,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   ["https://openalex.org/I2802508454", "https://openalex.org/I4210100991"], "apc_list":
   {"value": 1690, "currency": "GBP", "value_usd": 2072}, "apc_paid": {"value": 1690,
   "currency": "GBP", "value_usd": 2072}, "fwci": 0.0, "has_fulltext": true, "cited_by_count":
-  0, "citation_normalized_percentile": {"value": 0.88023387, "is_in_top_1_percent":
+  0, "citation_normalized_percentile": {"value": 0.78654163, "is_in_top_1_percent":
   false, "is_in_top_10_percent": false}, "cited_by_percentile_year": null, "biblio":
   {"volume": "14", "issue": "1", "first_page": null, "last_page": null}, "is_retracted":
   false, "is_paratext": false, "is_xpac": false, "primary_topic": {"id": "https://openalex.org/T11700",
@@ -11958,11 +11961,11 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   "raw_source_name": "Intensive care medicine experimental", "raw_type": null}, {"id":
   "pmh:oai:doaj.org/article:c4838b7486a54249abd497451c6273d9", "is_oa": true, "landing_page_url":
   "https://doaj.org/article/c4838b7486a54249abd497451c6273d9", "pdf_url": null, "source":
-  {"id": "https://openalex.org/S112646816", "display_name": "SHILAP Revista de lepidopterolog\u00eda",
-  "issn_l": "0300-5267", "issn": ["0300-5267", "2340-4078"], "is_oa": true, "is_in_doaj":
-  true, "is_core": false, "host_organization": null, "host_organization_name": null,
+  {"id": "https://openalex.org/S4306401280", "display_name": "DOAJ (DOAJ: Directory
+  of Open Access Journals)", "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj":
+  false, "is_core": false, "host_organization": null, "host_organization_name": null,
   "host_organization_lineage": [], "host_organization_lineage_names": [], "type":
-  "journal"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
+  "repository"}, "license": "cc-by-sa", "license_id": "https://openalex.org/licenses/cc-by-sa",
   "version": "submittedVersion", "is_accepted": false, "is_published": false, "raw_source_name":
   "Intensive Care Medicine Experimental, Vol 14, Iss 1 (2026)", "raw_type": "article"},
   {"id": "pmh:oai:pubmedcentral.nih.gov:13100084", "is_oa": true, "landing_page_url":
@@ -12039,7 +12042,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   "improved": [222], "discriminatory": [224], "performance": [225], "meaningful":
   [239], "improvement": [240], "risk": [242], "reclassification,": [243], "despite":
   [244], "only": [245], "modest": [246], "gains": [247], "overall": [249], "discrimination.":
-  [250]}, "counts_by_year": [], "updated_date": "2026-04-29T09:16:38.111599", "created_date":
+  [250]}, "counts_by_year": [], "updated_date": "2026-05-06T08:25:59.206177", "created_date":
   "2026-04-21T00:00:00"}, {"id": "https://openalex.org/W7155169850", "doi": "https://doi.org/10.6084/m9.figshare.32070915.v1",
   "title": "Additional file 2 of Predictive value of ventriculo-arterial coupling
   for hypotension after induction of anaesthesia: a prospective observational cohort
@@ -12636,7 +12639,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   false, "is_published": false, "raw_source_name": null, "raw_type": "article-journal"},
   "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/2", "display_name":
   "Zero hunger", "score": 0.5143677592277527}], "awards": [], "funders": [], "has_content":
-  {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+  {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
   0, "referenced_works": [], "related_works": [], "abstract_inverted_index": {"Supplementary":
   [0], "Material": [1], "1.": [2]}, "counts_by_year": [], "updated_date": "2026-04-23T06:20:18.424754",
   "created_date": "2026-04-23T00:00:00"}, {"id": "https://openalex.org/W7155193550",
@@ -13065,7 +13068,7 @@ body: '{"meta": {"count": 24, "db_response_time_ms": 24, "page": 1, "per_page": 
   false, "is_published": false, "raw_source_name": null, "raw_type": "article-journal"},
   "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/2", "display_name":
   "Zero hunger", "score": 0.5143677592277527}], "awards": [], "funders": [], "has_content":
-  {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+  {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
   0, "referenced_works": [], "related_works": [], "abstract_inverted_index": {"Supplementary":
   [0], "Material": [1], "1.": [2]}, "counts_by_year": [], "updated_date": "2026-04-23T06:20:18.424754",
   "created_date": "2026-04-23T00:00:00"}, {"id": "https://openalex.org/W7155236017",
