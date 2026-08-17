@@ -1,7 +1,7 @@
 url: https://api.openalex.org/works?filter=authorships.author.id:a5073343908|a5123129713&per-page=200
 status: 200
 content_type: application/json
-body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 200,
+body: '{"meta": {"count": 25, "db_response_time_ms": 19, "page": 1, "per_page": 200,
   "groups_count": null, "x_query": {"oql": "works where author is (a5073343908 or
   a5123129713)", "oqo": {"get_rows": "works", "filter_rows": [{"join": "or", "filters":
   [{"column_id": "authorships.author.id", "value": "a5073343908"}, {"column_id": "authorships.author.id",
@@ -5907,8 +5907,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   11, "corresponding_author_ids": ["https://openalex.org/A5023117088"], "corresponding_institution_ids":
   ["https://openalex.org/I183935753", "https://openalex.org/I4210119896"], "apc_list":
   {"value": 2390, "currency": "USD", "value_usd": 2390}, "apc_paid": {"value": 2390,
-  "currency": "USD", "value_usd": 2390}, "fwci": 3.3917, "has_fulltext": true, "cited_by_count":
-  8, "citation_normalized_percentile": {"value": 0.92887729, "is_in_top_1_percent":
+  "currency": "USD", "value_usd": 2390}, "fwci": 3.3591, "has_fulltext": true, "cited_by_count":
+  8, "citation_normalized_percentile": {"value": 0.92804981, "is_in_top_1_percent":
   false, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 97, "max":
   99}, "biblio": {"volume": "14", "issue": "1", "first_page": "17581", "last_page":
   "17581"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -6151,15 +6151,16 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   "repository"}, "license": null, "license_id": null, "version": "publishedVersion",
   "is_accepted": true, "is_published": true, "raw_source_name": "Scientific reports",
   "raw_type": null}, {"id": "pmh:oai:eprints.whiterose.ac.uk:236614", "is_oa": false,
-  "landing_page_url": null, "pdf_url": null, "source": {"id": "https://openalex.org/S4306400854",
-  "display_name": "White Rose Research Online (University of Leeds, The University
-  of Sheffield, University of York)", "issn_l": null, "issn": null, "is_oa": false,
-  "is_in_doaj": false, "is_core": false, "host_organization": "https://openalex.org/I2800616092",
-  "host_organization_name": "White Rose University Consortium", "host_organization_lineage":
-  ["https://openalex.org/I2800616092"], "host_organization_lineage_names": [], "type":
-  "repository"}, "license": null, "license_id": null, "version": "acceptedVersion",
-  "is_accepted": true, "is_published": false, "raw_source_name": null, "raw_type":
-  "Article"}, {"id": "pmh:oai:ora.ox.ac.uk:uuid:6cc20788-7ef9-48d7-be5e-73b80418ed5d",
+  "landing_page_url": "https://eprints.whiterose.ac.uk/id/eprint/236614/1/Computer-aided%20prognosis%20of%20tuberculous%20meningitis%20combining%20imaging%20and%20non-imaging%20data.pdf",
+  "pdf_url": "https://eprints.whiterose.ac.uk/id/eprint/236614/1/Computer-aided%20prognosis%20of%20tuberculous%20meningitis%20combining%20imaging%20and%20non-imaging%20data.pdf",
+  "source": {"id": "https://openalex.org/S4306400854", "display_name": "White Rose
+  Research Online (University of Leeds, The University of Sheffield, University of
+  York)", "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core":
+  false, "host_organization": "https://openalex.org/I2800616092", "host_organization_name":
+  "White Rose University Consortium", "host_organization_lineage": ["https://openalex.org/I2800616092"],
+  "host_organization_lineage_names": [], "type": "repository"}, "license": null, "license_id":
+  null, "version": "acceptedVersion", "is_accepted": true, "is_published": false,
+  "raw_source_name": null, "raw_type": "Article"}, {"id": "pmh:oai:ora.ox.ac.uk:uuid:6cc20788-7ef9-48d7-be5e-73b80418ed5d",
   "is_oa": true, "landing_page_url": "https://ora.ox.ac.uk/objects/uuid:6cc20788-7ef9-48d7-be5e-73b80418ed5d",
   "pdf_url": "https://ora.ox.ac.uk/objects/uuid:6cc20788-7ef9-48d7-be5e-73b80418ed5d",
   "source": {"id": "https://openalex.org/S4306402636", "display_name": "Oxford University
@@ -6314,7 +6315,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   "data,": [252], "model.": [257], "has": [260], "potential": [262], "accurately":
   [264], "progression": [267], "timely": [270], "intervention.": [272]}, "counts_by_year":
   [{"year": 2026, "cited_by_count": 2}, {"year": 2025, "cited_by_count": 6}], "updated_date":
-  "2026-08-08T01:25:22.217667", "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W7124277710",
+  "2026-08-11T07:18:39.950985", "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W7124277710",
   "doi": "https://doi.org/10.1038/s41591-025-04138-z", "title": "Genotype-stratified
   adjunctive dexamethasone for tuberculous meningitis in HIV-negative adults: a randomized
   controlled phase 3 trial", "display_name": "Genotype-stratified adjunctive dexamethasone
@@ -6520,26 +6521,26 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   Ho Chi Minh City, Vietnam", "institution_ids": ["https://openalex.org/I4210163004"]},
   {"raw_affiliation_string": "School of Medicine, Vietnam National University of Ho
   Chi Minh City, Ho Chi Minh City, Vietnam", "institution_ids": ["https://openalex.org/I123565023"]}]},
-  {"author_position": "middle", "author": {"id": null, "display_name": "Kieu Nguyet
-  Oanh Pham", "orcid": null}, "institutions": [{"id": "https://openalex.org/I4210155479",
-  "display_name": "Hospital for Tropical Diseases", "ror": "https://ror.org/040tqsb23",
-  "country_code": "VN", "type": "healthcare", "lineage": ["https://openalex.org/I4210155479"]}],
-  "countries": ["VN"], "is_corresponding": false, "raw_author_name": "Kieu Nguyet
-  Oanh Pham", "raw_affiliation_strings": ["Hospital for Tropical Diseases, Ho Chi
-  Minh City, Vietnam"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string":
-  "Hospital for Tropical Diseases, Ho Chi Minh City, Vietnam", "institution_ids":
-  ["https://openalex.org/I4210155479"]}]}, {"author_position": "middle", "author":
-  {"id": "https://openalex.org/A5108645362", "display_name": "Do Dang Anh Thu", "orcid":
-  null}, "institutions": [{"id": "https://openalex.org/I4210150114", "display_name":
-  "Oxford University Clinical Research Unit", "ror": "https://ror.org/05rehad94",
+  {"author_position": "middle", "author": {"id": "https://openalex.org/A5094166669",
+  "display_name": "Ki\u1ec1u Nguy\u1ec7t Oanh Ph\u1ea1m", "orcid": null}, "institutions":
+  [{"id": "https://openalex.org/I4210155479", "display_name": "Hospital for Tropical
+  Diseases", "ror": "https://ror.org/040tqsb23", "country_code": "VN", "type": "healthcare",
+  "lineage": ["https://openalex.org/I4210155479"]}], "countries": ["VN"], "is_corresponding":
+  false, "raw_author_name": "Kieu Nguyet Oanh Pham", "raw_affiliation_strings": ["Hospital
+  for Tropical Diseases, Ho Chi Minh City, Vietnam"], "raw_orcid": null, "affiliations":
+  [{"raw_affiliation_string": "Hospital for Tropical Diseases, Ho Chi Minh City, Vietnam",
+  "institution_ids": ["https://openalex.org/I4210155479"]}]}, {"author_position":
+  "middle", "author": {"id": "https://openalex.org/A5108645362", "display_name": "Do
+  Dang Anh Thu", "orcid": null}, "institutions": [{"id": "https://openalex.org/I4210150114",
+  "display_name": "Oxford University Clinical Research Unit", "ror": "https://ror.org/05rehad94",
   "country_code": "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149",
   "https://openalex.org/I4210150114", "https://openalex.org/I87048295"]}], "countries":
   ["VN"], "is_corresponding": false, "raw_author_name": "Dang Anh Thu Do", "raw_affiliation_strings":
   ["Oxford University Clinical Research Unit, Ho Chi Minh City, Vietnam"], "raw_orcid":
   null, "affiliations": [{"raw_affiliation_string": "Oxford University Clinical Research
   Unit, Ho Chi Minh City, Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}]},
-  {"author_position": "middle", "author": {"id": null, "display_name": "Thi Mai Trang
-  Nguyen", "orcid": null}, "institutions": [{"id": "https://openalex.org/I40120149",
+  {"author_position": "middle", "author": {"id": "https://openalex.org/A5006754739",
+  "display_name": "Thi-Mai Nguyen", "orcid": null}, "institutions": [{"id": "https://openalex.org/I40120149",
   "display_name": "University of Oxford", "ror": "https://ror.org/052gg0110", "country_code":
   "GB", "type": "education", "lineage": ["https://openalex.org/I40120149"]}, {"id":
   "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
@@ -6775,8 +6776,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   ["https://openalex.org/A5071781127"], "corresponding_institution_ids": ["https://openalex.org/I124357947",
   "https://openalex.org/I40120149", "https://openalex.org/I4210089966", "https://openalex.org/I4210150114"],
   "apc_list": {"value": 11690, "currency": "USD", "value_usd": 11690}, "apc_paid":
-  {"value": 11690, "currency": "USD", "value_usd": 11690}, "fwci": 61.3687, "has_fulltext":
-  false, "cited_by_count": 6, "citation_normalized_percentile": {"value": 0.99891664,
+  {"value": 11690, "currency": "USD", "value_usd": 11690}, "fwci": 55.2639, "has_fulltext":
+  false, "cited_by_count": 6, "citation_normalized_percentile": {"value": 0.99878539,
   "is_in_top_1_percent": true, "is_in_top_10_percent": true}, "cited_by_percentile_year":
   {"min": 98, "max": 99}, "biblio": {"volume": "32", "issue": "3", "first_page": "849",
   "last_page": "858"}, "is_retracted": false, "is_paratext": false, "is_xpac": false,
@@ -6870,23 +6871,28 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   "D000328", "descriptor_name": "Adult", "qualifier_ui": null, "qualifier_name": null,
   "is_major_topic": false}, {"descriptor_ui": "D000328", "descriptor_name": "Adult",
   "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui":
-  "D003907", "descriptor_name": "Dexamethasone", "qualifier_ui": "Q000008", "qualifier_name":
-  "administration & dosage", "is_major_topic": true}, {"descriptor_ui": "D003907",
-  "descriptor_name": "Dexamethasone", "qualifier_ui": "Q000008", "qualifier_name":
-  "administration & dosage", "is_major_topic": true}, {"descriptor_ui": "D003907",
-  "descriptor_name": "Dexamethasone", "qualifier_ui": "Q000008", "qualifier_name":
-  "administration & dosage", "is_major_topic": true}, {"descriptor_ui": "D003907",
-  "descriptor_name": "Dexamethasone", "qualifier_ui": "Q000008", "qualifier_name":
-  "administration & dosage", "is_major_topic": true}, {"descriptor_ui": "D003907",
-  "descriptor_name": "Dexamethasone", "qualifier_ui": "Q000008", "qualifier_name":
-  "administration & dosage", "is_major_topic": true}, {"descriptor_ui": "D003907",
-  "descriptor_name": "Dexamethasone", "qualifier_ui": "Q000008", "qualifier_name":
-  "administration & dosage", "is_major_topic": true}, {"descriptor_ui": "D003907",
-  "descriptor_name": "Dexamethasone", "qualifier_ui": "Q000008", "qualifier_name":
-  "administration & dosage", "is_major_topic": true}, {"descriptor_ui": "D003907",
-  "descriptor_name": "Dexamethasone", "qualifier_ui": "Q000008", "qualifier_name":
-  "administration & dosage", "is_major_topic": true}, {"descriptor_ui": "D003907",
-  "descriptor_name": "Dexamethasone", "qualifier_ui": "Q000009", "qualifier_name":
+  "D000328", "descriptor_name": "Adult", "qualifier_ui": null, "qualifier_name": null,
+  "is_major_topic": false}, {"descriptor_ui": "D003907", "descriptor_name": "Dexamethasone",
+  "qualifier_ui": "Q000008", "qualifier_name": "administration & dosage", "is_major_topic":
+  true}, {"descriptor_ui": "D003907", "descriptor_name": "Dexamethasone", "qualifier_ui":
+  "Q000008", "qualifier_name": "administration & dosage", "is_major_topic": true},
+  {"descriptor_ui": "D003907", "descriptor_name": "Dexamethasone", "qualifier_ui":
+  "Q000008", "qualifier_name": "administration & dosage", "is_major_topic": true},
+  {"descriptor_ui": "D003907", "descriptor_name": "Dexamethasone", "qualifier_ui":
+  "Q000008", "qualifier_name": "administration & dosage", "is_major_topic": true},
+  {"descriptor_ui": "D003907", "descriptor_name": "Dexamethasone", "qualifier_ui":
+  "Q000008", "qualifier_name": "administration & dosage", "is_major_topic": true},
+  {"descriptor_ui": "D003907", "descriptor_name": "Dexamethasone", "qualifier_ui":
+  "Q000008", "qualifier_name": "administration & dosage", "is_major_topic": true},
+  {"descriptor_ui": "D003907", "descriptor_name": "Dexamethasone", "qualifier_ui":
+  "Q000008", "qualifier_name": "administration & dosage", "is_major_topic": true},
+  {"descriptor_ui": "D003907", "descriptor_name": "Dexamethasone", "qualifier_ui":
+  "Q000008", "qualifier_name": "administration & dosage", "is_major_topic": true},
+  {"descriptor_ui": "D003907", "descriptor_name": "Dexamethasone", "qualifier_ui":
+  "Q000008", "qualifier_name": "administration & dosage", "is_major_topic": true},
+  {"descriptor_ui": "D003907", "descriptor_name": "Dexamethasone", "qualifier_ui":
+  "Q000009", "qualifier_name": "adverse effects", "is_major_topic": true}, {"descriptor_ui":
+  "D003907", "descriptor_name": "Dexamethasone", "qualifier_ui": "Q000009", "qualifier_name":
   "adverse effects", "is_major_topic": true}, {"descriptor_ui": "D003907", "descriptor_name":
   "Dexamethasone", "qualifier_ui": "Q000009", "qualifier_name": "adverse effects",
   "is_major_topic": true}, {"descriptor_ui": "D003907", "descriptor_name": "Dexamethasone",
@@ -6914,8 +6920,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   "qualifier_ui": "Q000627", "qualifier_name": "therapeutic use", "is_major_topic":
   true}, {"descriptor_ui": "D003907", "descriptor_name": "Dexamethasone", "qualifier_ui":
   "Q000627", "qualifier_name": "therapeutic use", "is_major_topic": true}, {"descriptor_ui":
-  "D004851", "descriptor_name": "Epoxide Hydrolases", "qualifier_ui": "Q000235", "qualifier_name":
-  "genetics", "is_major_topic": true}, {"descriptor_ui": "D004851", "descriptor_name":
+  "D003907", "descriptor_name": "Dexamethasone", "qualifier_ui": "Q000627", "qualifier_name":
+  "therapeutic use", "is_major_topic": true}, {"descriptor_ui": "D004851", "descriptor_name":
   "Epoxide Hydrolases", "qualifier_ui": "Q000235", "qualifier_name": "genetics", "is_major_topic":
   true}, {"descriptor_ui": "D004851", "descriptor_name": "Epoxide Hydrolases", "qualifier_ui":
   "Q000235", "qualifier_name": "genetics", "is_major_topic": true}, {"descriptor_ui":
@@ -6927,67 +6933,83 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   "D004851", "descriptor_name": "Epoxide Hydrolases", "qualifier_ui": "Q000235", "qualifier_name":
   "genetics", "is_major_topic": true}, {"descriptor_ui": "D004851", "descriptor_name":
   "Epoxide Hydrolases", "qualifier_ui": "Q000235", "qualifier_name": "genetics", "is_major_topic":
-  true}, {"descriptor_ui": "D005260", "descriptor_name": "Female", "qualifier_ui":
-  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005260",
-  "descriptor_name": "Female", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
-  false}, {"descriptor_ui": "D005260", "descriptor_name": "Female", "qualifier_ui":
-  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005260",
-  "descriptor_name": "Female", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
-  false}, {"descriptor_ui": "D005260", "descriptor_name": "Female", "qualifier_ui":
-  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005260",
-  "descriptor_name": "Female", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
-  false}, {"descriptor_ui": "D005260", "descriptor_name": "Female", "qualifier_ui":
-  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005260",
-  "descriptor_name": "Female", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
-  false}, {"descriptor_ui": "D005838", "descriptor_name": "Genotype", "qualifier_ui":
-  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005838",
-  "descriptor_name": "Genotype", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
-  false}, {"descriptor_ui": "D005838", "descriptor_name": "Genotype", "qualifier_ui":
-  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005838",
-  "descriptor_name": "Genotype", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
-  false}, {"descriptor_ui": "D005838", "descriptor_name": "Genotype", "qualifier_ui":
-  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005838",
-  "descriptor_name": "Genotype", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
-  false}, {"descriptor_ui": "D005838", "descriptor_name": "Genotype", "qualifier_ui":
-  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005838",
-  "descriptor_name": "Genotype", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
-  false}, {"descriptor_ui": "D006801", "descriptor_name": "Humans", "qualifier_ui":
-  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D006801",
-  "descriptor_name": "Humans", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
-  false}, {"descriptor_ui": "D006801", "descriptor_name": "Humans", "qualifier_ui":
-  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D006801",
-  "descriptor_name": "Humans", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
-  false}, {"descriptor_ui": "D006801", "descriptor_name": "Humans", "qualifier_ui":
-  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D006801",
-  "descriptor_name": "Humans", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
-  false}, {"descriptor_ui": "D006801", "descriptor_name": "Humans", "qualifier_ui":
-  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D006801",
-  "descriptor_name": "Humans", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
-  false}, {"descriptor_ui": "D008297", "descriptor_name": "Male", "qualifier_ui":
-  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D008297",
-  "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
-  false}, {"descriptor_ui": "D008297", "descriptor_name": "Male", "qualifier_ui":
-  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D008297",
-  "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
-  false}, {"descriptor_ui": "D008297", "descriptor_name": "Male", "qualifier_ui":
-  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D008297",
-  "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
-  false}, {"descriptor_ui": "D008297", "descriptor_name": "Male", "qualifier_ui":
-  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D008297",
-  "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
-  false}, {"descriptor_ui": "D008875", "descriptor_name": "Middle Aged", "qualifier_ui":
-  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D008875",
-  "descriptor_name": "Middle Aged", "qualifier_ui": null, "qualifier_name": null,
-  "is_major_topic": false}, {"descriptor_ui": "D008875", "descriptor_name": "Middle
-  Aged", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui":
-  "D008875", "descriptor_name": "Middle Aged", "qualifier_ui": null, "qualifier_name":
+  true}, {"descriptor_ui": "D004851", "descriptor_name": "Epoxide Hydrolases", "qualifier_ui":
+  "Q000235", "qualifier_name": "genetics", "is_major_topic": true}, {"descriptor_ui":
+  "D004851", "descriptor_name": "Epoxide Hydrolases", "qualifier_ui": "Q000235", "qualifier_name":
+  "genetics", "is_major_topic": true}, {"descriptor_ui": "D005260", "descriptor_name":
+  "Female", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D005260", "descriptor_name": "Female", "qualifier_ui": null,
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005260", "descriptor_name":
+  "Female", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D005260", "descriptor_name": "Female", "qualifier_ui": null,
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005260", "descriptor_name":
+  "Female", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D005260", "descriptor_name": "Female", "qualifier_ui": null,
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005260", "descriptor_name":
+  "Female", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D005260", "descriptor_name": "Female", "qualifier_ui": null,
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005260", "descriptor_name":
+  "Female", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D005838", "descriptor_name": "Genotype", "qualifier_ui": null,
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005838", "descriptor_name":
+  "Genotype", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D005838", "descriptor_name": "Genotype", "qualifier_ui": null,
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005838", "descriptor_name":
+  "Genotype", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D005838", "descriptor_name": "Genotype", "qualifier_ui": null,
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005838", "descriptor_name":
+  "Genotype", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D005838", "descriptor_name": "Genotype", "qualifier_ui": null,
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005838", "descriptor_name":
+  "Genotype", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D005838", "descriptor_name": "Genotype", "qualifier_ui": null,
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D006801", "descriptor_name":
+  "Humans", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D006801", "descriptor_name": "Humans", "qualifier_ui": null,
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D006801", "descriptor_name":
+  "Humans", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D006801", "descriptor_name": "Humans", "qualifier_ui": null,
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D006801", "descriptor_name":
+  "Humans", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D006801", "descriptor_name": "Humans", "qualifier_ui": null,
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D006801", "descriptor_name":
+  "Humans", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D006801", "descriptor_name": "Humans", "qualifier_ui": null,
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D006801", "descriptor_name":
+  "Humans", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D008297", "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name":
+  null, "is_major_topic": false}, {"descriptor_ui": "D008297", "descriptor_name":
+  "Male", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D008297", "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name":
+  null, "is_major_topic": false}, {"descriptor_ui": "D008297", "descriptor_name":
+  "Male", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D008297", "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name":
+  null, "is_major_topic": false}, {"descriptor_ui": "D008297", "descriptor_name":
+  "Male", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D008297", "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name":
+  null, "is_major_topic": false}, {"descriptor_ui": "D008297", "descriptor_name":
+  "Male", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D008297", "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name":
   null, "is_major_topic": false}, {"descriptor_ui": "D008875", "descriptor_name":
   "Middle Aged", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
   {"descriptor_ui": "D008875", "descriptor_name": "Middle Aged", "qualifier_ui": null,
   "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D008875", "descriptor_name":
   "Middle Aged", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
   {"descriptor_ui": "D008875", "descriptor_name": "Middle Aged", "qualifier_ui": null,
-  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D014390", "descriptor_name":
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D008875", "descriptor_name":
+  "Middle Aged", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D008875", "descriptor_name": "Middle Aged", "qualifier_ui": null,
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D008875", "descriptor_name":
+  "Middle Aged", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D008875", "descriptor_name": "Middle Aged", "qualifier_ui": null,
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D008875", "descriptor_name":
+  "Middle Aged", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D014390", "descriptor_name": "Tuberculosis, Meningeal", "qualifier_ui":
+  "Q000188", "qualifier_name": "drug therapy", "is_major_topic": true}, {"descriptor_ui":
+  "D014390", "descriptor_name": "Tuberculosis, Meningeal", "qualifier_ui": "Q000188",
+  "qualifier_name": "drug therapy", "is_major_topic": true}, {"descriptor_ui": "D014390",
+  "descriptor_name": "Tuberculosis, Meningeal", "qualifier_ui": "Q000188", "qualifier_name":
+  "drug therapy", "is_major_topic": true}, {"descriptor_ui": "D014390", "descriptor_name":
   "Tuberculosis, Meningeal", "qualifier_ui": "Q000188", "qualifier_name": "drug therapy",
   "is_major_topic": true}, {"descriptor_ui": "D014390", "descriptor_name": "Tuberculosis,
   Meningeal", "qualifier_ui": "Q000188", "qualifier_name": "drug therapy", "is_major_topic":
@@ -6999,9 +7021,9 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   "qualifier_name": "drug therapy", "is_major_topic": true}, {"descriptor_ui": "D014390",
   "descriptor_name": "Tuberculosis, Meningeal", "qualifier_ui": "Q000188", "qualifier_name":
   "drug therapy", "is_major_topic": true}, {"descriptor_ui": "D014390", "descriptor_name":
-  "Tuberculosis, Meningeal", "qualifier_ui": "Q000188", "qualifier_name": "drug therapy",
+  "Tuberculosis, Meningeal", "qualifier_ui": "Q000235", "qualifier_name": "genetics",
   "is_major_topic": true}, {"descriptor_ui": "D014390", "descriptor_name": "Tuberculosis,
-  Meningeal", "qualifier_ui": "Q000188", "qualifier_name": "drug therapy", "is_major_topic":
+  Meningeal", "qualifier_ui": "Q000235", "qualifier_name": "genetics", "is_major_topic":
   true}, {"descriptor_ui": "D014390", "descriptor_name": "Tuberculosis, Meningeal",
   "qualifier_ui": "Q000235", "qualifier_name": "genetics", "is_major_topic": true},
   {"descriptor_ui": "D014390", "descriptor_name": "Tuberculosis, Meningeal", "qualifier_ui":
@@ -7015,9 +7037,9 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   Meningeal", "qualifier_ui": "Q000235", "qualifier_name": "genetics", "is_major_topic":
   true}, {"descriptor_ui": "D014390", "descriptor_name": "Tuberculosis, Meningeal",
   "qualifier_ui": "Q000235", "qualifier_name": "genetics", "is_major_topic": true},
-  {"descriptor_ui": "D014390", "descriptor_name": "Tuberculosis, Meningeal", "qualifier_ui":
-  "Q000235", "qualifier_name": "genetics", "is_major_topic": true}, {"descriptor_ui":
-  "D016896", "descriptor_name": "Treatment Outcome", "qualifier_ui": null, "qualifier_name":
+  {"descriptor_ui": "D016896", "descriptor_name": "Treatment Outcome", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D016896",
+  "descriptor_name": "Treatment Outcome", "qualifier_ui": null, "qualifier_name":
   null, "is_major_topic": false}, {"descriptor_ui": "D016896", "descriptor_name":
   "Treatment Outcome", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
   false}, {"descriptor_ui": "D016896", "descriptor_name": "Treatment Outcome", "qualifier_ui":
@@ -7052,7 +7074,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   "National Institutes of Health", "host_organization_lineage": ["https://openalex.org/I1299303238"],
   "host_organization_lineage_names": [], "type": "repository"}, "license": null, "license_id":
   null, "version": "publishedVersion", "is_accepted": true, "is_published": true,
-  "raw_source_name": "Nature medicine", "raw_type": null}, {"id": "pmh:oai:pubmedcentral.nih.gov:13004695",
+  "raw_source_name": "Nature medicine", "raw_type": "Journal Article"}, {"id": "pmh:oai:pubmedcentral.nih.gov:13004695",
   "is_oa": true, "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13004695/",
   "pdf_url": null, "source": {"id": "https://openalex.org/S2764455111", "display_name":
   "PubMed Central", "issn_l": null, "issn": null, "is_oa": true, "is_in_doaj": false,
@@ -7168,7 +7190,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   "needed,": [317], "alongside": [318], "targeted,": [320], "more": [321], "effective":
   [322], "anti-inflammatory": [323], "agents": [324], "than": [325], "(ClinicalTrials.gov":
   [327], "NCT03100786": [328], ").": [329]}, "counts_by_year": [{"year": 2026, "cited_by_count":
-  6}], "updated_date": "2026-08-01T09:00:35.917206", "created_date": "2026-01-16T00:00:00"},
+  6}], "updated_date": "2026-08-14T07:06:38.338062", "created_date": "2026-01-16T00:00:00"},
   {"id": "https://openalex.org/W4414787932", "doi": "https://doi.org/10.1371/journal.pntd.0013589",
   "title": "Severe dengue in adults: Clinical features from the 2022 dengue outbreak
   at a Vietnamese tertiary hospital", "display_name": "Severe dengue in adults: Clinical
@@ -7341,8 +7363,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   2, "institutions_distinct_count": 5, "corresponding_author_ids": ["https://openalex.org/A5073508427"],
   "corresponding_institution_ids": ["https://openalex.org/I2802508454"], "apc_list":
   {"value": 2495, "currency": "USD", "value_usd": 2495}, "apc_paid": {"value": 2495,
-  "currency": "USD", "value_usd": 2495}, "fwci": 3.2103, "has_fulltext": true, "cited_by_count":
-  3, "citation_normalized_percentile": {"value": 0.92387938, "is_in_top_1_percent":
+  "currency": "USD", "value_usd": 2495}, "fwci": 3.0839, "has_fulltext": true, "cited_by_count":
+  3, "citation_normalized_percentile": {"value": 0.92026255, "is_in_top_1_percent":
   false, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 98, "max":
   99}, "biblio": {"volume": "19", "issue": "10", "first_page": "e0013589", "last_page":
   "e0013589"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -7524,25 +7546,24 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   "host_organization_lineage_names": [], "type": "repository"}, "license": null, "license_id":
   null, "version": "publishedVersion", "is_accepted": true, "is_published": true,
   "raw_source_name": "PLoS neglected tropical diseases", "raw_type": null}, {"id":
-  "pmh:oai:doaj.org/article:5522d7da2abf44a5933335a701ffabf4", "is_oa": true, "landing_page_url":
-  "https://doaj.org/article/5522d7da2abf44a5933335a701ffabf4", "pdf_url": null, "source":
-  {"id": "https://openalex.org/S4306401280", "display_name": "DOAJ (DOAJ: Directory
-  of Open Access Journals)", "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj":
-  false, "is_core": false, "host_organization": null, "host_organization_name": null,
-  "host_organization_lineage": [], "host_organization_lineage_names": [], "type":
-  "repository"}, "license": "cc-by-sa", "license_id": "https://openalex.org/licenses/cc-by-sa",
+  "pmh:oai:europepmc.org:11321357", "is_oa": true, "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12513615",
+  "pdf_url": null, "source": {"id": "https://openalex.org/S4306400806", "display_name":
+  "Europe PMC (PubMed Central)", "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj":
+  false, "is_core": false, "host_organization": "https://openalex.org/I1303153112",
+  "host_organization_name": "European Bioinformatics Institute", "host_organization_lineage":
+  ["https://openalex.org/I1303153112"], "host_organization_lineage_names": [], "type":
+  "repository"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
+  "version": "submittedVersion", "is_accepted": false, "is_published": false, "raw_source_name":
+  null, "raw_type": "Text"}, {"id": "pmh:oai:doaj.org/article:5522d7da2abf44a5933335a701ffabf4",
+  "is_oa": true, "landing_page_url": "https://doaj.org/article/5522d7da2abf44a5933335a701ffabf4",
+  "pdf_url": null, "source": {"id": "https://openalex.org/S4306401280", "display_name":
+  "DOAJ (DOAJ: Directory of Open Access Journals)", "issn_l": null, "issn": null,
+  "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization": null,
+  "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
+  [], "type": "repository"}, "license": "cc-by-sa", "license_id": "https://openalex.org/licenses/cc-by-sa",
   "version": "submittedVersion", "is_accepted": false, "is_published": false, "raw_source_name":
   "PLoS Neglected Tropical Diseases, Vol 19, Iss 10, p e0013589 (2025)", "raw_type":
-  "article"}, {"id": "pmh:oai:europepmc.org:11321357", "is_oa": true, "landing_page_url":
-  "https://www.ncbi.nlm.nih.gov/pmc/articles/12513615", "pdf_url": null, "source":
-  {"id": "https://openalex.org/S4306400806", "display_name": "Europe PMC (PubMed Central)",
-  "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core": false,
-  "host_organization": "https://openalex.org/I1303153112", "host_organization_name":
-  "European Bioinformatics Institute", "host_organization_lineage": ["https://openalex.org/I1303153112"],
-  "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
-  "license_id": "https://openalex.org/licenses/cc-by", "version": "submittedVersion",
-  "is_accepted": false, "is_published": false, "raw_source_name": null, "raw_type":
-  "Text"}, {"id": "pmh:oai:ora.ox.ac.uk:uuid:af95c33e-6b35-423f-8e2a-288e4fac306d",
+  "article"}, {"id": "pmh:oai:ora.ox.ac.uk:uuid:af95c33e-6b35-423f-8e2a-288e4fac306d",
   "is_oa": false, "landing_page_url": null, "pdf_url": null, "source": {"id": "https://openalex.org/S4306402636",
   "display_name": "Oxford University Research Archive (ORA) (University of Oxford)",
   "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core": false,
@@ -7619,7 +7640,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   [284], "host": [285], "these": [289], "features,": [290], "will": [291], "contribute":
   [292], "formulating": [294], "suitable": [295], "treatment": [296], "guidelines":
   [297], "this": [299], "at-risk": [300], "population.": [301]}, "counts_by_year":
-  [{"year": 2026, "cited_by_count": 3}], "updated_date": "2026-08-01T09:00:35.917206",
+  [{"year": 2026, "cited_by_count": 3}], "updated_date": "2026-08-11T07:18:39.950985",
   "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4399859342",
   "doi": "https://doi.org/10.1038/s41598-024-64898-5", "title": "Detection of co-infection
   and recombination cases with Omicron and local Delta variants of SARS-CoV-2 in Vietnam",
@@ -8540,8 +8561,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   5, "corresponding_author_ids": ["https://openalex.org/A5007778579", "https://openalex.org/A5010505038",
   "https://openalex.org/A5101671864"], "corresponding_institution_ids": ["https://openalex.org/I4210150114"],
   "apc_list": {"value": 2390, "currency": "USD", "value_usd": 2390}, "apc_paid": {"value":
-  2390, "currency": "USD", "value_usd": 2390}, "fwci": 1.8075, "has_fulltext": true,
-  "cited_by_count": 6, "citation_normalized_percentile": {"value": 0.84579101, "is_in_top_1_percent":
+  2390, "currency": "USD", "value_usd": 2390}, "fwci": 2.0549, "has_fulltext": true,
+  "cited_by_count": 7, "citation_normalized_percentile": {"value": 0.86832481, "is_in_top_1_percent":
   false, "is_in_top_10_percent": false}, "cited_by_percentile_year": {"min": 90, "max":
   98}, "biblio": {"volume": "14", "issue": "1", "first_page": "14225", "last_page":
   "14225"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -8850,14 +8871,15 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   "monitoring": [171], "circulating": [173], "community": [177], "enabling": [178],
   "rapid": [179], "identification": [180], "changes": [183], "that": [184], "may":
   [185], "affect": [186], "properties": [188], "evolutionary": [190], "events.": [191]},
-  "counts_by_year": [{"year": 2025, "cited_by_count": 5}, {"year": 2024, "cited_by_count":
-  1}], "updated_date": "2026-08-01T09:00:35.917206", "created_date": "2025-10-10T00:00:00"},
-  {"id": "https://openalex.org/W4404755442", "doi": "https://doi.org/10.12688/wellcomeopenres.22498.1",
-  "title": "Statistical analysis plan for the LAST ACT clinical trial; a Leukotriene
-  A4 hydrolase Stratified non-inferiority Trial of Adjunctive Corticosteroids for
-  HIV-negative adults with Tuberculous meningitis", "display_name": "Statistical analysis
-  plan for the LAST ACT clinical trial; a Leukotriene A4 hydrolase Stratified non-inferiority
-  Trial of Adjunctive Corticosteroids for HIV-negative adults with Tuberculous meningitis",
+  "counts_by_year": [{"year": 2026, "cited_by_count": 1}, {"year": 2025, "cited_by_count":
+  5}, {"year": 2024, "cited_by_count": 1}], "updated_date": "2026-08-15T07:11:24.734988",
+  "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4404755442",
+  "doi": "https://doi.org/10.12688/wellcomeopenres.22498.1", "title": "Statistical
+  analysis plan for the LAST ACT clinical trial; a Leukotriene A4 hydrolase Stratified
+  non-inferiority Trial of Adjunctive Corticosteroids for HIV-negative adults with
+  Tuberculous meningitis", "display_name": "Statistical analysis plan for the LAST
+  ACT clinical trial; a Leukotriene A4 hydrolase Stratified non-inferiority Trial
+  of Adjunctive Corticosteroids for HIV-negative adults with Tuberculous meningitis",
   "publication_year": 2024, "publication_date": "2024-11-27", "ids": {"openalex":
   "https://openalex.org/W4404755442", "doi": "https://doi.org/10.12688/wellcomeopenres.22498.1",
   "pmid": "https://pubmed.ncbi.nlm.nih.gov/39911285"}, "language": "en", "primary_location":
@@ -10417,8 +10439,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   6, "corresponding_author_ids": ["https://openalex.org/A5073343908"], "corresponding_institution_ids":
   ["https://openalex.org/I183935753", "https://openalex.org/I4210150114"], "apc_list":
   {"value": 1805, "currency": "USD", "value_usd": 1805}, "apc_paid": {"value": 1805,
-  "currency": "USD", "value_usd": 1805}, "fwci": 2.1861, "has_fulltext": true, "cited_by_count":
-  2, "citation_normalized_percentile": {"value": 0.86360163, "is_in_top_1_percent":
+  "currency": "USD", "value_usd": 1805}, "fwci": 2.1039, "has_fulltext": true, "cited_by_count":
+  2, "citation_normalized_percentile": {"value": 0.85835284, "is_in_top_1_percent":
   false, "is_in_top_10_percent": false}, "cited_by_percentile_year": {"min": 95, "max":
   96}, "biblio": {"volume": "20", "issue": "5", "first_page": "e0321655", "last_page":
   "e0321655"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -10598,26 +10620,25 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   of Health", "host_organization_lineage": ["https://openalex.org/I1299303238"], "host_organization_lineage_names":
   [], "type": "repository"}, "license": null, "license_id": null, "version": "publishedVersion",
   "is_accepted": true, "is_published": true, "raw_source_name": "PloS one", "raw_type":
-  null}, {"id": "pmh:oai:doaj.org/article:d65d7f39c31043b9a44b9c87d6198a21", "is_oa":
-  true, "landing_page_url": "https://doaj.org/article/d65d7f39c31043b9a44b9c87d6198a21",
+  null}, {"id": "pmh:oai:pubmedcentral.nih.gov:12101703", "is_oa": true, "landing_page_url":
+  "https://www.ncbi.nlm.nih.gov/pmc/articles/12101703", "pdf_url": null, "source":
+  {"id": "https://openalex.org/S2764455111", "display_name": "PubMed Central", "issn_l":
+  null, "issn": null, "is_oa": true, "is_in_doaj": false, "is_core": false, "host_organization":
+  "https://openalex.org/I1299303238", "host_organization_name": "National Institutes
+  of Health", "host_organization_lineage": ["https://openalex.org/I1299303238"], "host_organization_lineage_names":
+  [], "type": "repository"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
+  "version": "submittedVersion", "is_accepted": false, "is_published": false, "raw_source_name":
+  "PLoS One", "raw_type": "Text"}, {"id": "pmh:oai:doaj.org/article:d65d7f39c31043b9a44b9c87d6198a21",
+  "is_oa": true, "landing_page_url": "https://doaj.org/article/d65d7f39c31043b9a44b9c87d6198a21",
   "pdf_url": null, "source": {"id": "https://openalex.org/S4306401280", "display_name":
   "DOAJ (DOAJ: Directory of Open Access Journals)", "issn_l": null, "issn": null,
   "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization": null,
   "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
   [], "type": "repository"}, "license": "cc-by-sa", "license_id": "https://openalex.org/licenses/cc-by-sa",
   "version": "submittedVersion", "is_accepted": false, "is_published": false, "raw_source_name":
-  "PLoS ONE, Vol 20, Iss 5, p e0321655 (2025)", "raw_type": "article"}, {"id": "pmh:oai:pubmedcentral.nih.gov:12101703",
-  "is_oa": true, "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12101703",
-  "pdf_url": null, "source": {"id": "https://openalex.org/S2764455111", "display_name":
-  "PubMed Central", "issn_l": null, "issn": null, "is_oa": true, "is_in_doaj": false,
-  "is_core": false, "host_organization": "https://openalex.org/I1299303238", "host_organization_name":
-  "National Institutes of Health", "host_organization_lineage": ["https://openalex.org/I1299303238"],
-  "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
-  "license_id": "https://openalex.org/licenses/cc-by", "version": "submittedVersion",
-  "is_accepted": false, "is_published": false, "raw_source_name": "PLoS One", "raw_type":
-  "Text"}], "best_oa_location": {"id": "doi:10.1371/journal.pone.0321655", "is_oa":
-  true, "landing_page_url": "https://doi.org/10.1371/journal.pone.0321655", "pdf_url":
-  "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0321655&type=printable",
+  "PLoS ONE, Vol 20, Iss 5, p e0321655 (2025)", "raw_type": "article"}], "best_oa_location":
+  {"id": "doi:10.1371/journal.pone.0321655", "is_oa": true, "landing_page_url": "https://doi.org/10.1371/journal.pone.0321655",
+  "pdf_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0321655&type=printable",
   "source": {"id": "https://openalex.org/S202381698", "display_name": "PLoS ONE",
   "issn_l": "1932-6203", "issn": ["1932-6203"], "is_oa": true, "is_in_doaj": true,
   "is_core": true, "host_organization": "https://openalex.org/P4310315706", "host_organization_name":
@@ -10741,7 +10762,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   [279], "can": [280], "provide": [281], "added": [282], "unwanted": [286], "outcomes":
   [287], "TBM.": [289], "However,": [290], "confirm": [292], "this": [293], "finding,":
   [294], "larger": [296], "dataset": [297], "needed.": [299]}, "counts_by_year": [{"year":
-  2025, "cited_by_count": 2}], "updated_date": "2026-08-01T09:00:35.917206", "created_date":
+  2025, "cited_by_count": 2}], "updated_date": "2026-08-11T07:18:39.950985", "created_date":
   "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4384696586", "doi": "https://doi.org/10.21203/rs.3.rs-3139645/v1",
   "title": "A novel diagnostic model for Tuberculous meningitis using Bayesian Latent
   class analysis", "display_name": "A novel diagnostic model for Tuberculous meningitis
@@ -12094,7 +12115,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   "https://openalex.org/I4210150114"], "apc_list": {"value": 1990, "currency": "USD",
   "value_usd": 1990}, "apc_paid": {"value": 1990, "currency": "USD", "value_usd":
   1990}, "fwci": 0.0, "has_fulltext": true, "cited_by_count": 0, "citation_normalized_percentile":
-  {"value": 0.18715746, "is_in_top_1_percent": false, "is_in_top_10_percent": false},
+  {"value": 0.17231158, "is_in_top_1_percent": false, "is_in_top_10_percent": false},
   "cited_by_percentile_year": null, "biblio": {"volume": "27", "issue": "1", "first_page":
   null, "last_page": null}, "is_retracted": false, "is_paratext": false, "is_xpac":
   false, "primary_topic": {"id": "https://openalex.org/T10168", "display_name": "COVID-19
@@ -12167,29 +12188,53 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   "https://www.wikidata.org/wiki/Q1519812", "display_name": "Health policy", "level":
   3, "score": 0.25200000405311584}], "mesh": [{"descriptor_ui": "D000086382", "descriptor_name":
   "COVID-19", "qualifier_ui": "Q000453", "qualifier_name": "epidemiology", "is_major_topic":
-  true}, {"descriptor_ui": "D000086402", "descriptor_name": "SARS-CoV-2", "qualifier_ui":
-  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D000091482",
+  true}, {"descriptor_ui": "D000086382", "descriptor_name": "COVID-19", "qualifier_ui":
+  "Q000453", "qualifier_name": "epidemiology", "is_major_topic": true}, {"descriptor_ui":
+  "D000086402", "descriptor_name": "SARS-CoV-2", "qualifier_ui": null, "qualifier_name":
+  null, "is_major_topic": false}, {"descriptor_ui": "D000086402", "descriptor_name":
+  "SARS-CoV-2", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D000091482", "descriptor_name": "Social Vulnerability", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": true}, {"descriptor_ui": "D000091482",
   "descriptor_name": "Social Vulnerability", "qualifier_ui": null, "qualifier_name":
   null, "is_major_topic": true}, {"descriptor_ui": "D000328", "descriptor_name": "Adult",
+  "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui":
+  "D000328", "descriptor_name": "Adult", "qualifier_ui": null, "qualifier_name": null,
+  "is_major_topic": false}, {"descriptor_ui": "D005260", "descriptor_name": "Female",
   "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui":
   "D005260", "descriptor_name": "Female", "qualifier_ui": null, "qualifier_name":
   null, "is_major_topic": false}, {"descriptor_ui": "D006801", "descriptor_name":
   "Humans", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
-  {"descriptor_ui": "D007214", "descriptor_name": "Indonesia", "qualifier_ui": "Q000453",
-  "qualifier_name": "epidemiology", "is_major_topic": false}, {"descriptor_ui": "D008297",
-  "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
-  false}, {"descriptor_ui": "D008875", "descriptor_name": "Middle Aged", "qualifier_ui":
-  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D009390",
+  {"descriptor_ui": "D006801", "descriptor_name": "Humans", "qualifier_ui": null,
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D007214", "descriptor_name":
+  "Indonesia", "qualifier_ui": "Q000453", "qualifier_name": "epidemiology", "is_major_topic":
+  false}, {"descriptor_ui": "D007214", "descriptor_name": "Indonesia", "qualifier_ui":
+  "Q000453", "qualifier_name": "epidemiology", "is_major_topic": false}, {"descriptor_ui":
+  "D008297", "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name": null,
+  "is_major_topic": false}, {"descriptor_ui": "D008297", "descriptor_name": "Male",
+  "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui":
+  "D008875", "descriptor_name": "Middle Aged", "qualifier_ui": null, "qualifier_name":
+  null, "is_major_topic": false}, {"descriptor_ui": "D008875", "descriptor_name":
+  "Middle Aged", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D009390", "descriptor_name": "Nepal", "qualifier_ui": "Q000453",
+  "qualifier_name": "epidemiology", "is_major_topic": false}, {"descriptor_ui": "D009390",
   "descriptor_name": "Nepal", "qualifier_ui": "Q000453", "qualifier_name": "epidemiology",
   "is_major_topic": false}, {"descriptor_ui": "D011634", "descriptor_name": "Public
   Health", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
-  {"descriptor_ui": "D014744", "descriptor_name": "Vietnam", "qualifier_ui": "Q000453",
-  "qualifier_name": "epidemiology", "is_major_topic": false}, {"descriptor_ui": "D035862",
+  {"descriptor_ui": "D011634", "descriptor_name": "Public Health", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D014744",
+  "descriptor_name": "Vietnam", "qualifier_ui": "Q000453", "qualifier_name": "epidemiology",
+  "is_major_topic": false}, {"descriptor_ui": "D014744", "descriptor_name": "Vietnam",
+  "qualifier_ui": "Q000453", "qualifier_name": "epidemiology", "is_major_topic": false},
+  {"descriptor_ui": "D035862", "descriptor_name": "Vulnerable Populations", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": true}, {"descriptor_ui": "D035862",
   "descriptor_name": "Vulnerable Populations", "qualifier_ui": null, "qualifier_name":
   null, "is_major_topic": true}, {"descriptor_ui": "D036301", "descriptor_name": "Qualitative
   Research", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
-  {"descriptor_ui": "D058873", "descriptor_name": "Pandemics", "qualifier_ui": null,
-  "qualifier_name": null, "is_major_topic": false}], "locations_count": 4, "locations":
+  {"descriptor_ui": "D036301", "descriptor_name": "Qualitative Research", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D058873",
+  "descriptor_name": "Pandemics", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
+  false}, {"descriptor_ui": "D058873", "descriptor_name": "Pandemics", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": false}], "locations_count": 4, "locations":
   [{"id": "doi:10.1186/s12910-026-01400-y", "is_oa": true, "landing_page_url": "https://doi.org/10.1186/s12910-026-01400-y",
   "pdf_url": null, "source": {"id": "https://openalex.org/S17537316", "display_name":
   "BMC Medical Ethics", "issn_l": "1472-6939", "issn": ["1472-6939"], "is_oa": true,
@@ -12207,7 +12252,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   ["https://openalex.org/I1299303238"], "host_organization_lineage_names": [], "type":
   "repository"}, "license": null, "license_id": null, "version": "publishedVersion",
   "is_accepted": true, "is_published": true, "raw_source_name": "BMC medical ethics",
-  "raw_type": null}, {"id": "pmh:oai:doaj.org/article:d0d7986fb99f4f9b83d3dbc92ed8c307",
+  "raw_type": "Journal Article"}, {"id": "pmh:oai:doaj.org/article:d0d7986fb99f4f9b83d3dbc92ed8c307",
   "is_oa": true, "landing_page_url": "https://doaj.org/article/d0d7986fb99f4f9b83d3dbc92ed8c307",
   "pdf_url": null, "source": {"id": "https://openalex.org/S4306401280", "display_name":
   "DOAJ (DOAJ: Directory of Open Access Journals)", "issn_l": null, "issn": null,
@@ -12300,7 +12345,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   "groupings": [321], "impacted": [323], "people.": [324], "An": [325], "understanding":
   [326], "context": [330], "is": [331], "essential": [333], "improve": [335], "uptake":
   [337], "effectiveness": [339], "measures.": [343]}, "counts_by_year": [], "updated_date":
-  "2026-07-29T09:40:50.615796", "created_date": "2026-03-03T00:00:00"}, {"id": "https://openalex.org/W7155169850",
+  "2026-08-16T07:02:28.622633", "created_date": "2026-03-03T00:00:00"}, {"id": "https://openalex.org/W7155169850",
   "doi": "https://doi.org/10.6084/m9.figshare.32070915.v1", "title": "Additional file
   2 of Predictive value of ventriculo-arterial coupling for hypotension after induction
   of anaesthesia: a prospective observational cohort study", "display_name": "Additional
@@ -13742,7 +13787,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   "https://openalex.org/I4210150114"], "apc_list": {"value": 4000, "currency": "USD",
   "value_usd": 4000}, "apc_paid": {"value": 4000, "currency": "USD", "value_usd":
   4000}, "fwci": 0.0, "has_fulltext": true, "cited_by_count": 0, "citation_normalized_percentile":
-  {"value": 0.76049112, "is_in_top_1_percent": false, "is_in_top_10_percent": false},
+  {"value": 0.66248929, "is_in_top_1_percent": false, "is_in_top_10_percent": false},
   "cited_by_percentile_year": null, "biblio": {"volume": "93", "issue": "2", "first_page":
   "106796", "last_page": "106796"}, "is_retracted": false, "is_paratext": false, "is_xpac":
   false, "primary_topic": {"id": "https://openalex.org/T11381", "display_name": "Infectious
@@ -13796,8 +13841,56 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   "wikidata": "https://www.wikidata.org/wiki/Q353963", "display_name": "Complication",
   "level": 2, "score": 0.26109999418258667}, {"id": "https://openalex.org/C2776694085",
   "wikidata": "https://www.wikidata.org/wiki/Q974135", "display_name": "Chemotherapy",
-  "level": 2, "score": 0.2515000104904175}], "mesh": [], "locations_count": 2, "locations":
-  [{"id": "doi:10.1016/j.jinf.2026.106796", "is_oa": true, "landing_page_url": "https://doi.org/10.1016/j.jinf.2026.106796",
+  "level": 2, "score": 0.2515000104904175}], "mesh": [{"descriptor_ui": "D000328",
+  "descriptor_name": "Adult", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
+  false}, {"descriptor_ui": "D000995", "descriptor_name": "Antitubercular Agents",
+  "qualifier_ui": "Q000008", "qualifier_name": "administration & dosage", "is_major_topic":
+  true}, {"descriptor_ui": "D000995", "descriptor_name": "Antitubercular Agents",
+  "qualifier_ui": "Q000009", "qualifier_name": "adverse effects", "is_major_topic":
+  true}, {"descriptor_ui": "D000995", "descriptor_name": "Antitubercular Agents",
+  "qualifier_ui": "Q000627", "qualifier_name": "therapeutic use", "is_major_topic":
+  true}, {"descriptor_ui": "D004977", "descriptor_name": "Ethambutol", "qualifier_ui":
+  "Q000009", "qualifier_name": "adverse effects", "is_major_topic": false}, {"descriptor_ui":
+  "D004977", "descriptor_name": "Ethambutol", "qualifier_ui": "Q000627", "qualifier_name":
+  "therapeutic use", "is_major_topic": false}, {"descriptor_ui": "D005260", "descriptor_name":
+  "Female", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D006801", "descriptor_name": "Humans", "qualifier_ui": null,
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D007538", "descriptor_name":
+  "Isoniazid", "qualifier_ui": "Q000008", "qualifier_name": "administration & dosage",
+  "is_major_topic": false}, {"descriptor_ui": "D007538", "descriptor_name": "Isoniazid",
+  "qualifier_ui": "Q000009", "qualifier_name": "adverse effects", "is_major_topic":
+  false}, {"descriptor_ui": "D007538", "descriptor_name": "Isoniazid", "qualifier_ui":
+  "Q000627", "qualifier_name": "therapeutic use", "is_major_topic": false}, {"descriptor_ui":
+  "D008297", "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name": null,
+  "is_major_topic": false}, {"descriptor_ui": "D008875", "descriptor_name": "Middle
+  Aged", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui":
+  "D011718", "descriptor_name": "Pyrazinamide", "qualifier_ui": "Q000008", "qualifier_name":
+  "administration & dosage", "is_major_topic": false}, {"descriptor_ui": "D011718",
+  "descriptor_name": "Pyrazinamide", "qualifier_ui": "Q000009", "qualifier_name":
+  "adverse effects", "is_major_topic": false}, {"descriptor_ui": "D011718", "descriptor_name":
+  "Pyrazinamide", "qualifier_ui": "Q000627", "qualifier_name": "therapeutic use",
+  "is_major_topic": false}, {"descriptor_ui": "D012293", "descriptor_name": "Rifampin",
+  "qualifier_ui": "Q000008", "qualifier_name": "administration & dosage", "is_major_topic":
+  false}, {"descriptor_ui": "D012293", "descriptor_name": "Rifampin", "qualifier_ui":
+  "Q000009", "qualifier_name": "adverse effects", "is_major_topic": false}, {"descriptor_ui":
+  "D012293", "descriptor_name": "Rifampin", "qualifier_ui": "Q000627", "qualifier_name":
+  "therapeutic use", "is_major_topic": false}, {"descriptor_ui": "D014390", "descriptor_name":
+  "Tuberculosis, Meningeal", "qualifier_ui": "Q000150", "qualifier_name": "complications",
+  "is_major_topic": true}, {"descriptor_ui": "D014390", "descriptor_name": "Tuberculosis,
+  Meningeal", "qualifier_ui": "Q000188", "qualifier_name": "drug therapy", "is_major_topic":
+  true}, {"descriptor_ui": "D016896", "descriptor_name": "Treatment Outcome", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D055815",
+  "descriptor_name": "Young Adult", "qualifier_ui": null, "qualifier_name": null,
+  "is_major_topic": false}, {"descriptor_ui": "D056486", "descriptor_name": "Chemical
+  and Drug Induced Liver Injury", "qualifier_ui": "Q000188", "qualifier_name": "drug
+  therapy", "is_major_topic": true}, {"descriptor_ui": "D056486", "descriptor_name":
+  "Chemical and Drug Induced Liver Injury", "qualifier_ui": "Q000209", "qualifier_name":
+  "etiology", "is_major_topic": true}, {"descriptor_ui": "D064704", "descriptor_name":
+  "Levofloxacin", "qualifier_ui": "Q000009", "qualifier_name": "adverse effects",
+  "is_major_topic": false}, {"descriptor_ui": "D064704", "descriptor_name": "Levofloxacin",
+  "qualifier_ui": "Q000627", "qualifier_name": "therapeutic use", "is_major_topic":
+  false}], "locations_count": 2, "locations": [{"id": "doi:10.1016/j.jinf.2026.106796",
+  "is_oa": true, "landing_page_url": "https://doi.org/10.1016/j.jinf.2026.106796",
   "pdf_url": "https://www.journalofinfection.com/article/S0163-4453(26)00121-0/pdf",
   "source": {"id": "https://openalex.org/S19579164", "display_name": "Journal of Infection",
   "issn_l": "0163-4453", "issn": ["0163-4453", "1532-2742"], "is_oa": true, "is_in_doaj":
@@ -13814,7 +13907,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   ["https://openalex.org/I1299303238"], "host_organization_lineage_names": [], "type":
   "repository"}, "license": null, "license_id": null, "version": "publishedVersion",
   "is_accepted": true, "is_published": true, "raw_source_name": "The Journal of infection",
-  "raw_type": null}], "best_oa_location": {"id": "doi:10.1016/j.jinf.2026.106796",
+  "raw_type": "Journal Article"}], "best_oa_location": {"id": "doi:10.1016/j.jinf.2026.106796",
   "is_oa": true, "landing_page_url": "https://doi.org/10.1016/j.jinf.2026.106796",
   "pdf_url": "https://www.journalofinfection.com/article/S0163-4453(26)00121-0/pdf",
   "source": {"id": "https://openalex.org/S19579164", "display_name": "Journal of Infection",
@@ -13826,9 +13919,12 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   "is_accepted": true, "is_published": true, "raw_source_name": "Journal of Infection",
   "raw_type": "journal-article"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
   "score": 0.8647307753562927, "display_name": "Good health and well-being"}], "awards":
-  [], "funders": [{"id": "https://openalex.org/F4320311904", "display_name": "Wellcome
-  Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": true, "grobid_xml":
-  true}, "content_urls": {"pdf": "https://content.openalex.org/works/W7165029375.pdf",
+  [{"id": "https://openalex.org/G8855775527", "display_name": "Personalised adjunctive
+  anti-inflammatory therapy to reduce deaths from tuberculosis.", "funder_award_id":
+  "110179/Z/15/Z", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
+  "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": true,
+  "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W7165029375.pdf",
   "grobid_xml": "https://content.openalex.org/works/W7165029375.grobid-xml"}, "referenced_works_count":
   20, "referenced_works": ["https://openalex.org/W1951724000", "https://openalex.org/W1986607793",
   "https://openalex.org/W2001811916", "https://openalex.org/W2020976497", "https://openalex.org/W2150492824",
@@ -13878,5 +13974,5 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 34, "page": 1, "per_page": 
   [230], "(10X": [231], "ULN),": [232], "pyrazinamide": [235], "alone,": [236], "appeared":
   [237], "safe": [238], "reduced": [240], "rifampicin/isoniazid": [241], "interruptions":
   [242], "standard": [244], "approaches.": [245]}, "counts_by_year": [], "updated_date":
-  "2026-07-22T07:51:19.307946", "created_date": "2026-06-18T00:00:00"}], "group_by":
+  "2026-08-13T07:04:57.449891", "created_date": "2026-06-18T00:00:00"}], "group_by":
   []}'
