@@ -1,7 +1,7 @@
 url: https://api.openalex.org/works?filter=authorships.author.id:a5073343908|a5123129713&per-page=200
 status: 200
 content_type: application/json
-body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page": 200,
+body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 200,
   "groups_count": null, "x_query": {"oql": "works where author is (a5073343908 or
   a5123129713)", "oqo": {"get_rows": "works", "filter_rows": [{"join": "or", "filters":
   [{"column_id": "authorships.author.id", "value": "a5073343908"}, {"column_id": "authorships.author.id",
@@ -313,9 +313,9 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "institutions": [], "countries_distinct_count": 3, "institutions_distinct_count":
   4, "corresponding_author_ids": ["https://openalex.org/A5071781127"], "corresponding_institution_ids":
   ["https://openalex.org/I2799599516", "https://openalex.org/I40120149", "https://openalex.org/I4210150114"],
-  "apc_list": {"value": 7280, "currency": "USD", "value_usd": 7280}, "apc_paid": {"value":
-  7280, "currency": "USD", "value_usd": 7280}, "fwci": 18.8892, "has_fulltext": true,
-  "cited_by_count": 162, "citation_normalized_percentile": {"value": 0.99653655, "is_in_top_1_percent":
+  "apc_list": {"value": 5000, "currency": "USD", "value_usd": 5000}, "apc_paid": {"value":
+  5000, "currency": "USD", "value_usd": 5000}, "fwci": 18.9196, "has_fulltext": true,
+  "cited_by_count": 162, "citation_normalized_percentile": {"value": 0.9965427, "is_in_top_1_percent":
   true, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 99, "max":
   100}, "biblio": {"volume": "20", "issue": "3", "first_page": "299", "last_page":
   "307"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -539,7 +539,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "funder_display_name": "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904",
   "display_name": "Wellcome Trust", "ror": "https://ror.org/029chgv08"}, {"id": "https://openalex.org/F4320320290",
   "display_name": "University of Oxford", "ror": "https://ror.org/052gg0110"}], "has_content":
-  {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3000453407.pdf",
+  {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3000453407.pdf",
   "grobid_xml": "https://content.openalex.org/works/W3000453407.grobid-xml"}, "referenced_works_count":
   21, "referenced_works": ["https://openalex.org/W2014074083", "https://openalex.org/W2047801331",
   "https://openalex.org/W2110728266", "https://openalex.org/W2114356129", "https://openalex.org/W2145541864",
@@ -610,7 +610,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "Diagnostics.": [382]}, "counts_by_year": [{"year": 2026, "cited_by_count": 11},
   {"year": 2025, "cited_by_count": 18}, {"year": 2024, "cited_by_count": 37}, {"year":
   2023, "cited_by_count": 31}, {"year": 2022, "cited_by_count": 18}, {"year": 2021,
-  "cited_by_count": 23}, {"year": 2020, "cited_by_count": 24}], "updated_date": "2026-08-21T09:56:20.448147",
+  "cited_by_count": 23}, {"year": 2020, "cited_by_count": 24}], "updated_date": "2026-08-28T12:50:07.497085",
   "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W3046463923",
   "doi": "https://doi.org/10.1093/cid/ciaa1130", "title": "The First 100 Days of Severe
   Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2) Control in Vietnam", "display_name":
@@ -1438,8 +1438,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   Diseases", "raw_type": "journal-article"}, "sustainable_development_goals": [{"display_name":
   "Good health and well-being", "id": "https://metadata.un.org/sdg/3", "score": 0.41999998688697815}],
   "awards": [], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
-  false, "pdf": false}, "content_urls": null, "referenced_works_count": 29, "referenced_works":
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": false,
+  "grobid_xml": false}, "content_urls": null, "referenced_works_count": 29, "referenced_works":
   ["https://openalex.org/W1844981334", "https://openalex.org/W1978453912", "https://openalex.org/W2004573151",
   "https://openalex.org/W2096800088", "https://openalex.org/W2153416121", "https://openalex.org/W2162384187",
   "https://openalex.org/W2582743722", "https://openalex.org/W2765341148", "https://openalex.org/W2886659803",
@@ -2674,10 +2674,10 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   ["https://openalex.org/I183935753"]}]}], "institutions": [], "countries_distinct_count":
   5, "institutions_distinct_count": 10, "corresponding_author_ids": ["https://openalex.org/A5071608103"],
   "corresponding_institution_ids": ["https://openalex.org/I183935753", "https://openalex.org/I4210119896",
-  "https://openalex.org/I4210150114"], "apc_list": {"value": 4190, "currency": "USD",
-  "value_usd": 4190}, "apc_paid": {"value": 4190, "currency": "USD", "value_usd":
-  4190}, "fwci": 10.0408, "has_fulltext": true, "cited_by_count": 57, "citation_normalized_percentile":
-  {"value": 0.9894827, "is_in_top_1_percent": false, "is_in_top_10_percent": true},
+  "https://openalex.org/I4210150114"], "apc_list": {"value": 3790, "currency": "USD",
+  "value_usd": 3790}, "apc_paid": {"value": 3790, "currency": "USD", "value_usd":
+  3790}, "fwci": 9.9522, "has_fulltext": true, "cited_by_count": 57, "citation_normalized_percentile":
+  {"value": 0.98946595, "is_in_top_1_percent": false, "is_in_top_10_percent": true},
   "cited_by_percentile_year": {"min": 99, "max": 100}, "biblio": {"volume": "27",
   "issue": "1", "first_page": "257", "last_page": "257"}, "is_retracted": false, "is_paratext":
   false, "is_xpac": false, "primary_topic": {"id": "https://openalex.org/T11738",
@@ -2891,7 +2891,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   illness in resource-limited settings", "funder_award_id": "215010/Z/18/Z", "funder_id":
   "https://openalex.org/F4320311904", "funder_display_name": "Wellcome Trust"}], "funders":
   [{"id": "https://openalex.org/F4320311904", "display_name": "Wellcome Trust", "ror":
-  "https://ror.org/029chgv08"}], "has_content": {"grobid_xml": true, "pdf": true},
+  "https://ror.org/029chgv08"}], "has_content": {"pdf": true, "grobid_xml": true},
   "content_urls": {"pdf": "https://content.openalex.org/works/W4382795683.pdf", "grobid_xml":
   "https://content.openalex.org/works/W4382795683.grobid-xml"}, "referenced_works_count":
   22, "referenced_works": ["https://openalex.org/W1755606227", "https://openalex.org/W2204772374",
@@ -2957,7 +2957,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   [343], "improve": [345], "features": [351], "more": [352, 354, 357], "accurately,":
   [353], "quickly": [355], "confidently.": [358]}, "counts_by_year": [{"year": 2026,
   "cited_by_count": 13}, {"year": 2025, "cited_by_count": 24}, {"year": 2024, "cited_by_count":
-  20}], "updated_date": "2026-08-22T07:34:49.880490", "created_date": "2025-10-10T00:00:00"},
+  20}], "updated_date": "2026-08-30T07:30:35.949966", "created_date": "2025-10-10T00:00:00"},
   {"id": "https://openalex.org/W3194782510", "doi": "https://doi.org/10.1093/cid/ciab724",
   "title": "Effectiveness of Continuous Endotracheal Cuff Pressure Control for the
   Prevention of Ventilator-Associated Respiratory Infections: An Open-Label Randomized,
@@ -3379,9 +3379,9 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "institutions": [], "countries_distinct_count": 3, "institutions_distinct_count":
   7, "corresponding_author_ids": ["https://openalex.org/A5025150644"], "corresponding_institution_ids":
   ["https://openalex.org/I189643551", "https://openalex.org/I4210150114"], "apc_list":
-  {"value": 4763, "currency": "USD", "value_usd": 4763}, "apc_paid": {"value": 4763,
-  "currency": "USD", "value_usd": 4763}, "fwci": 3.7178, "has_fulltext": false, "cited_by_count":
-  33, "citation_normalized_percentile": {"value": 0.94258101, "is_in_top_1_percent":
+  {"value": 4052, "currency": "USD", "value_usd": 4052}, "apc_paid": {"value": 4052,
+  "currency": "USD", "value_usd": 4052}, "fwci": 3.7311, "has_fulltext": false, "cited_by_count":
+  33, "citation_normalized_percentile": {"value": 0.94276323, "is_in_top_1_percent":
   false, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 93, "max":
   99}, "biblio": {"volume": "74", "issue": "10", "first_page": "1795", "last_page":
   "1803"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -3530,8 +3530,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "awards": [{"id": "https://openalex.org/G8376193503", "display_name": null, "funder_award_id":
   "106680/B/14/Z.", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
   "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
-  false, "pdf": false}, "content_urls": null, "referenced_works_count": 32, "referenced_works":
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": false,
+  "grobid_xml": false}, "content_urls": null, "referenced_works_count": 32, "referenced_works":
   ["https://openalex.org/W1978159568", "https://openalex.org/W1980980484", "https://openalex.org/W1992464091",
   "https://openalex.org/W1995667320", "https://openalex.org/W1995839475", "https://openalex.org/W2042301469",
   "https://openalex.org/W2046747986", "https://openalex.org/W2080390653", "https://openalex.org/W2113701842",
@@ -3590,7 +3590,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   [266]}, "counts_by_year": [{"year": 2026, "cited_by_count": 4}, {"year": 2025, "cited_by_count":
   3}, {"year": 2024, "cited_by_count": 15}, {"year": 2023, "cited_by_count": 3}, {"year":
   2022, "cited_by_count": 6}, {"year": 2021, "cited_by_count": 2}], "updated_date":
-  "2026-08-21T09:56:20.448147", "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4400031077",
+  "2026-08-28T12:50:07.497085", "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4400031077",
   "doi": "https://doi.org/10.1038/s41598-024-64564-w", "title": "Clinical evaluation
   of AI-assisted muscle ultrasound for monitoring muscle wasting in ICU patients",
   "display_name": "Clinical evaluation of AI-assisted muscle ultrasound for monitoring
@@ -4577,10 +4577,10 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   [], "countries_distinct_count": 4, "institutions_distinct_count": 8, "corresponding_author_ids":
   ["https://openalex.org/A5071608103"], "corresponding_institution_ids": ["https://openalex.org/I183935753",
   "https://openalex.org/I4210119896", "https://openalex.org/I4210150114"], "apc_list":
-  {"value": 2690, "currency": "USD", "value_usd": 2690}, "apc_paid": {"value": 2690,
-  "currency": "USD", "value_usd": 2690}, "fwci": 3.4534, "has_fulltext": true, "cited_by_count":
-  11, "citation_normalized_percentile": {"value": 0.93117543, "is_in_top_1_percent":
-  false, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 94, "max":
+  {"value": 2590, "currency": "USD", "value_usd": 2590}, "apc_paid": {"value": 2590,
+  "currency": "USD", "value_usd": 2590}, "fwci": 3.385, "has_fulltext": true, "cited_by_count":
+  11, "citation_normalized_percentile": {"value": 0.92924581, "is_in_top_1_percent":
+  false, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 93, "max":
   99}, "biblio": {"volume": "14", "issue": "1", "first_page": "14798", "last_page":
   "14798"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
   {"id": "https://openalex.org/T10867", "display_name": "Intensive Care Unit Cognitive
@@ -4785,7 +4785,16 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   S, Van Vinh Chau, N, King, A P, Thwaites, L, Denehy, L, Gomez, A 2024, ''Clinical
   evaluation of AI-assisted muscle ultrasound for monitoring muscle wasting in ICU
   patients'', Scientific Reports, vol. 14, no. 1, 14798, pp. 14798. https://doi.org/10.1038/s41598-024-64564-w",
-  "raw_type": "info:eu-repo/semantics/article"}, {"id": "pmh:oai:pubmedcentral.nih.gov:11208490",
+  "raw_type": "info:eu-repo/semantics/article"}, {"id": "pmh:oai:pure.amsterdamumc.nl:openaire/6dcadfc5-86c9-46b5-849b-51ea1674c678",
+  "is_oa": true, "landing_page_url": "https://pure.amsterdamumc.nl/en/publications/6dcadfc5-86c9-46b5-849b-51ea1674c678",
+  "pdf_url": "https://pure.amsterdamumc.nl/ws/files/139866070/Clinical-evaluation-of-ai-assisted-muscle-ultrasound-for-monitoring-muscle-wasting-in-icu-patients.pdf",
+  "source": {"id": "https://openalex.org/S7407055222", "display_name": "Pure Amsterdam
+  UMC", "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core":
+  false, "host_organization": null, "host_organization_name": null, "host_organization_lineage":
+  [], "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
+  "license_id": "https://openalex.org/licenses/cc-by", "version": "acceptedVersion",
+  "is_accepted": true, "is_published": false, "raw_source_name": null, "raw_type":
+  "info:eu-repo/semantics/article"}, {"id": "pmh:oai:pubmedcentral.nih.gov:11208490",
   "is_oa": true, "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11208490",
   "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11208490/pdf/41598_2024_Article_64564.pdf",
   "source": {"id": "https://openalex.org/S2764455111", "display_name": "PubMed Central",
@@ -4795,17 +4804,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
   "license_id": "https://openalex.org/licenses/cc-by", "version": "submittedVersion",
   "is_accepted": false, "is_published": false, "raw_source_name": "Sci Rep", "raw_type":
-  "Text"}, {"id": "pmh:oai:pure.amsterdamumc.nl:openaire_cris_publications/6dcadfc5-86c9-46b5-849b-51ea1674c678",
-  "is_oa": true, "landing_page_url": "https://pure.amsterdamumc.nl/en/publications/6dcadfc5-86c9-46b5-849b-51ea1674c678",
-  "pdf_url": "https://pure.amsterdamumc.nl/ws/files/139866070/Clinical-evaluation-of-ai-assisted-muscle-ultrasound-for-monitoring-muscle-wasting-in-icu-patients.pdf",
-  "source": {"id": "https://openalex.org/S7407055222", "display_name": "Pure Amsterdam
-  UMC", "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core":
-  false, "host_organization": null, "host_organization_name": null, "host_organization_lineage":
-  [], "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
-  "license_id": "https://openalex.org/licenses/cc-by", "version": "submittedVersion",
-  "is_accepted": false, "is_published": false, "raw_source_name": null, "raw_type":
-  "info:eu-repo/semantics/article"}, {"id": "pmh:oai:doaj.org/article:a57ad77f59cf43128c6e019d56da4e7a",
-  "is_oa": true, "landing_page_url": "https://doaj.org/article/a57ad77f59cf43128c6e019d56da4e7a",
+  "Text"}, {"id": "pmh:oai:doaj.org/article:a57ad77f59cf43128c6e019d56da4e7a", "is_oa":
+  true, "landing_page_url": "https://doaj.org/article/a57ad77f59cf43128c6e019d56da4e7a",
   "pdf_url": null, "source": {"id": "https://openalex.org/S4306401280", "display_name":
   "DOAJ (DOAJ: Directory of Open Access Journals)", "issn_l": null, "issn": null,
   "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization": null,
@@ -4865,8 +4865,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   Translational Resource: Critical Care/Fever", "funder_award_id": "217650/Z/19/Z",
   "funder_id": "https://openalex.org/F4320311904", "funder_display_name": "Wellcome
   Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
-  false, "pdf": false}, "content_urls": null, "referenced_works_count": 24, "referenced_works":
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": false,
+  "grobid_xml": false}, "content_urls": null, "referenced_works_count": 24, "referenced_works":
   ["https://openalex.org/W1767128030", "https://openalex.org/W1963428859", "https://openalex.org/W2026598133",
   "https://openalex.org/W2118240638", "https://openalex.org/W2124381750", "https://openalex.org/W2227283568",
   "https://openalex.org/W2327037637", "https://openalex.org/W2569351312", "https://openalex.org/W2745446031",
@@ -4918,7 +4918,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   [234], "reproducibility": [235], "saves": [237], "time.": [238], "system": [240],
   "may": [241], "aid": [242], "monitoring": [243], "size": [245], "assisting": [249],
   "rehabilitation": [250], "programmes.": [251]}, "counts_by_year": [{"year": 2026,
-  "cited_by_count": 1}, {"year": 2025, "cited_by_count": 10}], "updated_date": "2026-08-21T09:56:20.448147",
+  "cited_by_count": 1}, {"year": 2025, "cited_by_count": 10}], "updated_date": "2026-08-29T07:29:34.045763",
   "created_date": "2024-06-27T00:00:00"}, {"id": "https://openalex.org/W4401108518",
   "doi": "https://doi.org/10.1038/s41598-024-68308-8", "title": "Computer-aided prognosis
   of tuberculous meningitis combining imaging and non-imaging data", "display_name":
@@ -5928,9 +5928,9 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "institutions": [], "countries_distinct_count": 5, "institutions_distinct_count":
   11, "corresponding_author_ids": ["https://openalex.org/A5023117088"], "corresponding_institution_ids":
   ["https://openalex.org/I183935753", "https://openalex.org/I4210119896"], "apc_list":
-  {"value": 2690, "currency": "USD", "value_usd": 2690}, "apc_paid": {"value": 2690,
-  "currency": "USD", "value_usd": 2690}, "fwci": 3.3501, "has_fulltext": true, "cited_by_count":
-  8, "citation_normalized_percentile": {"value": 0.92761124, "is_in_top_1_percent":
+  {"value": 2590, "currency": "USD", "value_usd": 2590}, "apc_paid": {"value": 2590,
+  "currency": "USD", "value_usd": 2590}, "fwci": 3.2878, "has_fulltext": true, "cited_by_count":
+  8, "citation_normalized_percentile": {"value": 0.92580388, "is_in_top_1_percent":
   false, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 97, "max":
   99}, "biblio": {"volume": "14", "issue": "1", "first_page": "17581", "last_page":
   "17581"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -6276,7 +6276,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "display_name": "Engineering and Physical Sciences Research Council", "ror": "https://ror.org/0439y7842"},
   {"id": "https://openalex.org/F4320337314", "display_name": "Centre For Medical Engineering,
   King\u2019s College London", "ror": "https://ror.org/04s9kfd63"}], "has_content":
-  {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+  {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
   37, "referenced_works": ["https://openalex.org/W2026752633", "https://openalex.org/W2028279393",
   "https://openalex.org/W2058384458", "https://openalex.org/W2064675550", "https://openalex.org/W2067395123",
   "https://openalex.org/W2119390490", "https://openalex.org/W2123983635", "https://openalex.org/W2138747051",
@@ -6334,7 +6334,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "combining": [248], "data,": [252], "model.": [257], "has": [260], "potential":
   [262], "accurately": [264], "progression": [267], "timely": [270], "intervention.":
   [272]}, "counts_by_year": [{"year": 2026, "cited_by_count": 2}, {"year": 2025, "cited_by_count":
-  6}], "updated_date": "2026-08-21T09:56:20.448147", "created_date": "2025-10-10T00:00:00"},
+  6}], "updated_date": "2026-08-29T07:29:34.045763", "created_date": "2025-10-10T00:00:00"},
   {"id": "https://openalex.org/W7124277710", "doi": "https://doi.org/10.1038/s41591-025-04138-z",
   "title": "Genotype-stratified adjunctive dexamethasone for tuberculous meningitis
   in HIV-negative adults: a randomized controlled phase 3 trial", "display_name":
@@ -6795,8 +6795,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   ["https://openalex.org/A5071781127"], "corresponding_institution_ids": ["https://openalex.org/I124357947",
   "https://openalex.org/I40120149", "https://openalex.org/I4210089966", "https://openalex.org/I4210150114"],
   "apc_list": {"value": 12690, "currency": "USD", "value_usd": 12690}, "apc_paid":
-  {"value": 12690, "currency": "USD", "value_usd": 12690}, "fwci": 53.6047, "has_fulltext":
-  false, "cited_by_count": 6, "citation_normalized_percentile": {"value": 0.99873447,
+  {"value": 12690, "currency": "USD", "value_usd": 12690}, "fwci": 60.3116, "has_fulltext":
+  false, "cited_by_count": 7, "citation_normalized_percentile": {"value": 0.99905253,
   "is_in_top_1_percent": true, "is_in_top_10_percent": true}, "cited_by_percentile_year":
   {"min": 98, "max": 99}, "biblio": {"volume": "32", "issue": "3", "first_page": "849",
   "last_page": "858"}, "is_retracted": false, "is_paratext": false, "is_xpac": false,
@@ -7145,8 +7145,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   anti-inflammatory therapy to reduce deaths from tuberculosis.", "funder_award_id":
   "110179/Z/15/Z", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
   "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
-  false, "pdf": false}, "content_urls": null, "referenced_works_count": 36, "referenced_works":
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": false,
+  "grobid_xml": false}, "content_urls": null, "referenced_works_count": 36, "referenced_works":
   ["https://openalex.org/W1965974931", "https://openalex.org/W1967607476", "https://openalex.org/W1968632660",
   "https://openalex.org/W1972605644", "https://openalex.org/W1979936739", "https://openalex.org/W1986514504",
   "https://openalex.org/W1986607793", "https://openalex.org/W2059831659", "https://openalex.org/W2088438114",
@@ -7209,7 +7209,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "needed,": [317], "alongside": [318], "targeted,": [320], "more": [321], "effective":
   [322], "anti-inflammatory": [323], "agents": [324], "than": [325], "(ClinicalTrials.gov":
   [327], "NCT03100786": [328], ").": [329]}, "counts_by_year": [{"year": 2026, "cited_by_count":
-  6}], "updated_date": "2026-08-21T09:56:20.448147", "created_date": "2026-01-16T00:00:00"},
+  7}], "updated_date": "2026-08-26T07:47:46.906454", "created_date": "2026-01-16T00:00:00"},
   {"id": "https://openalex.org/W4414787932", "doi": "https://doi.org/10.1371/journal.pntd.0013589",
   "title": "Severe dengue in adults: Clinical features from the 2022 dengue outbreak
   at a Vietnamese tertiary hospital", "display_name": "Severe dengue in adults: Clinical
@@ -7382,8 +7382,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   2, "institutions_distinct_count": 5, "corresponding_author_ids": ["https://openalex.org/A5073508427"],
   "corresponding_institution_ids": ["https://openalex.org/I2802508454"], "apc_list":
   {"value": 2670, "currency": "USD", "value_usd": 2670}, "apc_paid": {"value": 2670,
-  "currency": "USD", "value_usd": 2670}, "fwci": 3.0705, "has_fulltext": true, "cited_by_count":
-  3, "citation_normalized_percentile": {"value": 0.91929242, "is_in_top_1_percent":
+  "currency": "USD", "value_usd": 2670}, "fwci": 3.9951, "has_fulltext": true, "cited_by_count":
+  4, "citation_normalized_percentile": {"value": 0.94138948, "is_in_top_1_percent":
   false, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 98, "max":
   99}, "biblio": {"volume": "19", "issue": "10", "first_page": "e0013589", "last_page":
   "e0013589"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -7602,8 +7602,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "version": "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
   "PLOS Neglected Tropical Diseases", "raw_type": "journal-article"}, "sustainable_development_goals":
   [], "awards": [], "funders": [{"id": "https://openalex.org/F4320320290", "display_name":
-  "University of Oxford", "ror": "https://ror.org/052gg0110"}], "has_content": {"grobid_xml":
-  true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4414787932.pdf",
+  "University of Oxford", "ror": "https://ror.org/052gg0110"}], "has_content": {"pdf":
+  true, "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4414787932.pdf",
   "grobid_xml": "https://content.openalex.org/works/W4414787932.grobid-xml"}, "referenced_works_count":
   15, "referenced_works": ["https://openalex.org/W1971497078", "https://openalex.org/W2001480606",
   "https://openalex.org/W2002958662", "https://openalex.org/W2109949934", "https://openalex.org/W2786255039",
@@ -7659,7 +7659,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   [284], "host": [285], "these": [289], "features,": [290], "will": [291], "contribute":
   [292], "formulating": [294], "suitable": [295], "treatment": [296], "guidelines":
   [297], "this": [299], "at-risk": [300], "population.": [301]}, "counts_by_year":
-  [{"year": 2026, "cited_by_count": 3}], "updated_date": "2026-08-21T09:56:20.448147",
+  [{"year": 2026, "cited_by_count": 4}], "updated_date": "2026-08-27T14:10:00.468798",
   "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4399859342",
   "doi": "https://doi.org/10.1038/s41598-024-64898-5", "title": "Detection of co-infection
   and recombination cases with Omicron and local Delta variants of SARS-CoV-2 in Vietnam",
@@ -8578,10 +8578,10 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "institutions": [], "countries_distinct_count": 2, "institutions_distinct_count":
   5, "corresponding_author_ids": ["https://openalex.org/A5007778579", "https://openalex.org/A5010505038",
   "https://openalex.org/A5101671864"], "corresponding_institution_ids": ["https://openalex.org/I4210150114"],
-  "apc_list": {"value": 2690, "currency": "USD", "value_usd": 2690}, "apc_paid": {"value":
-  2690, "currency": "USD", "value_usd": 2690}, "fwci": 2.0555, "has_fulltext": true,
-  "cited_by_count": 7, "citation_normalized_percentile": {"value": 0.86781183, "is_in_top_1_percent":
-  false, "is_in_top_10_percent": false}, "cited_by_percentile_year": {"min": 90, "max":
+  "apc_list": {"value": 2590, "currency": "USD", "value_usd": 2590}, "apc_paid": {"value":
+  2590, "currency": "USD", "value_usd": 2590}, "fwci": 2.0296, "has_fulltext": true,
+  "cited_by_count": 7, "citation_normalized_percentile": {"value": 0.86596638, "is_in_top_1_percent":
+  false, "is_in_top_10_percent": false}, "cited_by_percentile_year": {"min": 89, "max":
   98}, "biblio": {"volume": "14", "issue": "1", "first_page": "14225", "last_page":
   "14225"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
   {"id": "https://openalex.org/T10118", "display_name": "SARS-CoV-2 and COVID-19 Research",
@@ -8843,8 +8843,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "display_name": "National COVID Testing Africa AAPs/Centre", "funder_award_id":
   "222574/Z/21/Z", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
   "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
-  false, "pdf": false}, "content_urls": null, "referenced_works_count": 21, "referenced_works":
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": false,
+  "grobid_xml": false}, "content_urls": null, "referenced_works_count": 21, "referenced_works":
   ["https://openalex.org/W2120076861", "https://openalex.org/W3001195213", "https://openalex.org/W3014162634",
   "https://openalex.org/W3046463923", "https://openalex.org/W3147414822", "https://openalex.org/W3215610096",
   "https://openalex.org/W4200112411", "https://openalex.org/W4220823144", "https://openalex.org/W4220852166",
@@ -8888,7 +8888,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   [180], "changes": [183], "that": [184], "may": [185], "affect": [186], "properties":
   [188], "evolutionary": [190], "events.": [191]}, "counts_by_year": [{"year": 2026,
   "cited_by_count": 1}, {"year": 2025, "cited_by_count": 5}, {"year": 2024, "cited_by_count":
-  1}], "updated_date": "2026-08-23T07:36:19.812096", "created_date": "2025-10-10T00:00:00"},
+  1}], "updated_date": "2026-08-28T12:50:07.497085", "created_date": "2025-10-10T00:00:00"},
   {"id": "https://openalex.org/W4404755442", "doi": "https://doi.org/10.12688/wellcomeopenres.22498.1",
   "title": "Statistical analysis plan for the LAST ACT clinical trial; a Leukotriene
   A4 hydrolase Stratified non-inferiority Trial of Adjunctive Corticosteroids for
@@ -9025,8 +9025,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "institutions": [], "countries_distinct_count": 2, "institutions_distinct_count":
   4, "corresponding_author_ids": [], "corresponding_institution_ids": [], "apc_list":
   {"value": 920, "currency": "GBP", "value_usd": 1128}, "apc_paid": {"value": 920,
-  "currency": "GBP", "value_usd": 1128}, "fwci": 0.8349, "has_fulltext": true, "cited_by_count":
-  2, "citation_normalized_percentile": {"value": 0.75742426, "is_in_top_1_percent":
+  "currency": "GBP", "value_usd": 1128}, "fwci": 0.8277, "has_fulltext": true, "cited_by_count":
+  2, "citation_normalized_percentile": {"value": 0.7558024, "is_in_top_1_percent":
   false, "is_in_top_10_percent": false}, "cited_by_percentile_year": {"min": 97, "max":
   98}, "biblio": {"volume": "9", "issue": null, "first_page": "695", "last_page":
   "695"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -9140,8 +9140,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   adjunctive anti-inflammatory therapy to reduce deaths from tuberculosis.", "funder_award_id":
   "110179", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
   "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
-  false, "pdf": false}, "content_urls": null, "referenced_works_count": 18, "referenced_works":
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": false,
+  "grobid_xml": false}, "content_urls": null, "referenced_works_count": 18, "referenced_works":
   ["https://openalex.org/W313080928", "https://openalex.org/W1968632660", "https://openalex.org/W1986514504",
   "https://openalex.org/W1986607793", "https://openalex.org/W1992045522", "https://openalex.org/W1996016456",
   "https://openalex.org/W2123879591", "https://openalex.org/W2150492824", "https://openalex.org/W2152740900",
@@ -9190,7 +9190,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "causes": [220], "substantial": [221], "harm.": [222], "statistical": [224], "analysis":
   [225, 232], "plan": [226, 233], "expands": [227], "updates": [230], "outlined":
   [234], "published": [237], "study": [238], "protocol.": [239]}, "counts_by_year":
-  [{"year": 2026, "cited_by_count": 2}], "updated_date": "2026-08-23T07:36:19.812096",
+  [{"year": 2026, "cited_by_count": 2}], "updated_date": "2026-08-26T07:47:46.906454",
   "created_date": "2024-11-28T00:00:00"}, {"id": "https://openalex.org/W4407157314",
   "doi": "https://doi.org/10.12688/wellcomeopenres.22498.2", "title": "Statistical
   analysis plan for the LAST ACT clinical trial; a Leukotriene A4 hydrolase Stratified
@@ -9328,8 +9328,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "institutions": [], "countries_distinct_count": 2, "institutions_distinct_count":
   4, "corresponding_author_ids": [], "corresponding_institution_ids": [], "apc_list":
   {"value": 920, "currency": "GBP", "value_usd": 1128}, "apc_paid": {"value": 920,
-  "currency": "GBP", "value_usd": 1128}, "fwci": 2.0713, "has_fulltext": true, "cited_by_count":
-  2, "citation_normalized_percentile": {"value": 0.83505661, "is_in_top_1_percent":
+  "currency": "GBP", "value_usd": 1128}, "fwci": 2.0344, "has_fulltext": true, "cited_by_count":
+  2, "citation_normalized_percentile": {"value": 0.83264085, "is_in_top_1_percent":
   false, "is_in_top_10_percent": false}, "cited_by_percentile_year": {"min": 91, "max":
   97}, "biblio": {"volume": "9", "issue": null, "first_page": "695", "last_page":
   "695"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -9392,10 +9392,9 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   null, "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization":
   "https://openalex.org/I4210089966", "host_organization_name": "London School of
   Hygiene & Tropical Medicine", "host_organization_lineage": ["https://openalex.org/I4210089966"],
-  "host_organization_lineage_names": [], "type": "repository"}, "license": "other-oa",
-  "license_id": "https://openalex.org/licenses/other-oa", "version": "acceptedVersion",
-  "is_accepted": true, "is_published": false, "raw_source_name": null, "raw_type":
-  "Article"}, {"id": "pmh:oai:doaj.org/article:99df0b0d17f54fa49384a7006f80d183",
+  "host_organization_lineage_names": [], "type": "repository"}, "license": null, "license_id":
+  null, "version": "acceptedVersion", "is_accepted": true, "is_published": false,
+  "raw_source_name": null, "raw_type": "Article"}, {"id": "pmh:oai:doaj.org/article:99df0b0d17f54fa49384a7006f80d183",
   "is_oa": true, "landing_page_url": "https://doaj.org/article/99df0b0d17f54fa49384a7006f80d183",
   "pdf_url": null, "source": {"id": "https://openalex.org/S4306401280", "display_name":
   "DOAJ (DOAJ: Directory of Open Access Journals)", "issn_l": null, "issn": null,
@@ -9417,8 +9416,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   adjunctive anti-inflammatory therapy to reduce deaths from tuberculosis.", "funder_award_id":
   "110179", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
   "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
-  false, "pdf": false}, "content_urls": null, "referenced_works_count": 19, "referenced_works":
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": false,
+  "grobid_xml": false}, "content_urls": null, "referenced_works_count": 19, "referenced_works":
   ["https://openalex.org/W313080928", "https://openalex.org/W1968632660", "https://openalex.org/W1986514504",
   "https://openalex.org/W1986607793", "https://openalex.org/W1992045522", "https://openalex.org/W1996016456",
   "https://openalex.org/W2123879591", "https://openalex.org/W2128471563", "https://openalex.org/W2150492824",
@@ -9468,7 +9467,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   [225, 232], "plan": [226, 233], "expands": [227], "updates": [230], "outlined":
   [234], "published": [237], "study": [238], "protocol.": [239]}, "counts_by_year":
   [{"year": 2026, "cited_by_count": 1}, {"year": 2025, "cited_by_count": 1}], "updated_date":
-  "2026-08-21T09:56:20.448147", "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W7154964006",
+  "2026-08-26T07:47:46.906454", "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W7154964006",
   "doi": "https://doi.org/10.1186/s40635-026-00899-0", "title": "Predictive value
   of ventriculo-arterial coupling for hypotension after induction of anaesthesia:
   a prospective observational cohort study", "display_name": "Predictive value of
@@ -9743,7 +9742,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version": "publishedVersion",
   "is_accepted": true, "is_published": true, "raw_source_name": "Intensive Care Medicine
   Experimental", "raw_type": "journal-article"}, "sustainable_development_goals":
-  [], "awards": [], "funders": [], "has_content": {"grobid_xml": true, "pdf": true},
+  [], "awards": [], "funders": [], "has_content": {"pdf": true, "grobid_xml": true},
   "content_urls": {"pdf": "https://content.openalex.org/works/W7154964006.pdf", "grobid_xml":
   "https://content.openalex.org/works/W7154964006.grobid-xml"}, "referenced_works_count":
   40, "referenced_works": ["https://openalex.org/W73459521", "https://openalex.org/W1651614883",
@@ -10019,9 +10018,9 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "institutions": [], "countries_distinct_count": 2, "institutions_distinct_count":
   8, "corresponding_author_ids": ["https://openalex.org/A5073343908"], "corresponding_institution_ids":
   ["https://openalex.org/I183935753", "https://openalex.org/I4210150114"], "apc_list":
-  {"value": 3090, "currency": "USD", "value_usd": 3090}, "apc_paid": {"value": 3090,
-  "currency": "USD", "value_usd": 3090}, "fwci": 1.6688, "has_fulltext": true, "cited_by_count":
-  4, "citation_normalized_percentile": {"value": 0.82079506, "is_in_top_1_percent":
+  {"value": 2990, "currency": "USD", "value_usd": 2990}, "apc_paid": {"value": 2990,
+  "currency": "USD", "value_usd": 2990}, "fwci": 1.6475, "has_fulltext": true, "cited_by_count":
+  4, "citation_normalized_percentile": {"value": 0.8186705, "is_in_top_1_percent":
   false, "is_in_top_10_percent": false}, "cited_by_percentile_year": {"min": 94, "max":
   96}, "biblio": {"volume": "24", "issue": "1", "first_page": "163", "last_page":
   "163"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -10236,7 +10235,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   [{"id": "https://openalex.org/F4320311904", "display_name": "Wellcome Trust", "ror":
   "https://ror.org/029chgv08"}, {"id": "https://openalex.org/F4320319990", "display_name":
   "National Institute for Health and Care Research", "ror": "https://ror.org/0187kwz08"}],
-  "has_content": {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4391574296.pdf",
+  "has_content": {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4391574296.pdf",
   "grobid_xml": "https://content.openalex.org/works/W4391574296.grobid-xml"}, "referenced_works_count":
   22, "referenced_works": ["https://openalex.org/W1538600059", "https://openalex.org/W2014074083",
   "https://openalex.org/W2040536528", "https://openalex.org/W2051133080", "https://openalex.org/W2070635713",
@@ -10293,7 +10292,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "analysis,": [266], "combining": [267], "factors.": [273], "Models": [274], "accurate,":
   [276], "well-calibrated,": [277], "support": [280], "both": [281], "practice": [283],
   "research.": [285]}, "counts_by_year": [{"year": 2025, "cited_by_count": 2}, {"year":
-  2024, "cited_by_count": 2}], "updated_date": "2026-08-24T07:32:12.397491", "created_date":
+  2024, "cited_by_count": 2}], "updated_date": "2026-08-28T12:50:07.497085", "created_date":
   "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4410631163", "doi": "https://doi.org/10.1371/journal.pone.0321655",
   "title": "Convolutional neural network using magnetic resonance brain imaging to
   predict outcome from tuberculosis meningitis", "display_name": "Convolutional neural
@@ -10711,7 +10710,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "https://openalex.org/F4320334627", "display_name": "Engineering and Physical Sciences
   Research Council", "ror": "https://ror.org/0439y7842"}, {"id": "https://openalex.org/F4320337314",
   "display_name": "Centre For Medical Engineering, King\u2019s College London", "ror":
-  "https://ror.org/04s9kfd63"}], "has_content": {"grobid_xml": true, "pdf": true},
+  "https://ror.org/04s9kfd63"}], "has_content": {"pdf": true, "grobid_xml": true},
   "content_urls": {"pdf": "https://content.openalex.org/works/W4410631163.pdf", "grobid_xml":
   "https://content.openalex.org/works/W4410631163.grobid-xml"}, "referenced_works_count":
   38, "referenced_works": ["https://openalex.org/W1965974931", "https://openalex.org/W2007537022",
@@ -11006,7 +11005,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   system infections in Vietnam", "funder_award_id": "204904/Z/16/Z", "funder_id":
   "https://openalex.org/F4320311904", "funder_display_name": "Wellcome Trust"}], "funders":
   [{"id": "https://openalex.org/F4320311904", "display_name": "Wellcome Trust", "ror":
-  "https://ror.org/029chgv08"}], "has_content": {"grobid_xml": true, "pdf": true},
+  "https://ror.org/029chgv08"}], "has_content": {"pdf": true, "grobid_xml": true},
   "content_urls": {"pdf": "https://content.openalex.org/works/W4384696586.pdf", "grobid_xml":
   "https://content.openalex.org/works/W4384696586.grobid-xml"}, "referenced_works_count":
   23, "referenced_works": ["https://openalex.org/W1538600059", "https://openalex.org/W2014074083",
@@ -11059,7 +11058,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "88.0%": [218], "75.0%": [220], "respectively.": [221], "Conclusion": [222], "Our":
   [223], "shows": [226], "reliable": [227], "performance": [228], "as": [233], "decision":
   [235], "assistant": [236], "clinicians": [238], "detect": [240], "patients": [241]},
-  "counts_by_year": [{"year": 2025, "cited_by_count": 1}], "updated_date": "2026-08-18T07:49:30.821534",
+  "counts_by_year": [{"year": 2025, "cited_by_count": 1}], "updated_date": "2026-08-26T07:47:46.906454",
   "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W3202355958",
   "doi": "https://doi.org/10.1093/cid/ciab891", "title": "Reply to Kataoka", "display_name":
   "Reply to Kataoka", "publication_year": 2021, "publication_date": "2021-10-07",
@@ -11176,8 +11175,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "institution_ids": ["https://openalex.org/I4210150114"]}]}], "institutions": [],
   "countries_distinct_count": 3, "institutions_distinct_count": 4, "corresponding_author_ids":
   ["https://openalex.org/A5025150644"], "corresponding_institution_ids": ["https://openalex.org/I189643551",
-  "https://openalex.org/I4210150114"], "apc_list": {"value": 4763, "currency": "USD",
-  "value_usd": 4763}, "apc_paid": null, "fwci": null, "has_fulltext": false, "cited_by_count":
+  "https://openalex.org/I4210150114"], "apc_list": {"value": 4052, "currency": "USD",
+  "value_usd": 4052}, "apc_paid": null, "fwci": null, "has_fulltext": false, "cited_by_count":
   0, "citation_normalized_percentile": null, "cited_by_percentile_year": null, "biblio":
   {"volume": "74", "issue": "10", "first_page": "1884", "last_page": "1885"}, "is_retracted":
   false, "is_paratext": false, "is_xpac": false, "primary_topic": {"id": "https://openalex.org/T10218",
@@ -11272,8 +11271,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   the management and prevention of tetanus in Vietnam.", "funder_award_id": "107367/Z/15/Z",
   "funder_id": "https://openalex.org/F4320311904", "funder_display_name": "Wellcome
   Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
-  false, "pdf": false}, "content_urls": null, "referenced_works_count": 5, "referenced_works":
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": false,
+  "grobid_xml": false}, "content_urls": null, "referenced_works_count": 5, "referenced_works":
   ["https://openalex.org/W1503693879", "https://openalex.org/W1998638218", "https://openalex.org/W2154117702",
   "https://openalex.org/W2796402759", "https://openalex.org/W3194782510"], "related_works":
   ["https://openalex.org/W2348837382", "https://openalex.org/W746329893", "https://openalex.org/W4205872570",
@@ -11301,7 +11300,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   [109], "harm)": [111], "[3\u20135].": [112], "give": [114], "more": [116], "meaningful":
   [117], "indication": [118], "these": [120], "end": [122], "points,": [123], "present":
   [126], "number": [128], "events/follow-up": [130], "days.": [131], "As": [132],
-  "protocol,...": [143]}, "counts_by_year": [], "updated_date": "2026-08-21T09:56:20.448147",
+  "protocol,...": [143]}, "counts_by_year": [], "updated_date": "2026-08-28T12:50:07.497085",
   "created_date": "2021-10-11T00:00:00"}, {"id": "https://openalex.org/W4391578951",
   "doi": "https://doi.org/10.21203/rs.3.rs-3890824/v1", "title": "Convolutional neural
   network using magnetic resonance brain imaging to predict outcome from tuberculosis
@@ -11579,7 +11578,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "https://openalex.org/F4320334627", "display_name": "Engineering and Physical Sciences
   Research Council", "ror": "https://ror.org/0439y7842"}, {"id": "https://openalex.org/F4320337314",
   "display_name": "Centre For Medical Engineering, King\u2019s College London", "ror":
-  "https://ror.org/04s9kfd63"}], "has_content": {"grobid_xml": true, "pdf": true},
+  "https://ror.org/04s9kfd63"}], "has_content": {"pdf": true, "grobid_xml": true},
   "content_urls": {"pdf": "https://content.openalex.org/works/W4391578951.pdf", "grobid_xml":
   "https://content.openalex.org/works/W4391578951.grobid-xml"}, "referenced_works_count":
   21, "referenced_works": ["https://openalex.org/W1965974931", "https://openalex.org/W2007537022",
@@ -11644,7 +11643,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   [301], "information": [302], "can": [306], "help": [307], "unwanted": [309], "outcomes":
   [310], "TBM.": [312], "A": [313], "larger": [314], "dataset": [315], "now": [317],
   "needed": [318], "confirm": [320], "findings.": [322]}, "counts_by_year": [], "updated_date":
-  "2026-08-18T07:49:30.821534", "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W7133234693",
+  "2026-08-26T07:47:46.906454", "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W7133234693",
   "doi": "https://doi.org/10.1186/s12910-026-01400-y", "title": "Exploring layers
   of vulnerability during COVID-19: qualitative research with communities in Indonesia,
   Nepal, and Vietnam", "display_name": "Exploring layers of vulnerability during COVID-19:
@@ -12301,7 +12300,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   true, "is_published": true, "raw_source_name": "BMC Medical Ethics", "raw_type":
   "journal-article"}, "sustainable_development_goals": [{"display_name": "Good health
   and well-being", "id": "https://metadata.un.org/sdg/3", "score": 0.42751845717430115}],
-  "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false},
+  "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false},
   "content_urls": null, "referenced_works_count": 24, "referenced_works": ["https://openalex.org/W1566125242",
   "https://openalex.org/W1989224082", "https://openalex.org/W2045853031", "https://openalex.org/W2148183484",
   "https://openalex.org/W2485540656", "https://openalex.org/W2887820101", "https://openalex.org/W2983441955",
@@ -12531,7 +12530,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
   "license_id": "https://openalex.org/licenses/cc-by", "version": null, "is_accepted":
   false, "is_published": false, "raw_source_name": null, "raw_type": "Image"}, "sustainable_development_goals":
-  [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false},
+  [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false},
   "content_urls": null, "referenced_works_count": 0, "referenced_works": [], "related_works":
   [], "abstract_inverted_index": {"Supplementary": [0], "Material": [1], "2.": [2]},
   "counts_by_year": [], "updated_date": "2026-07-01T06:00:48.157686", "created_date":
@@ -12724,7 +12723,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "license_id": "https://openalex.org/licenses/cc-by", "version": null, "is_accepted":
   false, "is_published": false, "raw_source_name": null, "raw_type": "Collection"},
   "sustainable_development_goals": [], "awards": [], "funders": [], "has_content":
-  {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+  {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
   0, "referenced_works": [], "related_works": [], "abstract_inverted_index": {"Abstract":
   [0], "Background": [1], "Post-induction": [2], "hypotension": [3], "(PIH)": [4],
   "is": [5], "associated": [6, 140, 252], "with": [7, 61, 141, 214, 253], "acute":
@@ -12958,10 +12957,10 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "license_id": "https://openalex.org/licenses/cc-by", "version": null, "is_accepted":
   false, "is_published": false, "raw_source_name": null, "raw_type": "JournalArticle"},
   "sustainable_development_goals": [{"display_name": "Zero hunger", "id": "https://metadata.un.org/sdg/2",
-  "score": 0.5143677592277527}], "awards": [], "funders": [], "has_content": {"grobid_xml":
-  false, "pdf": false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
-  [], "related_works": [], "abstract_inverted_index": {"Supplementary": [0], "Material":
-  [1], "1.": [2]}, "counts_by_year": [], "updated_date": "2026-07-01T06:00:48.157686",
+  "score": 0.5143677592277527}], "awards": [], "funders": [], "has_content": {"pdf":
+  false, "grobid_xml": false}, "content_urls": null, "referenced_works_count": 0,
+  "referenced_works": [], "related_works": [], "abstract_inverted_index": {"Supplementary":
+  [0], "Material": [1], "1.": [2]}, "counts_by_year": [], "updated_date": "2026-07-01T06:00:48.157686",
   "created_date": "2026-04-23T00:00:00"}, {"id": "https://openalex.org/W7155193550",
   "doi": "https://doi.org/10.6084/m9.figshare.c.8434773.v1", "title": "Predictive
   value of ventriculo-arterial coupling for hypotension after induction of anaesthesia:
@@ -13152,7 +13151,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "license_id": "https://openalex.org/licenses/cc-by", "version": null, "is_accepted":
   false, "is_published": false, "raw_source_name": null, "raw_type": "Collection"},
   "sustainable_development_goals": [], "awards": [], "funders": [], "has_content":
-  {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+  {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
   0, "referenced_works": [], "related_works": [], "abstract_inverted_index": {"Abstract":
   [0], "Background": [1], "Post-induction": [2], "hypotension": [3], "(PIH)": [4],
   "is": [5], "associated": [6, 140, 252], "with": [7, 61, 141, 214, 253], "acute":
@@ -13386,10 +13385,10 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "license_id": "https://openalex.org/licenses/cc-by", "version": null, "is_accepted":
   false, "is_published": false, "raw_source_name": null, "raw_type": "JournalArticle"},
   "sustainable_development_goals": [{"display_name": "Zero hunger", "id": "https://metadata.un.org/sdg/2",
-  "score": 0.5143677592277527}], "awards": [], "funders": [], "has_content": {"grobid_xml":
-  false, "pdf": false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
-  [], "related_works": [], "abstract_inverted_index": {"Supplementary": [0], "Material":
-  [1], "1.": [2]}, "counts_by_year": [], "updated_date": "2026-07-01T06:00:48.157686",
+  "score": 0.5143677592277527}], "awards": [], "funders": [], "has_content": {"pdf":
+  false, "grobid_xml": false}, "content_urls": null, "referenced_works_count": 0,
+  "referenced_works": [], "related_works": [], "abstract_inverted_index": {"Supplementary":
+  [0], "Material": [1], "1.": [2]}, "counts_by_year": [], "updated_date": "2026-07-01T06:00:48.157686",
   "created_date": "2026-04-23T00:00:00"}, {"id": "https://openalex.org/W7155236017",
   "doi": "https://doi.org/10.6084/m9.figshare.32070915", "title": "Additional file
   2 of Predictive value of ventriculo-arterial coupling for hypotension after induction
@@ -13556,7 +13555,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
   "license_id": "https://openalex.org/licenses/cc-by", "version": null, "is_accepted":
   false, "is_published": false, "raw_source_name": null, "raw_type": "Image"}, "sustainable_development_goals":
-  [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false},
+  [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false},
   "content_urls": null, "referenced_works_count": 0, "referenced_works": [], "related_works":
   [], "abstract_inverted_index": {"Supplementary": [0], "Material": [1], "2.": [2]},
   "counts_by_year": [], "updated_date": "2026-07-01T06:00:48.157686", "created_date":
@@ -13807,7 +13806,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "https://openalex.org/I4210150114"], "apc_list": {"value": 4030, "currency": "USD",
   "value_usd": 4030}, "apc_paid": {"value": 4030, "currency": "USD", "value_usd":
   4030}, "fwci": 0.0, "has_fulltext": true, "cited_by_count": 0, "citation_normalized_percentile":
-  {"value": 0.64112143, "is_in_top_1_percent": false, "is_in_top_10_percent": false},
+  {"value": 0.62540227, "is_in_top_1_percent": false, "is_in_top_10_percent": false},
   "cited_by_percentile_year": null, "biblio": {"volume": "93", "issue": "2", "first_page":
   "106796", "last_page": "106796"}, "is_retracted": false, "is_paratext": false, "is_xpac":
   false, "primary_topic": {"id": "https://openalex.org/T11381", "display_name": "Infectious
@@ -13863,54 +13862,100 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   "wikidata": "https://www.wikidata.org/wiki/Q974135", "display_name": "Chemotherapy",
   "level": 2, "score": 0.2515000104904175}], "mesh": [{"descriptor_ui": "D000328",
   "descriptor_name": "Adult", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
-  false}, {"descriptor_ui": "D000995", "descriptor_name": "Antitubercular Agents",
-  "qualifier_ui": "Q000008", "qualifier_name": "administration & dosage", "is_major_topic":
-  true}, {"descriptor_ui": "D000995", "descriptor_name": "Antitubercular Agents",
-  "qualifier_ui": "Q000009", "qualifier_name": "adverse effects", "is_major_topic":
+  false}, {"descriptor_ui": "D000328", "descriptor_name": "Adult", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D000995",
+  "descriptor_name": "Antitubercular Agents", "qualifier_ui": "Q000008", "qualifier_name":
+  "administration & dosage", "is_major_topic": true}, {"descriptor_ui": "D000995",
+  "descriptor_name": "Antitubercular Agents", "qualifier_ui": "Q000008", "qualifier_name":
+  "administration & dosage", "is_major_topic": true}, {"descriptor_ui": "D000995",
+  "descriptor_name": "Antitubercular Agents", "qualifier_ui": "Q000009", "qualifier_name":
+  "adverse effects", "is_major_topic": true}, {"descriptor_ui": "D000995", "descriptor_name":
+  "Antitubercular Agents", "qualifier_ui": "Q000009", "qualifier_name": "adverse effects",
+  "is_major_topic": true}, {"descriptor_ui": "D000995", "descriptor_name": "Antitubercular
+  Agents", "qualifier_ui": "Q000627", "qualifier_name": "therapeutic use", "is_major_topic":
   true}, {"descriptor_ui": "D000995", "descriptor_name": "Antitubercular Agents",
   "qualifier_ui": "Q000627", "qualifier_name": "therapeutic use", "is_major_topic":
   true}, {"descriptor_ui": "D004977", "descriptor_name": "Ethambutol", "qualifier_ui":
   "Q000009", "qualifier_name": "adverse effects", "is_major_topic": false}, {"descriptor_ui":
-  "D004977", "descriptor_name": "Ethambutol", "qualifier_ui": "Q000627", "qualifier_name":
-  "therapeutic use", "is_major_topic": false}, {"descriptor_ui": "D005260", "descriptor_name":
+  "D004977", "descriptor_name": "Ethambutol", "qualifier_ui": "Q000009", "qualifier_name":
+  "adverse effects", "is_major_topic": false}, {"descriptor_ui": "D004977", "descriptor_name":
+  "Ethambutol", "qualifier_ui": "Q000627", "qualifier_name": "therapeutic use", "is_major_topic":
+  false}, {"descriptor_ui": "D004977", "descriptor_name": "Ethambutol", "qualifier_ui":
+  "Q000627", "qualifier_name": "therapeutic use", "is_major_topic": false}, {"descriptor_ui":
+  "D005260", "descriptor_name": "Female", "qualifier_ui": null, "qualifier_name":
+  null, "is_major_topic": false}, {"descriptor_ui": "D005260", "descriptor_name":
   "Female", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
   {"descriptor_ui": "D006801", "descriptor_name": "Humans", "qualifier_ui": null,
-  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D007538", "descriptor_name":
-  "Isoniazid", "qualifier_ui": "Q000008", "qualifier_name": "administration & dosage",
-  "is_major_topic": false}, {"descriptor_ui": "D007538", "descriptor_name": "Isoniazid",
-  "qualifier_ui": "Q000009", "qualifier_name": "adverse effects", "is_major_topic":
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D006801", "descriptor_name":
+  "Humans", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D007538", "descriptor_name": "Isoniazid", "qualifier_ui": "Q000008",
+  "qualifier_name": "administration & dosage", "is_major_topic": false}, {"descriptor_ui":
+  "D007538", "descriptor_name": "Isoniazid", "qualifier_ui": "Q000008", "qualifier_name":
+  "administration & dosage", "is_major_topic": false}, {"descriptor_ui": "D007538",
+  "descriptor_name": "Isoniazid", "qualifier_ui": "Q000009", "qualifier_name": "adverse
+  effects", "is_major_topic": false}, {"descriptor_ui": "D007538", "descriptor_name":
+  "Isoniazid", "qualifier_ui": "Q000009", "qualifier_name": "adverse effects", "is_major_topic":
   false}, {"descriptor_ui": "D007538", "descriptor_name": "Isoniazid", "qualifier_ui":
   "Q000627", "qualifier_name": "therapeutic use", "is_major_topic": false}, {"descriptor_ui":
-  "D008297", "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name": null,
-  "is_major_topic": false}, {"descriptor_ui": "D008875", "descriptor_name": "Middle
-  Aged", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui":
-  "D011718", "descriptor_name": "Pyrazinamide", "qualifier_ui": "Q000008", "qualifier_name":
-  "administration & dosage", "is_major_topic": false}, {"descriptor_ui": "D011718",
-  "descriptor_name": "Pyrazinamide", "qualifier_ui": "Q000009", "qualifier_name":
+  "D007538", "descriptor_name": "Isoniazid", "qualifier_ui": "Q000627", "qualifier_name":
+  "therapeutic use", "is_major_topic": false}, {"descriptor_ui": "D008297", "descriptor_name":
+  "Male", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D008297", "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name":
+  null, "is_major_topic": false}, {"descriptor_ui": "D008875", "descriptor_name":
+  "Middle Aged", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D008875", "descriptor_name": "Middle Aged", "qualifier_ui": null,
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D011718", "descriptor_name":
+  "Pyrazinamide", "qualifier_ui": "Q000008", "qualifier_name": "administration & dosage",
+  "is_major_topic": false}, {"descriptor_ui": "D011718", "descriptor_name": "Pyrazinamide",
+  "qualifier_ui": "Q000008", "qualifier_name": "administration & dosage", "is_major_topic":
+  false}, {"descriptor_ui": "D011718", "descriptor_name": "Pyrazinamide", "qualifier_ui":
+  "Q000009", "qualifier_name": "adverse effects", "is_major_topic": false}, {"descriptor_ui":
+  "D011718", "descriptor_name": "Pyrazinamide", "qualifier_ui": "Q000009", "qualifier_name":
   "adverse effects", "is_major_topic": false}, {"descriptor_ui": "D011718", "descriptor_name":
   "Pyrazinamide", "qualifier_ui": "Q000627", "qualifier_name": "therapeutic use",
-  "is_major_topic": false}, {"descriptor_ui": "D012293", "descriptor_name": "Rifampin",
-  "qualifier_ui": "Q000008", "qualifier_name": "administration & dosage", "is_major_topic":
+  "is_major_topic": false}, {"descriptor_ui": "D011718", "descriptor_name": "Pyrazinamide",
+  "qualifier_ui": "Q000627", "qualifier_name": "therapeutic use", "is_major_topic":
   false}, {"descriptor_ui": "D012293", "descriptor_name": "Rifampin", "qualifier_ui":
-  "Q000009", "qualifier_name": "adverse effects", "is_major_topic": false}, {"descriptor_ui":
+  "Q000008", "qualifier_name": "administration & dosage", "is_major_topic": false},
+  {"descriptor_ui": "D012293", "descriptor_name": "Rifampin", "qualifier_ui": "Q000008",
+  "qualifier_name": "administration & dosage", "is_major_topic": false}, {"descriptor_ui":
+  "D012293", "descriptor_name": "Rifampin", "qualifier_ui": "Q000009", "qualifier_name":
+  "adverse effects", "is_major_topic": false}, {"descriptor_ui": "D012293", "descriptor_name":
+  "Rifampin", "qualifier_ui": "Q000009", "qualifier_name": "adverse effects", "is_major_topic":
+  false}, {"descriptor_ui": "D012293", "descriptor_name": "Rifampin", "qualifier_ui":
+  "Q000627", "qualifier_name": "therapeutic use", "is_major_topic": false}, {"descriptor_ui":
   "D012293", "descriptor_name": "Rifampin", "qualifier_ui": "Q000627", "qualifier_name":
   "therapeutic use", "is_major_topic": false}, {"descriptor_ui": "D014390", "descriptor_name":
   "Tuberculosis, Meningeal", "qualifier_ui": "Q000150", "qualifier_name": "complications",
   "is_major_topic": true}, {"descriptor_ui": "D014390", "descriptor_name": "Tuberculosis,
-  Meningeal", "qualifier_ui": "Q000188", "qualifier_name": "drug therapy", "is_major_topic":
-  true}, {"descriptor_ui": "D016896", "descriptor_name": "Treatment Outcome", "qualifier_ui":
+  Meningeal", "qualifier_ui": "Q000150", "qualifier_name": "complications", "is_major_topic":
+  true}, {"descriptor_ui": "D014390", "descriptor_name": "Tuberculosis, Meningeal",
+  "qualifier_ui": "Q000188", "qualifier_name": "drug therapy", "is_major_topic": true},
+  {"descriptor_ui": "D014390", "descriptor_name": "Tuberculosis, Meningeal", "qualifier_ui":
+  "Q000188", "qualifier_name": "drug therapy", "is_major_topic": true}, {"descriptor_ui":
+  "D016896", "descriptor_name": "Treatment Outcome", "qualifier_ui": null, "qualifier_name":
+  null, "is_major_topic": false}, {"descriptor_ui": "D016896", "descriptor_name":
+  "Treatment Outcome", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
+  false}, {"descriptor_ui": "D055815", "descriptor_name": "Young Adult", "qualifier_ui":
   null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D055815",
   "descriptor_name": "Young Adult", "qualifier_ui": null, "qualifier_name": null,
   "is_major_topic": false}, {"descriptor_ui": "D056486", "descriptor_name": "Chemical
   and Drug Induced Liver Injury", "qualifier_ui": "Q000188", "qualifier_name": "drug
   therapy", "is_major_topic": true}, {"descriptor_ui": "D056486", "descriptor_name":
+  "Chemical and Drug Induced Liver Injury", "qualifier_ui": "Q000188", "qualifier_name":
+  "drug therapy", "is_major_topic": true}, {"descriptor_ui": "D056486", "descriptor_name":
+  "Chemical and Drug Induced Liver Injury", "qualifier_ui": "Q000209", "qualifier_name":
+  "etiology", "is_major_topic": true}, {"descriptor_ui": "D056486", "descriptor_name":
   "Chemical and Drug Induced Liver Injury", "qualifier_ui": "Q000209", "qualifier_name":
   "etiology", "is_major_topic": true}, {"descriptor_ui": "D064704", "descriptor_name":
   "Levofloxacin", "qualifier_ui": "Q000009", "qualifier_name": "adverse effects",
   "is_major_topic": false}, {"descriptor_ui": "D064704", "descriptor_name": "Levofloxacin",
-  "qualifier_ui": "Q000627", "qualifier_name": "therapeutic use", "is_major_topic":
-  false}], "locations_count": 2, "locations": [{"id": "doi:10.1016/j.jinf.2026.106796",
-  "is_oa": true, "landing_page_url": "https://doi.org/10.1016/j.jinf.2026.106796",
+  "qualifier_ui": "Q000009", "qualifier_name": "adverse effects", "is_major_topic":
+  false}, {"descriptor_ui": "D064704", "descriptor_name": "Levofloxacin", "qualifier_ui":
+  "Q000627", "qualifier_name": "therapeutic use", "is_major_topic": false}, {"descriptor_ui":
+  "D064704", "descriptor_name": "Levofloxacin", "qualifier_ui": "Q000627", "qualifier_name":
+  "therapeutic use", "is_major_topic": false}], "locations_count": 2, "locations":
+  [{"id": "doi:10.1016/j.jinf.2026.106796", "is_oa": true, "landing_page_url": "https://doi.org/10.1016/j.jinf.2026.106796",
   "pdf_url": "https://www.journalofinfection.com/article/S0163-4453(26)00121-0/pdf",
   "source": {"id": "https://openalex.org/S19579164", "display_name": "Journal of Infection",
   "issn_l": "0163-4453", "issn": ["0163-4453", "1532-2742"], "is_oa": true, "is_in_doaj":
@@ -13927,7 +13972,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   ["https://openalex.org/I1299303238"], "host_organization_lineage_names": [], "type":
   "repository"}, "license": null, "license_id": null, "version": "publishedVersion",
   "is_accepted": true, "is_published": true, "raw_source_name": "The Journal of infection",
-  "raw_type": "Journal Article"}], "best_oa_location": {"id": "doi:10.1016/j.jinf.2026.106796",
+  "raw_type": "Clinical Trial, Phase III"}], "best_oa_location": {"id": "doi:10.1016/j.jinf.2026.106796",
   "is_oa": true, "landing_page_url": "https://doi.org/10.1016/j.jinf.2026.106796",
   "pdf_url": "https://www.journalofinfection.com/article/S0163-4453(26)00121-0/pdf",
   "source": {"id": "https://openalex.org/S19579164", "display_name": "Journal of Infection",
@@ -13943,8 +13988,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   adjunctive anti-inflammatory therapy to reduce deaths from tuberculosis.", "funder_award_id":
   "110179/Z/15/Z", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
   "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
-  true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W7165029375.pdf",
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": true,
+  "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W7165029375.pdf",
   "grobid_xml": "https://content.openalex.org/works/W7165029375.grobid-xml"}, "referenced_works_count":
   20, "referenced_works": ["https://openalex.org/W1951724000", "https://openalex.org/W1986607793",
   "https://openalex.org/W2001811916", "https://openalex.org/W2020976497", "https://openalex.org/W2150492824",
@@ -13994,5 +14039,5 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 151, "page": 1, "per_page":
   [230], "(10X": [231], "ULN),": [232], "pyrazinamide": [235], "alone,": [236], "appeared":
   [237], "safe": [238], "reduced": [240], "rifampicin/isoniazid": [241], "interruptions":
   [242], "standard": [244], "approaches.": [245]}, "counts_by_year": [], "updated_date":
-  "2026-08-23T07:36:19.812096", "created_date": "2026-06-18T00:00:00"}], "group_by":
+  "2026-08-28T12:50:07.497085", "created_date": "2026-06-18T00:00:00"}], "group_by":
   []}'

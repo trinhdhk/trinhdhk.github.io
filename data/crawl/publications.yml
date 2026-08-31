@@ -1,4 +1,4 @@
-generated_at: '2026-08-24T14:31:44Z'
+generated_at: '2026-08-31T19:46:21Z'
 items:
 - title: 'Xpert MTB/RIF Ultra versus Xpert MTB/RIF for the diagnosis of tuberculous
     meningitis: a prospective, randomised, diagnostic accuracy study'
@@ -11,6 +11,7 @@ items:
   - Scholar
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: Adjunctive dexamethasone for tuberculous meningitis in HIV-positive adults
   authors: J Donovan, ND Bang, D Imran, HDT Nghia, E Burhan, DTT Huong, ...
   venue: New England Journal of Medicine 389 (15), 1357-1367, 2023
@@ -30,6 +31,7 @@ items:
   sources:
   - Scholar
   - OpenAlex
+  - SemanticScholar
 - title: 'Effectiveness of continuous endotracheal cuff pressure control for the prevention
     of ventilator-associated respiratory infections: an open-label randomized, controlled
     trial'
@@ -42,6 +44,7 @@ items:
   - Scholar
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: Direct medical costs of tetanus, dengue, and sepsis patients in an intensive
     care unit in Vietnam
   authors: TM Hung, N Van Hao, LM Yen, A McBride, VQ Dat, HR van Doorn, ...
@@ -69,6 +72,7 @@ items:
   sources:
   - Scholar
   - OpenAlex
+  - SemanticScholar
 - title: Computer-aided prognosis of tuberculous meningitis combining imaging and
     non-imaging data
   authors: LS Canas, THK Dong, D Beasley, J Donovan, JO Cleary, R Brown, ...
@@ -80,6 +84,7 @@ items:
   - Scholar
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: A novel diagnostic model for tuberculous meningitis using Bayesian latent
     class analysis
   authors: THK Dong, J Donovan, NM Ngoc, DDA Thu, HDT Nghia, PKN Oanh, ...
@@ -91,6 +96,7 @@ items:
   - Scholar
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: A statistical analysis plan for the Adjunctive Corticosteroids for Tuberculous
     meningitis in HIV-positive adults (ACT HIV) clinical trial
   authors: J Donovan, TDH Khanh, GE Thwaites, RB Geskus
@@ -101,6 +107,7 @@ items:
   sources:
   - Scholar
   - orcid
+  - SemanticScholar
 - title: 'Genotype-stratified adjunctive dexamethasone for tuberculous meningitis
     in HIV-negative adults: a randomized controlled phase 3 trial'
   authors: J Donovan, N Duc Bang, HKT Dong, DTN Ho, TAT Nguyen, TTH Nguyen, ...
@@ -112,6 +119,7 @@ items:
   - Scholar
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: Statistical analysis plan for the LAST ACT clinical trial; a leukotriene
     A4 hydrolase stratified non-inferiority trial of adjunctive corticosteroids for
     HIV-negative adults …
@@ -132,6 +140,7 @@ items:
   - Scholar
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: 'Severe dengue in adults: Clinical features from the 2022 dengue outbreak
     at a Vietnamese tertiary hospital'
   authors: OK Pham, TB Duong, TV Phan, TN Truong, DTH Ha, HV Nguyen, ...
@@ -143,6 +152,7 @@ items:
   - Scholar
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: 'Tuberculous meningitis: understanding and improving diagnosis and prognosis
     using novel tools and approaches'
   authors: DHK Trinh
@@ -166,7 +176,9 @@ items:
   year: '2021'
   citations: '0'
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:qjMakFHDy7sC
-  sources: Scholar
+  sources:
+  - Scholar
+  - SemanticScholar
 - title: Human monoclonal antibodies from convalescent H7N9 patients in China and
     Taiwan
   authors: P Rijal, K Huang, L Schimanski, T Powell, B Wang, T Dong, X Li, ...
@@ -199,6 +211,7 @@ items:
   sources:
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: 'Acceptance and User Experiences of a Wearable Device for the Management
     of Hospitalized Patients in COVID-19-Designated Wards in Ho Chi Minh City, Vietnam:
     Action Learning Project'
@@ -240,7 +253,9 @@ items:
   year: '2020'
   citations: '78'
   url: https://doi.org/10.1093/cid/ciaa1130
-  sources: OpenAlex
+  sources:
+  - OpenAlex
+  - SemanticScholar
 - title: Detection of co-infection and recombination cases with Omicron and local
     Delta variants of SARS-CoV-2 in Vietnam
   authors: Nguyễn Thu Trang, Trịnh Công Điển, Nguyễn Thị Thanh Tâm, Phan Manh Cuong,
@@ -269,7 +284,9 @@ items:
   year: '2024'
   citations: '6'
   url: https://doi.org/10.1038/s41598-024-64898-5
-  sources: OpenAlex
+  sources:
+  - OpenAlex
+  - SemanticScholar
 - title: 'Exploring layers of vulnerability during COVID-19: qualitative research
     with communities in Indonesia, Nepal, and Vietnam'
   authors: Thao Tran, Manish Duwal, Diana Timoria, Ida Ayu Sutrisni, Yen Thi Hong
@@ -299,7 +316,9 @@ items:
   year: '2026'
   citations: '0'
   url: https://doi.org/10.1186/s12910-026-01400-y
-  sources: OpenAlex
+  sources:
+  - OpenAlex
+  - SemanticScholar
 - title: 'Additional file 2 of Predictive value of ventriculo-arterial coupling for
     hypotension after induction of anaesthesia: a prospective observational cohort
     study'
@@ -332,4 +351,6 @@ items:
   year: '2026'
   citations: '0'
   url: https://doi.org/10.1016/j.jinf.2026.106796
-  sources: OpenAlex
+  sources:
+  - OpenAlex
+  - SemanticScholar
