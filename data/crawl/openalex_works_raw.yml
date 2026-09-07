@@ -1,7 +1,7 @@
 url: https://api.openalex.org/works?filter=authorships.author.id:a5073343908|a5123129713&per-page=200
 status: 200
 content_type: application/json
-body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 200,
+body: '{"meta": {"count": 26, "db_response_time_ms": 32, "page": 1, "per_page": 200,
   "groups_count": null, "x_query": {"oql": "works where author is (a5073343908 or
   a5123129713)", "oqo": {"get_rows": "works", "filter_rows": [{"join": "or", "filters":
   [{"column_id": "authorships.author.id", "value": "a5073343908"}, {"column_id": "authorships.author.id",
@@ -314,8 +314,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   4, "corresponding_author_ids": ["https://openalex.org/A5071781127"], "corresponding_institution_ids":
   ["https://openalex.org/I2799599516", "https://openalex.org/I40120149", "https://openalex.org/I4210150114"],
   "apc_list": {"value": 5000, "currency": "USD", "value_usd": 5000}, "apc_paid": {"value":
-  5000, "currency": "USD", "value_usd": 5000}, "fwci": 18.9196, "has_fulltext": true,
-  "cited_by_count": 162, "citation_normalized_percentile": {"value": 0.9965427, "is_in_top_1_percent":
+  5000, "currency": "USD", "value_usd": 5000}, "fwci": 18.9693, "has_fulltext": true,
+  "cited_by_count": 162, "citation_normalized_percentile": {"value": 0.99655203, "is_in_top_1_percent":
   true, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 99, "max":
   100}, "biblio": {"volume": "20", "issue": "3", "first_page": "299", "last_page":
   "307"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -539,7 +539,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "funder_display_name": "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904",
   "display_name": "Wellcome Trust", "ror": "https://ror.org/029chgv08"}, {"id": "https://openalex.org/F4320320290",
   "display_name": "University of Oxford", "ror": "https://ror.org/052gg0110"}], "has_content":
-  {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3000453407.pdf",
+  {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3000453407.pdf",
   "grobid_xml": "https://content.openalex.org/works/W3000453407.grobid-xml"}, "referenced_works_count":
   21, "referenced_works": ["https://openalex.org/W2014074083", "https://openalex.org/W2047801331",
   "https://openalex.org/W2110728266", "https://openalex.org/W2114356129", "https://openalex.org/W2145541864",
@@ -610,7 +610,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "Diagnostics.": [382]}, "counts_by_year": [{"year": 2026, "cited_by_count": 11},
   {"year": 2025, "cited_by_count": 18}, {"year": 2024, "cited_by_count": 37}, {"year":
   2023, "cited_by_count": 31}, {"year": 2022, "cited_by_count": 18}, {"year": 2021,
-  "cited_by_count": 23}, {"year": 2020, "cited_by_count": 24}], "updated_date": "2026-08-28T12:50:07.497085",
+  "cited_by_count": 23}, {"year": 2020, "cited_by_count": 24}], "updated_date": "2026-09-07T09:17:50.787605",
   "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W3046463923",
   "doi": "https://doi.org/10.1093/cid/ciaa1130", "title": "The First 100 Days of Severe
   Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2) Control in Vietnam", "display_name":
@@ -1438,8 +1438,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   Diseases", "raw_type": "journal-article"}, "sustainable_development_goals": [{"display_name":
   "Good health and well-being", "id": "https://metadata.un.org/sdg/3", "score": 0.41999998688697815}],
   "awards": [], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": false,
-  "grobid_xml": false}, "content_urls": null, "referenced_works_count": 29, "referenced_works":
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
+  false, "pdf": false}, "content_urls": null, "referenced_works_count": 29, "referenced_works":
   ["https://openalex.org/W1844981334", "https://openalex.org/W1978453912", "https://openalex.org/W2004573151",
   "https://openalex.org/W2096800088", "https://openalex.org/W2153416121", "https://openalex.org/W2162384187",
   "https://openalex.org/W2582743722", "https://openalex.org/W2765341148", "https://openalex.org/W2886659803",
@@ -1726,18 +1726,26 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "https://openalex.org/I47508984", "display_name": "Imperial College London", "ror":
   "https://ror.org/041kmwe10", "country_code": "GB", "type": "education", "lineage":
   ["https://openalex.org/I47508984"]}], "countries": ["GB", "VN"], "is_corresponding":
-  false, "raw_author_name": "Dang Phuong Thao", "raw_affiliation_strings": ["Hospital
-  for Tropical Diseases, Ho Chi Minh City;", "Imperial College London;", "University
-  of Oxford;", "Oxford University Clinical Research Unit;"], "raw_orcid": null, "affiliations":
-  [{"raw_affiliation_string": "Hospital for Tropical Diseases, Ho Chi Minh City;",
-  "institution_ids": ["https://openalex.org/I4210155479"]}, {"raw_affiliation_string":
-  "Imperial College London;", "institution_ids": ["https://openalex.org/I47508984"]},
+  false, "raw_author_name": "Dang Phuong Thao", "raw_affiliation_strings": ["Oxford
+  University Clinical Research Unit , Ho Chi Minh City , Vietnam", "Hospital for Tropical
+  Diseases, Ho Chi Minh City;", "Imperial College London;", "University of Oxford;",
+  "Oxford University Clinical Research Unit;"], "raw_orcid": null, "affiliations":
+  [{"raw_affiliation_string": "Oxford University Clinical Research Unit , Ho Chi Minh
+  City , Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}, {"raw_affiliation_string":
+  "Hospital for Tropical Diseases, Ho Chi Minh City;", "institution_ids": ["https://openalex.org/I4210155479"]},
+  {"raw_affiliation_string": "Imperial College London;", "institution_ids": ["https://openalex.org/I47508984"]},
   {"raw_affiliation_string": "University of Oxford;", "institution_ids": ["https://openalex.org/I40120149"]},
   {"raw_affiliation_string": "Oxford University Clinical Research Unit;", "institution_ids":
   ["https://openalex.org/I4210150114"]}]}, {"author_position": "middle", "author":
   {"id": null, "display_name": "Dang Trung Kien", "orcid": null}, "institutions":
-  [], "countries": [], "is_corresponding": false, "raw_author_name": "Dang Trung Kien",
-  "raw_affiliation_strings": [], "raw_orcid": null, "affiliations": []}, {"author_position":
+  [{"id": "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
+  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
+  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
+  "https://openalex.org/I87048295"]}], "countries": ["VN"], "is_corresponding": false,
+  "raw_author_name": "Dang Trung Kien", "raw_affiliation_strings": ["Oxford University
+  Clinical Research Unit , Ho Chi Minh City , Vietnam"], "raw_orcid": null, "affiliations":
+  [{"raw_affiliation_string": "Oxford University Clinical Research Unit , Ho Chi Minh
+  City , Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}]}, {"author_position":
   "middle", "author": {"id": "https://openalex.org/A5092375705", "display_name": "Doan
   Bui Xuan Thy", "orcid": "https://orcid.org/0000-0001-7161-8017"}, "institutions":
   [], "countries": [], "is_corresponding": false, "raw_author_name": "Doan Bui Xuan
@@ -1759,13 +1767,21 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
   "https://openalex.org/I87048295"]}], "countries": ["VN"], "is_corresponding": false,
   "raw_author_name": "Du Hong Duc", "raw_affiliation_strings": ["Oxford University
-  Clinical Research Unit, Ho Chi Minh City, Vietnam"], "raw_orcid": null, "affiliations":
-  [{"raw_affiliation_string": "Oxford University Clinical Research Unit, Ho Chi Minh
-  City, Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}]}, {"author_position":
-  "middle", "author": {"id": "https://openalex.org/A5069415900", "display_name": "Ronald
-  B. Geskus", "orcid": "https://orcid.org/0000-0002-2740-3155"}, "institutions": [],
-  "countries": [], "is_corresponding": false, "raw_author_name": "Ronald Geskus",
-  "raw_affiliation_strings": [], "raw_orcid": null, "affiliations": []}, {"author_position":
+  Clinical Research Unit , Ho Chi Minh City , Vietnam", "Oxford University Clinical
+  Research Unit, Ho Chi Minh City, Vietnam"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string":
+  "Oxford University Clinical Research Unit , Ho Chi Minh City , Vietnam", "institution_ids":
+  ["https://openalex.org/I4210150114"]}, {"raw_affiliation_string": "Oxford University
+  Clinical Research Unit, Ho Chi Minh City, Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}]},
+  {"author_position": "middle", "author": {"id": "https://openalex.org/A5069415900",
+  "display_name": "Ronald B. Geskus", "orcid": "https://orcid.org/0000-0002-2740-3155"},
+  "institutions": [{"id": "https://openalex.org/I4210150114", "display_name": "Oxford
+  University Clinical Research Unit", "ror": "https://ror.org/05rehad94", "country_code":
+  "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
+  "https://openalex.org/I87048295"]}], "countries": ["VN"], "is_corresponding": false,
+  "raw_author_name": "Ronald Geskus", "raw_affiliation_strings": ["Oxford University
+  Clinical Research Unit , Ho Chi Minh City , Vietnam"], "raw_orcid": null, "affiliations":
+  [{"raw_affiliation_string": "Oxford University Clinical Research Unit , Ho Chi Minh
+  City , Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}]}, {"author_position":
   "middle", "author": {"id": "https://openalex.org/A5023641633", "display_name": "Ho
   Bich Hai", "orcid": null}, "institutions": [{"id": "https://openalex.org/I4210155479",
   "display_name": "Hospital for Tropical Diseases", "ror": "https://ror.org/040tqsb23",
@@ -1776,43 +1792,78 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   Diseases, Ho Chi Minh City, Vietnam", "institution_ids": ["https://openalex.org/I4210155479"]}]},
   {"author_position": "middle", "author": {"id": "https://openalex.org/A5030268725",
   "display_name": "Ho Quang Chanh", "orcid": "https://orcid.org/0000-0002-1840-0868"},
-  "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
-  "Ho Quang Chanh", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
-  []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5063060240",
-  "display_name": "Ho Van Hien", "orcid": "https://orcid.org/0000-0002-3609-8455"},
-  "institutions": [{"id": "https://openalex.org/I4210155479", "display_name": "Hospital
-  for Tropical Diseases", "ror": "https://ror.org/040tqsb23", "country_code": "VN",
-  "type": "healthcare", "lineage": ["https://openalex.org/I4210155479"]}], "countries":
-  ["VN"], "is_corresponding": false, "raw_author_name": "Ho Van Hien", "raw_affiliation_strings":
-  ["Hospital of Tropical Diseases, Ho Chi Minh City, Vietnam"], "raw_orcid": null,
-  "affiliations": [{"raw_affiliation_string": "Hospital of Tropical Diseases, Ho Chi
-  Minh City, Vietnam", "institution_ids": ["https://openalex.org/I4210155479"]}]},
-  {"author_position": "middle", "author": {"id": "https://openalex.org/A5011754096",
-  "display_name": "Huynh Trung Trieu", "orcid": "https://orcid.org/0000-0003-4922-6548"},
-  "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
-  "Huynh Trung Trieu", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
-  []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5018997560",
-  "display_name": "Evelyne Kestelyn", "orcid": "https://orcid.org/0000-0002-5728-0918"},
-  "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
-  "Evelyne Kestelyn", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
-  []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5049093237",
-  "display_name": "Lam Minh Yen", "orcid": "https://orcid.org/0000-0002-5126-110X"},
-  "institutions": [{"id": "https://openalex.org/I2802508454", "display_name": "University
-  of Medicine and Pharmacy at Ho Chi Minh City", "ror": "https://ror.org/025kb2624",
-  "country_code": "VN", "type": "education", "lineage": ["https://openalex.org/I2802508454"]}],
-  "countries": ["VN"], "is_corresponding": false, "raw_author_name": "Lam Minh Yen",
-  "raw_affiliation_strings": ["University of Medicine and Pharmacy, Ho Chi Minh City,
-  Vietnam"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string": "University
-  of Medicine and Pharmacy, Ho Chi Minh City, Vietnam", "institution_ids": ["https://openalex.org/I2802508454"]}]},
-  {"author_position": "middle", "author": {"id": "https://openalex.org/A5023306776",
-  "display_name": "Le Dinh Van Khoa", "orcid": "https://orcid.org/0000-0003-2958-0355"},
-  "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
-  "Le Dinh Van Khoa", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
-  []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5102763518",
-  "display_name": "Le Thanh Phuong", "orcid": "https://orcid.org/0000-0002-1457-5732"},
   "institutions": [{"id": "https://openalex.org/I4210150114", "display_name": "Oxford
   University Clinical Research Unit", "ror": "https://ror.org/05rehad94", "country_code":
   "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
+  "https://openalex.org/I87048295"]}], "countries": ["VN"], "is_corresponding": false,
+  "raw_author_name": "Ho Quang Chanh", "raw_affiliation_strings": ["Oxford University
+  Clinical Research Unit , Ho Chi Minh City , Vietnam"], "raw_orcid": null, "affiliations":
+  [{"raw_affiliation_string": "Oxford University Clinical Research Unit , Ho Chi Minh
+  City , Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}]}, {"author_position":
+  "middle", "author": {"id": "https://openalex.org/A5063060240", "display_name": "Ho
+  Van Hien", "orcid": "https://orcid.org/0000-0002-3609-8455"}, "institutions": [{"id":
+  "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
+  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
+  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
+  "https://openalex.org/I87048295"]}, {"id": "https://openalex.org/I4210155479", "display_name":
+  "Hospital for Tropical Diseases", "ror": "https://ror.org/040tqsb23", "country_code":
+  "VN", "type": "healthcare", "lineage": ["https://openalex.org/I4210155479"]}], "countries":
+  ["VN"], "is_corresponding": false, "raw_author_name": "Ho Van Hien", "raw_affiliation_strings":
+  ["Oxford University Clinical Research Unit , Ho Chi Minh City , Vietnam", "Hospital
+  of Tropical Diseases, Ho Chi Minh City, Vietnam"], "raw_orcid": null, "affiliations":
+  [{"raw_affiliation_string": "Oxford University Clinical Research Unit , Ho Chi Minh
+  City , Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}, {"raw_affiliation_string":
+  "Hospital of Tropical Diseases, Ho Chi Minh City, Vietnam", "institution_ids": ["https://openalex.org/I4210155479"]}]},
+  {"author_position": "middle", "author": {"id": "https://openalex.org/A5011754096",
+  "display_name": "Huynh Trung Trieu", "orcid": "https://orcid.org/0000-0003-4922-6548"},
+  "institutions": [{"id": "https://openalex.org/I4210150114", "display_name": "Oxford
+  University Clinical Research Unit", "ror": "https://ror.org/05rehad94", "country_code":
+  "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
+  "https://openalex.org/I87048295"]}], "countries": ["VN"], "is_corresponding": false,
+  "raw_author_name": "Huynh Trung Trieu", "raw_affiliation_strings": ["Oxford University
+  Clinical Research Unit , Ho Chi Minh City , Vietnam"], "raw_orcid": null, "affiliations":
+  [{"raw_affiliation_string": "Oxford University Clinical Research Unit , Ho Chi Minh
+  City , Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}]}, {"author_position":
+  "middle", "author": {"id": "https://openalex.org/A5018997560", "display_name": "Evelyne
+  Kestelyn", "orcid": "https://orcid.org/0000-0002-5728-0918"}, "institutions": [{"id":
+  "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
+  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
+  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
+  "https://openalex.org/I87048295"]}], "countries": ["VN"], "is_corresponding": false,
+  "raw_author_name": "Evelyne Kestelyn", "raw_affiliation_strings": ["Oxford University
+  Clinical Research Unit , Ho Chi Minh City , Vietnam"], "raw_orcid": null, "affiliations":
+  [{"raw_affiliation_string": "Oxford University Clinical Research Unit , Ho Chi Minh
+  City , Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}]}, {"author_position":
+  "middle", "author": {"id": "https://openalex.org/A5049093237", "display_name": "Lam
+  Minh Yen", "orcid": "https://orcid.org/0000-0002-5126-110X"}, "institutions": [{"id":
+  "https://openalex.org/I2802508454", "display_name": "University of Medicine and
+  Pharmacy at Ho Chi Minh City", "ror": "https://ror.org/025kb2624", "country_code":
+  "VN", "type": "education", "lineage": ["https://openalex.org/I2802508454"]}, {"id":
+  "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
+  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
+  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
+  "https://openalex.org/I87048295"]}], "countries": ["VN"], "is_corresponding": false,
+  "raw_author_name": "Lam Minh Yen", "raw_affiliation_strings": ["Oxford University
+  Clinical Research Unit , Ho Chi Minh City , Vietnam", "University of Medicine and
+  Pharmacy, Ho Chi Minh City, Vietnam"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string":
+  "Oxford University Clinical Research Unit , Ho Chi Minh City , Vietnam", "institution_ids":
+  ["https://openalex.org/I4210150114"]}, {"raw_affiliation_string": "University of
+  Medicine and Pharmacy, Ho Chi Minh City, Vietnam", "institution_ids": ["https://openalex.org/I2802508454"]}]},
+  {"author_position": "middle", "author": {"id": "https://openalex.org/A5023306776",
+  "display_name": "Le Dinh Van Khoa", "orcid": "https://orcid.org/0000-0003-2958-0355"},
+  "institutions": [{"id": "https://openalex.org/I4210150114", "display_name": "Oxford
+  University Clinical Research Unit", "ror": "https://ror.org/05rehad94", "country_code":
+  "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
+  "https://openalex.org/I87048295"]}], "countries": ["VN"], "is_corresponding": false,
+  "raw_author_name": "Le Dinh Van Khoa", "raw_affiliation_strings": ["Oxford University
+  Clinical Research Unit , Ho Chi Minh City , Vietnam"], "raw_orcid": null, "affiliations":
+  [{"raw_affiliation_string": "Oxford University Clinical Research Unit , Ho Chi Minh
+  City , Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}]}, {"author_position":
+  "middle", "author": {"id": "https://openalex.org/A5102763518", "display_name": "Le
+  Thanh Phuong", "orcid": "https://orcid.org/0000-0002-1457-5732"}, "institutions":
+  [{"id": "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
+  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
+  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
   "https://openalex.org/I87048295"]}], "countries": ["VN"], "is_corresponding": false,
   "raw_author_name": "Le Thanh Phuong", "raw_affiliation_strings": ["Oxford University
   Clinical Research Unit, Ho Chi Minh City, Vietnam"], "raw_orcid": null, "affiliations":
@@ -1850,17 +1901,22 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "Nguyen Lam Vuong", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations":
   []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5108326458",
   "display_name": "Nguy\u1ec5n Quang Huy", "orcid": null}, "institutions": [{"id":
-  "https://openalex.org/I4210155479", "display_name": "Hospital for Tropical Diseases",
-  "ror": "https://ror.org/040tqsb23", "country_code": "VN", "type": "healthcare",
-  "lineage": ["https://openalex.org/I4210155479"]}], "countries": ["VN"], "is_corresponding":
-  false, "raw_author_name": "Nguyen Quang Huy", "raw_affiliation_strings": ["Hospital
+  "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
+  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
+  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
+  "https://openalex.org/I87048295"]}, {"id": "https://openalex.org/I4210155479", "display_name":
+  "Hospital for Tropical Diseases", "ror": "https://ror.org/040tqsb23", "country_code":
+  "VN", "type": "healthcare", "lineage": ["https://openalex.org/I4210155479"]}], "countries":
+  ["VN"], "is_corresponding": false, "raw_author_name": "Nguyen Quang Huy", "raw_affiliation_strings":
+  ["Oxford University Clinical Research Unit , Ho Chi Minh City , Vietnam", "Hospital
   of Tropical Diseases, Ho Chi Minh City, Vietnam"], "raw_orcid": null, "affiliations":
-  [{"raw_affiliation_string": "Hospital of Tropical Diseases, Ho Chi Minh City, Vietnam",
-  "institution_ids": ["https://openalex.org/I4210155479"]}]}, {"author_position":
-  "middle", "author": {"id": "https://openalex.org/A5071149151", "display_name": "Nguyen
-  Than Ha Quyen", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
-  false, "raw_author_name": "Nguyen Than Ha Quyen", "raw_affiliation_strings": [],
-  "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
+  [{"raw_affiliation_string": "Oxford University Clinical Research Unit , Ho Chi Minh
+  City , Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}, {"raw_affiliation_string":
+  "Hospital of Tropical Diseases, Ho Chi Minh City, Vietnam", "institution_ids": ["https://openalex.org/I4210155479"]}]},
+  {"author_position": "middle", "author": {"id": "https://openalex.org/A5071149151",
+  "display_name": "Nguyen Than Ha Quyen", "orcid": null}, "institutions": [], "countries":
+  [], "is_corresponding": false, "raw_author_name": "Nguyen Than Ha Quyen", "raw_affiliation_strings":
+  [], "raw_orcid": null, "affiliations": []}, {"author_position": "middle", "author":
   {"id": "https://openalex.org/A5104138500", "display_name": "Nguy\u1ec5n Thanh Ng\u1ecdc",
   "orcid": null}, "institutions": [{"id": "https://openalex.org/I4210155479", "display_name":
   "Hospital for Tropical Diseases", "ror": "https://ror.org/040tqsb23", "country_code":
@@ -1942,20 +1998,31 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   null}, "institutions": [{"id": "https://openalex.org/I183935753", "display_name":
   "King''s College London", "ror": "https://ror.org/0220mzb33", "country_code": "GB",
   "type": "education", "lineage": ["https://openalex.org/I124357947", "https://openalex.org/I183935753"]},
-  {"id": "https://openalex.org/I4210155479", "display_name": "Hospital for Tropical
-  Diseases", "ror": "https://ror.org/040tqsb23", "country_code": "VN", "type": "healthcare",
-  "lineage": ["https://openalex.org/I4210155479"]}], "countries": ["GB", "VN"], "is_corresponding":
-  false, "raw_author_name": "Pham Tieu Kieu", "raw_affiliation_strings": ["Hospital
+  {"id": "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
+  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
+  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
+  "https://openalex.org/I87048295"]}, {"id": "https://openalex.org/I4210155479", "display_name":
+  "Hospital for Tropical Diseases", "ror": "https://ror.org/040tqsb23", "country_code":
+  "VN", "type": "healthcare", "lineage": ["https://openalex.org/I4210155479"]}], "countries":
+  ["GB", "VN"], "is_corresponding": false, "raw_author_name": "Pham Tieu Kieu", "raw_affiliation_strings":
+  ["Oxford University Clinical Research Unit , Ho Chi Minh City , Vietnam", "Hospital
   for Tropical Diseases, Ho Chi Minh City;", "School of Biomedical Engineering Imaging
   Sciences, King''s College London, London, UK"], "raw_orcid": null, "affiliations":
-  [{"raw_affiliation_string": "Hospital for Tropical Diseases, Ho Chi Minh City;",
-  "institution_ids": ["https://openalex.org/I4210155479"]}, {"raw_affiliation_string":
-  "School of Biomedical Engineering Imaging Sciences, King''s College London, London,
-  UK", "institution_ids": ["https://openalex.org/I183935753"]}]}, {"author_position":
-  "middle", "author": {"id": "https://openalex.org/A5041273721", "display_name": "Phan
-  Nguyen Quoc Khanh", "orcid": "https://orcid.org/0000-0002-7455-8862"}, "institutions":
-  [], "countries": [], "is_corresponding": false, "raw_author_name": "Phan Nguyen
-  Quoc Khanh", "raw_affiliation_strings": [], "raw_orcid": null, "affiliations": []},
+  [{"raw_affiliation_string": "Oxford University Clinical Research Unit , Ho Chi Minh
+  City , Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}, {"raw_affiliation_string":
+  "Hospital for Tropical Diseases, Ho Chi Minh City;", "institution_ids": ["https://openalex.org/I4210155479"]},
+  {"raw_affiliation_string": "School of Biomedical Engineering Imaging Sciences, King''s
+  College London, London, UK", "institution_ids": ["https://openalex.org/I183935753"]}]},
+  {"author_position": "middle", "author": {"id": "https://openalex.org/A5041273721",
+  "display_name": "Phan Nguyen Quoc Khanh", "orcid": "https://orcid.org/0000-0002-7455-8862"},
+  "institutions": [{"id": "https://openalex.org/I4210150114", "display_name": "Oxford
+  University Clinical Research Unit", "ror": "https://ror.org/05rehad94", "country_code":
+  "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
+  "https://openalex.org/I87048295"]}], "countries": ["VN"], "is_corresponding": false,
+  "raw_author_name": "Phan Nguyen Quoc Khanh", "raw_affiliation_strings": ["Oxford
+  University Clinical Research Unit , Ho Chi Minh City , Vietnam"], "raw_orcid": null,
+  "affiliations": [{"raw_affiliation_string": "Oxford University Clinical Research
+  Unit , Ho Chi Minh City , Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}]},
   {"author_position": "middle", "author": {"id": "https://openalex.org/A5066483640",
   "display_name": "Phung Khanh Lam", "orcid": "https://orcid.org/0000-0001-7968-473X"},
   "institutions": [{"id": "https://openalex.org/I4210150114", "display_name": "Oxford
@@ -1963,16 +2030,18 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
   "https://openalex.org/I87048295"]}], "countries": ["VN"], "is_corresponding": false,
   "raw_author_name": "Phung Khanh Lam", "raw_affiliation_strings": ["Oxford University
-  Clinical Research Unit, Ho Chi Minh City, Vietnam"], "raw_orcid": null, "affiliations":
-  [{"raw_affiliation_string": "Oxford University Clinical Research Unit, Ho Chi Minh
-  City, Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}]}, {"author_position":
-  "middle", "author": {"id": "https://openalex.org/A5071608103", "display_name": "Phung
-  Tran Huy Nhat", "orcid": "https://orcid.org/0000-0003-2508-0900"}, "institutions":
-  [{"id": "https://openalex.org/I183935753", "display_name": "King''s College London",
-  "ror": "https://ror.org/0220mzb33", "country_code": "GB", "type": "education", "lineage":
-  ["https://openalex.org/I124357947", "https://openalex.org/I183935753"]}, {"id":
-  "https://openalex.org/I4210119896", "display_name": "King''s College School", "ror":
-  "https://ror.org/02bbqcn27", "country_code": "GB", "type": "education", "lineage":
+  Clinical Research Unit , Ho Chi Minh City , Vietnam", "Oxford University Clinical
+  Research Unit, Ho Chi Minh City, Vietnam"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string":
+  "Oxford University Clinical Research Unit , Ho Chi Minh City , Vietnam", "institution_ids":
+  ["https://openalex.org/I4210150114"]}, {"raw_affiliation_string": "Oxford University
+  Clinical Research Unit, Ho Chi Minh City, Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}]},
+  {"author_position": "middle", "author": {"id": "https://openalex.org/A5071608103",
+  "display_name": "Phung Tran Huy Nhat", "orcid": "https://orcid.org/0000-0003-2508-0900"},
+  "institutions": [{"id": "https://openalex.org/I183935753", "display_name": "King''s
+  College London", "ror": "https://ror.org/0220mzb33", "country_code": "GB", "type":
+  "education", "lineage": ["https://openalex.org/I124357947", "https://openalex.org/I183935753"]},
+  {"id": "https://openalex.org/I4210119896", "display_name": "King''s College School",
+  "ror": "https://ror.org/02bbqcn27", "country_code": "GB", "type": "education", "lineage":
   ["https://openalex.org/I4210119896"]}, {"id": "https://openalex.org/I4210150114",
   "display_name": "Oxford University Clinical Research Unit", "ror": "https://ror.org/05rehad94",
   "country_code": "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149",
@@ -1992,11 +2061,23 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   {"id": null, "display_name": "Guy Thwaites", "orcid": null}, "institutions": [{"id":
   "https://openalex.org/I40120149", "display_name": "University of Oxford", "ror":
   "https://ror.org/052gg0110", "country_code": "GB", "type": "education", "lineage":
-  ["https://openalex.org/I40120149"]}], "countries": ["GB"], "is_corresponding": false,
-  "raw_author_name": "Guy Thwaites", "raw_affiliation_strings": ["Centre for Tropical
-  Medicine and Global Health, University of Oxford, Oxford, UK"], "raw_orcid": null,
-  "affiliations": [{"raw_affiliation_string": "Centre for Tropical Medicine and Global
-  Health, University of Oxford, Oxford, UK", "institution_ids": ["https://openalex.org/I40120149"]}]},
+  ["https://openalex.org/I40120149"]}, {"id": "https://openalex.org/I4210126604",
+  "display_name": "Mahidol Oxford Tropical Medicine Research Unit", "ror": "https://ror.org/03fs9z545",
+  "country_code": "TH", "type": "facility", "lineage": ["https://openalex.org/I25399158",
+  "https://openalex.org/I40120149", "https://openalex.org/I4210126604", "https://openalex.org/I87048295"]},
+  {"id": "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
+  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
+  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
+  "https://openalex.org/I87048295"]}], "countries": ["GB", "TH", "VN"], "is_corresponding":
+  false, "raw_author_name": "Guy Thwaites", "raw_affiliation_strings": ["Mahidol Oxford
+  Tropical Medicine Research Unit , Bangkok , Thailand", "Oxford University Clinical
+  Research Unit , Ho Chi Minh City , Vietnam", "Centre for Tropical Medicine and Global
+  Health, University of Oxford, Oxford, UK"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string":
+  "Mahidol Oxford Tropical Medicine Research Unit , Bangkok , Thailand", "institution_ids":
+  ["https://openalex.org/I4210126604"]}, {"raw_affiliation_string": "Oxford University
+  Clinical Research Unit , Ho Chi Minh City , Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]},
+  {"raw_affiliation_string": "Centre for Tropical Medicine and Global Health, University
+  of Oxford, Oxford, UK", "institution_ids": ["https://openalex.org/I40120149"]}]},
   {"author_position": "middle", "author": {"id": "https://openalex.org/A5052155328",
   "display_name": "Louise Thwaites", "orcid": "https://orcid.org/0000-0002-4666-9813"},
   "institutions": [{"id": "https://openalex.org/I40120149", "display_name": "University
@@ -2026,33 +2107,26 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   Manh Hung", "orcid": "https://orcid.org/0000-0002-9374-5962"}, "institutions": [{"id":
   "https://openalex.org/I183935753", "display_name": "King''s College London", "ror":
   "https://ror.org/0220mzb33", "country_code": "GB", "type": "education", "lineage":
-  ["https://openalex.org/I124357947", "https://openalex.org/I183935753"]}, {"id":
-  "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
-  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
-  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
-  "https://openalex.org/I87048295"]}], "countries": ["GB", "VN"], "is_corresponding":
-  false, "raw_author_name": "Trinh Manh Hung", "raw_affiliation_strings": ["Oxford
-  University Clinical Research Unit, Ho Chi Minh City, Vietnam", "School of Biomedical
-  Engineering Imaging Sciences, King''s College London, London, UK"], "raw_orcid":
+  ["https://openalex.org/I124357947", "https://openalex.org/I183935753"]}], "countries":
+  ["GB"], "is_corresponding": false, "raw_author_name": "Trinh Manh Hung", "raw_affiliation_strings":
+  ["School of Biomedical Engineering Imaging Sciences, King''s College London, London,
+  UK"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string": "School of
+  Biomedical Engineering Imaging Sciences, King''s College London, London, UK", "institution_ids":
+  ["https://openalex.org/I183935753"]}]}, {"author_position": "middle", "author":
+  {"id": "https://openalex.org/A5073992397", "display_name": "Hugo C. Turner", "orcid":
+  "https://orcid.org/0000-0002-8428-3874"}, "institutions": [{"id": "https://openalex.org/I4210150114",
+  "display_name": "Oxford University Clinical Research Unit", "ror": "https://ror.org/05rehad94",
+  "country_code": "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149",
+  "https://openalex.org/I4210150114", "https://openalex.org/I87048295"]}], "countries":
+  ["VN"], "is_corresponding": false, "raw_author_name": "Hugo Turner", "raw_affiliation_strings":
+  ["Oxford University Clinical Research Unit, Ho Chi Minh City, Vietnam"], "raw_orcid":
   null, "affiliations": [{"raw_affiliation_string": "Oxford University Clinical Research
-  Unit, Ho Chi Minh City, Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]},
-  {"raw_affiliation_string": "School of Biomedical Engineering Imaging Sciences, King''s
-  College London, London, UK", "institution_ids": ["https://openalex.org/I183935753"]}]},
-  {"author_position": "middle", "author": {"id": "https://openalex.org/A5073992397",
-  "display_name": "Hugo C. Turner", "orcid": "https://orcid.org/0000-0002-8428-3874"},
+  Unit, Ho Chi Minh City, Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}]},
+  {"author_position": "middle", "author": {"id": "https://openalex.org/A5090278740",
+  "display_name": "Jennifer Ilo Van Nuil", "orcid": "https://orcid.org/0000-0002-5167-5505"},
   "institutions": [{"id": "https://openalex.org/I4210150114", "display_name": "Oxford
   University Clinical Research Unit", "ror": "https://ror.org/05rehad94", "country_code":
   "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
-  "https://openalex.org/I87048295"]}], "countries": ["VN"], "is_corresponding": false,
-  "raw_author_name": "Hugo Turner", "raw_affiliation_strings": ["Oxford University
-  Clinical Research Unit, Ho Chi Minh City, Vietnam"], "raw_orcid": null, "affiliations":
-  [{"raw_affiliation_string": "Oxford University Clinical Research Unit, Ho Chi Minh
-  City, Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}]}, {"author_position":
-  "middle", "author": {"id": "https://openalex.org/A5090278740", "display_name": "Jennifer
-  Ilo Van Nuil", "orcid": "https://orcid.org/0000-0002-5167-5505"}, "institutions":
-  [{"id": "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
-  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
-  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
   "https://openalex.org/I87048295"]}], "countries": ["VN"], "is_corresponding": false,
   "raw_author_name": "Jennifer Ilo Van Nuil", "raw_affiliation_strings": ["Oxford
   University Clinical Research Unit, Ho Chi Minh City, Vietnam"], "raw_orcid": null,
@@ -2138,23 +2212,15 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "School of Biomedical Engineering Imaging Sciences, King''s College London, London,
   UK", "institution_ids": ["https://openalex.org/I183935753"]}]}, {"author_position":
   "middle", "author": {"id": "https://openalex.org/A5083452711", "display_name": "Le
-  Buu Chau", "orcid": null}, "institutions": [{"id": "https://openalex.org/I183935753",
-  "display_name": "King''s College London", "ror": "https://ror.org/0220mzb33", "country_code":
-  "GB", "type": "education", "lineage": ["https://openalex.org/I124357947", "https://openalex.org/I183935753"]},
-  {"id": "https://openalex.org/I4210155479", "display_name": "Hospital for Tropical
-  Diseases", "ror": "https://ror.org/040tqsb23", "country_code": "VN", "type": "healthcare",
-  "lineage": ["https://openalex.org/I4210155479"]}], "countries": ["GB", "VN"], "is_corresponding":
-  false, "raw_author_name": "Le Buu Chau", "raw_affiliation_strings": ["Hospital for
-  Tropical Diseases, Ho Chi Minh City;", "School of Biomedical Engineering Imaging
-  Sciences, King''s College London, London, UK", "Hospital of Tropical Diseases, Ho
-  Chi Minh City, Vietnam"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string":
-  "Hospital for Tropical Diseases, Ho Chi Minh City;", "institution_ids": ["https://openalex.org/I4210155479"]},
-  {"raw_affiliation_string": "School of Biomedical Engineering Imaging Sciences, King''s
-  College London, London, UK", "institution_ids": ["https://openalex.org/I183935753"]},
-  {"raw_affiliation_string": "Hospital of Tropical Diseases, Ho Chi Minh City, Vietnam",
-  "institution_ids": ["https://openalex.org/I4210155479"]}]}, {"author_position":
-  "middle", "author": {"id": "https://openalex.org/A5001412344", "display_name": "Le
-  Mau Toan", "orcid": null}, "institutions": [{"id": "https://openalex.org/I183935753",
+  Buu Chau", "orcid": null}, "institutions": [{"id": "https://openalex.org/I4210155479",
+  "display_name": "Hospital for Tropical Diseases", "ror": "https://ror.org/040tqsb23",
+  "country_code": "VN", "type": "healthcare", "lineage": ["https://openalex.org/I4210155479"]}],
+  "countries": ["VN"], "is_corresponding": false, "raw_author_name": "Le Buu Chau",
+  "raw_affiliation_strings": ["Hospital of Tropical Diseases, Ho Chi Minh City, Vietnam"],
+  "raw_orcid": null, "affiliations": [{"raw_affiliation_string": "Hospital of Tropical
+  Diseases, Ho Chi Minh City, Vietnam", "institution_ids": ["https://openalex.org/I4210155479"]}]},
+  {"author_position": "middle", "author": {"id": "https://openalex.org/A5001412344",
+  "display_name": "Le Mau Toan", "orcid": null}, "institutions": [{"id": "https://openalex.org/I183935753",
   "display_name": "King''s College London", "ror": "https://ror.org/0220mzb33", "country_code":
   "GB", "type": "education", "lineage": ["https://openalex.org/I124357947", "https://openalex.org/I183935753"]},
   {"id": "https://openalex.org/I4210155479", "display_name": "Hospital for Tropical
@@ -2215,26 +2281,16 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   Hoan Phu", "orcid": "https://orcid.org/0009-0005-1324-9168"}, "institutions": [{"id":
   "https://openalex.org/I183935753", "display_name": "King''s College London", "ror":
   "https://ror.org/0220mzb33", "country_code": "GB", "type": "education", "lineage":
-  ["https://openalex.org/I124357947", "https://openalex.org/I183935753"]}, {"id":
-  "https://openalex.org/I4210155479", "display_name": "Hospital for Tropical Diseases",
-  "ror": "https://ror.org/040tqsb23", "country_code": "VN", "type": "healthcare",
-  "lineage": ["https://openalex.org/I4210155479"]}], "countries": ["GB", "VN"], "is_corresponding":
-  false, "raw_author_name": "Nguyen Hoan Phu", "raw_affiliation_strings": ["Hospital
-  for Tropical Diseases, Ho Chi Minh City;", "School of Biomedical Engineering Imaging
-  Sciences, King''s College London, London, UK"], "raw_orcid": null, "affiliations":
-  [{"raw_affiliation_string": "Hospital for Tropical Diseases, Ho Chi Minh City;",
-  "institution_ids": ["https://openalex.org/I4210155479"]}, {"raw_affiliation_string":
-  "School of Biomedical Engineering Imaging Sciences, King''s College London, London,
-  UK", "institution_ids": ["https://openalex.org/I183935753"]}]}, {"author_position":
-  "middle", "author": {"id": "https://openalex.org/A5032254224", "display_name": "Nguy\u1ec5n
-  Qu\u1ed1c Vi\u1ec7t", "orcid": null}, "institutions": [{"id": "https://openalex.org/I4210155479",
-  "display_name": "Hospital for Tropical Diseases", "ror": "https://ror.org/040tqsb23",
-  "country_code": "VN", "type": "healthcare", "lineage": ["https://openalex.org/I4210155479"]}],
-  "countries": ["VN"], "is_corresponding": false, "raw_author_name": "Nguyen Quoc
-  Viet", "raw_affiliation_strings": ["Hospital for Tropical Diseases, Ho Chi Minh
-  City;"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string": "Hospital
-  for Tropical Diseases, Ho Chi Minh City;", "institution_ids": ["https://openalex.org/I4210155479"]}]},
-  {"author_position": "middle", "author": {"id": "https://openalex.org/A5113246180",
+  ["https://openalex.org/I124357947", "https://openalex.org/I183935753"]}], "countries":
+  ["GB"], "is_corresponding": false, "raw_author_name": "Nguyen Hoan Phu", "raw_affiliation_strings":
+  ["School of Biomedical Engineering Imaging Sciences, King''s College London, London,
+  UK"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string": "School of
+  Biomedical Engineering Imaging Sciences, King''s College London, London, UK", "institution_ids":
+  ["https://openalex.org/I183935753"]}]}, {"author_position": "middle", "author":
+  {"id": "https://openalex.org/A5032254224", "display_name": "Nguy\u1ec5n Qu\u1ed1c
+  Vi\u1ec7t", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+  false, "raw_author_name": "Nguyen Quoc Viet", "raw_affiliation_strings": [], "raw_orcid":
+  null, "affiliations": []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5113246180",
   "display_name": "Nguyen Thanh Dung", "orcid": "https://orcid.org/0000-0001-9635-1136"},
   "institutions": [{"id": "https://openalex.org/I183935753", "display_name": "King''s
   College London", "ror": "https://ror.org/0220mzb33", "country_code": "GB", "type":
@@ -2480,23 +2536,19 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   Oxford;", "institution_ids": ["https://openalex.org/I40120149"]}]}, {"author_position":
   "middle", "author": {"id": "https://openalex.org/A5021981517", "display_name": "Ping
   L\u00fc", "orcid": "https://orcid.org/0000-0002-0199-3783"}, "institutions": [{"id":
-  "https://openalex.org/I40120149", "display_name": "University of Oxford", "ror":
-  "https://ror.org/052gg0110", "country_code": "GB", "type": "education", "lineage":
-  ["https://openalex.org/I40120149"]}, {"id": "https://openalex.org/I4210126604",
-  "display_name": "Mahidol Oxford Tropical Medicine Research Unit", "ror": "https://ror.org/03fs9z545",
-  "country_code": "TH", "type": "facility", "lineage": ["https://openalex.org/I25399158",
-  "https://openalex.org/I40120149", "https://openalex.org/I4210126604", "https://openalex.org/I87048295"]}],
-  "countries": ["GB", "TH"], "is_corresponding": false, "raw_author_name": "Ping Lu",
-  "raw_affiliation_strings": ["Mahidol Oxford Tropical Medicine Research Unit, Bangkok,
-  Thailand", "University of Oxford;"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string":
-  "Mahidol Oxford Tropical Medicine Research Unit, Bangkok, Thailand", "institution_ids":
-  ["https://openalex.org/I4210126604"]}, {"raw_affiliation_string": "University of
-  Oxford;", "institution_ids": ["https://openalex.org/I40120149"]}]}, {"author_position":
-  "middle", "author": {"id": "https://openalex.org/A5064018781", "display_name": "Jacob
-  McKnight", "orcid": "https://orcid.org/0000-0003-1340-2618"}, "institutions": [{"id":
-  "https://openalex.org/I40120149", "display_name": "University of Oxford", "ror":
-  "https://ror.org/052gg0110", "country_code": "GB", "type": "education", "lineage":
-  ["https://openalex.org/I40120149"]}, {"id": "https://openalex.org/I4210126604",
+  "https://openalex.org/I4210126604", "display_name": "Mahidol Oxford Tropical Medicine
+  Research Unit", "ror": "https://ror.org/03fs9z545", "country_code": "TH", "type":
+  "facility", "lineage": ["https://openalex.org/I25399158", "https://openalex.org/I40120149",
+  "https://openalex.org/I4210126604", "https://openalex.org/I87048295"]}], "countries":
+  ["TH"], "is_corresponding": false, "raw_author_name": "Ping Lu", "raw_affiliation_strings":
+  ["Mahidol Oxford Tropical Medicine Research Unit, Bangkok, Thailand"], "raw_orcid":
+  null, "affiliations": [{"raw_affiliation_string": "Mahidol Oxford Tropical Medicine
+  Research Unit, Bangkok, Thailand", "institution_ids": ["https://openalex.org/I4210126604"]}]},
+  {"author_position": "middle", "author": {"id": "https://openalex.org/A5064018781",
+  "display_name": "Jacob McKnight", "orcid": "https://orcid.org/0000-0003-1340-2618"},
+  "institutions": [{"id": "https://openalex.org/I40120149", "display_name": "University
+  of Oxford", "ror": "https://ror.org/052gg0110", "country_code": "GB", "type": "education",
+  "lineage": ["https://openalex.org/I40120149"]}, {"id": "https://openalex.org/I4210126604",
   "display_name": "Mahidol Oxford Tropical Medicine Research Unit", "ror": "https://ror.org/03fs9z545",
   "country_code": "TH", "type": "facility", "lineage": ["https://openalex.org/I25399158",
   "https://openalex.org/I40120149", "https://openalex.org/I4210126604", "https://openalex.org/I87048295"]}],
@@ -2676,8 +2728,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "corresponding_institution_ids": ["https://openalex.org/I183935753", "https://openalex.org/I4210119896",
   "https://openalex.org/I4210150114"], "apc_list": {"value": 3790, "currency": "USD",
   "value_usd": 3790}, "apc_paid": {"value": 3790, "currency": "USD", "value_usd":
-  3790}, "fwci": 9.9522, "has_fulltext": true, "cited_by_count": 57, "citation_normalized_percentile":
-  {"value": 0.98946595, "is_in_top_1_percent": false, "is_in_top_10_percent": true},
+  3790}, "fwci": 9.8784, "has_fulltext": true, "cited_by_count": 57, "citation_normalized_percentile":
+  {"value": 0.9893565, "is_in_top_1_percent": false, "is_in_top_10_percent": true},
   "cited_by_percentile_year": {"min": 99, "max": 100}, "biblio": {"volume": "27",
   "issue": "1", "first_page": "257", "last_page": "257"}, "is_retracted": false, "is_paratext":
   false, "is_xpac": false, "primary_topic": {"id": "https://openalex.org/T11738",
@@ -2891,7 +2943,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   illness in resource-limited settings", "funder_award_id": "215010/Z/18/Z", "funder_id":
   "https://openalex.org/F4320311904", "funder_display_name": "Wellcome Trust"}], "funders":
   [{"id": "https://openalex.org/F4320311904", "display_name": "Wellcome Trust", "ror":
-  "https://ror.org/029chgv08"}], "has_content": {"pdf": true, "grobid_xml": true},
+  "https://ror.org/029chgv08"}], "has_content": {"grobid_xml": true, "pdf": true},
   "content_urls": {"pdf": "https://content.openalex.org/works/W4382795683.pdf", "grobid_xml":
   "https://content.openalex.org/works/W4382795683.grobid-xml"}, "referenced_works_count":
   22, "referenced_works": ["https://openalex.org/W1755606227", "https://openalex.org/W2204772374",
@@ -2957,7 +3009,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   [343], "improve": [345], "features": [351], "more": [352, 354, 357], "accurately,":
   [353], "quickly": [355], "confidently.": [358]}, "counts_by_year": [{"year": 2026,
   "cited_by_count": 13}, {"year": 2025, "cited_by_count": 24}, {"year": 2024, "cited_by_count":
-  20}], "updated_date": "2026-08-30T07:30:35.949966", "created_date": "2025-10-10T00:00:00"},
+  20}], "updated_date": "2026-09-06T09:10:53.072986", "created_date": "2025-10-10T00:00:00"},
   {"id": "https://openalex.org/W3194782510", "doi": "https://doi.org/10.1093/cid/ciab724",
   "title": "Effectiveness of Continuous Endotracheal Cuff Pressure Control for the
   Prevention of Ventilator-Associated Respiratory Infections: An Open-Label Randomized,
@@ -3530,8 +3582,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "awards": [{"id": "https://openalex.org/G8376193503", "display_name": null, "funder_award_id":
   "106680/B/14/Z.", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
   "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": false,
-  "grobid_xml": false}, "content_urls": null, "referenced_works_count": 32, "referenced_works":
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
+  false, "pdf": false}, "content_urls": null, "referenced_works_count": 32, "referenced_works":
   ["https://openalex.org/W1978159568", "https://openalex.org/W1980980484", "https://openalex.org/W1992464091",
   "https://openalex.org/W1995667320", "https://openalex.org/W1995839475", "https://openalex.org/W2042301469",
   "https://openalex.org/W2046747986", "https://openalex.org/W2080390653", "https://openalex.org/W2113701842",
@@ -4578,8 +4630,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   ["https://openalex.org/A5071608103"], "corresponding_institution_ids": ["https://openalex.org/I183935753",
   "https://openalex.org/I4210119896", "https://openalex.org/I4210150114"], "apc_list":
   {"value": 2590, "currency": "USD", "value_usd": 2590}, "apc_paid": {"value": 2590,
-  "currency": "USD", "value_usd": 2590}, "fwci": 3.385, "has_fulltext": true, "cited_by_count":
-  11, "citation_normalized_percentile": {"value": 0.92924581, "is_in_top_1_percent":
+  "currency": "USD", "value_usd": 2590}, "fwci": 3.3625, "has_fulltext": true, "cited_by_count":
+  11, "citation_normalized_percentile": {"value": 0.92860315, "is_in_top_1_percent":
   false, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 93, "max":
   99}, "biblio": {"volume": "14", "issue": "1", "first_page": "14798", "last_page":
   "14798"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -4865,8 +4917,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   Translational Resource: Critical Care/Fever", "funder_award_id": "217650/Z/19/Z",
   "funder_id": "https://openalex.org/F4320311904", "funder_display_name": "Wellcome
   Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": false,
-  "grobid_xml": false}, "content_urls": null, "referenced_works_count": 24, "referenced_works":
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
+  false, "pdf": false}, "content_urls": null, "referenced_works_count": 24, "referenced_works":
   ["https://openalex.org/W1767128030", "https://openalex.org/W1963428859", "https://openalex.org/W2026598133",
   "https://openalex.org/W2118240638", "https://openalex.org/W2124381750", "https://openalex.org/W2227283568",
   "https://openalex.org/W2327037637", "https://openalex.org/W2569351312", "https://openalex.org/W2745446031",
@@ -4918,7 +4970,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   [234], "reproducibility": [235], "saves": [237], "time.": [238], "system": [240],
   "may": [241], "aid": [242], "monitoring": [243], "size": [245], "assisting": [249],
   "rehabilitation": [250], "programmes.": [251]}, "counts_by_year": [{"year": 2026,
-  "cited_by_count": 1}, {"year": 2025, "cited_by_count": 10}], "updated_date": "2026-08-29T07:29:34.045763",
+  "cited_by_count": 1}, {"year": 2025, "cited_by_count": 10}], "updated_date": "2026-09-02T18:50:13.731487",
   "created_date": "2024-06-27T00:00:00"}, {"id": "https://openalex.org/W4401108518",
   "doi": "https://doi.org/10.1038/s41598-024-68308-8", "title": "Computer-aided prognosis
   of tuberculous meningitis combining imaging and non-imaging data", "display_name":
@@ -5929,9 +5981,9 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   11, "corresponding_author_ids": ["https://openalex.org/A5023117088"], "corresponding_institution_ids":
   ["https://openalex.org/I183935753", "https://openalex.org/I4210119896"], "apc_list":
   {"value": 2590, "currency": "USD", "value_usd": 2590}, "apc_paid": {"value": 2590,
-  "currency": "USD", "value_usd": 2590}, "fwci": 3.2878, "has_fulltext": true, "cited_by_count":
-  8, "citation_normalized_percentile": {"value": 0.92580388, "is_in_top_1_percent":
-  false, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 97, "max":
+  "currency": "USD", "value_usd": 2590}, "fwci": 3.268, "has_fulltext": true, "cited_by_count":
+  8, "citation_normalized_percentile": {"value": 0.92521721, "is_in_top_1_percent":
+  false, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 96, "max":
   99}, "biblio": {"volume": "14", "issue": "1", "first_page": "17581", "last_page":
   "17581"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
   {"id": "https://openalex.org/T11381", "display_name": "Infectious Diseases and Tuberculosis",
@@ -6276,7 +6328,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "display_name": "Engineering and Physical Sciences Research Council", "ror": "https://ror.org/0439y7842"},
   {"id": "https://openalex.org/F4320337314", "display_name": "Centre For Medical Engineering,
   King\u2019s College London", "ror": "https://ror.org/04s9kfd63"}], "has_content":
-  {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
+  {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
   37, "referenced_works": ["https://openalex.org/W2026752633", "https://openalex.org/W2028279393",
   "https://openalex.org/W2058384458", "https://openalex.org/W2064675550", "https://openalex.org/W2067395123",
   "https://openalex.org/W2119390490", "https://openalex.org/W2123983635", "https://openalex.org/W2138747051",
@@ -6334,7 +6386,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "combining": [248], "data,": [252], "model.": [257], "has": [260], "potential":
   [262], "accurately": [264], "progression": [267], "timely": [270], "intervention.":
   [272]}, "counts_by_year": [{"year": 2026, "cited_by_count": 2}, {"year": 2025, "cited_by_count":
-  6}], "updated_date": "2026-08-29T07:29:34.045763", "created_date": "2025-10-10T00:00:00"},
+  6}], "updated_date": "2026-09-02T18:50:13.731487", "created_date": "2025-10-10T00:00:00"},
   {"id": "https://openalex.org/W7124277710", "doi": "https://doi.org/10.1038/s41591-025-04138-z",
   "title": "Genotype-stratified adjunctive dexamethasone for tuberculous meningitis
   in HIV-negative adults: a randomized controlled phase 3 trial", "display_name":
@@ -7145,8 +7197,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   anti-inflammatory therapy to reduce deaths from tuberculosis.", "funder_award_id":
   "110179/Z/15/Z", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
   "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": false,
-  "grobid_xml": false}, "content_urls": null, "referenced_works_count": 36, "referenced_works":
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
+  false, "pdf": false}, "content_urls": null, "referenced_works_count": 36, "referenced_works":
   ["https://openalex.org/W1965974931", "https://openalex.org/W1967607476", "https://openalex.org/W1968632660",
   "https://openalex.org/W1972605644", "https://openalex.org/W1979936739", "https://openalex.org/W1986514504",
   "https://openalex.org/W1986607793", "https://openalex.org/W2059831659", "https://openalex.org/W2088438114",
@@ -7382,8 +7434,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   2, "institutions_distinct_count": 5, "corresponding_author_ids": ["https://openalex.org/A5073508427"],
   "corresponding_institution_ids": ["https://openalex.org/I2802508454"], "apc_list":
   {"value": 2670, "currency": "USD", "value_usd": 2670}, "apc_paid": {"value": 2670,
-  "currency": "USD", "value_usd": 2670}, "fwci": 3.9951, "has_fulltext": true, "cited_by_count":
-  4, "citation_normalized_percentile": {"value": 0.94138948, "is_in_top_1_percent":
+  "currency": "USD", "value_usd": 2670}, "fwci": 3.8238, "has_fulltext": true, "cited_by_count":
+  4, "citation_normalized_percentile": {"value": 0.93802631, "is_in_top_1_percent":
   false, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 98, "max":
   99}, "biblio": {"volume": "19", "issue": "10", "first_page": "e0013589", "last_page":
   "e0013589"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -7463,7 +7515,10 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D000293", "descriptor_name":
   "Adolescent", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
   {"descriptor_ui": "D000293", "descriptor_name": "Adolescent", "qualifier_ui": null,
-  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D000328", "descriptor_name":
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D000293", "descriptor_name":
+  "Adolescent", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D000328", "descriptor_name": "Adult", "qualifier_ui": null, "qualifier_name":
+  null, "is_major_topic": false}, {"descriptor_ui": "D000328", "descriptor_name":
   "Adult", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
   {"descriptor_ui": "D000328", "descriptor_name": "Adult", "qualifier_ui": null, "qualifier_name":
   null, "is_major_topic": false}, {"descriptor_ui": "D000328", "descriptor_name":
@@ -7476,29 +7531,37 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "descriptor_name": "Disease Outbreaks", "qualifier_ui": null, "qualifier_name":
   null, "is_major_topic": true}, {"descriptor_ui": "D004196", "descriptor_name": "Disease
   Outbreaks", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": true},
-  {"descriptor_ui": "D005260", "descriptor_name": "Female", "qualifier_ui": null,
-  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005260", "descriptor_name":
-  "Female", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
-  {"descriptor_ui": "D005260", "descriptor_name": "Female", "qualifier_ui": null,
-  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005260", "descriptor_name":
-  "Female", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
-  {"descriptor_ui": "D006801", "descriptor_name": "Humans", "qualifier_ui": null,
-  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D006801", "descriptor_name":
-  "Humans", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
-  {"descriptor_ui": "D006801", "descriptor_name": "Humans", "qualifier_ui": null,
-  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D006801", "descriptor_name":
-  "Humans", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
-  {"descriptor_ui": "D008297", "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name":
-  null, "is_major_topic": false}, {"descriptor_ui": "D008297", "descriptor_name":
-  "Male", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
-  {"descriptor_ui": "D008297", "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name":
-  null, "is_major_topic": false}, {"descriptor_ui": "D008297", "descriptor_name":
-  "Male", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
-  {"descriptor_ui": "D008875", "descriptor_name": "Middle Aged", "qualifier_ui": null,
-  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D008875", "descriptor_name":
-  "Middle Aged", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
-  {"descriptor_ui": "D008875", "descriptor_name": "Middle Aged", "qualifier_ui": null,
-  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D008875", "descriptor_name":
+  {"descriptor_ui": "D004196", "descriptor_name": "Disease Outbreaks", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": true}, {"descriptor_ui": "D005260",
+  "descriptor_name": "Female", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
+  false}, {"descriptor_ui": "D005260", "descriptor_name": "Female", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005260",
+  "descriptor_name": "Female", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
+  false}, {"descriptor_ui": "D005260", "descriptor_name": "Female", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005260",
+  "descriptor_name": "Female", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
+  false}, {"descriptor_ui": "D006801", "descriptor_name": "Humans", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D006801",
+  "descriptor_name": "Humans", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
+  false}, {"descriptor_ui": "D006801", "descriptor_name": "Humans", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D006801",
+  "descriptor_name": "Humans", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
+  false}, {"descriptor_ui": "D006801", "descriptor_name": "Humans", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D008297",
+  "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
+  false}, {"descriptor_ui": "D008297", "descriptor_name": "Male", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D008297",
+  "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
+  false}, {"descriptor_ui": "D008297", "descriptor_name": "Male", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D008297",
+  "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
+  false}, {"descriptor_ui": "D008875", "descriptor_name": "Middle Aged", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D008875",
+  "descriptor_name": "Middle Aged", "qualifier_ui": null, "qualifier_name": null,
+  "is_major_topic": false}, {"descriptor_ui": "D008875", "descriptor_name": "Middle
+  Aged", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui":
+  "D008875", "descriptor_name": "Middle Aged", "qualifier_ui": null, "qualifier_name":
+  null, "is_major_topic": false}, {"descriptor_ui": "D008875", "descriptor_name":
   "Middle Aged", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
   {"descriptor_ui": "D012189", "descriptor_name": "Retrospective Studies", "qualifier_ui":
   null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D012189",
@@ -7507,13 +7570,18 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "Retrospective Studies", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
   false}, {"descriptor_ui": "D012189", "descriptor_name": "Retrospective Studies",
   "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui":
+  "D012189", "descriptor_name": "Retrospective Studies", "qualifier_ui": null, "qualifier_name":
+  null, "is_major_topic": false}, {"descriptor_ui": "D014744", "descriptor_name":
+  "Vietnam", "qualifier_ui": "Q000453", "qualifier_name": "epidemiology", "is_major_topic":
+  false}, {"descriptor_ui": "D014744", "descriptor_name": "Vietnam", "qualifier_ui":
+  "Q000453", "qualifier_name": "epidemiology", "is_major_topic": false}, {"descriptor_ui":
   "D014744", "descriptor_name": "Vietnam", "qualifier_ui": "Q000453", "qualifier_name":
   "epidemiology", "is_major_topic": false}, {"descriptor_ui": "D014744", "descriptor_name":
   "Vietnam", "qualifier_ui": "Q000453", "qualifier_name": "epidemiology", "is_major_topic":
   false}, {"descriptor_ui": "D014744", "descriptor_name": "Vietnam", "qualifier_ui":
   "Q000453", "qualifier_name": "epidemiology", "is_major_topic": false}, {"descriptor_ui":
-  "D014744", "descriptor_name": "Vietnam", "qualifier_ui": "Q000453", "qualifier_name":
-  "epidemiology", "is_major_topic": false}, {"descriptor_ui": "D019595", "descriptor_name":
+  "D019595", "descriptor_name": "Severe Dengue", "qualifier_ui": "Q000453", "qualifier_name":
+  "epidemiology", "is_major_topic": true}, {"descriptor_ui": "D019595", "descriptor_name":
   "Severe Dengue", "qualifier_ui": "Q000453", "qualifier_name": "epidemiology", "is_major_topic":
   true}, {"descriptor_ui": "D019595", "descriptor_name": "Severe Dengue", "qualifier_ui":
   "Q000453", "qualifier_name": "epidemiology", "is_major_topic": true}, {"descriptor_ui":
@@ -7527,13 +7595,18 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "Severe Dengue", "qualifier_ui": "Q000473", "qualifier_name": "pathology", "is_major_topic":
   true}, {"descriptor_ui": "D019595", "descriptor_name": "Severe Dengue", "qualifier_ui":
   "Q000473", "qualifier_name": "pathology", "is_major_topic": true}, {"descriptor_ui":
+  "D019595", "descriptor_name": "Severe Dengue", "qualifier_ui": "Q000473", "qualifier_name":
+  "pathology", "is_major_topic": true}, {"descriptor_ui": "D019595", "descriptor_name":
+  "Severe Dengue", "qualifier_ui": "Q000821", "qualifier_name": "virology", "is_major_topic":
+  true}, {"descriptor_ui": "D019595", "descriptor_name": "Severe Dengue", "qualifier_ui":
+  "Q000821", "qualifier_name": "virology", "is_major_topic": true}, {"descriptor_ui":
   "D019595", "descriptor_name": "Severe Dengue", "qualifier_ui": "Q000821", "qualifier_name":
   "virology", "is_major_topic": true}, {"descriptor_ui": "D019595", "descriptor_name":
   "Severe Dengue", "qualifier_ui": "Q000821", "qualifier_name": "virology", "is_major_topic":
   true}, {"descriptor_ui": "D019595", "descriptor_name": "Severe Dengue", "qualifier_ui":
   "Q000821", "qualifier_name": "virology", "is_major_topic": true}, {"descriptor_ui":
-  "D019595", "descriptor_name": "Severe Dengue", "qualifier_ui": "Q000821", "qualifier_name":
-  "virology", "is_major_topic": true}, {"descriptor_ui": "D055815", "descriptor_name":
+  "D055815", "descriptor_name": "Young Adult", "qualifier_ui": null, "qualifier_name":
+  null, "is_major_topic": false}, {"descriptor_ui": "D055815", "descriptor_name":
   "Young Adult", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
   {"descriptor_ui": "D055815", "descriptor_name": "Young Adult", "qualifier_ui": null,
   "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D055815", "descriptor_name":
@@ -7546,9 +7619,10 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "D062606", "descriptor_name": "Tertiary Care Centers", "qualifier_ui": null, "qualifier_name":
   null, "is_major_topic": false}, {"descriptor_ui": "D062606", "descriptor_name":
   "Tertiary Care Centers", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
-  false}], "locations_count": 5, "locations": [{"id": "doi:10.1371/journal.pntd.0013589",
-  "is_oa": true, "landing_page_url": "https://doi.org/10.1371/journal.pntd.0013589",
-  "pdf_url": "https://journals.plos.org/plosntds/article/file?id=10.1371/journal.pntd.0013589&type=printable",
+  false}, {"descriptor_ui": "D062606", "descriptor_name": "Tertiary Care Centers",
+  "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false}], "locations_count":
+  4, "locations": [{"id": "doi:10.1371/journal.pntd.0013589", "is_oa": true, "landing_page_url":
+  "https://doi.org/10.1371/journal.pntd.0013589", "pdf_url": "https://journals.plos.org/plosntds/article/file?id=10.1371/journal.pntd.0013589&type=printable",
   "source": {"id": "https://openalex.org/S46544255", "display_name": "PLoS neglected
   tropical diseases", "issn_l": "1935-2727", "issn": ["1935-2727", "1935-2735"], "is_oa":
   true, "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310315706",
@@ -7582,17 +7656,9 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   [], "type": "repository"}, "license": "cc-by-sa", "license_id": "https://openalex.org/licenses/cc-by-sa",
   "version": "submittedVersion", "is_accepted": false, "is_published": false, "raw_source_name":
   "PLoS Neglected Tropical Diseases, Vol 19, Iss 10, p e0013589 (2025)", "raw_type":
-  "article"}, {"id": "pmh:oai:ora.ox.ac.uk:uuid:af95c33e-6b35-423f-8e2a-288e4fac306d",
-  "is_oa": false, "landing_page_url": null, "pdf_url": null, "source": {"id": "https://openalex.org/S4306402636",
-  "display_name": "Oxford University Research Archive (ORA) (University of Oxford)",
-  "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core": false,
-  "host_organization": "https://openalex.org/I40120149", "host_organization_name":
-  "University of Oxford", "host_organization_lineage": ["https://openalex.org/I40120149"],
-  "host_organization_lineage_names": [], "type": "repository"}, "license": null, "license_id":
-  null, "version": "submittedVersion", "is_accepted": false, "is_published": false,
-  "raw_source_name": "Jisc Publications Router", "raw_type": "http://purl.org/coar/resource_type/c_dcae04bc"}],
-  "best_oa_location": {"id": "doi:10.1371/journal.pntd.0013589", "is_oa": true, "landing_page_url":
-  "https://doi.org/10.1371/journal.pntd.0013589", "pdf_url": "https://journals.plos.org/plosntds/article/file?id=10.1371/journal.pntd.0013589&type=printable",
+  "article"}], "best_oa_location": {"id": "doi:10.1371/journal.pntd.0013589", "is_oa":
+  true, "landing_page_url": "https://doi.org/10.1371/journal.pntd.0013589", "pdf_url":
+  "https://journals.plos.org/plosntds/article/file?id=10.1371/journal.pntd.0013589&type=printable",
   "source": {"id": "https://openalex.org/S46544255", "display_name": "PLoS neglected
   tropical diseases", "issn_l": "1935-2727", "issn": ["1935-2727", "1935-2735"], "is_oa":
   true, "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310315706",
@@ -7602,8 +7668,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "version": "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
   "PLOS Neglected Tropical Diseases", "raw_type": "journal-article"}, "sustainable_development_goals":
   [], "awards": [], "funders": [{"id": "https://openalex.org/F4320320290", "display_name":
-  "University of Oxford", "ror": "https://ror.org/052gg0110"}], "has_content": {"pdf":
-  true, "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4414787932.pdf",
+  "University of Oxford", "ror": "https://ror.org/052gg0110"}], "has_content": {"grobid_xml":
+  true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4414787932.pdf",
   "grobid_xml": "https://content.openalex.org/works/W4414787932.grobid-xml"}, "referenced_works_count":
   15, "referenced_works": ["https://openalex.org/W1971497078", "https://openalex.org/W2001480606",
   "https://openalex.org/W2002958662", "https://openalex.org/W2109949934", "https://openalex.org/W2786255039",
@@ -7659,7 +7725,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   [284], "host": [285], "these": [289], "features,": [290], "will": [291], "contribute":
   [292], "formulating": [294], "suitable": [295], "treatment": [296], "guidelines":
   [297], "this": [299], "at-risk": [300], "population.": [301]}, "counts_by_year":
-  [{"year": 2026, "cited_by_count": 4}], "updated_date": "2026-08-27T14:10:00.468798",
+  [{"year": 2026, "cited_by_count": 4}], "updated_date": "2026-09-06T09:10:53.072986",
   "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4399859342",
   "doi": "https://doi.org/10.1038/s41598-024-64898-5", "title": "Detection of co-infection
   and recombination cases with Omicron and local Delta variants of SARS-CoV-2 in Vietnam",
@@ -8843,8 +8909,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "display_name": "National COVID Testing Africa AAPs/Centre", "funder_award_id":
   "222574/Z/21/Z", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
   "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": false,
-  "grobid_xml": false}, "content_urls": null, "referenced_works_count": 21, "referenced_works":
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
+  false, "pdf": false}, "content_urls": null, "referenced_works_count": 21, "referenced_works":
   ["https://openalex.org/W2120076861", "https://openalex.org/W3001195213", "https://openalex.org/W3014162634",
   "https://openalex.org/W3046463923", "https://openalex.org/W3147414822", "https://openalex.org/W3215610096",
   "https://openalex.org/W4200112411", "https://openalex.org/W4220823144", "https://openalex.org/W4220852166",
@@ -9025,9 +9091,9 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "institutions": [], "countries_distinct_count": 2, "institutions_distinct_count":
   4, "corresponding_author_ids": [], "corresponding_institution_ids": [], "apc_list":
   {"value": 920, "currency": "GBP", "value_usd": 1128}, "apc_paid": {"value": 920,
-  "currency": "GBP", "value_usd": 1128}, "fwci": 0.8277, "has_fulltext": true, "cited_by_count":
-  2, "citation_normalized_percentile": {"value": 0.7558024, "is_in_top_1_percent":
-  false, "is_in_top_10_percent": false}, "cited_by_percentile_year": {"min": 97, "max":
+  "currency": "GBP", "value_usd": 1128}, "fwci": 0.8128, "has_fulltext": true, "cited_by_count":
+  2, "citation_normalized_percentile": {"value": 0.75321537, "is_in_top_1_percent":
+  false, "is_in_top_10_percent": false}, "cited_by_percentile_year": {"min": 96, "max":
   98}, "biblio": {"volume": "9", "issue": null, "first_page": "695", "last_page":
   "695"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
   {"id": "https://openalex.org/T11381", "display_name": "Infectious Diseases and Tuberculosis",
@@ -9081,7 +9147,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "wikidata": "https://www.wikidata.org/wiki/Q7208", "display_name": "Pathology",
   "level": 1, "score": 0.11250796914100647}, {"id": "https://openalex.org/C204787440",
   "wikidata": "https://www.wikidata.org/wiki/Q188504", "display_name": "Alternative
-  medicine", "level": 2, "score": 0.0}], "mesh": [], "locations_count": 5, "locations":
+  medicine", "level": 2, "score": 0.0}], "mesh": [], "locations_count": 4, "locations":
   [{"id": "doi:10.12688/wellcomeopenres.22498.1", "is_oa": true, "landing_page_url":
   "https://doi.org/10.12688/wellcomeopenres.22498.1", "pdf_url": null, "source": {"id":
   "https://openalex.org/S4210218052", "display_name": "Wellcome Open Research", "issn_l":
@@ -9116,295 +9182,9 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
   [], "type": "repository"}, "license": "cc-by-sa", "license_id": "https://openalex.org/licenses/cc-by-sa",
   "version": "submittedVersion", "is_accepted": false, "is_published": false, "raw_source_name":
-  "Wellcome Open Research, Vol 9 (2024)", "raw_type": "article"}, {"id": "pmh:oai:ora.ox.ac.uk:uuid:a538c9d2-a197-4218-8822-63751d8e3631",
-  "is_oa": false, "landing_page_url": null, "pdf_url": null, "source": {"id": "https://openalex.org/S4306402636",
-  "display_name": "Oxford University Research Archive (ORA) (University of Oxford)",
-  "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core": false,
-  "host_organization": "https://openalex.org/I40120149", "host_organization_name":
-  "University of Oxford", "host_organization_lineage": ["https://openalex.org/I40120149"],
-  "host_organization_lineage_names": [], "type": "repository"}, "license": null, "license_id":
-  null, "version": "submittedVersion", "is_accepted": false, "is_published": false,
-  "raw_source_name": "Symplectic Elements", "raw_type": "http://purl.org/coar/resource_type/c_dcae04bc"}],
-  "best_oa_location": {"id": "doi:10.12688/wellcomeopenres.22498.1", "is_oa": true,
-  "landing_page_url": "https://doi.org/10.12688/wellcomeopenres.22498.1", "pdf_url":
-  null, "source": {"id": "https://openalex.org/S4210218052", "display_name": "Wellcome
-  Open Research", "issn_l": "2398-502X", "issn": ["2398-502X"], "is_oa": true, "is_in_doaj":
-  true, "is_core": true, "host_organization": "https://openalex.org/P4310311838",
-  "host_organization_name": "Wellcome", "host_organization_lineage": ["https://openalex.org/P4310311838"],
-  "host_organization_lineage_names": ["Wellcome"], "type": "journal"}, "license":
-  "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version": "publishedVersion",
-  "is_accepted": true, "is_published": true, "raw_source_name": "Wellcome Open Research",
-  "raw_type": "journal-article"}, "sustainable_development_goals": [{"display_name":
-  "Good health and well-being", "id": "https://metadata.un.org/sdg/3", "score": 0.8700000047683716}],
-  "awards": [{"id": "https://openalex.org/G7076209523", "display_name": "Personalised
-  adjunctive anti-inflammatory therapy to reduce deaths from tuberculosis.", "funder_award_id":
-  "110179", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
-  "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": false,
-  "grobid_xml": false}, "content_urls": null, "referenced_works_count": 18, "referenced_works":
-  ["https://openalex.org/W313080928", "https://openalex.org/W1968632660", "https://openalex.org/W1986514504",
-  "https://openalex.org/W1986607793", "https://openalex.org/W1992045522", "https://openalex.org/W1996016456",
-  "https://openalex.org/W2123879591", "https://openalex.org/W2150492824", "https://openalex.org/W2152740900",
-  "https://openalex.org/W2159707944", "https://openalex.org/W2160408047", "https://openalex.org/W2582743722",
-  "https://openalex.org/W2607348542", "https://openalex.org/W2792649023", "https://openalex.org/W2963208580",
-  "https://openalex.org/W4210305735", "https://openalex.org/W4360894306", "https://openalex.org/W4387521979"],
-  "related_works": ["https://openalex.org/W1859326399", "https://openalex.org/W204855368",
-  "https://openalex.org/W2354241142", "https://openalex.org/W3029340634", "https://openalex.org/W1586953954",
-  "https://openalex.org/W2187969695", "https://openalex.org/W1966127473", "https://openalex.org/W1982434602",
-  "https://openalex.org/W2094844283", "https://openalex.org/W2342261185"], "abstract_inverted_index":
-  {"Tuberculous": [0, 77], "meningitis": [1], "(TBM)": [2], "is": [3, 86], "the":
-  [4, 41, 48, 52, 56, 59, 84, 190, 231, 236], "most": [5], "severe": [6], "form":
-  [7], "of": [8, 55, 58, 70, 123, 207, 215], "tuberculosis.": [9], "Corticosteroids":
-  [10, 72], "are": [11], "currently": [12], "recommended": [13], "as": [14], "an":
-  [15, 109], "adjunctive": [16, 98], "therapy": [17], "in": [18, 27, 90, 129, 142,
-  176, 217, 235], "HIV-negative": [19, 74], "adults": [20, 75, 103], "with": [21,
-  76, 104, 150], "TBM.": [22, 105], "However,": [23], "benefit": [24], "from": [25],
-  "corticosteroids": [26], "TBM": [28], "may": [29], "depend": [30], "upon": [31,
-  228], "host": [32], "leukotriene": [33], "A4": [34, 66], "hydrolase": [35, 67],
-  "(": [36], "LTA4H": [37, 88, 110, 135], ")": [38], "genotype": [39, 111, 136, 154,
-  163], "and": [40, 229], "corresponding": [42], "inflammatory": [43], "phenotypes.":
-  [44], "This": [45, 223], "article": [46], "describes": [47], "planned": [49], "analyses":
-  [50], "for": [51, 73, 126], "primary": [53, 80, 180], "publication": [54], "results":
-  [57], "LAST": [60], "ACT": [61], "clinical": [62], "trial": [63, 85, 107, 122],
-  "(NCT03100786):": [64], "\u2018Leukotriene": [65], "Stratified": [68], "Trial":
-  [69], "Adjunctive": [71], "meningitis\u2019.": [78], "The": [79, 106, 179], "hypothesis":
-  [81], "addressed": [82], "by": [83, 174], "that": [87], "genotype,": [89, 95], "particular":
-  [91], "CC": [92, 151], "or": [93, 101, 152, 159, 185], "CT": [94, 153], "determines":
-  [96], "whether": [97], "dexamethasone": [99, 124, 158, 166, 175, 219], "benefits":
-  [100], "harms": [102], "was": [108, 140, 172, 182], "stratified,": [112], "parallel":
-  [113], "group,": [114], "randomised,": [115], "double": [116], "blind,": [117],
-  "placebo-controlled": [118], "multi-centre": [119], "Phase": [120], "III": [121],
-  "given": [125], "6\u20138": [127], "weeks": [128], "addition": [130], "to": [131,
-  146, 157, 204], "standard": [132], "anti-tuberculosis": [133], "drugs.": [134],
-  "(CC,": [137], "CT,": [138], "TT)": [139], "determined": [141], "all": [143], "participants":
-  [144, 164], "prior": [145, 168], "randomisation;": [147], "only": [148], "those":
-  [149], "were": [155], "randomised": [156], "placebo.": [160], "All": [161], "TT":
-  [162], "received": [165], "because": [167], "data": [169], "indicated": [170], "survival":
-  [171], "increased": [173], "this": [177], "genotype.": [178], "endpoint": [181],
-  "all-cause": [183], "death": [184], "new": [186], "neurological": [187], "event":
-  [188], "over": [189], "first": [191, 209], "12": [192], "months": [193], "after":
-  [194], "randomisation.": [195], "We": [196], "took": [197], "a": [198], "hybrid":
-  [199], "trial-design": [200], "approach": [201], "which": [202], "aims": [203],
-  "prove": [205], "non-inferiority": [206], "placebo": [208, 216], "but": [210], "also":
-  [211], "allows": [212], "claiming": [213], "superiority": [214], "case": [218],
-  "causes": [220], "substantial": [221], "harm.": [222], "statistical": [224], "analysis":
-  [225, 232], "plan": [226, 233], "expands": [227], "updates": [230], "outlined":
-  [234], "published": [237], "study": [238], "protocol.": [239]}, "counts_by_year":
-  [{"year": 2026, "cited_by_count": 2}], "updated_date": "2026-08-26T07:47:46.906454",
-  "created_date": "2024-11-28T00:00:00"}, {"id": "https://openalex.org/W4407157314",
-  "doi": "https://doi.org/10.12688/wellcomeopenres.22498.2", "title": "Statistical
-  analysis plan for the LAST ACT clinical trial; a Leukotriene A4 hydrolase Stratified
-  non-inferiority Trial of Adjunctive Corticosteroids for HIV-negative adults with
-  Tuberculous meningitis", "display_name": "Statistical analysis plan for the LAST
-  ACT clinical trial; a Leukotriene A4 hydrolase Stratified non-inferiority Trial
-  of Adjunctive Corticosteroids for HIV-negative adults with Tuberculous meningitis",
-  "publication_year": 2025, "publication_date": "2025-02-05", "ids": {"openalex":
-  "https://openalex.org/W4407157314", "doi": "https://doi.org/10.12688/wellcomeopenres.22498.2"},
-  "language": "en", "primary_location": {"id": "doi:10.12688/wellcomeopenres.22498.2",
-  "is_oa": true, "landing_page_url": "https://doi.org/10.12688/wellcomeopenres.22498.2",
-  "pdf_url": null, "source": {"id": "https://openalex.org/S4210218052", "display_name":
-  "Wellcome Open Research", "issn_l": "2398-502X", "issn": ["2398-502X"], "is_oa":
-  true, "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310311838",
-  "host_organization_name": "Wellcome", "host_organization_lineage": ["https://openalex.org/P4310311838"],
-  "host_organization_lineage_names": ["Wellcome"], "type": "journal"}, "license":
-  "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version": "publishedVersion",
-  "is_accepted": true, "is_published": true, "raw_source_name": "Wellcome Open Research",
-  "raw_type": "journal-article"}, "type": "article", "indexed_in": ["crossref", "doaj"],
-  "open_access": {"is_oa": true, "oa_status": "gold", "oa_url": "https://doi.org/10.12688/wellcomeopenres.22498.2",
-  "any_repository_has_fulltext": true}, "authorships": [{"author_position": "first",
-  "author": {"id": "https://openalex.org/A5071781127", "display_name": "Joseph Donovan",
-  "orcid": "https://orcid.org/0000-0002-5893-336X"}, "institutions": [{"id": "https://openalex.org/I40120149",
-  "display_name": "University of Oxford", "ror": "https://ror.org/052gg0110", "country_code":
-  "GB", "type": "education", "lineage": ["https://openalex.org/I40120149"]}, {"id":
-  "https://openalex.org/I4210089966", "display_name": "London School of Hygiene &
-  Tropical Medicine", "ror": "https://ror.org/00a0jsq62", "country_code": "GB", "type":
-  "education", "lineage": ["https://openalex.org/I124357947", "https://openalex.org/I4210089966"]},
-  {"id": "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
-  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
-  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
-  "https://openalex.org/I87048295"]}], "countries": ["GB", "VN"], "is_corresponding":
-  false, "raw_author_name": "Joseph Donovan", "raw_affiliation_strings": ["Centre
-  for Tropical Medicine and Global Health, Nuffield Department of Medicine, University
-  of Oxford, Oxford, England, UK", "London School of Hygiene and Tropical Medicine,
-  London, England, UK", "Oxford University Clinical Research Unit, Centre for Tropical
-  Medicine, Ho Chi Minh City, Vietnam"], "raw_orcid": "https://orcid.org/0000-0002-5893-336X",
-  "affiliations": [{"raw_affiliation_string": "Centre for Tropical Medicine and Global
-  Health, Nuffield Department of Medicine, University of Oxford, Oxford, England,
-  UK", "institution_ids": ["https://openalex.org/I40120149"]}, {"raw_affiliation_string":
-  "London School of Hygiene and Tropical Medicine, London, England, UK", "institution_ids":
-  ["https://openalex.org/I4210089966"]}, {"raw_affiliation_string": "Oxford University
-  Clinical Research Unit, Centre for Tropical Medicine, Ho Chi Minh City, Vietnam",
-  "institution_ids": ["https://openalex.org/I4210150114"]}]}, {"author_position":
-  "middle", "author": {"id": "https://openalex.org/A5031705923", "display_name": "Marcel
-  Wolbers", "orcid": "https://orcid.org/0000-0003-4915-9015"}, "institutions": [{"id":
-  "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
-  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
-  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
-  "https://openalex.org/I87048295"]}], "countries": ["VN"], "is_corresponding": false,
-  "raw_author_name": "Marcel Wolbers", "raw_affiliation_strings": ["Oxford University
-  Clinical Research Unit, Centre for Tropical Medicine, Ho Chi Minh City, Vietnam"],
-  "raw_orcid": null, "affiliations": [{"raw_affiliation_string": "Oxford University
-  Clinical Research Unit, Centre for Tropical Medicine, Ho Chi Minh City, Vietnam",
-  "institution_ids": ["https://openalex.org/I4210150114"]}]}, {"author_position":
-  "middle", "author": {"id": "https://openalex.org/A5029866557", "display_name": "Nguy\u1ec5n
-  Th\u1ee5y Th\u01b0\u01a1ng Th\u01b0\u01a1ng", "orcid": "https://orcid.org/0000-0001-8733-692X"},
-  "institutions": [{"id": "https://openalex.org/I40120149", "display_name": "University
-  of Oxford", "ror": "https://ror.org/052gg0110", "country_code": "GB", "type": "education",
-  "lineage": ["https://openalex.org/I40120149"]}, {"id": "https://openalex.org/I4210150114",
-  "display_name": "Oxford University Clinical Research Unit", "ror": "https://ror.org/05rehad94",
-  "country_code": "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149",
-  "https://openalex.org/I4210150114", "https://openalex.org/I87048295"]}], "countries":
-  ["GB", "VN"], "is_corresponding": false, "raw_author_name": "Nguyen Thuy Thuong
-  Thuong", "raw_affiliation_strings": ["Centre for Tropical Medicine and Global Health,
-  Nuffield Department of Medicine, University of Oxford, Oxford, England, UK", "Oxford
-  University Clinical Research Unit, Centre for Tropical Medicine, Ho Chi Minh City,
-  Vietnam"], "raw_orcid": "https://orcid.org/0000-0001-8733-692X", "affiliations":
-  [{"raw_affiliation_string": "Centre for Tropical Medicine and Global Health, Nuffield
-  Department of Medicine, University of Oxford, Oxford, England, UK", "institution_ids":
-  ["https://openalex.org/I40120149"]}, {"raw_affiliation_string": "Oxford University
-  Clinical Research Unit, Centre for Tropical Medicine, Ho Chi Minh City, Vietnam",
-  "institution_ids": ["https://openalex.org/I4210150114"]}]}, {"author_position":
-  "middle", "author": {"id": "https://openalex.org/A5073343908", "display_name": "Dong
-  Huu Khanh Trinh", "orcid": "https://orcid.org/0000-0003-4281-4929"}, "institutions":
-  [{"id": "https://openalex.org/I183935753", "display_name": "King''s College London",
-  "ror": "https://ror.org/0220mzb33", "country_code": "GB", "type": "education", "lineage":
-  ["https://openalex.org/I124357947", "https://openalex.org/I183935753"]}, {"id":
-  "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
-  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
-  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
-  "https://openalex.org/I87048295"]}], "countries": ["GB", "VN"], "is_corresponding":
-  false, "raw_author_name": "Dong Huu Khanh Trinh", "raw_affiliation_strings": ["King''s
-  College London, London, England, UK", "Oxford University Clinical Research Unit,
-  Centre for Tropical Medicine, Ho Chi Minh City, Vietnam"], "raw_orcid": null, "affiliations":
-  [{"raw_affiliation_string": "King''s College London, London, England, UK", "institution_ids":
-  ["https://openalex.org/I183935753"]}, {"raw_affiliation_string": "Oxford University
-  Clinical Research Unit, Centre for Tropical Medicine, Ho Chi Minh City, Vietnam",
-  "institution_ids": ["https://openalex.org/I4210150114"]}]}, {"author_position":
-  "middle", "author": {"id": "https://openalex.org/A5015393537", "display_name": "Le
-  Thanh Hoang Nhat", "orcid": "https://orcid.org/0000-0002-3756-7217"}, "institutions":
-  [{"id": "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
-  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
-  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
-  "https://openalex.org/I87048295"]}], "countries": ["VN"], "is_corresponding": false,
-  "raw_author_name": "Le Thanh Hoang Nhat", "raw_affiliation_strings": ["Oxford University
-  Clinical Research Unit, Centre for Tropical Medicine, Ho Chi Minh City, Vietnam"],
-  "raw_orcid": null, "affiliations": [{"raw_affiliation_string": "Oxford University
-  Clinical Research Unit, Centre for Tropical Medicine, Ho Chi Minh City, Vietnam",
-  "institution_ids": ["https://openalex.org/I4210150114"]}]}, {"author_position":
-  "middle", "author": {"id": "https://openalex.org/A5013471493", "display_name": "Guy
-  Thwaites", "orcid": "https://orcid.org/0000-0002-2858-2087"}, "institutions": [{"id":
-  "https://openalex.org/I40120149", "display_name": "University of Oxford", "ror":
-  "https://ror.org/052gg0110", "country_code": "GB", "type": "education", "lineage":
-  ["https://openalex.org/I40120149"]}, {"id": "https://openalex.org/I4210150114",
-  "display_name": "Oxford University Clinical Research Unit", "ror": "https://ror.org/05rehad94",
-  "country_code": "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149",
-  "https://openalex.org/I4210150114", "https://openalex.org/I87048295"]}], "countries":
-  ["GB", "VN"], "is_corresponding": false, "raw_author_name": "Guy E. Thwaites", "raw_affiliation_strings":
-  ["Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine,
-  University of Oxford, Oxford, England, UK", "Oxford University Clinical Research
-  Unit, Centre for Tropical Medicine, Ho Chi Minh City, Vietnam"], "raw_orcid": "https://orcid.org/0000-0002-2858-2087",
-  "affiliations": [{"raw_affiliation_string": "Centre for Tropical Medicine and Global
-  Health, Nuffield Department of Medicine, University of Oxford, Oxford, England,
-  UK", "institution_ids": ["https://openalex.org/I40120149"]}, {"raw_affiliation_string":
-  "Oxford University Clinical Research Unit, Centre for Tropical Medicine, Ho Chi
-  Minh City, Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}]},
-  {"author_position": "last", "author": {"id": "https://openalex.org/A5069415900",
-  "display_name": "Ronald B. Geskus", "orcid": "https://orcid.org/0000-0002-2740-3155"},
-  "institutions": [{"id": "https://openalex.org/I40120149", "display_name": "University
-  of Oxford", "ror": "https://ror.org/052gg0110", "country_code": "GB", "type": "education",
-  "lineage": ["https://openalex.org/I40120149"]}, {"id": "https://openalex.org/I4210150114",
-  "display_name": "Oxford University Clinical Research Unit", "ror": "https://ror.org/05rehad94",
-  "country_code": "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149",
-  "https://openalex.org/I4210150114", "https://openalex.org/I87048295"]}], "countries":
-  ["GB", "VN"], "is_corresponding": false, "raw_author_name": "Ronald B. Geskus",
-  "raw_affiliation_strings": ["Centre for Tropical Medicine and Global Health, Nuffield
-  Department of Medicine, University of Oxford, Oxford, England, UK", "Oxford University
-  Clinical Research Unit, Centre for Tropical Medicine, Ho Chi Minh City, Vietnam"],
-  "raw_orcid": "https://orcid.org/0000-0002-2740-3155", "affiliations": [{"raw_affiliation_string":
-  "Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine,
-  University of Oxford, Oxford, England, UK", "institution_ids": ["https://openalex.org/I40120149"]},
-  {"raw_affiliation_string": "Oxford University Clinical Research Unit, Centre for
-  Tropical Medicine, Ho Chi Minh City, Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}]}],
-  "institutions": [], "countries_distinct_count": 2, "institutions_distinct_count":
-  4, "corresponding_author_ids": [], "corresponding_institution_ids": [], "apc_list":
-  {"value": 920, "currency": "GBP", "value_usd": 1128}, "apc_paid": {"value": 920,
-  "currency": "GBP", "value_usd": 1128}, "fwci": 2.0344, "has_fulltext": true, "cited_by_count":
-  2, "citation_normalized_percentile": {"value": 0.83264085, "is_in_top_1_percent":
-  false, "is_in_top_10_percent": false}, "cited_by_percentile_year": {"min": 91, "max":
-  97}, "biblio": {"volume": "9", "issue": null, "first_page": "695", "last_page":
-  "695"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
-  {"id": "https://openalex.org/T11381", "display_name": "Infectious Diseases and Tuberculosis",
-  "score": 1.0, "subfield": {"id": "https://openalex.org/subfields/2746", "display_name":
-  "Surgery"}, "field": {"id": "https://openalex.org/fields/27", "display_name": "Medicine"},
-  "domain": {"id": "https://openalex.org/domains/4", "display_name": "Health Sciences"}},
-  "topics": [{"id": "https://openalex.org/T11381", "display_name": "Infectious Diseases
-  and Tuberculosis", "score": 1.0, "subfield": {"id": "https://openalex.org/subfields/2746",
-  "display_name": "Surgery"}, "field": {"id": "https://openalex.org/fields/27", "display_name":
-  "Medicine"}, "domain": {"id": "https://openalex.org/domains/4", "display_name":
-  "Health Sciences"}}, {"id": "https://openalex.org/T10873", "display_name": "Bacterial
-  Infections and Vaccines", "score": 0.9995999932289124, "subfield": {"id": "https://openalex.org/subfields/2404",
-  "display_name": "Microbiology"}, "field": {"id": "https://openalex.org/fields/24",
-  "display_name": "Immunology and Microbiology"}, "domain": {"id": "https://openalex.org/domains/1",
-  "display_name": "Life Sciences"}}, {"id": "https://openalex.org/T10038", "display_name":
-  "Tuberculosis Research and Epidemiology", "score": 0.9965999722480774, "subfield":
-  {"id": "https://openalex.org/subfields/2725", "display_name": "Infectious Diseases"},
-  "field": {"id": "https://openalex.org/fields/27", "display_name": "Medicine"}, "domain":
-  {"id": "https://openalex.org/domains/4", "display_name": "Health Sciences"}}], "keywords":
-  [{"id": "https://openalex.org/keywords/medicine", "display_name": "Medicine", "score":
-  0.584558367729187}, {"id": "https://openalex.org/keywords/tuberculous-meningitis",
-  "display_name": "Tuberculous meningitis", "score": 0.5578914284706116}, {"id": "https://openalex.org/keywords/clinical-trial",
-  "display_name": "Clinical trial", "score": 0.4862026572227478}, {"id": "https://openalex.org/keywords/human-immunodeficiency-virus",
-  "display_name": "Human immunodeficiency virus (HIV)", "score": 0.48028016090393066},
-  {"id": "https://openalex.org/keywords/internal-medicine", "display_name": "Internal
-  medicine", "score": 0.38070207834243774}, {"id": "https://openalex.org/keywords/immunology",
-  "display_name": "Immunology", "score": 0.3638921082019806}, {"id": "https://openalex.org/keywords/meningitis",
-  "display_name": "Meningitis", "score": 0.30164623260498047}, {"id": "https://openalex.org/keywords/pediatrics",
-  "display_name": "Pediatrics", "score": 0.2945002317428589}], "concepts": [{"id":
-  "https://openalex.org/C71924100", "wikidata": "https://www.wikidata.org/wiki/Q11190",
-  "display_name": "Medicine", "level": 0, "score": 0.584558367729187}, {"id": "https://openalex.org/C2776896556",
-  "wikidata": "https://www.wikidata.org/wiki/Q3854687", "display_name": "Tuberculous
-  meningitis", "level": 3, "score": 0.5578914284706116}, {"id": "https://openalex.org/C535046627",
-  "wikidata": "https://www.wikidata.org/wiki/Q30612", "display_name": "Clinical trial",
-  "level": 2, "score": 0.4862026572227478}, {"id": "https://openalex.org/C3013748606",
-  "wikidata": "https://www.wikidata.org/wiki/Q15787", "display_name": "Human immunodeficiency
-  virus (HIV)", "level": 2, "score": 0.48028016090393066}, {"id": "https://openalex.org/C126322002",
-  "wikidata": "https://www.wikidata.org/wiki/Q11180", "display_name": "Internal medicine",
-  "level": 1, "score": 0.38070207834243774}, {"id": "https://openalex.org/C203014093",
-  "wikidata": "https://www.wikidata.org/wiki/Q101929", "display_name": "Immunology",
-  "level": 1, "score": 0.3638921082019806}, {"id": "https://openalex.org/C2781026528",
-  "wikidata": "https://www.wikidata.org/wiki/Q48143", "display_name": "Meningitis",
-  "level": 2, "score": 0.30164623260498047}, {"id": "https://openalex.org/C187212893",
-  "wikidata": "https://www.wikidata.org/wiki/Q123028", "display_name": "Pediatrics",
-  "level": 1, "score": 0.2945002317428589}], "mesh": [], "locations_count": 3, "locations":
-  [{"id": "doi:10.12688/wellcomeopenres.22498.2", "is_oa": true, "landing_page_url":
-  "https://doi.org/10.12688/wellcomeopenres.22498.2", "pdf_url": null, "source": {"id":
-  "https://openalex.org/S4210218052", "display_name": "Wellcome Open Research", "issn_l":
-  "2398-502X", "issn": ["2398-502X"], "is_oa": true, "is_in_doaj": true, "is_core":
-  true, "host_organization": "https://openalex.org/P4310311838", "host_organization_name":
-  "Wellcome", "host_organization_lineage": ["https://openalex.org/P4310311838"], "host_organization_lineage_names":
-  ["Wellcome"], "type": "journal"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
-  "version": "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
-  "Wellcome Open Research", "raw_type": "journal-article"}, {"id": "pmh:oai:researchonline.lshtm.ac.uk:4675040",
-  "is_oa": true, "landing_page_url": "https://orcid.org/0000-0002-5893-336X>;", "pdf_url":
-  "https://researchonline.lshtm.ac.uk/id/eprint/4675040/1/Donovan-etal-2025-Statistical-analysis-plan-for-the-LAST-ACT-clinical-trial.pdf",
-  "source": {"id": "https://openalex.org/S4306402527", "display_name": "LSHTM Research
-  Online (London School of Hygiene and Tropical Medicine)", "issn_l": null, "issn":
-  null, "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization":
-  "https://openalex.org/I4210089966", "host_organization_name": "London School of
-  Hygiene & Tropical Medicine", "host_organization_lineage": ["https://openalex.org/I4210089966"],
-  "host_organization_lineage_names": [], "type": "repository"}, "license": null, "license_id":
-  null, "version": "acceptedVersion", "is_accepted": true, "is_published": false,
-  "raw_source_name": null, "raw_type": "Article"}, {"id": "pmh:oai:doaj.org/article:99df0b0d17f54fa49384a7006f80d183",
-  "is_oa": true, "landing_page_url": "https://doaj.org/article/99df0b0d17f54fa49384a7006f80d183",
-  "pdf_url": null, "source": {"id": "https://openalex.org/S4306401280", "display_name":
-  "DOAJ (DOAJ: Directory of Open Access Journals)", "issn_l": null, "issn": null,
-  "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization": null,
-  "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
-  [], "type": "repository"}, "license": "cc-by-sa", "license_id": "https://openalex.org/licenses/cc-by-sa",
-  "version": "submittedVersion", "is_accepted": false, "is_published": false, "raw_source_name":
-  "Wellcome Open Research, Vol 9 (2025)", "raw_type": "article"}], "best_oa_location":
-  {"id": "doi:10.12688/wellcomeopenres.22498.2", "is_oa": true, "landing_page_url":
-  "https://doi.org/10.12688/wellcomeopenres.22498.2", "pdf_url": null, "source": {"id":
+  "Wellcome Open Research, Vol 9 (2024)", "raw_type": "article"}], "best_oa_location":
+  {"id": "doi:10.12688/wellcomeopenres.22498.1", "is_oa": true, "landing_page_url":
+  "https://doi.org/10.12688/wellcomeopenres.22498.1", "pdf_url": null, "source": {"id":
   "https://openalex.org/S4210218052", "display_name": "Wellcome Open Research", "issn_l":
   "2398-502X", "issn": ["2398-502X"], "is_oa": true, "is_in_doaj": true, "is_core":
   true, "host_organization": "https://openalex.org/P4310311838", "host_organization_name":
@@ -9412,22 +9192,23 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   ["Wellcome"], "type": "journal"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
   "version": "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
   "Wellcome Open Research", "raw_type": "journal-article"}, "sustainable_development_goals":
-  [], "awards": [{"id": "https://openalex.org/G7076209523", "display_name": "Personalised
-  adjunctive anti-inflammatory therapy to reduce deaths from tuberculosis.", "funder_award_id":
-  "110179", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
-  "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": false,
-  "grobid_xml": false}, "content_urls": null, "referenced_works_count": 19, "referenced_works":
-  ["https://openalex.org/W313080928", "https://openalex.org/W1968632660", "https://openalex.org/W1986514504",
-  "https://openalex.org/W1986607793", "https://openalex.org/W1992045522", "https://openalex.org/W1996016456",
-  "https://openalex.org/W2123879591", "https://openalex.org/W2128471563", "https://openalex.org/W2150492824",
+  [{"display_name": "Good health and well-being", "id": "https://metadata.un.org/sdg/3",
+  "score": 0.8700000047683716}], "awards": [{"id": "https://openalex.org/G7076209523",
+  "display_name": "Personalised adjunctive anti-inflammatory therapy to reduce deaths
+  from tuberculosis.", "funder_award_id": "110179", "funder_id": "https://openalex.org/F4320311904",
+  "funder_display_name": "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904",
+  "display_name": "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content":
+  {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+  18, "referenced_works": ["https://openalex.org/W313080928", "https://openalex.org/W1968632660",
+  "https://openalex.org/W1986514504", "https://openalex.org/W1986607793", "https://openalex.org/W1992045522",
+  "https://openalex.org/W1996016456", "https://openalex.org/W2123879591", "https://openalex.org/W2150492824",
   "https://openalex.org/W2152740900", "https://openalex.org/W2159707944", "https://openalex.org/W2160408047",
   "https://openalex.org/W2582743722", "https://openalex.org/W2607348542", "https://openalex.org/W2792649023",
   "https://openalex.org/W2963208580", "https://openalex.org/W4210305735", "https://openalex.org/W4360894306",
-  "https://openalex.org/W4387521979"], "related_works": ["https://openalex.org/W2187969695",
-  "https://openalex.org/W4206255072", "https://openalex.org/W2428989295", "https://openalex.org/W2365454603",
-  "https://openalex.org/W2556182447", "https://openalex.org/W2052865792", "https://openalex.org/W2182815054",
-  "https://openalex.org/W2324916164", "https://openalex.org/W2004041264", "https://openalex.org/W2397674973"],
+  "https://openalex.org/W4387521979"], "related_works": ["https://openalex.org/W1859326399",
+  "https://openalex.org/W204855368", "https://openalex.org/W2354241142", "https://openalex.org/W3029340634",
+  "https://openalex.org/W1586953954", "https://openalex.org/W2187969695", "https://openalex.org/W1966127473",
+  "https://openalex.org/W1982434602", "https://openalex.org/W2094844283", "https://openalex.org/W2342261185"],
   "abstract_inverted_index": {"Tuberculous": [0, 77], "meningitis": [1], "(TBM)":
   [2], "is": [3, 86], "the": [4, 41, 48, 52, 56, 59, 84, 190, 231, 236], "most": [5],
   "severe": [6], "form": [7], "of": [8, 55, 58, 70, 123, 207, 215], "tuberculosis.":
@@ -9466,8 +9247,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "causes": [220], "substantial": [221], "harm.": [222], "statistical": [224], "analysis":
   [225, 232], "plan": [226, 233], "expands": [227], "updates": [230], "outlined":
   [234], "published": [237], "study": [238], "protocol.": [239]}, "counts_by_year":
-  [{"year": 2026, "cited_by_count": 1}, {"year": 2025, "cited_by_count": 1}], "updated_date":
-  "2026-08-26T07:47:46.906454", "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W7154964006",
+  [{"year": 2026, "cited_by_count": 2}], "updated_date": "2026-09-06T09:10:53.072986",
+  "created_date": "2024-11-28T00:00:00"}, {"id": "https://openalex.org/W7154964006",
   "doi": "https://doi.org/10.1186/s40635-026-00899-0", "title": "Predictive value
   of ventriculo-arterial coupling for hypotension after induction of anaesthesia:
   a prospective observational cohort study", "display_name": "Predictive value of
@@ -9742,7 +9523,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version": "publishedVersion",
   "is_accepted": true, "is_published": true, "raw_source_name": "Intensive Care Medicine
   Experimental", "raw_type": "journal-article"}, "sustainable_development_goals":
-  [], "awards": [], "funders": [], "has_content": {"pdf": true, "grobid_xml": true},
+  [], "awards": [], "funders": [], "has_content": {"grobid_xml": true, "pdf": true},
   "content_urls": {"pdf": "https://content.openalex.org/works/W7154964006.pdf", "grobid_xml":
   "https://content.openalex.org/works/W7154964006.grobid-xml"}, "referenced_works_count":
   40, "referenced_works": ["https://openalex.org/W73459521", "https://openalex.org/W1651614883",
@@ -10019,8 +9800,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   8, "corresponding_author_ids": ["https://openalex.org/A5073343908"], "corresponding_institution_ids":
   ["https://openalex.org/I183935753", "https://openalex.org/I4210150114"], "apc_list":
   {"value": 2990, "currency": "USD", "value_usd": 2990}, "apc_paid": {"value": 2990,
-  "currency": "USD", "value_usd": 2990}, "fwci": 1.6475, "has_fulltext": true, "cited_by_count":
-  4, "citation_normalized_percentile": {"value": 0.8186705, "is_in_top_1_percent":
+  "currency": "USD", "value_usd": 2990}, "fwci": 1.6257, "has_fulltext": true, "cited_by_count":
+  4, "citation_normalized_percentile": {"value": 0.81690214, "is_in_top_1_percent":
   false, "is_in_top_10_percent": false}, "cited_by_percentile_year": {"min": 94, "max":
   96}, "biblio": {"volume": "24", "issue": "1", "first_page": "163", "last_page":
   "163"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -10235,7 +10016,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   [{"id": "https://openalex.org/F4320311904", "display_name": "Wellcome Trust", "ror":
   "https://ror.org/029chgv08"}, {"id": "https://openalex.org/F4320319990", "display_name":
   "National Institute for Health and Care Research", "ror": "https://ror.org/0187kwz08"}],
-  "has_content": {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4391574296.pdf",
+  "has_content": {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4391574296.pdf",
   "grobid_xml": "https://content.openalex.org/works/W4391574296.grobid-xml"}, "referenced_works_count":
   22, "referenced_works": ["https://openalex.org/W1538600059", "https://openalex.org/W2014074083",
   "https://openalex.org/W2040536528", "https://openalex.org/W2051133080", "https://openalex.org/W2070635713",
@@ -10292,15 +10073,291 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "analysis,": [266], "combining": [267], "factors.": [273], "Models": [274], "accurate,":
   [276], "well-calibrated,": [277], "support": [280], "both": [281], "practice": [283],
   "research.": [285]}, "counts_by_year": [{"year": 2025, "cited_by_count": 2}, {"year":
-  2024, "cited_by_count": 2}], "updated_date": "2026-08-28T12:50:07.497085", "created_date":
-  "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4410631163", "doi": "https://doi.org/10.1371/journal.pone.0321655",
-  "title": "Convolutional neural network using magnetic resonance brain imaging to
-  predict outcome from tuberculosis meningitis", "display_name": "Convolutional neural
+  2024, "cited_by_count": 2}], "updated_date": "2026-09-06T09:10:53.072986", "created_date":
+  "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4407157314", "doi": "https://doi.org/10.12688/wellcomeopenres.22498.2",
+  "title": "Statistical analysis plan for the LAST ACT clinical trial; a Leukotriene
+  A4 hydrolase Stratified non-inferiority Trial of Adjunctive Corticosteroids for
+  HIV-negative adults with Tuberculous meningitis", "display_name": "Statistical analysis
+  plan for the LAST ACT clinical trial; a Leukotriene A4 hydrolase Stratified non-inferiority
+  Trial of Adjunctive Corticosteroids for HIV-negative adults with Tuberculous meningitis",
+  "publication_year": 2025, "publication_date": "2025-02-05", "ids": {"openalex":
+  "https://openalex.org/W4407157314", "doi": "https://doi.org/10.12688/wellcomeopenres.22498.2"},
+  "language": "en", "primary_location": {"id": "doi:10.12688/wellcomeopenres.22498.2",
+  "is_oa": true, "landing_page_url": "https://doi.org/10.12688/wellcomeopenres.22498.2",
+  "pdf_url": null, "source": {"id": "https://openalex.org/S4210218052", "display_name":
+  "Wellcome Open Research", "issn_l": "2398-502X", "issn": ["2398-502X"], "is_oa":
+  true, "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310311838",
+  "host_organization_name": "Wellcome", "host_organization_lineage": ["https://openalex.org/P4310311838"],
+  "host_organization_lineage_names": ["Wellcome"], "type": "journal"}, "license":
+  "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version": "publishedVersion",
+  "is_accepted": true, "is_published": true, "raw_source_name": "Wellcome Open Research",
+  "raw_type": "journal-article"}, "type": "article", "indexed_in": ["crossref", "doaj"],
+  "open_access": {"is_oa": true, "oa_status": "gold", "oa_url": "https://doi.org/10.12688/wellcomeopenres.22498.2",
+  "any_repository_has_fulltext": true}, "authorships": [{"author_position": "first",
+  "author": {"id": "https://openalex.org/A5071781127", "display_name": "Joseph Donovan",
+  "orcid": "https://orcid.org/0000-0002-5893-336X"}, "institutions": [{"id": "https://openalex.org/I40120149",
+  "display_name": "University of Oxford", "ror": "https://ror.org/052gg0110", "country_code":
+  "GB", "type": "education", "lineage": ["https://openalex.org/I40120149"]}, {"id":
+  "https://openalex.org/I4210089966", "display_name": "London School of Hygiene &
+  Tropical Medicine", "ror": "https://ror.org/00a0jsq62", "country_code": "GB", "type":
+  "education", "lineage": ["https://openalex.org/I124357947", "https://openalex.org/I4210089966"]},
+  {"id": "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
+  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
+  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
+  "https://openalex.org/I87048295"]}], "countries": ["GB", "VN"], "is_corresponding":
+  false, "raw_author_name": "Joseph Donovan", "raw_affiliation_strings": ["Centre
+  for Tropical Medicine and Global Health, Nuffield Department of Medicine, University
+  of Oxford, Oxford, England, UK", "London School of Hygiene and Tropical Medicine,
+  London, England, UK", "Oxford University Clinical Research Unit, Centre for Tropical
+  Medicine, Ho Chi Minh City, Vietnam"], "raw_orcid": "https://orcid.org/0000-0002-5893-336X",
+  "affiliations": [{"raw_affiliation_string": "Centre for Tropical Medicine and Global
+  Health, Nuffield Department of Medicine, University of Oxford, Oxford, England,
+  UK", "institution_ids": ["https://openalex.org/I40120149"]}, {"raw_affiliation_string":
+  "London School of Hygiene and Tropical Medicine, London, England, UK", "institution_ids":
+  ["https://openalex.org/I4210089966"]}, {"raw_affiliation_string": "Oxford University
+  Clinical Research Unit, Centre for Tropical Medicine, Ho Chi Minh City, Vietnam",
+  "institution_ids": ["https://openalex.org/I4210150114"]}]}, {"author_position":
+  "middle", "author": {"id": "https://openalex.org/A5031705923", "display_name": "Marcel
+  Wolbers", "orcid": "https://orcid.org/0000-0003-4915-9015"}, "institutions": [{"id":
+  "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
+  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
+  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
+  "https://openalex.org/I87048295"]}], "countries": ["VN"], "is_corresponding": false,
+  "raw_author_name": "Marcel Wolbers", "raw_affiliation_strings": ["Oxford University
+  Clinical Research Unit, Centre for Tropical Medicine, Ho Chi Minh City, Vietnam"],
+  "raw_orcid": null, "affiliations": [{"raw_affiliation_string": "Oxford University
+  Clinical Research Unit, Centre for Tropical Medicine, Ho Chi Minh City, Vietnam",
+  "institution_ids": ["https://openalex.org/I4210150114"]}]}, {"author_position":
+  "middle", "author": {"id": "https://openalex.org/A5029866557", "display_name": "Nguy\u1ec5n
+  Th\u1ee5y Th\u01b0\u01a1ng Th\u01b0\u01a1ng", "orcid": "https://orcid.org/0000-0001-8733-692X"},
+  "institutions": [{"id": "https://openalex.org/I40120149", "display_name": "University
+  of Oxford", "ror": "https://ror.org/052gg0110", "country_code": "GB", "type": "education",
+  "lineage": ["https://openalex.org/I40120149"]}, {"id": "https://openalex.org/I4210150114",
+  "display_name": "Oxford University Clinical Research Unit", "ror": "https://ror.org/05rehad94",
+  "country_code": "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149",
+  "https://openalex.org/I4210150114", "https://openalex.org/I87048295"]}], "countries":
+  ["GB", "VN"], "is_corresponding": false, "raw_author_name": "Nguyen Thuy Thuong
+  Thuong", "raw_affiliation_strings": ["Centre for Tropical Medicine and Global Health,
+  Nuffield Department of Medicine, University of Oxford, Oxford, England, UK", "Oxford
+  University Clinical Research Unit, Centre for Tropical Medicine, Ho Chi Minh City,
+  Vietnam"], "raw_orcid": "https://orcid.org/0000-0001-8733-692X", "affiliations":
+  [{"raw_affiliation_string": "Centre for Tropical Medicine and Global Health, Nuffield
+  Department of Medicine, University of Oxford, Oxford, England, UK", "institution_ids":
+  ["https://openalex.org/I40120149"]}, {"raw_affiliation_string": "Oxford University
+  Clinical Research Unit, Centre for Tropical Medicine, Ho Chi Minh City, Vietnam",
+  "institution_ids": ["https://openalex.org/I4210150114"]}]}, {"author_position":
+  "middle", "author": {"id": "https://openalex.org/A5073343908", "display_name": "Dong
+  Huu Khanh Trinh", "orcid": "https://orcid.org/0000-0003-4281-4929"}, "institutions":
+  [{"id": "https://openalex.org/I183935753", "display_name": "King''s College London",
+  "ror": "https://ror.org/0220mzb33", "country_code": "GB", "type": "education", "lineage":
+  ["https://openalex.org/I124357947", "https://openalex.org/I183935753"]}, {"id":
+  "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
+  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
+  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
+  "https://openalex.org/I87048295"]}], "countries": ["GB", "VN"], "is_corresponding":
+  false, "raw_author_name": "Dong Huu Khanh Trinh", "raw_affiliation_strings": ["King''s
+  College London, London, England, UK", "Oxford University Clinical Research Unit,
+  Centre for Tropical Medicine, Ho Chi Minh City, Vietnam"], "raw_orcid": null, "affiliations":
+  [{"raw_affiliation_string": "King''s College London, London, England, UK", "institution_ids":
+  ["https://openalex.org/I183935753"]}, {"raw_affiliation_string": "Oxford University
+  Clinical Research Unit, Centre for Tropical Medicine, Ho Chi Minh City, Vietnam",
+  "institution_ids": ["https://openalex.org/I4210150114"]}]}, {"author_position":
+  "middle", "author": {"id": "https://openalex.org/A5015393537", "display_name": "Le
+  Thanh Hoang Nhat", "orcid": "https://orcid.org/0000-0002-3756-7217"}, "institutions":
+  [{"id": "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
+  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
+  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
+  "https://openalex.org/I87048295"]}], "countries": ["VN"], "is_corresponding": false,
+  "raw_author_name": "Le Thanh Hoang Nhat", "raw_affiliation_strings": ["Oxford University
+  Clinical Research Unit, Centre for Tropical Medicine, Ho Chi Minh City, Vietnam"],
+  "raw_orcid": null, "affiliations": [{"raw_affiliation_string": "Oxford University
+  Clinical Research Unit, Centre for Tropical Medicine, Ho Chi Minh City, Vietnam",
+  "institution_ids": ["https://openalex.org/I4210150114"]}]}, {"author_position":
+  "middle", "author": {"id": "https://openalex.org/A5013471493", "display_name": "Guy
+  Thwaites", "orcid": "https://orcid.org/0000-0002-2858-2087"}, "institutions": [{"id":
+  "https://openalex.org/I40120149", "display_name": "University of Oxford", "ror":
+  "https://ror.org/052gg0110", "country_code": "GB", "type": "education", "lineage":
+  ["https://openalex.org/I40120149"]}, {"id": "https://openalex.org/I4210150114",
+  "display_name": "Oxford University Clinical Research Unit", "ror": "https://ror.org/05rehad94",
+  "country_code": "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149",
+  "https://openalex.org/I4210150114", "https://openalex.org/I87048295"]}], "countries":
+  ["GB", "VN"], "is_corresponding": false, "raw_author_name": "Guy E. Thwaites", "raw_affiliation_strings":
+  ["Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine,
+  University of Oxford, Oxford, England, UK", "Oxford University Clinical Research
+  Unit, Centre for Tropical Medicine, Ho Chi Minh City, Vietnam"], "raw_orcid": "https://orcid.org/0000-0002-2858-2087",
+  "affiliations": [{"raw_affiliation_string": "Centre for Tropical Medicine and Global
+  Health, Nuffield Department of Medicine, University of Oxford, Oxford, England,
+  UK", "institution_ids": ["https://openalex.org/I40120149"]}, {"raw_affiliation_string":
+  "Oxford University Clinical Research Unit, Centre for Tropical Medicine, Ho Chi
+  Minh City, Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}]},
+  {"author_position": "last", "author": {"id": "https://openalex.org/A5069415900",
+  "display_name": "Ronald B. Geskus", "orcid": "https://orcid.org/0000-0002-2740-3155"},
+  "institutions": [{"id": "https://openalex.org/I40120149", "display_name": "University
+  of Oxford", "ror": "https://ror.org/052gg0110", "country_code": "GB", "type": "education",
+  "lineage": ["https://openalex.org/I40120149"]}, {"id": "https://openalex.org/I4210150114",
+  "display_name": "Oxford University Clinical Research Unit", "ror": "https://ror.org/05rehad94",
+  "country_code": "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149",
+  "https://openalex.org/I4210150114", "https://openalex.org/I87048295"]}], "countries":
+  ["GB", "VN"], "is_corresponding": false, "raw_author_name": "Ronald B. Geskus",
+  "raw_affiliation_strings": ["Centre for Tropical Medicine and Global Health, Nuffield
+  Department of Medicine, University of Oxford, Oxford, England, UK", "Oxford University
+  Clinical Research Unit, Centre for Tropical Medicine, Ho Chi Minh City, Vietnam"],
+  "raw_orcid": "https://orcid.org/0000-0002-2740-3155", "affiliations": [{"raw_affiliation_string":
+  "Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine,
+  University of Oxford, Oxford, England, UK", "institution_ids": ["https://openalex.org/I40120149"]},
+  {"raw_affiliation_string": "Oxford University Clinical Research Unit, Centre for
+  Tropical Medicine, Ho Chi Minh City, Vietnam", "institution_ids": ["https://openalex.org/I4210150114"]}]}],
+  "institutions": [], "countries_distinct_count": 2, "institutions_distinct_count":
+  4, "corresponding_author_ids": [], "corresponding_institution_ids": [], "apc_list":
+  {"value": 920, "currency": "GBP", "value_usd": 1128}, "apc_paid": {"value": 920,
+  "currency": "GBP", "value_usd": 1128}, "fwci": 1.9788, "has_fulltext": true, "cited_by_count":
+  2, "citation_normalized_percentile": {"value": 0.82908542, "is_in_top_1_percent":
+  false, "is_in_top_10_percent": false}, "cited_by_percentile_year": {"min": 91, "max":
+  96}, "biblio": {"volume": "9", "issue": null, "first_page": "695", "last_page":
+  "695"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
+  {"id": "https://openalex.org/T11381", "display_name": "Infectious Diseases and Tuberculosis",
+  "score": 1.0, "subfield": {"id": "https://openalex.org/subfields/2746", "display_name":
+  "Surgery"}, "field": {"id": "https://openalex.org/fields/27", "display_name": "Medicine"},
+  "domain": {"id": "https://openalex.org/domains/4", "display_name": "Health Sciences"}},
+  "topics": [{"id": "https://openalex.org/T11381", "display_name": "Infectious Diseases
+  and Tuberculosis", "score": 1.0, "subfield": {"id": "https://openalex.org/subfields/2746",
+  "display_name": "Surgery"}, "field": {"id": "https://openalex.org/fields/27", "display_name":
+  "Medicine"}, "domain": {"id": "https://openalex.org/domains/4", "display_name":
+  "Health Sciences"}}, {"id": "https://openalex.org/T10873", "display_name": "Bacterial
+  Infections and Vaccines", "score": 0.9995999932289124, "subfield": {"id": "https://openalex.org/subfields/2404",
+  "display_name": "Microbiology"}, "field": {"id": "https://openalex.org/fields/24",
+  "display_name": "Immunology and Microbiology"}, "domain": {"id": "https://openalex.org/domains/1",
+  "display_name": "Life Sciences"}}, {"id": "https://openalex.org/T10038", "display_name":
+  "Tuberculosis Research and Epidemiology", "score": 0.9965999722480774, "subfield":
+  {"id": "https://openalex.org/subfields/2725", "display_name": "Infectious Diseases"},
+  "field": {"id": "https://openalex.org/fields/27", "display_name": "Medicine"}, "domain":
+  {"id": "https://openalex.org/domains/4", "display_name": "Health Sciences"}}], "keywords":
+  [{"id": "https://openalex.org/keywords/medicine", "display_name": "Medicine", "score":
+  0.584558367729187}, {"id": "https://openalex.org/keywords/tuberculous-meningitis",
+  "display_name": "Tuberculous meningitis", "score": 0.5578914284706116}, {"id": "https://openalex.org/keywords/clinical-trial",
+  "display_name": "Clinical trial", "score": 0.4862026572227478}, {"id": "https://openalex.org/keywords/human-immunodeficiency-virus",
+  "display_name": "Human immunodeficiency virus (HIV)", "score": 0.48028016090393066},
+  {"id": "https://openalex.org/keywords/internal-medicine", "display_name": "Internal
+  medicine", "score": 0.38070207834243774}, {"id": "https://openalex.org/keywords/immunology",
+  "display_name": "Immunology", "score": 0.3638921082019806}, {"id": "https://openalex.org/keywords/meningitis",
+  "display_name": "Meningitis", "score": 0.30164623260498047}, {"id": "https://openalex.org/keywords/pediatrics",
+  "display_name": "Pediatrics", "score": 0.2945002317428589}], "concepts": [{"id":
+  "https://openalex.org/C71924100", "wikidata": "https://www.wikidata.org/wiki/Q11190",
+  "display_name": "Medicine", "level": 0, "score": 0.584558367729187}, {"id": "https://openalex.org/C2776896556",
+  "wikidata": "https://www.wikidata.org/wiki/Q3854687", "display_name": "Tuberculous
+  meningitis", "level": 3, "score": 0.5578914284706116}, {"id": "https://openalex.org/C535046627",
+  "wikidata": "https://www.wikidata.org/wiki/Q30612", "display_name": "Clinical trial",
+  "level": 2, "score": 0.4862026572227478}, {"id": "https://openalex.org/C3013748606",
+  "wikidata": "https://www.wikidata.org/wiki/Q15787", "display_name": "Human immunodeficiency
+  virus (HIV)", "level": 2, "score": 0.48028016090393066}, {"id": "https://openalex.org/C126322002",
+  "wikidata": "https://www.wikidata.org/wiki/Q11180", "display_name": "Internal medicine",
+  "level": 1, "score": 0.38070207834243774}, {"id": "https://openalex.org/C203014093",
+  "wikidata": "https://www.wikidata.org/wiki/Q101929", "display_name": "Immunology",
+  "level": 1, "score": 0.3638921082019806}, {"id": "https://openalex.org/C2781026528",
+  "wikidata": "https://www.wikidata.org/wiki/Q48143", "display_name": "Meningitis",
+  "level": 2, "score": 0.30164623260498047}, {"id": "https://openalex.org/C187212893",
+  "wikidata": "https://www.wikidata.org/wiki/Q123028", "display_name": "Pediatrics",
+  "level": 1, "score": 0.2945002317428589}], "mesh": [], "locations_count": 3, "locations":
+  [{"id": "doi:10.12688/wellcomeopenres.22498.2", "is_oa": true, "landing_page_url":
+  "https://doi.org/10.12688/wellcomeopenres.22498.2", "pdf_url": null, "source": {"id":
+  "https://openalex.org/S4210218052", "display_name": "Wellcome Open Research", "issn_l":
+  "2398-502X", "issn": ["2398-502X"], "is_oa": true, "is_in_doaj": true, "is_core":
+  true, "host_organization": "https://openalex.org/P4310311838", "host_organization_name":
+  "Wellcome", "host_organization_lineage": ["https://openalex.org/P4310311838"], "host_organization_lineage_names":
+  ["Wellcome"], "type": "journal"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
+  "version": "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
+  "Wellcome Open Research", "raw_type": "journal-article"}, {"id": "pmh:oai:researchonline.lshtm.ac.uk:4675040",
+  "is_oa": true, "landing_page_url": "https://orcid.org/0000-0002-5893-336X>;", "pdf_url":
+  "https://researchonline.lshtm.ac.uk/id/eprint/4675040/1/Donovan-etal-2025-Statistical-analysis-plan-for-the-LAST-ACT-clinical-trial.pdf",
+  "source": {"id": "https://openalex.org/S4306402527", "display_name": "LSHTM Research
+  Online (London School of Hygiene and Tropical Medicine)", "issn_l": null, "issn":
+  null, "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization":
+  "https://openalex.org/I4210089966", "host_organization_name": "London School of
+  Hygiene & Tropical Medicine", "host_organization_lineage": ["https://openalex.org/I4210089966"],
+  "host_organization_lineage_names": [], "type": "repository"}, "license": null, "license_id":
+  null, "version": "acceptedVersion", "is_accepted": true, "is_published": false,
+  "raw_source_name": null, "raw_type": "Article"}, {"id": "pmh:oai:doaj.org/article:99df0b0d17f54fa49384a7006f80d183",
+  "is_oa": true, "landing_page_url": "https://doaj.org/article/99df0b0d17f54fa49384a7006f80d183",
+  "pdf_url": null, "source": {"id": "https://openalex.org/S4306401280", "display_name":
+  "DOAJ (DOAJ: Directory of Open Access Journals)", "issn_l": null, "issn": null,
+  "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization": null,
+  "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
+  [], "type": "repository"}, "license": "cc-by-sa", "license_id": "https://openalex.org/licenses/cc-by-sa",
+  "version": "submittedVersion", "is_accepted": false, "is_published": false, "raw_source_name":
+  "Wellcome Open Research, Vol 9 (2025)", "raw_type": "article"}], "best_oa_location":
+  {"id": "doi:10.12688/wellcomeopenres.22498.2", "is_oa": true, "landing_page_url":
+  "https://doi.org/10.12688/wellcomeopenres.22498.2", "pdf_url": null, "source": {"id":
+  "https://openalex.org/S4210218052", "display_name": "Wellcome Open Research", "issn_l":
+  "2398-502X", "issn": ["2398-502X"], "is_oa": true, "is_in_doaj": true, "is_core":
+  true, "host_organization": "https://openalex.org/P4310311838", "host_organization_name":
+  "Wellcome", "host_organization_lineage": ["https://openalex.org/P4310311838"], "host_organization_lineage_names":
+  ["Wellcome"], "type": "journal"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
+  "version": "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
+  "Wellcome Open Research", "raw_type": "journal-article"}, "sustainable_development_goals":
+  [], "awards": [{"id": "https://openalex.org/G7076209523", "display_name": "Personalised
+  adjunctive anti-inflammatory therapy to reduce deaths from tuberculosis.", "funder_award_id":
+  "110179", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
+  "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
+  false, "pdf": false}, "content_urls": null, "referenced_works_count": 19, "referenced_works":
+  ["https://openalex.org/W313080928", "https://openalex.org/W1968632660", "https://openalex.org/W1986514504",
+  "https://openalex.org/W1986607793", "https://openalex.org/W1992045522", "https://openalex.org/W1996016456",
+  "https://openalex.org/W2123879591", "https://openalex.org/W2128471563", "https://openalex.org/W2150492824",
+  "https://openalex.org/W2152740900", "https://openalex.org/W2159707944", "https://openalex.org/W2160408047",
+  "https://openalex.org/W2582743722", "https://openalex.org/W2607348542", "https://openalex.org/W2792649023",
+  "https://openalex.org/W2963208580", "https://openalex.org/W4210305735", "https://openalex.org/W4360894306",
+  "https://openalex.org/W4387521979"], "related_works": ["https://openalex.org/W2187969695",
+  "https://openalex.org/W4206255072", "https://openalex.org/W2428989295", "https://openalex.org/W2365454603",
+  "https://openalex.org/W2556182447", "https://openalex.org/W2052865792", "https://openalex.org/W2182815054",
+  "https://openalex.org/W2324916164", "https://openalex.org/W2004041264", "https://openalex.org/W2397674973"],
+  "abstract_inverted_index": {"Tuberculous": [0, 77], "meningitis": [1], "(TBM)":
+  [2], "is": [3, 86], "the": [4, 41, 48, 52, 56, 59, 84, 190, 231, 236], "most": [5],
+  "severe": [6], "form": [7], "of": [8, 55, 58, 70, 123, 207, 215], "tuberculosis.":
+  [9], "Corticosteroids": [10, 72], "are": [11], "currently": [12], "recommended":
+  [13], "as": [14], "an": [15, 109], "adjunctive": [16, 98], "therapy": [17], "in":
+  [18, 27, 90, 129, 142, 176, 217, 235], "HIV-negative": [19, 74], "adults": [20,
+  75, 103], "with": [21, 76, 104, 150], "TBM.": [22, 105], "However,": [23], "benefit":
+  [24], "from": [25], "corticosteroids": [26], "TBM": [28], "may": [29], "depend":
+  [30], "upon": [31, 228], "host": [32], "leukotriene": [33], "A4": [34, 66], "hydrolase":
+  [35, 67], "(": [36], "LTA4H": [37, 88, 110, 135], ")": [38], "genotype": [39, 111,
+  136, 154, 163], "and": [40, 229], "corresponding": [42], "inflammatory": [43], "phenotypes.":
+  [44], "This": [45, 223], "article": [46], "describes": [47], "planned": [49], "analyses":
+  [50], "for": [51, 73, 126], "primary": [53, 80, 180], "publication": [54], "results":
+  [57], "LAST": [60], "ACT": [61], "clinical": [62], "trial": [63, 85, 107, 122],
+  "(NCT03100786):": [64], "\u2018Leukotriene": [65], "Stratified": [68], "Trial":
+  [69], "Adjunctive": [71], "meningitis\u2019.": [78], "The": [79, 106, 179], "hypothesis":
+  [81], "addressed": [82], "by": [83, 174], "that": [87], "genotype,": [89, 95], "particular":
+  [91], "CC": [92, 151], "or": [93, 101, 152, 159, 185], "CT": [94, 153], "determines":
+  [96], "whether": [97], "dexamethasone": [99, 124, 158, 166, 175, 219], "benefits":
+  [100], "harms": [102], "was": [108, 140, 172, 182], "stratified,": [112], "parallel":
+  [113], "group,": [114], "randomised,": [115], "double": [116], "blind,": [117],
+  "placebo-controlled": [118], "multi-centre": [119], "Phase": [120], "III": [121],
+  "given": [125], "6\u20138": [127], "weeks": [128], "addition": [130], "to": [131,
+  146, 157, 204], "standard": [132], "anti-tuberculosis": [133], "drugs.": [134],
+  "(CC,": [137], "CT,": [138], "TT)": [139], "determined": [141], "all": [143], "participants":
+  [144, 164], "prior": [145, 168], "randomisation;": [147], "only": [148], "those":
+  [149], "were": [155], "randomised": [156], "placebo.": [160], "All": [161], "TT":
+  [162], "received": [165], "because": [167], "data": [169], "indicated": [170], "survival":
+  [171], "increased": [173], "this": [177], "genotype.": [178], "endpoint": [181],
+  "all-cause": [183], "death": [184], "new": [186], "neurological": [187], "event":
+  [188], "over": [189], "first": [191, 209], "12": [192], "months": [193], "after":
+  [194], "randomisation.": [195], "We": [196], "took": [197], "a": [198], "hybrid":
+  [199], "trial-design": [200], "approach": [201], "which": [202], "aims": [203],
+  "prove": [205], "non-inferiority": [206], "placebo": [208, 216], "but": [210], "also":
+  [211], "allows": [212], "claiming": [213], "superiority": [214], "case": [218],
+  "causes": [220], "substantial": [221], "harm.": [222], "statistical": [224], "analysis":
+  [225, 232], "plan": [226, 233], "expands": [227], "updates": [230], "outlined":
+  [234], "published": [237], "study": [238], "protocol.": [239]}, "counts_by_year":
+  [{"year": 2026, "cited_by_count": 1}, {"year": 2025, "cited_by_count": 1}], "updated_date":
+  "2026-09-02T18:50:13.731487", "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4410631163",
+  "doi": "https://doi.org/10.1371/journal.pone.0321655", "title": "Convolutional neural
   network using magnetic resonance brain imaging to predict outcome from tuberculosis
-  meningitis", "publication_year": 2025, "publication_date": "2025-05-23", "ids":
-  {"openalex": "https://openalex.org/W4410631163", "doi": "https://doi.org/10.1371/journal.pone.0321655",
-  "pmid": "https://pubmed.ncbi.nlm.nih.gov/40408340"}, "language": "en", "primary_location":
-  {"id": "doi:10.1371/journal.pone.0321655", "is_oa": true, "landing_page_url": "https://doi.org/10.1371/journal.pone.0321655",
+  meningitis", "display_name": "Convolutional neural network using magnetic resonance
+  brain imaging to predict outcome from tuberculosis meningitis", "publication_year":
+  2025, "publication_date": "2025-05-23", "ids": {"openalex": "https://openalex.org/W4410631163",
+  "doi": "https://doi.org/10.1371/journal.pone.0321655", "pmid": "https://pubmed.ncbi.nlm.nih.gov/40408340"},
+  "language": "en", "primary_location": {"id": "doi:10.1371/journal.pone.0321655",
+  "is_oa": true, "landing_page_url": "https://doi.org/10.1371/journal.pone.0321655",
   "pdf_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0321655&type=printable",
   "source": {"id": "https://openalex.org/S202381698", "display_name": "PLoS ONE",
   "issn_l": "1932-6203", "issn": ["1932-6203"], "is_oa": true, "is_in_doaj": true,
@@ -10710,7 +10767,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "https://openalex.org/F4320334627", "display_name": "Engineering and Physical Sciences
   Research Council", "ror": "https://ror.org/0439y7842"}, {"id": "https://openalex.org/F4320337314",
   "display_name": "Centre For Medical Engineering, King\u2019s College London", "ror":
-  "https://ror.org/04s9kfd63"}], "has_content": {"pdf": true, "grobid_xml": true},
+  "https://ror.org/04s9kfd63"}], "has_content": {"grobid_xml": true, "pdf": true},
   "content_urls": {"pdf": "https://content.openalex.org/works/W4410631163.pdf", "grobid_xml":
   "https://content.openalex.org/works/W4410631163.grobid-xml"}, "referenced_works_count":
   38, "referenced_works": ["https://openalex.org/W1965974931", "https://openalex.org/W2007537022",
@@ -11005,7 +11062,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   system infections in Vietnam", "funder_award_id": "204904/Z/16/Z", "funder_id":
   "https://openalex.org/F4320311904", "funder_display_name": "Wellcome Trust"}], "funders":
   [{"id": "https://openalex.org/F4320311904", "display_name": "Wellcome Trust", "ror":
-  "https://ror.org/029chgv08"}], "has_content": {"pdf": true, "grobid_xml": true},
+  "https://ror.org/029chgv08"}], "has_content": {"grobid_xml": true, "pdf": true},
   "content_urls": {"pdf": "https://content.openalex.org/works/W4384696586.pdf", "grobid_xml":
   "https://content.openalex.org/works/W4384696586.grobid-xml"}, "referenced_works_count":
   23, "referenced_works": ["https://openalex.org/W1538600059", "https://openalex.org/W2014074083",
@@ -11271,8 +11328,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   the management and prevention of tetanus in Vietnam.", "funder_award_id": "107367/Z/15/Z",
   "funder_id": "https://openalex.org/F4320311904", "funder_display_name": "Wellcome
   Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": false,
-  "grobid_xml": false}, "content_urls": null, "referenced_works_count": 5, "referenced_works":
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
+  false, "pdf": false}, "content_urls": null, "referenced_works_count": 5, "referenced_works":
   ["https://openalex.org/W1503693879", "https://openalex.org/W1998638218", "https://openalex.org/W2154117702",
   "https://openalex.org/W2796402759", "https://openalex.org/W3194782510"], "related_works":
   ["https://openalex.org/W2348837382", "https://openalex.org/W746329893", "https://openalex.org/W4205872570",
@@ -11511,7 +11568,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "wikidata": "https://www.wikidata.org/wiki/Q395", "display_name": "Mathematics",
   "level": 0, "score": 0.12784633040428162}, {"id": "https://openalex.org/C144237770",
   "wikidata": "https://www.wikidata.org/wiki/Q747534", "display_name": "Mathematical
-  economics", "level": 1, "score": 0.0}], "mesh": [], "locations_count": 2, "locations":
+  economics", "level": 1, "score": 0.0}], "mesh": [], "locations_count": 1, "locations":
   [{"id": "doi:10.21203/rs.3.rs-3890824/v1", "is_oa": true, "landing_page_url": "http://dx.doi.org/10.21203/rs.3.rs-3890824/v1",
   "pdf_url": "https://www.researchsquare.com/article/rs-3890824/latest.pdf", "source":
   {"id": "https://openalex.org/S4306525896", "display_name": "Research Square", "issn_l":
@@ -11519,43 +11576,34 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   null, "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
   [], "type": "repository"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
   "version": "acceptedVersion", "is_accepted": true, "is_published": false, "raw_source_name":
-  "Research Square", "raw_type": "posted-content"}, {"id": "pmh:oai:ora.ox.ac.uk:uuid:ae1c9ec1-9a42-4114-9807-15f0a2c7ee40",
-  "is_oa": false, "landing_page_url": null, "pdf_url": null, "source": {"id": "https://openalex.org/S4306402636",
-  "display_name": "Oxford University Research Archive (ORA) (University of Oxford)",
-  "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core": false,
-  "host_organization": "https://openalex.org/I40120149", "host_organization_name":
-  "University of Oxford", "host_organization_lineage": ["https://openalex.org/I40120149"],
-  "host_organization_lineage_names": [], "type": "repository"}, "license": null, "license_id":
-  null, "version": "submittedVersion", "is_accepted": false, "is_published": false,
-  "raw_source_name": "Jisc Publications Router", "raw_type": "http://purl.org/coar/resource_type/c_dcae04bc"}],
-  "best_oa_location": {"id": "doi:10.21203/rs.3.rs-3890824/v1", "is_oa": true, "landing_page_url":
-  "http://dx.doi.org/10.21203/rs.3.rs-3890824/v1", "pdf_url": "https://www.researchsquare.com/article/rs-3890824/latest.pdf",
-  "source": {"id": "https://openalex.org/S4306525896", "display_name": "Research Square",
-  "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core": false,
-  "host_organization": null, "host_organization_name": null, "host_organization_lineage":
-  [], "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
-  "license_id": "https://openalex.org/licenses/cc-by", "version": "acceptedVersion",
-  "is_accepted": true, "is_published": false, "raw_source_name": "Research Square",
-  "raw_type": "posted-content"}, "sustainable_development_goals": [{"display_name":
-  "Good health and well-being", "id": "https://metadata.un.org/sdg/3", "score": 0.8700000047683716}],
-  "awards": [{"id": "https://openalex.org/G1322964166", "display_name": "King''s College
-  London Medical Engineering Centre of Research Excellence", "funder_award_id": "203148/Z/16/Z",
+  "Research Square", "raw_type": "posted-content"}], "best_oa_location": {"id": "doi:10.21203/rs.3.rs-3890824/v1",
+  "is_oa": true, "landing_page_url": "http://dx.doi.org/10.21203/rs.3.rs-3890824/v1",
+  "pdf_url": "https://www.researchsquare.com/article/rs-3890824/latest.pdf", "source":
+  {"id": "https://openalex.org/S4306525896", "display_name": "Research Square", "issn_l":
+  null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core": false, "host_organization":
+  null, "host_organization_name": null, "host_organization_lineage": [], "host_organization_lineage_names":
+  [], "type": "repository"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
+  "version": "acceptedVersion", "is_accepted": true, "is_published": false, "raw_source_name":
+  "Research Square", "raw_type": "posted-content"}, "sustainable_development_goals":
+  [{"display_name": "Good health and well-being", "id": "https://metadata.un.org/sdg/3",
+  "score": 0.8700000047683716}], "awards": [{"id": "https://openalex.org/G1322964166",
+  "display_name": "King''s College London Medical Engineering Centre of Research Excellence",
+  "funder_award_id": "203148/Z/16/Z", "funder_id": "https://openalex.org/F4320311904",
+  "funder_display_name": "Wellcome Trust"}, {"id": "https://openalex.org/G1595280774",
+  "display_name": "JADE: Joint Academic Data science Endeavour - 2", "funder_award_id":
+  "EP/T022205/1", "funder_id": "https://openalex.org/F4320334627", "funder_display_name":
+  "Engineering and Physical Sciences Research Council"}, {"id": "https://openalex.org/G2884997024",
+  "display_name": "Translational Resource Award ''Flagship Translational Resource:
+  Critical Care/Fever", "funder_award_id": "217650", "funder_id": "https://openalex.org/F4320311904",
+  "funder_display_name": "Wellcome Trust"}, {"id": "https://openalex.org/G305152554",
+  "display_name": "Flagship Translational Resource: Critical Care/Fever", "funder_award_id":
+  "217650/Z/19/Z", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
+  "Wellcome Trust"}, {"id": "https://openalex.org/G3536065358", "display_name": "Vietnam
+  Africa Asia Programme Core Grant Renewal, 2022 to 2029", "funder_award_id": "225167",
   "funder_id": "https://openalex.org/F4320311904", "funder_display_name": "Wellcome
-  Trust"}, {"id": "https://openalex.org/G1595280774", "display_name": "JADE: Joint
-  Academic Data science Endeavour - 2", "funder_award_id": "EP/T022205/1", "funder_id":
-  "https://openalex.org/F4320334627", "funder_display_name": "Engineering and Physical
-  Sciences Research Council"}, {"id": "https://openalex.org/G2884997024", "display_name":
-  "Translational Resource Award ''Flagship Translational Resource: Critical Care/Fever",
-  "funder_award_id": "217650", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
-  "Wellcome Trust"}, {"id": "https://openalex.org/G305152554", "display_name": "Flagship
-  Translational Resource: Critical Care/Fever", "funder_award_id": "217650/Z/19/Z",
-  "funder_id": "https://openalex.org/F4320311904", "funder_display_name": "Wellcome
-  Trust"}, {"id": "https://openalex.org/G3536065358", "display_name": "Vietnam Africa
-  Asia Programme Core Grant Renewal, 2022 to 2029", "funder_award_id": "225167", "funder_id":
-  "https://openalex.org/F4320311904", "funder_display_name": "Wellcome Trust"}, {"id":
-  "https://openalex.org/G4906042428", "display_name": null, "funder_award_id": "EP/T022205/1",
-  "funder_id": "https://openalex.org/F4320337314", "funder_display_name": "Centre
-  For Medical Engineering, King\u2019s College London"}, {"id": "https://openalex.org/G5296857752",
+  Trust"}, {"id": "https://openalex.org/G4906042428", "display_name": null, "funder_award_id":
+  "EP/T022205/1", "funder_id": "https://openalex.org/F4320337314", "funder_display_name":
+  "Centre For Medical Engineering, King\u2019s College London"}, {"id": "https://openalex.org/G5296857752",
   "display_name": null, "funder_award_id": "203148/Z/16/Z", "funder_id": "https://openalex.org/F4320337314",
   "funder_display_name": "Centre For Medical Engineering, King\u2019s College London"},
   {"id": "https://openalex.org/G5907639349", "display_name": "King''s College London
@@ -11578,7 +11626,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "https://openalex.org/F4320334627", "display_name": "Engineering and Physical Sciences
   Research Council", "ror": "https://ror.org/0439y7842"}, {"id": "https://openalex.org/F4320337314",
   "display_name": "Centre For Medical Engineering, King\u2019s College London", "ror":
-  "https://ror.org/04s9kfd63"}], "has_content": {"pdf": true, "grobid_xml": true},
+  "https://ror.org/04s9kfd63"}], "has_content": {"grobid_xml": true, "pdf": true},
   "content_urls": {"pdf": "https://content.openalex.org/works/W4391578951.pdf", "grobid_xml":
   "https://content.openalex.org/works/W4391578951.grobid-xml"}, "referenced_works_count":
   21, "referenced_works": ["https://openalex.org/W1965974931", "https://openalex.org/W2007537022",
@@ -11643,7 +11691,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   [301], "information": [302], "can": [306], "help": [307], "unwanted": [309], "outcomes":
   [310], "TBM.": [312], "A": [313], "larger": [314], "dataset": [315], "now": [317],
   "needed": [318], "confirm": [320], "findings.": [322]}, "counts_by_year": [], "updated_date":
-  "2026-08-26T07:47:46.906454", "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W7133234693",
+  "2026-09-06T09:10:53.072986", "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W7133234693",
   "doi": "https://doi.org/10.1186/s12910-026-01400-y", "title": "Exploring layers
   of vulnerability during COVID-19: qualitative research with communities in Indonesia,
   Nepal, and Vietnam", "display_name": "Exploring layers of vulnerability during COVID-19:
@@ -12300,7 +12348,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   true, "is_published": true, "raw_source_name": "BMC Medical Ethics", "raw_type":
   "journal-article"}, "sustainable_development_goals": [{"display_name": "Good health
   and well-being", "id": "https://metadata.un.org/sdg/3", "score": 0.42751845717430115}],
-  "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false},
+  "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false},
   "content_urls": null, "referenced_works_count": 24, "referenced_works": ["https://openalex.org/W1566125242",
   "https://openalex.org/W1989224082", "https://openalex.org/W2045853031", "https://openalex.org/W2148183484",
   "https://openalex.org/W2485540656", "https://openalex.org/W2887820101", "https://openalex.org/W2983441955",
@@ -12530,7 +12578,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
   "license_id": "https://openalex.org/licenses/cc-by", "version": null, "is_accepted":
   false, "is_published": false, "raw_source_name": null, "raw_type": "Image"}, "sustainable_development_goals":
-  [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false},
+  [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false},
   "content_urls": null, "referenced_works_count": 0, "referenced_works": [], "related_works":
   [], "abstract_inverted_index": {"Supplementary": [0], "Material": [1], "2.": [2]},
   "counts_by_year": [], "updated_date": "2026-07-01T06:00:48.157686", "created_date":
@@ -12723,7 +12771,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "license_id": "https://openalex.org/licenses/cc-by", "version": null, "is_accepted":
   false, "is_published": false, "raw_source_name": null, "raw_type": "Collection"},
   "sustainable_development_goals": [], "awards": [], "funders": [], "has_content":
-  {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
+  {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
   0, "referenced_works": [], "related_works": [], "abstract_inverted_index": {"Abstract":
   [0], "Background": [1], "Post-induction": [2], "hypotension": [3], "(PIH)": [4],
   "is": [5], "associated": [6, 140, 252], "with": [7, 61, 141, 214, 253], "acute":
@@ -12957,10 +13005,10 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "license_id": "https://openalex.org/licenses/cc-by", "version": null, "is_accepted":
   false, "is_published": false, "raw_source_name": null, "raw_type": "JournalArticle"},
   "sustainable_development_goals": [{"display_name": "Zero hunger", "id": "https://metadata.un.org/sdg/2",
-  "score": 0.5143677592277527}], "awards": [], "funders": [], "has_content": {"pdf":
-  false, "grobid_xml": false}, "content_urls": null, "referenced_works_count": 0,
-  "referenced_works": [], "related_works": [], "abstract_inverted_index": {"Supplementary":
-  [0], "Material": [1], "1.": [2]}, "counts_by_year": [], "updated_date": "2026-07-01T06:00:48.157686",
+  "score": 0.5143677592277527}], "awards": [], "funders": [], "has_content": {"grobid_xml":
+  false, "pdf": false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
+  [], "related_works": [], "abstract_inverted_index": {"Supplementary": [0], "Material":
+  [1], "1.": [2]}, "counts_by_year": [], "updated_date": "2026-07-01T06:00:48.157686",
   "created_date": "2026-04-23T00:00:00"}, {"id": "https://openalex.org/W7155193550",
   "doi": "https://doi.org/10.6084/m9.figshare.c.8434773.v1", "title": "Predictive
   value of ventriculo-arterial coupling for hypotension after induction of anaesthesia:
@@ -13151,7 +13199,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "license_id": "https://openalex.org/licenses/cc-by", "version": null, "is_accepted":
   false, "is_published": false, "raw_source_name": null, "raw_type": "Collection"},
   "sustainable_development_goals": [], "awards": [], "funders": [], "has_content":
-  {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
+  {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
   0, "referenced_works": [], "related_works": [], "abstract_inverted_index": {"Abstract":
   [0], "Background": [1], "Post-induction": [2], "hypotension": [3], "(PIH)": [4],
   "is": [5], "associated": [6, 140, 252], "with": [7, 61, 141, 214, 253], "acute":
@@ -13385,10 +13433,10 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "license_id": "https://openalex.org/licenses/cc-by", "version": null, "is_accepted":
   false, "is_published": false, "raw_source_name": null, "raw_type": "JournalArticle"},
   "sustainable_development_goals": [{"display_name": "Zero hunger", "id": "https://metadata.un.org/sdg/2",
-  "score": 0.5143677592277527}], "awards": [], "funders": [], "has_content": {"pdf":
-  false, "grobid_xml": false}, "content_urls": null, "referenced_works_count": 0,
-  "referenced_works": [], "related_works": [], "abstract_inverted_index": {"Supplementary":
-  [0], "Material": [1], "1.": [2]}, "counts_by_year": [], "updated_date": "2026-07-01T06:00:48.157686",
+  "score": 0.5143677592277527}], "awards": [], "funders": [], "has_content": {"grobid_xml":
+  false, "pdf": false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
+  [], "related_works": [], "abstract_inverted_index": {"Supplementary": [0], "Material":
+  [1], "1.": [2]}, "counts_by_year": [], "updated_date": "2026-07-01T06:00:48.157686",
   "created_date": "2026-04-23T00:00:00"}, {"id": "https://openalex.org/W7155236017",
   "doi": "https://doi.org/10.6084/m9.figshare.32070915", "title": "Additional file
   2 of Predictive value of ventriculo-arterial coupling for hypotension after induction
@@ -13555,7 +13603,7 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
   "license_id": "https://openalex.org/licenses/cc-by", "version": null, "is_accepted":
   false, "is_published": false, "raw_source_name": null, "raw_type": "Image"}, "sustainable_development_goals":
-  [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false},
+  [], "awards": [], "funders": [], "has_content": {"grobid_xml": false, "pdf": false},
   "content_urls": null, "referenced_works_count": 0, "referenced_works": [], "related_works":
   [], "abstract_inverted_index": {"Supplementary": [0], "Material": [1], "2.": [2]},
   "counts_by_year": [], "updated_date": "2026-07-01T06:00:48.157686", "created_date":
@@ -13988,8 +14036,8 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   adjunctive anti-inflammatory therapy to reduce deaths from tuberculosis.", "funder_award_id":
   "110179/Z/15/Z", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
   "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": true,
-  "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W7165029375.pdf",
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
+  true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W7165029375.pdf",
   "grobid_xml": "https://content.openalex.org/works/W7165029375.grobid-xml"}, "referenced_works_count":
   20, "referenced_works": ["https://openalex.org/W1951724000", "https://openalex.org/W1986607793",
   "https://openalex.org/W2001811916", "https://openalex.org/W2020976497", "https://openalex.org/W2150492824",
@@ -14039,5 +14087,322 @@ body: '{"meta": {"count": 25, "db_response_time_ms": 22, "page": 1, "per_page": 
   [230], "(10X": [231], "ULN),": [232], "pyrazinamide": [235], "alone,": [236], "appeared":
   [237], "safe": [238], "reduced": [240], "rifampicin/isoniazid": [241], "interruptions":
   [242], "standard": [244], "approaches.": [245]}, "counts_by_year": [], "updated_date":
-  "2026-08-28T12:50:07.497085", "created_date": "2026-06-18T00:00:00"}], "group_by":
-  []}'
+  "2026-08-28T12:50:07.497085", "created_date": "2026-06-18T00:00:00"}, {"id": "https://openalex.org/W7205003995",
+  "doi": "https://doi.org/10.1093/ofid/ofag575", "title": "Risk of hepatitis B reactivation
+  following corticosteroids for tuberculous meningitis", "display_name": "Risk of
+  hepatitis B reactivation following corticosteroids for tuberculous meningitis",
+  "publication_year": 2026, "publication_date": "2026-09-02", "ids": {"openalex":
+  "https://openalex.org/W7205003995", "doi": "https://doi.org/10.1093/ofid/ofag575"},
+  "language": "en", "primary_location": {"id": "doi:10.1093/ofid/ofag575", "is_oa":
+  true, "landing_page_url": "https://doi.org/10.1093/ofid/ofag575", "pdf_url": "https://academic.oup.com/ofid/advance-article-pdf/doi/10.1093/ofid/ofag575/70922771/ofag575.pdf",
+  "source": {"id": "https://openalex.org/S2735126445", "display_name": "Open Forum
+  Infectious Diseases", "issn_l": "2328-8957", "issn": ["2328-8957"], "is_oa": true,
+  "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310311648",
+  "host_organization_name": "Oxford University Press", "host_organization_lineage":
+  ["https://openalex.org/P4310311648", "https://openalex.org/P4310311647"], "host_organization_lineage_names":
+  ["Oxford University Press", "University of Oxford"], "type": "journal"}, "license":
+  "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version": "publishedVersion",
+  "is_accepted": true, "is_published": true, "raw_source_name": "Open Forum Infectious
+  Diseases", "raw_type": "journal-article"}, "type": "article", "indexed_in": ["crossref",
+  "doaj"], "open_access": {"is_oa": true, "oa_status": "gold", "oa_url": "https://academic.oup.com/ofid/advance-article-pdf/doi/10.1093/ofid/ofag575/70922771/ofag575.pdf",
+  "any_repository_has_fulltext": false}, "authorships": [{"author_position": "first",
+  "author": {"id": "https://openalex.org/A5071781127", "display_name": "Joseph Donovan",
+  "orcid": "https://orcid.org/0000-0002-5893-336X"}, "institutions": [{"id": "https://openalex.org/I2799599516",
+  "display_name": "Angkor Hospital for Children", "ror": "https://ror.org/01yjqh416",
+  "country_code": "KH", "type": "healthcare", "lineage": ["https://openalex.org/I2799599516"]},
+  {"id": "https://openalex.org/I40120149", "display_name": "University of Oxford",
+  "ror": "https://ror.org/052gg0110", "country_code": "GB", "type": "education", "lineage":
+  ["https://openalex.org/I40120149"]}, {"id": "https://openalex.org/I4210150114",
+  "display_name": "Oxford University Clinical Research Unit", "ror": "https://ror.org/05rehad94",
+  "country_code": "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149",
+  "https://openalex.org/I4210150114", "https://openalex.org/I87048295"]}], "countries":
+  ["GB", "KH", "VN"], "is_corresponding": true, "raw_author_name": "Joseph Donovan",
+  "raw_affiliation_strings": ["Centre for Tropical Medicine and Global Health, Nuffield
+  Department of Medicine, University of Oxford ,", "Oxford University Clinical Research
+  Unit , Ho Chi Minh City ,"], "raw_orcid": "https://orcid.org/0000-0002-5893-336X",
+  "affiliations": [{"raw_affiliation_string": "Centre for Tropical Medicine and Global
+  Health, Nuffield Department of Medicine, University of Oxford ,", "institution_ids":
+  ["https://openalex.org/I2799599516", "https://openalex.org/I40120149"]}, {"raw_affiliation_string":
+  "Oxford University Clinical Research Unit , Ho Chi Minh City ,", "institution_ids":
+  ["https://openalex.org/I4210150114"]}]}, {"author_position": "middle", "author":
+  {"id": "https://openalex.org/A5149052570", "display_name": "Nguyen Thi Anh Thu",
+  "orcid": null}, "institutions": [{"id": "https://openalex.org/I4210150114", "display_name":
+  "Oxford University Clinical Research Unit", "ror": "https://ror.org/05rehad94",
+  "country_code": "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149",
+  "https://openalex.org/I4210150114", "https://openalex.org/I87048295"]}], "countries":
+  ["VN"], "is_corresponding": false, "raw_author_name": "Nguyen Thi Anh Thu", "raw_affiliation_strings":
+  ["Oxford University Clinical Research Unit , Ho Chi Minh City ,"], "raw_orcid":
+  null, "affiliations": [{"raw_affiliation_string": "Oxford University Clinical Research
+  Unit , Ho Chi Minh City ,", "institution_ids": ["https://openalex.org/I4210150114"]}]},
+  {"author_position": "middle", "author": {"id": "https://openalex.org/A5068437486",
+  "display_name": "Nghia Ho Dang Trung", "orcid": "https://orcid.org/0009-0005-6026-9153"},
+  "institutions": [{"id": "https://openalex.org/I18550681", "display_name": "Pham
+  Ngoc Thach University of Medicine", "ror": "https://ror.org/003g49r03", "country_code":
+  "VN", "type": "education", "lineage": ["https://openalex.org/I18550681"]}, {"id":
+  "https://openalex.org/I4210155479", "display_name": "Hospital for Tropical Diseases",
+  "ror": "https://ror.org/040tqsb23", "country_code": "VN", "type": "healthcare",
+  "lineage": ["https://openalex.org/I4210155479"]}], "countries": ["VN"], "is_corresponding":
+  false, "raw_author_name": "Ho Dang Trung Nghia", "raw_affiliation_strings": ["Hospital
+  for Tropical Diseases , Ho Chi Minh City ,", "Pham Ngoc Thach University of Medicine
+  , Ho Chi Minh City ,"], "raw_orcid": "https://orcid.org/0009-0005-6026-9153", "affiliations":
+  [{"raw_affiliation_string": "Hospital for Tropical Diseases , Ho Chi Minh City ,",
+  "institution_ids": ["https://openalex.org/I4210155479"]}, {"raw_affiliation_string":
+  "Pham Ngoc Thach University of Medicine , Ho Chi Minh City ,", "institution_ids":
+  ["https://openalex.org/I18550681"]}]}, {"author_position": "middle", "author": {"id":
+  "https://openalex.org/A5113661597", "display_name": "Nguyen Duc Bang", "orcid":
+  null}, "institutions": [{"id": "https://openalex.org/I4210163004", "display_name":
+  "Pham Ngoc Thach Hospital", "ror": "https://ror.org/05yevm258", "country_code":
+  "VN", "type": "healthcare", "lineage": ["https://openalex.org/I4210163004"]}], "countries":
+  ["VN"], "is_corresponding": false, "raw_author_name": "Nguyen Duc Bang", "raw_affiliation_strings":
+  ["Pham Ngoc Thach Hospital for Tuberculosis and Lung Disease , Ho Chi Minh City
+  ,"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string": "Pham Ngoc Thach
+  Hospital for Tuberculosis and Lung Disease , Ho Chi Minh City ,", "institution_ids":
+  ["https://openalex.org/I4210163004"]}]}, {"author_position": "middle", "author":
+  {"id": "https://openalex.org/A5073343908", "display_name": "Dong Huu Khanh Trinh",
+  "orcid": "https://orcid.org/0000-0003-4281-4929"}, "institutions": [{"id": "https://openalex.org/I183935753",
+  "display_name": "King''s College London", "ror": "https://ror.org/0220mzb33", "country_code":
+  "GB", "type": "education", "lineage": ["https://openalex.org/I124357947", "https://openalex.org/I183935753"]},
+  {"id": "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
+  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
+  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
+  "https://openalex.org/I87048295"]}], "countries": ["GB", "VN"], "is_corresponding":
+  false, "raw_author_name": "Dong Huu Khanh Trinh", "raw_affiliation_strings": ["King\u2019s
+  College London , London ,", "Oxford University Clinical Research Unit , Ho Chi Minh
+  City ,"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string": "King\u2019s
+  College London , London ,", "institution_ids": ["https://openalex.org/I183935753"]},
+  {"raw_affiliation_string": "Oxford University Clinical Research Unit , Ho Chi Minh
+  City ,", "institution_ids": ["https://openalex.org/I4210150114"]}]}, {"author_position":
+  "middle", "author": {"id": "https://openalex.org/A5036925817", "display_name": "Lam
+  Hong Bao Ngoc", "orcid": null}, "institutions": [{"id": "https://openalex.org/I4210150114",
+  "display_name": "Oxford University Clinical Research Unit", "ror": "https://ror.org/05rehad94",
+  "country_code": "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149",
+  "https://openalex.org/I4210150114", "https://openalex.org/I87048295"]}], "countries":
+  ["VN"], "is_corresponding": false, "raw_author_name": "Lam Hong Bao Ngoc", "raw_affiliation_strings":
+  ["Oxford University Clinical Research Unit , Ho Chi Minh City ,"], "raw_orcid":
+  null, "affiliations": [{"raw_affiliation_string": "Oxford University Clinical Research
+  Unit , Ho Chi Minh City ,", "institution_ids": ["https://openalex.org/I4210150114"]}]},
+  {"author_position": "middle", "author": {"id": "https://openalex.org/A5031995541",
+  "display_name": "Pham Kieu Nguyet Oanh", "orcid": null}, "institutions": [{"id":
+  "https://openalex.org/I4210155479", "display_name": "Hospital for Tropical Diseases",
+  "ror": "https://ror.org/040tqsb23", "country_code": "VN", "type": "healthcare",
+  "lineage": ["https://openalex.org/I4210155479"]}], "countries": ["VN"], "is_corresponding":
+  false, "raw_author_name": "Pham Kieu Nguyet Oanh", "raw_affiliation_strings": ["Hospital
+  for Tropical Diseases , Ho Chi Minh City ,"], "raw_orcid": null, "affiliations":
+  [{"raw_affiliation_string": "Hospital for Tropical Diseases , Ho Chi Minh City ,",
+  "institution_ids": ["https://openalex.org/I4210155479"]}]}, {"author_position":
+  "middle", "author": {"id": "https://openalex.org/A5018997560", "display_name": "Evelyne
+  Kestelyn", "orcid": "https://orcid.org/0000-0002-5728-0918"}, "institutions": [{"id":
+  "https://openalex.org/I2799599516", "display_name": "Angkor Hospital for Children",
+  "ror": "https://ror.org/01yjqh416", "country_code": "KH", "type": "healthcare",
+  "lineage": ["https://openalex.org/I2799599516"]}, {"id": "https://openalex.org/I40120149",
+  "display_name": "University of Oxford", "ror": "https://ror.org/052gg0110", "country_code":
+  "GB", "type": "education", "lineage": ["https://openalex.org/I40120149"]}, {"id":
+  "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
+  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
+  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
+  "https://openalex.org/I87048295"]}], "countries": ["GB", "KH", "VN"], "is_corresponding":
+  false, "raw_author_name": "Evelyne Kestelyn", "raw_affiliation_strings": ["Centre
+  for Tropical Medicine and Global Health, Nuffield Department of Medicine, University
+  of Oxford ,", "Oxford University Clinical Research Unit , Ho Chi Minh City ,"],
+  "raw_orcid": "https://orcid.org/0000-0002-5728-0918", "affiliations": [{"raw_affiliation_string":
+  "Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine,
+  University of Oxford ,", "institution_ids": ["https://openalex.org/I2799599516",
+  "https://openalex.org/I40120149"]}, {"raw_affiliation_string": "Oxford University
+  Clinical Research Unit , Ho Chi Minh City ,", "institution_ids": ["https://openalex.org/I4210150114"]}]},
+  {"author_position": "middle", "author": {"id": "https://openalex.org/A5138816651",
+  "display_name": "Tran Thai Hung", "orcid": null}, "institutions": [{"id": "https://openalex.org/I4210150114",
+  "display_name": "Oxford University Clinical Research Unit", "ror": "https://ror.org/05rehad94",
+  "country_code": "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149",
+  "https://openalex.org/I4210150114", "https://openalex.org/I87048295"]}], "countries":
+  ["VN"], "is_corresponding": false, "raw_author_name": "Tran Thai Hung", "raw_affiliation_strings":
+  ["Oxford University Clinical Research Unit , Ho Chi Minh City ,"], "raw_orcid":
+  "https://orcid.org/0009-0000-6714-2183", "affiliations": [{"raw_affiliation_string":
+  "Oxford University Clinical Research Unit , Ho Chi Minh City ,", "institution_ids":
+  ["https://openalex.org/I4210150114"]}]}, {"author_position": "middle", "author":
+  {"id": "https://openalex.org/A5069415900", "display_name": "Ronald B. Geskus", "orcid":
+  "https://orcid.org/0000-0002-2740-3155"}, "institutions": [{"id": "https://openalex.org/I2799599516",
+  "display_name": "Angkor Hospital for Children", "ror": "https://ror.org/01yjqh416",
+  "country_code": "KH", "type": "healthcare", "lineage": ["https://openalex.org/I2799599516"]},
+  {"id": "https://openalex.org/I40120149", "display_name": "University of Oxford",
+  "ror": "https://ror.org/052gg0110", "country_code": "GB", "type": "education", "lineage":
+  ["https://openalex.org/I40120149"]}, {"id": "https://openalex.org/I4210150114",
+  "display_name": "Oxford University Clinical Research Unit", "ror": "https://ror.org/05rehad94",
+  "country_code": "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149",
+  "https://openalex.org/I4210150114", "https://openalex.org/I87048295"]}], "countries":
+  ["GB", "KH", "VN"], "is_corresponding": false, "raw_author_name": "Ronald B Geskus",
+  "raw_affiliation_strings": ["Centre for Tropical Medicine and Global Health, Nuffield
+  Department of Medicine, University of Oxford ,", "Oxford University Clinical Research
+  Unit , Ho Chi Minh City ,"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string":
+  "Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine,
+  University of Oxford ,", "institution_ids": ["https://openalex.org/I2799599516",
+  "https://openalex.org/I40120149"]}, {"raw_affiliation_string": "Oxford University
+  Clinical Research Unit , Ho Chi Minh City ,", "institution_ids": ["https://openalex.org/I4210150114"]}]},
+  {"author_position": "middle", "author": {"id": "https://openalex.org/A5029866557",
+  "display_name": "Nguy\u1ec5n Th\u1ee5y Th\u01b0\u01a1ng Th\u01b0\u01a1ng", "orcid":
+  "https://orcid.org/0000-0001-8733-692X"}, "institutions": [{"id": "https://openalex.org/I2799599516",
+  "display_name": "Angkor Hospital for Children", "ror": "https://ror.org/01yjqh416",
+  "country_code": "KH", "type": "healthcare", "lineage": ["https://openalex.org/I2799599516"]},
+  {"id": "https://openalex.org/I40120149", "display_name": "University of Oxford",
+  "ror": "https://ror.org/052gg0110", "country_code": "GB", "type": "education", "lineage":
+  ["https://openalex.org/I40120149"]}, {"id": "https://openalex.org/I4210150114",
+  "display_name": "Oxford University Clinical Research Unit", "ror": "https://ror.org/05rehad94",
+  "country_code": "VN", "type": "facility", "lineage": ["https://openalex.org/I40120149",
+  "https://openalex.org/I4210150114", "https://openalex.org/I87048295"]}], "countries":
+  ["GB", "KH", "VN"], "is_corresponding": false, "raw_author_name": "Nguyen Thuy Thuong
+  Thuong", "raw_affiliation_strings": ["Centre for Tropical Medicine and Global Health,
+  Nuffield Department of Medicine, University of Oxford ,", "Oxford University Clinical
+  Research Unit , Ho Chi Minh City ,"], "raw_orcid": null, "affiliations": [{"raw_affiliation_string":
+  "Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine,
+  University of Oxford ,", "institution_ids": ["https://openalex.org/I2799599516",
+  "https://openalex.org/I40120149"]}, {"raw_affiliation_string": "Oxford University
+  Clinical Research Unit , Ho Chi Minh City ,", "institution_ids": ["https://openalex.org/I4210150114"]}]},
+  {"author_position": "middle", "author": {"id": "https://openalex.org/A5103565016",
+  "display_name": "N. H. Phu", "orcid": null}, "institutions": [{"id": "https://openalex.org/I123565023",
+  "display_name": "Vietnam National University Ho Chi Minh City", "ror": "https://ror.org/00waaqh38",
+  "country_code": "VN", "type": "education", "lineage": ["https://openalex.org/I123565023"]},
+  {"id": "https://openalex.org/I2799599516", "display_name": "Angkor Hospital for
+  Children", "ror": "https://ror.org/01yjqh416", "country_code": "KH", "type": "healthcare",
+  "lineage": ["https://openalex.org/I2799599516"]}, {"id": "https://openalex.org/I40120149",
+  "display_name": "University of Oxford", "ror": "https://ror.org/052gg0110", "country_code":
+  "GB", "type": "education", "lineage": ["https://openalex.org/I40120149"]}, {"id":
+  "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
+  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
+  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
+  "https://openalex.org/I87048295"]}], "countries": ["GB", "KH", "VN"], "is_corresponding":
+  false, "raw_author_name": "Nguyen Hoan Phu", "raw_affiliation_strings": ["Centre
+  for Tropical Medicine and Global Health, Nuffield Department of Medicine, University
+  of Oxford ,", "Oxford University Clinical Research Unit , Ho Chi Minh City ,", "School
+  of Medicine, Vietnam National University of Ho Chi Minh City ,"], "raw_orcid": null,
+  "affiliations": [{"raw_affiliation_string": "Centre for Tropical Medicine and Global
+  Health, Nuffield Department of Medicine, University of Oxford ,", "institution_ids":
+  ["https://openalex.org/I2799599516", "https://openalex.org/I40120149"]}, {"raw_affiliation_string":
+  "Oxford University Clinical Research Unit , Ho Chi Minh City ,", "institution_ids":
+  ["https://openalex.org/I4210150114"]}, {"raw_affiliation_string": "School of Medicine,
+  Vietnam National University of Ho Chi Minh City ,", "institution_ids": ["https://openalex.org/I123565023"]}]},
+  {"author_position": "last", "author": {"id": "https://openalex.org/A5013471493",
+  "display_name": "Guy Thwaites", "orcid": "https://orcid.org/0000-0002-2858-2087"},
+  "institutions": [{"id": "https://openalex.org/I2799599516", "display_name": "Angkor
+  Hospital for Children", "ror": "https://ror.org/01yjqh416", "country_code": "KH",
+  "type": "healthcare", "lineage": ["https://openalex.org/I2799599516"]}, {"id": "https://openalex.org/I40120149",
+  "display_name": "University of Oxford", "ror": "https://ror.org/052gg0110", "country_code":
+  "GB", "type": "education", "lineage": ["https://openalex.org/I40120149"]}, {"id":
+  "https://openalex.org/I4210150114", "display_name": "Oxford University Clinical
+  Research Unit", "ror": "https://ror.org/05rehad94", "country_code": "VN", "type":
+  "facility", "lineage": ["https://openalex.org/I40120149", "https://openalex.org/I4210150114",
+  "https://openalex.org/I87048295"]}], "countries": ["GB", "KH", "VN"], "is_corresponding":
+  false, "raw_author_name": "Guy E Thwaites", "raw_affiliation_strings": ["Centre
+  for Tropical Medicine and Global Health, Nuffield Department of Medicine, University
+  of Oxford ,", "Oxford University Clinical Research Unit , Ho Chi Minh City ,"],
+  "raw_orcid": null, "affiliations": [{"raw_affiliation_string": "Centre for Tropical
+  Medicine and Global Health, Nuffield Department of Medicine, University of Oxford
+  ,", "institution_ids": ["https://openalex.org/I2799599516", "https://openalex.org/I40120149"]},
+  {"raw_affiliation_string": "Oxford University Clinical Research Unit , Ho Chi Minh
+  City ,", "institution_ids": ["https://openalex.org/I4210150114"]}]}], "institutions":
+  [], "countries_distinct_count": 3, "institutions_distinct_count": 8, "corresponding_author_ids":
+  ["https://openalex.org/A5071781127"], "corresponding_institution_ids": ["https://openalex.org/I2799599516",
+  "https://openalex.org/I40120149", "https://openalex.org/I4210150114"], "apc_list":
+  {"value": 4053, "currency": "USD", "value_usd": 4053}, "apc_paid": {"value": 4053,
+  "currency": "USD", "value_usd": 4053}, "fwci": 0.0, "has_fulltext": true, "cited_by_count":
+  0, "citation_normalized_percentile": {"value": 0.91246023, "is_in_top_1_percent":
+  false, "is_in_top_10_percent": true}, "cited_by_percentile_year": null, "biblio":
+  {"volume": null, "issue": null, "first_page": null, "last_page": null}, "is_retracted":
+  false, "is_paratext": false, "is_xpac": false, "primary_topic": {"id": "https://openalex.org/T11381",
+  "display_name": "Infectious Diseases and Tuberculosis", "score": 0.41920000314712524,
+  "subfield": {"id": "https://openalex.org/subfields/2746", "display_name": "Surgery"},
+  "field": {"id": "https://openalex.org/fields/27", "display_name": "Medicine"}, "domain":
+  {"id": "https://openalex.org/domains/4", "display_name": "Health Sciences"}}, "topics":
+  [{"id": "https://openalex.org/T11381", "display_name": "Infectious Diseases and
+  Tuberculosis", "score": 0.41920000314712524, "subfield": {"id": "https://openalex.org/subfields/2746",
+  "display_name": "Surgery"}, "field": {"id": "https://openalex.org/fields/27", "display_name":
+  "Medicine"}, "domain": {"id": "https://openalex.org/domains/4", "display_name":
+  "Health Sciences"}}, {"id": "https://openalex.org/T10340", "display_name": "Hepatitis
+  B Virus Studies", "score": 0.21240000426769257, "subfield": {"id": "https://openalex.org/subfields/2713",
+  "display_name": "Epidemiology"}, "field": {"id": "https://openalex.org/fields/27",
+  "display_name": "Medicine"}, "domain": {"id": "https://openalex.org/domains/4",
+  "display_name": "Health Sciences"}}, {"id": "https://openalex.org/T10873", "display_name":
+  "Bacterial Infections and Vaccines", "score": 0.05700000002980232, "subfield": {"id":
+  "https://openalex.org/subfields/2404", "display_name": "Microbiology"}, "field":
+  {"id": "https://openalex.org/fields/24", "display_name": "Immunology and Microbiology"},
+  "domain": {"id": "https://openalex.org/domains/1", "display_name": "Life Sciences"}}],
+  "keywords": [{"id": "https://openalex.org/keywords/dexamethasone", "display_name":
+  "Dexamethasone", "score": 0.7930999994277954}, {"id": "https://openalex.org/keywords/tuberculous-meningitis",
+  "display_name": "Tuberculous meningitis", "score": 0.7807999849319458}, {"id": "https://openalex.org/keywords/hepatitis-b-virus",
+  "display_name": "Hepatitis B virus", "score": 0.5011000037193298}, {"id": "https://openalex.org/keywords/meningitis",
+  "display_name": "Meningitis", "score": 0.46209999918937683}, {"id": "https://openalex.org/keywords/hepatitis-b",
+  "display_name": "Hepatitis B", "score": 0.4066999852657318}, {"id": "https://openalex.org/keywords/tuberculosis",
+  "display_name": "Tuberculosis", "score": 0.3930000066757202}, {"id": "https://openalex.org/keywords/hepatitis",
+  "display_name": "Hepatitis", "score": 0.382099986076355}], "concepts": [{"id": "https://openalex.org/C71924100",
+  "wikidata": "https://www.wikidata.org/wiki/Q11190", "display_name": "Medicine",
+  "level": 0, "score": 0.9685999751091003}, {"id": "https://openalex.org/C2780401358",
+  "wikidata": "https://www.wikidata.org/wiki/Q422252", "display_name": "Dexamethasone",
+  "level": 2, "score": 0.7930999994277954}, {"id": "https://openalex.org/C2776896556",
+  "wikidata": "https://www.wikidata.org/wiki/Q3854687", "display_name": "Tuberculous
+  meningitis", "level": 3, "score": 0.7807999849319458}, {"id": "https://openalex.org/C2780593183",
+  "wikidata": "https://www.wikidata.org/wiki/Q6844", "display_name": "Hepatitis B
+  virus", "level": 3, "score": 0.5011000037193298}, {"id": "https://openalex.org/C2781026528",
+  "wikidata": "https://www.wikidata.org/wiki/Q48143", "display_name": "Meningitis",
+  "level": 2, "score": 0.46209999918937683}, {"id": "https://openalex.org/C126322002",
+  "wikidata": "https://www.wikidata.org/wiki/Q11180", "display_name": "Internal medicine",
+  "level": 1, "score": 0.4131999909877777}, {"id": "https://openalex.org/C2777382497",
+  "wikidata": "https://www.wikidata.org/wiki/Q6853", "display_name": "Hepatitis B",
+  "level": 2, "score": 0.4066999852657318}, {"id": "https://openalex.org/C203014093",
+  "wikidata": "https://www.wikidata.org/wiki/Q101929", "display_name": "Immunology",
+  "level": 1, "score": 0.4050999879837036}, {"id": "https://openalex.org/C2781069245",
+  "wikidata": "https://www.wikidata.org/wiki/Q12204", "display_name": "Tuberculosis",
+  "level": 2, "score": 0.3930000066757202}, {"id": "https://openalex.org/C159047783",
+  "wikidata": "https://www.wikidata.org/wiki/Q7215", "display_name": "Virology", "level":
+  1, "score": 0.38370001316070557}, {"id": "https://openalex.org/C2776029263", "wikidata":
+  "https://www.wikidata.org/wiki/Q131742", "display_name": "Hepatitis", "level": 2,
+  "score": 0.382099986076355}, {"id": "https://openalex.org/C2776804153", "wikidata":
+  "https://www.wikidata.org/wiki/Q210420", "display_name": "Corticosteroid", "level":
+  2, "score": 0.3686999976634979}, {"id": "https://openalex.org/C2522874641", "wikidata":
+  "https://www.wikidata.org/wiki/Q808", "display_name": "Virus", "level": 2, "score":
+  0.3513999879360199}, {"id": "https://openalex.org/C90924648", "wikidata": "https://www.wikidata.org/wiki/Q120569",
+  "display_name": "Gastroenterology", "level": 1, "score": 0.35089999437332153}, {"id":
+  "https://openalex.org/C2777072776", "wikidata": "https://www.wikidata.org/wiki/Q1983841",
+  "display_name": "Viral hepatitis", "level": 2, "score": 0.31189998984336853}, {"id":
+  "https://openalex.org/C3019983190", "wikidata": "https://www.wikidata.org/wiki/Q157661",
+  "display_name": "Hepatitis a virus", "level": 3, "score": 0.30309998989105225},
+  {"id": "https://openalex.org/C2780727368", "wikidata": "https://www.wikidata.org/wiki/Q1928978",
+  "display_name": "Viral disease", "level": 3, "score": 0.2897000014781952}, {"id":
+  "https://openalex.org/C187212893", "wikidata": "https://www.wikidata.org/wiki/Q123028",
+  "display_name": "Pediatrics", "level": 1, "score": 0.2632000148296356}, {"id": "https://openalex.org/C2778607973",
+  "wikidata": "https://www.wikidata.org/wiki/Q422652", "display_name": "Rifampicin",
+  "level": 3, "score": 0.25380000472068787}], "mesh": [], "locations_count": 1, "locations":
+  [{"id": "doi:10.1093/ofid/ofag575", "is_oa": true, "landing_page_url": "https://doi.org/10.1093/ofid/ofag575",
+  "pdf_url": "https://academic.oup.com/ofid/advance-article-pdf/doi/10.1093/ofid/ofag575/70922771/ofag575.pdf",
+  "source": {"id": "https://openalex.org/S2735126445", "display_name": "Open Forum
+  Infectious Diseases", "issn_l": "2328-8957", "issn": ["2328-8957"], "is_oa": true,
+  "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310311648",
+  "host_organization_name": "Oxford University Press", "host_organization_lineage":
+  ["https://openalex.org/P4310311648", "https://openalex.org/P4310311647"], "host_organization_lineage_names":
+  ["Oxford University Press", "University of Oxford"], "type": "journal"}, "license":
+  "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version": "publishedVersion",
+  "is_accepted": true, "is_published": true, "raw_source_name": "Open Forum Infectious
+  Diseases", "raw_type": "journal-article"}], "best_oa_location": {"id": "doi:10.1093/ofid/ofag575",
+  "is_oa": true, "landing_page_url": "https://doi.org/10.1093/ofid/ofag575", "pdf_url":
+  "https://academic.oup.com/ofid/advance-article-pdf/doi/10.1093/ofid/ofag575/70922771/ofag575.pdf",
+  "source": {"id": "https://openalex.org/S2735126445", "display_name": "Open Forum
+  Infectious Diseases", "issn_l": "2328-8957", "issn": ["2328-8957"], "is_oa": true,
+  "is_in_doaj": true, "is_core": true, "host_organization": "https://openalex.org/P4310311648",
+  "host_organization_name": "Oxford University Press", "host_organization_lineage":
+  ["https://openalex.org/P4310311648", "https://openalex.org/P4310311647"], "host_organization_lineage_names":
+  ["Oxford University Press", "University of Oxford"], "type": "journal"}, "license":
+  "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version": "publishedVersion",
+  "is_accepted": true, "is_published": true, "raw_source_name": "Open Forum Infectious
+  Diseases", "raw_type": "journal-article"}, "sustainable_development_goals": [{"display_name":
+  "Good health and well-being", "id": "https://metadata.un.org/sdg/3", "score": 0.883516252040863}],
+  "awards": [], "funders": [], "has_content": {"grobid_xml": true, "pdf": true}, "content_urls":
+  {"pdf": "https://content.openalex.org/works/W7205003995.pdf", "grobid_xml": "https://content.openalex.org/works/W7205003995.grobid-xml"},
+  "referenced_works_count": 0, "referenced_works": [], "related_works": [], "abstract_inverted_index":
+  {"Abstract": [0], "High-dose": [1], "corticosteroids": [2], "may": [3], "cause":
+  [4], "reactivation": [5, 45], "or": [6, 46], "relapse": [7], "of": [8, 20], "hepatitis":
+  [9, 25], "B": [10, 26], "virus": [11, 27], "infection.": [12], "We": [13], "investigated":
+  [14], "the": [15], "virologic": [16], "and": [17], "clinical": [18], "consequences":
+  [19], "6-8": [21], "weeks": [22], "dexamethasone": [23], "in": [24], "infected/exposed/unexposed":
+  [28], "HIV-negative": [29], "adults": [30], "with": [31, 43], "tuberculous": [32],
+  "meningitis": [33], "enrolled": [34], "into": [35], "a": [36], "placebo-controlled":
+  [37], "trial.": [38], "Dexamethasone": [39], "was": [40], "not": [41], "associated":
+  [42], "viral": [44], "increased": [47], "liver": [48], "injury.": [49]}, "counts_by_year":
+  [], "updated_date": "2026-09-04T10:56:28.161419", "created_date": "2026-09-02T00:00:00"}],
+  "group_by": []}'
