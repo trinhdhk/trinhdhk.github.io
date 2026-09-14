@@ -58,16 +58,17 @@ body: "<!DOCTYPE html>\r\n<html id=\"nav-close\" lang=\"en\" xml:lang=\"en\" xml
   class=\"skipToContent\">Skip to main content</a>\r\n    </div>\r\n  \r\n    <!--
   CONTENT BLOCKS AREA -->\r\n    <main class=\"container\">\r\n      <!-- ALERT BANNER
   -->\r\n      \r\n    \t<!-- NAVIGATION BARS - START -->\r\n    \t<div id=\"js-navigation\"
-  class=\"navigation\">\r\n            <div class=\"secondary\">\r\n            \t<div
-  class=\"row\">\r\n            \t\t<div class=\"section-home\" href=\"/medical-sciences/\"><a
-  class=\"section-label\" href=\"/medical-sciences/\">Faculty of Medical Sciences</a></div>\r\n
-  \           \t\t<ul class=\"menu-secondary\"><li><a href=\"/medical-sciences/about-us/contact/\">Contact
-  Us</a></li></ul>\r\n            \t</div>\r\n            </div>\r\n            <div
-  class=\"primary\">\r\n            \t<div class=\"row\">\r\n\t            \t<div
-  class=\"logo\">\r\n\t\t                <a class=\"logo-image\" href=\"/\" title=\"Newcastle
-  University\">Logo</a>\r\n\t\t                <div class=\"school-name\"><div class=\"school-name\">Faculty
-  of Medical Sciences</div></div>\r\n\t\t            </div>\r\n\t\t            <div
-  class=\"menu\">\r\n\t\t            \t<div tabindex=\"0\" class=\"menu-back\"><span
+  class=\"navigation\">\r\n            <nav class=\"secondary\" aria-label=\"Secondary\">\r\n
+  \           \t<div class=\"row\">\r\n            \t\t<div class=\"section-home\"
+  href=\"/medical-sciences/\"><a class=\"section-label\" href=\"/medical-sciences/\">Faculty
+  of Medical Sciences</a></div>\r\n            \t\t<ul class=\"menu-secondary\"><li><a
+  href=\"/medical-sciences/about-us/contact/\">Contact Us</a></li></ul>\r\n            \t</div>\r\n
+  \           </nav>\r\n            <div class=\"primary\">\r\n            \t<div
+  class=\"row\">\r\n\t            \t<div class=\"logo\">\r\n\t\t                <a
+  class=\"logo-image\" href=\"/\" title=\"Newcastle University\">Logo</a>\r\n\t\t
+  \               <div class=\"school-name\"><div class=\"school-name\">Faculty of
+  Medical Sciences</div></div>\r\n\t\t            </div>\r\n\t\t            <nav class=\"menu\"
+  aria-label=\"Primary\">\r\n\t\t            \t<div tabindex=\"0\" class=\"menu-back\"><span
   class=\"menu-back-arrow\"></span><span class=\"menu-back-label\"></span></div>\r\n\t\t
   \           \t<div class=\"menu-wrapper\" data-translatex=\"0\" data-menulevel=\"0\">\r\n
   \                     <ul class=\"menu-toplevel\"><li><a data-level=\"0\" data-id=\"14436\"
@@ -265,7 +266,7 @@ body: "<!DOCTYPE html>\r\n<html id=\"nav-close\" lang=\"en\" xml:lang=\"en\" xml
   Delivery</a></li><li><a data-level=\"1\" data-id=\"59408\" data-parent=\"13242\"
   data-link-target=\"59408\" href=\"https://newcastle.sharepoint.com/hub/medical\">Current
   Staff Homepage</a></li></ul></div></div></li></ul>\r\n\t\t            \t</div>\r\n\t\t
-  \           </div>\r\n                <div class=\"search-inline\">\r\n                    <div
+  \           </nav>\r\n                <div class=\"search-inline\">\r\n                    <div
   class=\"search-panel\">\r\n                       <form method=\"get\" action=\"//search.ncl.ac.uk/s/search.html\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<input
   type=\"hidden\" name=\"collection\" value=\"neu~sp-meta\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<input
   type=\"hidden\" name=\"profile\" value=\"_default\">\r\n                            <fieldset
