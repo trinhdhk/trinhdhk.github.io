@@ -1,4 +1,4 @@
-generated_at: '2026-09-21T18:58:03Z'
+generated_at: '2026-09-28T20:18:36Z'
 items:
 - title: 'Xpert MTB/RIF Ultra versus Xpert MTB/RIF for the diagnosis of tuberculous
     meningitis: a prospective, randomised, diagnostic accuracy study'
@@ -31,7 +31,6 @@ items:
   sources:
   - Scholar
   - OpenAlex
-  - SemanticScholar
 - title: 'Effectiveness of continuous endotracheal cuff pressure control for the prevention
     of ventilator-associated respiratory infections: an open-label randomized, controlled
     trial'
@@ -72,7 +71,6 @@ items:
   sources:
   - Scholar
   - OpenAlex
-  - SemanticScholar
 - title: Computer-aided prognosis of tuberculous meningitis combining imaging and
     non-imaging data
   authors: LS Canas, THK Dong, D Beasley, J Donovan, JO Cleary, R Brown, ...
@@ -253,9 +251,7 @@ items:
   year: '2020'
   citations: '78'
   url: https://doi.org/10.1093/cid/ciaa1130
-  sources:
-  - OpenAlex
-  - SemanticScholar
+  sources: OpenAlex
 - title: Detection of co-infection and recombination cases with Omicron and local
     Delta variants of SARS-CoV-2 in Vietnam
   authors: Nguyễn Thu Trang, Trịnh Công Điển, Nguyễn Thị Thanh Tâm, Phan Manh Cuong,
@@ -316,9 +312,7 @@ items:
   year: '2026'
   citations: '0'
   url: https://doi.org/10.1186/s12910-026-01400-y
-  sources:
-  - OpenAlex
-  - SemanticScholar
+  sources: OpenAlex
 - title: 'Additional file 2 of Predictive value of ventriculo-arterial coupling for
     hypotension after induction of anaesthesia: a prospective observational cohort
     study'
