@@ -323,53 +323,12 @@ body: "<!DOCTYPE html>\r\n<html id=\"nav-close\" lang=\"en\" xml:lang=\"en\" xml
   Start -->\r\n\t\t\r\n\t\t<!-- Desktop lefthand nav object text/desktop-nav - End
   -->\r\n\t\t<div id=\"mainContent\">\r\n\t\t\t<!-- Mobile lefthand nav object text/mobile-nav
   - Start -->\r\n\t\t\t\r\n\t\t\t<!-- Mobile lefthand nav object text/mobile-nav -
-  End -->\r\n\t\t\t<div id=\"mainContentWrapper\">\r\n<section class=\"textArea\">\r\n<!--
-  START STAFF -->\r\n\t\t\t<div class=\"row\">\r\n\t\t\t<script>document.write(\"
-  <im\"+\"g src='https://includes.ncl.ac.uk/cmswebservices/myimpact/2020ws/picture/picture.php?wk=newcastleuniversity&pk=trinh.dong'
-  alt='' style='float:right; width: auto; ' /> \"); </script>\r\n\t\t<h2>Dr Trinh
-  Dong</h2>\r\n\r\n\t\t<meta name=\"ncl_staff\" content=\"Dr Trinh Dong, Research
-  Associate in Biostatistics\"/>\r\n\t\t<meta name=\"ncl_staff_displayname\" content=\"Dr
-  Trinh Dong\"/>\r\n\t\t<meta name=\"ncl_staff_jobtitle\" content=\"Research Associate
-  in Biostatistics\"/>\r\n\t\t<meta name=\"ncl_staff_department\" content=\"Population
-  Health Sciences\"/>\r\n\t\t<meta name=\"ncl_staff_email\" content=\"trinh.dong@ncl.ac.uk\"/>\r\n\t\t<meta
-  name=\"ncl_staff_telephone\" content=\"\"/>\r\n\t\t<meta name=\"ncl_staff_image\"
-  content=\"https://includes.ncl.ac.uk/cmswebservices/myimpact/2020ws/picture/picture.php?wk=newcastleuniversity&pk=trinh.dong\"/>\r\n\t\t<meta
-  name=\"ncl_staff_isprimary\" content=\"1\"/>\r\n\t\t<h3 class=\"summary\">Research
-  Associate in Biostatistics</h3>\r\n\t\t<ul>\r\n\t\t<li>Email: <a href=\"mailto:trinh.dong@ncl.ac.uk\">trinh.dong@ncl.ac.uk</a></li>\t\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t<div
-  class=\"clear\"></div>\r\n\t\t</div>\r\n\t\t\t    <!--DROP DOWN WITH TEXT CONTENT
-  BLOCK CODE-->\r\n    <section class=\"dropdown media\">\r\n        <div class=\"row\">\r\n
-  \           <div class=\"dropDownBlock\">\r\n                <a href=\"#\" class=\"dropDownHeading\"
-  data-buttonfunction=\"toggleDropdown\">\r\n                    Background                    <span
-  class=\"toggle\"></span>\r\n                </a>\r\n                <div class=\"dropDownSummary
-  textArea\">\r\n                <h1><strong>Overview</strong></h1><p><br></p><p>Medical
-  statistician and clinician with interdisciplinary expertise in medicine, biostatistics,
-  machine learning, and medical image processing. Experienced in clinical trials,
-  Bayesian modelling, machine learning, medical imaging, and reproducible analytics.
-  Passionate about developing rigorous statistical tools that improve clinical decision&#8209;making
-  and healthcare outcomes.</p><p><br></p><h1><strong>Past experience</strong></h1><p><br></p><ul><li>2017-2018:
-  Medical Doctor, Vietnam</li><li>2018-2020: Research assistant in Biostatistics,
-  Oxford University Clinical Research Unit, Vietnam</li><li>2020-2024: PhD student
-  at King's College London, UK and Oxford University Clinical Research Unit, Vietnam</li><li>2024-2025:
-  Postdoctoral researcher in Biostatistics, Univ. Bordeaux, Bordeaux Population Health,
-  INSERM UMR U1219, France</li></ul><h1><strong>Qualifications</strong></h1><ul><li>Doctor
-  of Medicine, Vietnam</li><li>DPhil in Biomedical engineering, UK</li></ul><p><br></p>
-  \             </div>\r\n            </div>\r\n        </div>\r\n    </section>\r\n
-  \   <!--DROP DOWN WITH TEXT CONTENT BLOCK CODE - END -->\r\n\t\t    <!--DROP DOWN
-  WITH TEXT CONTENT BLOCK CODE-->\r\n    <section class=\"dropdown media\">\r\n        <div
-  class=\"row\">\r\n            <div class=\"dropDownBlock\">\r\n                <a
-  href=\"#\" class=\"dropDownHeading\" data-buttonfunction=\"toggleDropdown\">\r\n
-  \                   Research                    <span class=\"toggle\"></span>\r\n
-  \               </a>\r\n                <div class=\"dropDownSummary textArea\">\r\n
-  \               <h1><strong>Research Interests</strong></h1><ul><li>Multiple comparison
-  &amp; high dimensional data</li><li>Latent variable analysis</li><li>Joint modelling</li><li>Bayesian
-  modelling</li><li>Causal inference</li></ul>              </div>\r\n            </div>\r\n
-  \       </div>\r\n    </section>\r\n    <!--DROP DOWN WITH TEXT CONTENT BLOCK CODE
-  - END -->\r\n\t<!-- END STAFF -->\r\n</section>    \r\n    \t\t\t</div>\r\n        </div>\r\n
-  \     </div>\r\n\t</main>\r\n    <!-- CONTENT BLOCKS AREA - END -->\r\n\t\t\r\n
-  \   <!-- FOOTER AREA -->\r\n    <!-- FOOTER - START -->\r\n<footer class=\"footer\">\r\n
-  \   <div class=\"row\">\r\n        <div class=\"footerContent\">\r\n            <div
-  class=\"footerColumn\">\r\n                <h5>Newcastle</h5>\n<p>Newcastle University<br
-  />Newcastle upon Tyne<br />NE1 7RU</p>\n<p>Telephone: +44 (0)191 208&nbsp;6000</p>\n<h5><a
+  End -->\r\n\t\t\t<div id=\"mainContentWrapper\">\r\n<section class=\"textArea\">\r\n\r\n</section>
+  \   \r\n    \t\t\t</div>\r\n        </div>\r\n      </div>\r\n\t</main>\r\n    <!--
+  CONTENT BLOCKS AREA - END -->\r\n\t\t\r\n    <!-- FOOTER AREA -->\r\n    <!-- FOOTER
+  - START -->\r\n<footer class=\"footer\">\r\n    <div class=\"row\">\r\n        <div
+  class=\"footerContent\">\r\n            <div class=\"footerColumn\">\r\n                <h5>Newcastle</h5>\n<p>Newcastle
+  University<br />Newcastle upon Tyne<br />NE1 7RU</p>\n<p>Telephone: +44 (0)191 208&nbsp;6000</p>\n<h5><a
   href=\"https://www.ncl.ac.uk/numed/\">Malaysia</a>&nbsp;|&nbsp;<a href=\"https://www.ncl.ac.uk/singapore/\">Singapore</a>&nbsp;</h5>\r\n
   \             <!-- Footer CTA -->\r\n\t\t\t\t<p><a class=\"cta full \" href=\"https://www.ncl.ac.uk/alumni/support/support-us/\">Donate
   now</a></p>\r\n            </div>\r\n\r\n            <div class=\"footerColumn\">\r\n

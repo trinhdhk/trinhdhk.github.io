@@ -7,21 +7,22 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys
   with {\"email\": \"<your user''s email>\"}; we email them a link, and the key works
   once they click it. Docs for agents: https://help.openalex.org/llms.txt", "count":
-  21, "db_response_time_ms": 12, "page": 1, "per_page": 200, "groups_count": null,
+  21, "db_response_time_ms": 13, "page": 1, "per_page": 200, "groups_count": null,
   "x_query": {"oql": "get works where author is (A5073343908 or A5123129713)", "x_new_oql":
   "get works where author is (A5073343908 or A5123129713)", "oqo": {"get_rows": "works",
   "filter_rows": [{"join": "or", "filters": [{"column_id": "authorships.author.id",
   "value": "A5073343908"}, {"column_id": "authorships.author.id", "value": "A5123129713"}]}]},
-  "url": "/works?filter=authorships.author.id:A5073343908|A5123129713&per_page=200"},
-  "cost_usd": 0.0001}, "results": [{"id": "https://openalex.org/W3000453407", "doi":
-  "https://doi.org/10.1016/s1473-3099(19)30649-8", "title": "Xpert MTB/RIF Ultra versus
-  Xpert MTB/RIF for the diagnosis of tuberculous meningitis: a prospective, randomised,
-  diagnostic accuracy study", "display_name": "Xpert MTB/RIF Ultra versus Xpert MTB/RIF
-  for the diagnosis of tuberculous meningitis: a prospective, randomised, diagnostic
-  accuracy study", "publication_year": 2020, "publication_date": "2020-01-07", "ids":
-  {"openalex": "https://openalex.org/W3000453407", "doi": "https://doi.org/10.1016/s1473-3099(19)30649-8",
-  "mag": "3000453407", "pmid": "https://pubmed.ncbi.nlm.nih.gov/31924551"}, "language":
-  "en", "primary_location": {"id": "doi:10.1016/s1473-3099(19)30649-8", "doi": "https://doi.org/10.1016/s1473-3099(19)30649-8",
+  "url": "/works?filter=authorships.author.id:A5073343908|A5123129713&per_page=200",
+  "order": "most cited (age-adjusted) first", "order_default": true}, "cost_usd":
+  0.0001}, "results": [{"id": "https://openalex.org/W3000453407", "doi": "https://doi.org/10.1016/s1473-3099(19)30649-8",
+  "title": "Xpert MTB/RIF Ultra versus Xpert MTB/RIF for the diagnosis of tuberculous
+  meningitis: a prospective, randomised, diagnostic accuracy study", "display_name":
+  "Xpert MTB/RIF Ultra versus Xpert MTB/RIF for the diagnosis of tuberculous meningitis:
+  a prospective, randomised, diagnostic accuracy study", "publication_year": 2020,
+  "publication_date": "2020-01-07", "ids": {"openalex": "https://openalex.org/W3000453407",
+  "doi": "https://doi.org/10.1016/s1473-3099(19)30649-8", "mag": "3000453407", "pmid":
+  "https://pubmed.ncbi.nlm.nih.gov/31924551"}, "language": "en", "primary_location":
+  {"id": "doi:10.1016/s1473-3099(19)30649-8", "doi": "https://doi.org/10.1016/s1473-3099(19)30649-8",
   "is_oa": true, "landing_page_url": "https://doi.org/10.1016/s1473-3099(19)30649-8",
   "pdf_url": "http://www.thelancet.com/article/S1473309919306498/pdf", "source": {"id":
   "https://openalex.org/S23772524", "display_name": "The Lancet Infectious Diseases",
@@ -323,8 +324,8 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   3, "corresponding_author_ids": ["https://openalex.org/A5071781127"], "corresponding_institution_ids":
   ["https://openalex.org/I40120149", "https://openalex.org/I4210150114"], "apc_list":
   {"value": 5000, "currency": "USD", "value_usd": 5000}, "apc_paid": {"value": 5000,
-  "currency": "USD", "value_usd": 5000}, "fwci": 19.1032, "has_fulltext": true, "cited_by_count":
-  153, "citation_normalized_percentile": {"value": 0.99671581, "is_in_top_1_percent":
+  "currency": "USD", "value_usd": 5000}, "fwci": 19.0602, "has_fulltext": true, "cited_by_count":
+  154, "citation_normalized_percentile": {"value": 0.99670044, "is_in_top_1_percent":
   true, "is_in_top_10_percent": true}, "cited_by_percentile_year": {"min": 99, "max":
   100}, "biblio": {"volume": "20", "issue": "3", "first_page": "299", "last_page":
   "307"}, "is_retracted": false, "is_paratext": false, "is_xpac": false, "primary_topic":
@@ -552,13 +553,14 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   "host_organization_lineage_names": ["Elsevier BV"], "type": "journal"}, "license":
   "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version": "publishedVersion",
   "is_accepted": true, "is_published": true, "raw_source_name": "The Lancet Infectious
-  Diseases", "raw_type": "journal-article"}, "sustainable_development_goals": [{"score":
-  1.0, "id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being"}],
-  "sustainable_development_goals_aurora": [{"score": 0.8199999928474426, "id": "https://metadata.un.org/sdg/3",
-  "display_name": "Good health and well-being"}], "study_designs": [{"id": "https://openalex.org/study-designs/clinical-trial",
-  "display_name": "Clinical Trial"}], "awards": [{"id": "https://openalex.org/G1658089987",
-  "display_name": "Viet Nam Major Overseas Programme core grant renewal 2015-2020.",
-  "funder_award_id": "106680", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
+  Diseases", "raw_type": "journal-article"}, "sustainable_development_goals": [{"id":
+  "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being", "score":
+  1.0}], "sustainable_development_goals_aurora": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 0.8199999928474426}], "study_designs":
+  [{"id": "https://openalex.org/study-designs/clinical-trial", "display_name": "Clinical
+  Trial"}], "awards": [{"id": "https://openalex.org/G1658089987", "display_name":
+  "Viet Nam Major Overseas Programme core grant renewal 2015-2020.", "funder_award_id":
+  "106680", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
   "Wellcome Trust"}, {"id": "https://openalex.org/G3287491477", "display_name": "The
   translational potential of mass spectrometry and next-generation sequencing in patients
   with central nervous system infections in Vietnam", "funder_award_id": "204904",
@@ -575,7 +577,7 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   "funder_display_name": "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904",
   "display_name": "Wellcome Trust", "ror": "https://ror.org/029chgv08"}, {"id": "https://openalex.org/F4320320290",
   "display_name": "University of Oxford", "ror": "https://ror.org/052gg0110"}], "has_content":
-  {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3000453407.pdf",
+  {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W3000453407.pdf",
   "grobid_xml": "https://content.openalex.org/works/W3000453407.grobid-xml"}, "referenced_works_count":
   21, "referenced_works": ["https://openalex.org/W2014074083", "https://openalex.org/W2047801331",
   "https://openalex.org/W2110728266", "https://openalex.org/W2114356129", "https://openalex.org/W2145541864",
@@ -643,10 +645,10 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   "does": [361], "rule": [363], "out": [364], "meningitis.": [366], "New": [367, 381],
   "strategies": [369], "are": [370], "urgently": [371], "required.": [372], "FUNDING:":
   [373], "Wellcome": [374], "Trust": [375], "Foundation": [378], "Innovative": [380],
-  "Diagnostics.": [382]}, "counts_by_year": [{"year": 2026, "cited_by_count": 14},
+  "Diagnostics.": [382]}, "counts_by_year": [{"year": 2026, "cited_by_count": 15},
   {"year": 2025, "cited_by_count": 18}, {"year": 2024, "cited_by_count": 28}, {"year":
   2023, "cited_by_count": 29}, {"year": 2022, "cited_by_count": 18}, {"year": 2021,
-  "cited_by_count": 23}, {"year": 2020, "cited_by_count": 23}], "updated_date": "2026-10-15T10:00:46.086208",
+  "cited_by_count": 23}, {"year": 2020, "cited_by_count": 23}], "updated_date": "2026-10-21T09:56:26.102985",
   "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W3046463923",
   "doi": "https://doi.org/10.1093/cid/ciaa1130", "title": "The First 100 Days of Severe
   Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2) Control in Vietnam", "display_name":
@@ -1539,14 +1541,14 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   ["Oxford University Press", "University of Oxford"], "type": "journal"}, "license":
   "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version": "publishedVersion",
   "is_accepted": true, "is_published": true, "raw_source_name": "Clinical Infectious
-  Diseases", "raw_type": "journal-article"}, "sustainable_development_goals": [{"score":
-  0.9763000011444092, "id": "https://metadata.un.org/sdg/3", "display_name": "Good
-  health and well-being"}], "sustainable_development_goals_aurora": [{"score": 0.41999998688697815,
-  "id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being"}],
-  "study_designs": [{"id": "https://openalex.org/study-designs/observational-study",
-  "display_name": "Observational Study"}], "awards": [], "funders": [{"id": "https://openalex.org/F4320311904",
+  Diseases", "raw_type": "journal-article"}, "sustainable_development_goals": [{"id":
+  "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being", "score":
+  0.9763000011444092}], "sustainable_development_goals_aurora": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 0.41999998688697815}], "study_designs":
+  [{"id": "https://openalex.org/study-designs/observational-study", "display_name":
+  "Observational Study"}], "awards": [], "funders": [{"id": "https://openalex.org/F4320311904",
   "display_name": "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content":
-  {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
+  {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
   30, "referenced_works": ["https://openalex.org/W1844981334", "https://openalex.org/W1978453912",
   "https://openalex.org/W2004573151", "https://openalex.org/W2096800088", "https://openalex.org/W2153416121",
   "https://openalex.org/W2162384187", "https://openalex.org/W2582743722", "https://openalex.org/W2765341148",
@@ -3118,8 +3120,8 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   Central", "Springer Nature"], "type": "journal"}, "license": "cc-by", "license_id":
   "https://openalex.org/licenses/cc-by", "version": "publishedVersion", "is_accepted":
   true, "is_published": true, "raw_source_name": "Critical Care", "raw_type": "journal-article"},
-  "sustainable_development_goals": [{"score": 0.98580002784729, "id": "https://metadata.un.org/sdg/3",
-  "display_name": "Good health and well-being"}], "sustainable_development_goals_aurora":
+  "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3", "display_name":
+  "Good health and well-being", "score": 0.98580002784729}], "sustainable_development_goals_aurora":
   [], "study_designs": [], "awards": [{"id": "https://openalex.org/G2884997024", "display_name":
   "Translational Resource Award ''Flagship Translational Resource: Critical Care/Fever",
   "funder_award_id": "217650", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
@@ -3131,7 +3133,7 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   in resource-limited settings", "funder_award_id": "215010/Z/18/Z", "funder_id":
   "https://openalex.org/F4320311904", "funder_display_name": "Wellcome Trust"}], "funders":
   [{"id": "https://openalex.org/F4320311904", "display_name": "Wellcome Trust", "ror":
-  "https://ror.org/029chgv08"}], "has_content": {"pdf": true, "grobid_xml": true},
+  "https://ror.org/029chgv08"}], "has_content": {"grobid_xml": true, "pdf": true},
   "content_urls": {"pdf": "https://content.openalex.org/works/W4382795683.pdf", "grobid_xml":
   "https://content.openalex.org/works/W4382795683.grobid-xml"}, "referenced_works_count":
   22, "referenced_works": ["https://openalex.org/W1755606227", "https://openalex.org/W2204772374",
@@ -3802,16 +3804,17 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   ["Oxford University Press", "University of Oxford"], "type": "journal"}, "license":
   "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version": "publishedVersion",
   "is_accepted": true, "is_published": true, "raw_source_name": "Clinical Infectious
-  Diseases", "raw_type": "journal-article"}, "sustainable_development_goals": [{"score":
-  1.0, "id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being"}],
-  "sustainable_development_goals_aurora": [{"score": 0.8700000047683716, "id": "https://metadata.un.org/sdg/3",
-  "display_name": "Good health and well-being"}], "study_designs": [{"id": "https://openalex.org/study-designs/randomized-controlled-trial",
-  "display_name": "Randomized Controlled Trial"}, {"id": "https://openalex.org/study-designs/clinical-trial",
+  Diseases", "raw_type": "journal-article"}, "sustainable_development_goals": [{"id":
+  "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being", "score":
+  1.0}], "sustainable_development_goals_aurora": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 0.8700000047683716}], "study_designs":
+  [{"id": "https://openalex.org/study-designs/randomized-controlled-trial", "display_name":
+  "Randomized Controlled Trial"}, {"id": "https://openalex.org/study-designs/clinical-trial",
   "display_name": "Clinical Trial"}], "awards": [{"id": "https://openalex.org/G8376193503",
   "display_name": null, "funder_award_id": "106680/B/14/Z.", "funder_id": "https://openalex.org/F4320311904",
   "funder_display_name": "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904",
   "display_name": "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content":
-  {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
+  {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
   32, "referenced_works": ["https://openalex.org/W1978159568", "https://openalex.org/W1980980484",
   "https://openalex.org/W1992464091", "https://openalex.org/W1995667320", "https://openalex.org/W1995839475",
   "https://openalex.org/W2042301469", "https://openalex.org/W2046747986", "https://openalex.org/W2080390653",
@@ -5124,10 +5127,10 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   Portfolio", "Springer Nature"], "type": "journal"}, "license": "cc-by", "license_id":
   "https://openalex.org/licenses/cc-by", "version": "publishedVersion", "is_accepted":
   true, "is_published": true, "raw_source_name": "Scientific Reports", "raw_type":
-  "journal-article"}, "sustainable_development_goals": [{"score": 0.9940000176429749,
-  "id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being"}],
-  "sustainable_development_goals_aurora": [{"score": 0.49000000953674316, "id": "https://metadata.un.org/sdg/3",
-  "display_name": "Good health and well-being"}], "study_designs": [{"id": "https://openalex.org/study-designs/clinical-trial",
+  "journal-article"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 0.9940000176429749}], "sustainable_development_goals_aurora":
+  [{"id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being",
+  "score": 0.49000000953674316}], "study_designs": [{"id": "https://openalex.org/study-designs/clinical-trial",
   "display_name": "Clinical Trial"}], "awards": [{"id": "https://openalex.org/G2884997024",
   "display_name": "Translational Resource Award ''Flagship Translational Resource:
   Critical Care/Fever", "funder_award_id": "217650", "funder_id": "https://openalex.org/F4320311904",
@@ -5135,8 +5138,8 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   "display_name": "Flagship Translational Resource: Critical Care/Fever", "funder_award_id":
   "217650/Z/19/Z", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
   "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": false,
-  "grobid_xml": false}, "content_urls": null, "referenced_works_count": 23, "referenced_works":
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
+  false, "pdf": false}, "content_urls": null, "referenced_works_count": 23, "referenced_works":
   ["https://openalex.org/W1767128030", "https://openalex.org/W1963428859", "https://openalex.org/W2026598133",
   "https://openalex.org/W2118240638", "https://openalex.org/W2124381750", "https://openalex.org/W2227283568",
   "https://openalex.org/W2327037637", "https://openalex.org/W2569351312", "https://openalex.org/W2745446031",
@@ -6572,10 +6575,10 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   Portfolio", "Springer Nature"], "type": "journal"}, "license": "cc-by", "license_id":
   "https://openalex.org/licenses/cc-by", "version": "publishedVersion", "is_accepted":
   true, "is_published": true, "raw_source_name": "Scientific Reports", "raw_type":
-  "journal-article"}, "sustainable_development_goals": [{"score": 1.0, "id": "https://metadata.un.org/sdg/3",
-  "display_name": "Good health and well-being"}], "sustainable_development_goals_aurora":
-  [{"score": 0.8600000143051147, "id": "https://metadata.un.org/sdg/3", "display_name":
-  "Good health and well-being"}], "study_designs": [{"id": "https://openalex.org/study-designs/observational-study",
+  "journal-article"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 1.0}], "sustainable_development_goals_aurora":
+  [{"id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being",
+  "score": 0.8600000143051147}], "study_designs": [{"id": "https://openalex.org/study-designs/observational-study",
   "display_name": "Observational Study"}], "awards": [{"id": "https://openalex.org/G1322964166",
   "display_name": "King''s College London Medical Engineering Centre of Research Excellence",
   "funder_award_id": "203148/Z/16/Z", "funder_id": "https://openalex.org/F4320311904",
@@ -6604,7 +6607,7 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   "display_name": "Engineering and Physical Sciences Research Council", "ror": "https://ror.org/0439y7842"},
   {"id": "https://openalex.org/F4320337314", "display_name": "Centre For Medical Engineering,
   King\u2019s College London", "ror": "https://ror.org/04s9kfd63"}], "has_content":
-  {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
+  {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
   33, "referenced_works": ["https://openalex.org/W2026752633", "https://openalex.org/W2028279393",
   "https://openalex.org/W2058384458", "https://openalex.org/W2064675550", "https://openalex.org/W2067395123",
   "https://openalex.org/W2119390490", "https://openalex.org/W2123983635", "https://openalex.org/W2138747051",
@@ -7460,17 +7463,17 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   Portfolio", "Springer Nature"], "type": "journal"}, "license": "cc-by", "license_id":
   "https://openalex.org/licenses/cc-by", "version": "publishedVersion", "is_accepted":
   true, "is_published": true, "raw_source_name": "Nature Medicine", "raw_type": "journal-article"},
-  "sustainable_development_goals": [{"score": 1.0, "id": "https://metadata.un.org/sdg/3",
-  "display_name": "Good health and well-being"}], "sustainable_development_goals_aurora":
-  [{"score": 0.8302780389785767, "id": "https://metadata.un.org/sdg/3", "display_name":
-  "Good health and well-being"}], "study_designs": [{"id": "https://openalex.org/study-designs/randomized-controlled-trial",
+  "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3", "display_name":
+  "Good health and well-being", "score": 1.0}], "sustainable_development_goals_aurora":
+  [{"id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being",
+  "score": 0.8302780389785767}], "study_designs": [{"id": "https://openalex.org/study-designs/randomized-controlled-trial",
   "display_name": "Randomized Controlled Trial"}, {"id": "https://openalex.org/study-designs/clinical-trial",
   "display_name": "Clinical Trial"}], "awards": [{"id": "https://openalex.org/G8855775527",
   "display_name": "Personalised adjunctive anti-inflammatory therapy to reduce deaths
   from tuberculosis.", "funder_award_id": "110179/Z/15/Z", "funder_id": "https://openalex.org/F4320311904",
   "funder_display_name": "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904",
   "display_name": "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content":
-  {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
+  {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
   36, "referenced_works": ["https://openalex.org/W1965974931", "https://openalex.org/W1967607476",
   "https://openalex.org/W1968632660", "https://openalex.org/W1972605644", "https://openalex.org/W1979936739",
   "https://openalex.org/W1986514504", "https://openalex.org/W1986607793", "https://openalex.org/W2059831659",
@@ -7957,12 +7960,12 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   Library of Science"], "type": "journal"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
   "version": "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
   "PLOS Neglected Tropical Diseases", "raw_type": "journal-article"}, "sustainable_development_goals":
-  [{"score": 1.0, "id": "https://metadata.un.org/sdg/3", "display_name": "Good health
-  and well-being"}], "sustainable_development_goals_aurora": [], "study_designs":
-  [{"id": "https://openalex.org/study-designs/observational-study", "display_name":
-  "Observational Study"}], "awards": [], "funders": [{"id": "https://openalex.org/F4320320290",
-  "display_name": "University of Oxford", "ror": "https://ror.org/052gg0110"}], "has_content":
-  {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4414787932.pdf",
+  [{"id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being",
+  "score": 1.0}], "sustainable_development_goals_aurora": [], "study_designs": [{"id":
+  "https://openalex.org/study-designs/observational-study", "display_name": "Observational
+  Study"}], "awards": [], "funders": [{"id": "https://openalex.org/F4320320290", "display_name":
+  "University of Oxford", "ror": "https://ror.org/052gg0110"}], "has_content": {"grobid_xml":
+  true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4414787932.pdf",
   "grobid_xml": "https://content.openalex.org/works/W4414787932.grobid-xml"}, "referenced_works_count":
   15, "referenced_works": ["https://openalex.org/W1971497078", "https://openalex.org/W2001480606",
   "https://openalex.org/W2002958662", "https://openalex.org/W2109949934", "https://openalex.org/W2786255039",
@@ -9259,68 +9262,68 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   Portfolio", "Springer Nature"], "type": "journal"}, "license": "cc-by", "license_id":
   "https://openalex.org/licenses/cc-by", "version": "publishedVersion", "is_accepted":
   true, "is_published": true, "raw_source_name": "Scientific Reports", "raw_type":
-  "journal-article"}, "sustainable_development_goals": [{"score": 0.9391000270843506,
-  "id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being"}],
-  "sustainable_development_goals_aurora": [{"score": 0.8199999928474426, "id": "https://metadata.un.org/sdg/3",
-  "display_name": "Good health and well-being"}], "study_designs": [], "awards": [{"id":
-  "https://openalex.org/G6217528405", "display_name": "National COVID Testing Africa
-  AAPs/Centre", "funder_award_id": "222574", "funder_id": "https://openalex.org/F4320311904",
-  "funder_display_name": "Wellcome Trust"}, {"id": "https://openalex.org/G937613659",
+  "journal-article"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 0.9391000270843506}], "sustainable_development_goals_aurora":
+  [{"id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being",
+  "score": 0.8199999928474426}], "study_designs": [], "awards": [{"id": "https://openalex.org/G6217528405",
   "display_name": "National COVID Testing Africa AAPs/Centre", "funder_award_id":
-  "222574/Z/21/Z", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
-  "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": false,
-  "grobid_xml": false}, "content_urls": null, "referenced_works_count": 21, "referenced_works":
-  ["https://openalex.org/W2120076861", "https://openalex.org/W3001195213", "https://openalex.org/W3014162634",
-  "https://openalex.org/W3046463923", "https://openalex.org/W3147414822", "https://openalex.org/W3215610096",
-  "https://openalex.org/W4200112411", "https://openalex.org/W4220823144", "https://openalex.org/W4220852166",
-  "https://openalex.org/W4223945501", "https://openalex.org/W4282840160", "https://openalex.org/W4285498614",
-  "https://openalex.org/W4306862545", "https://openalex.org/W4311807983", "https://openalex.org/W4317212025",
-  "https://openalex.org/W4317776727", "https://openalex.org/W4319020809", "https://openalex.org/W4362601829",
-  "https://openalex.org/W4367293557", "https://openalex.org/W4376872235", "https://openalex.org/W4380793183"],
-  "related_works": ["https://openalex.org/W2995118009", "https://openalex.org/W4221046490",
-  "https://openalex.org/W2786748503", "https://openalex.org/W2011298649", "https://openalex.org/W4297616267",
-  "https://openalex.org/W2502651140", "https://openalex.org/W1966203981", "https://openalex.org/W3195406774",
-  "https://openalex.org/W4297615481", "https://openalex.org/W4297616317"], "abstract_inverted_index":
-  {"The": [0, 38], "first": [1], "nationwide": [2], "outbreak": [3], "of": [4, 40,
-  48, 68, 74, 119, 127, 158, 167, 181], "COVID-19": [5], "in": [6, 9, 150, 170, 175],
-  "Vietnam": [7], "started": [8], "late": [10], "April": [11], "2021": [12], "and":
-  [13, 34, 42, 50, 106, 124, 138, 160, 189], "was": [14, 95], "caused": [15], "almost":
-  [16, 148], "exclusively": [17, 149], "by": [18, 57, 83, 97], "a": [19, 66, 117],
-  "single": [20], "Delta": [21, 32, 41, 120, 130], "lineage,": [22], "AY.57.": [23],
-  "In": [24], "early": [25], "2022,": [26, 65], "multiple": [27], "Omicron": [28,
-  43], "variants": [29, 33, 174], "co-circulated": [30], "with": [31, 129], "quickly":
-  [35], "became": [36], "dominant.": [37], "co-circulation": [39], "happened": [44],
-  "leading": [45], "to": [46, 63], "possibility": [47], "co-infection": [49, 123,
-  159], "recombination": [51], "events": [52, 157], "which": [53, 134], "can": [54],
-  "be": [55], "revealed": [56], "viral": [58, 70, 182, 187], "genomic": [59, 168],
-  "data.": [60], "From": [61], "January": [62], "October": [64], "total": [67], "1028":
-  [69], "RNA": [71], "samples": [72, 77], "out": [73], "4852": [75], "positive": [76],
-  "(Ct": [78], "<": [79], "30)": [80], "were": [81, 135], "sequenced": [82, 113],
-  "the": [84, 98, 144, 165, 172, 176], "long": [85], "pooled": [86], "amplicons":
-  [87], "method": [88], "on": [89, 102], "Illumina": [90, 107], "platforms.": [91],
-  "All": [92], "sequencing": [93], "data": [94], "analysed": [96], "workflow": [99],
-  "for": [100], "SARS-CoV-2": [101], "CLC": [103], "genomics": [104], "workbench":
-  [105], "Dragen": [108], "Covid": [109], "application.": [110], "Among": [111], "those":
-  [112], "samples,": [114], "we": [115], "detected": [116], "case": [118], "AY.57/Omicron":
-  [121, 131], "BA.1": [122], "two": [125], "cases": [126], "infection": [128], "BA.2":
-  [132], "recombinants": [133], "nearly": [136], "identical": [137], "had": [139],
-  "different": [140], "epidemiological": [141], "characteristics.": [142], "Since":
-  [143], "AY.57": [145], "lineage": [146], "circulated": [147], "Vietnam,": [151],
-  "these": [152], "results": [153], "strongly": [154], "suggest": [155], "domestic":
-  [156], "recombination.": [161], "These": [162], "findings": [163], "highlight":
-  [164], "strengths": [166], "surveillance": [169], "monitoring": [171], "circulating":
-  [173], "community": [177], "enabling": [178], "rapid": [179], "identification":
-  [180], "changes": [183], "that": [184], "may": [185], "affect": [186], "properties":
-  [188], "evolutionary": [190], "events.": [191]}, "counts_by_year": [{"year": 2026,
-  "cited_by_count": 1}, {"year": 2025, "cited_by_count": 5}, {"year": 2024, "cited_by_count":
-  1}], "updated_date": "2026-10-14T16:39:01.820549", "created_date": "2025-10-10T00:00:00"},
-  {"id": "https://openalex.org/W4404755442", "doi": "https://doi.org/10.12688/wellcomeopenres.22498.1",
-  "title": "Statistical analysis plan for the LAST ACT clinical trial; a Leukotriene
-  A4 hydrolase Stratified non-inferiority Trial of Adjunctive Corticosteroids for
-  HIV-negative adults with Tuberculous meningitis", "display_name": "Statistical analysis
-  plan for the LAST ACT clinical trial; a Leukotriene A4 hydrolase Stratified non-inferiority
-  Trial of Adjunctive Corticosteroids for HIV-negative adults with Tuberculous meningitis",
+  "222574", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
+  "Wellcome Trust"}, {"id": "https://openalex.org/G937613659", "display_name": "National
+  COVID Testing Africa AAPs/Centre", "funder_award_id": "222574/Z/21/Z", "funder_id":
+  "https://openalex.org/F4320311904", "funder_display_name": "Wellcome Trust"}], "funders":
+  [{"id": "https://openalex.org/F4320311904", "display_name": "Wellcome Trust", "ror":
+  "https://ror.org/029chgv08"}], "has_content": {"grobid_xml": false, "pdf": false},
+  "content_urls": null, "referenced_works_count": 21, "referenced_works": ["https://openalex.org/W2120076861",
+  "https://openalex.org/W3001195213", "https://openalex.org/W3014162634", "https://openalex.org/W3046463923",
+  "https://openalex.org/W3147414822", "https://openalex.org/W3215610096", "https://openalex.org/W4200112411",
+  "https://openalex.org/W4220823144", "https://openalex.org/W4220852166", "https://openalex.org/W4223945501",
+  "https://openalex.org/W4282840160", "https://openalex.org/W4285498614", "https://openalex.org/W4306862545",
+  "https://openalex.org/W4311807983", "https://openalex.org/W4317212025", "https://openalex.org/W4317776727",
+  "https://openalex.org/W4319020809", "https://openalex.org/W4362601829", "https://openalex.org/W4367293557",
+  "https://openalex.org/W4376872235", "https://openalex.org/W4380793183"], "related_works":
+  ["https://openalex.org/W2995118009", "https://openalex.org/W4221046490", "https://openalex.org/W2786748503",
+  "https://openalex.org/W2011298649", "https://openalex.org/W4297616267", "https://openalex.org/W2502651140",
+  "https://openalex.org/W1966203981", "https://openalex.org/W3195406774", "https://openalex.org/W4297615481",
+  "https://openalex.org/W4297616317"], "abstract_inverted_index": {"The": [0, 38],
+  "first": [1], "nationwide": [2], "outbreak": [3], "of": [4, 40, 48, 68, 74, 119,
+  127, 158, 167, 181], "COVID-19": [5], "in": [6, 9, 150, 170, 175], "Vietnam": [7],
+  "started": [8], "late": [10], "April": [11], "2021": [12], "and": [13, 34, 42, 50,
+  106, 124, 138, 160, 189], "was": [14, 95], "caused": [15], "almost": [16, 148],
+  "exclusively": [17, 149], "by": [18, 57, 83, 97], "a": [19, 66, 117], "single":
+  [20], "Delta": [21, 32, 41, 120, 130], "lineage,": [22], "AY.57.": [23], "In": [24],
+  "early": [25], "2022,": [26, 65], "multiple": [27], "Omicron": [28, 43], "variants":
+  [29, 33, 174], "co-circulated": [30], "with": [31, 129], "quickly": [35], "became":
+  [36], "dominant.": [37], "co-circulation": [39], "happened": [44], "leading": [45],
+  "to": [46, 63], "possibility": [47], "co-infection": [49, 123, 159], "recombination":
+  [51], "events": [52, 157], "which": [53, 134], "can": [54], "be": [55], "revealed":
+  [56], "viral": [58, 70, 182, 187], "genomic": [59, 168], "data.": [60], "From":
+  [61], "January": [62], "October": [64], "total": [67], "1028": [69], "RNA": [71],
+  "samples": [72, 77], "out": [73], "4852": [75], "positive": [76], "(Ct": [78], "<":
+  [79], "30)": [80], "were": [81, 135], "sequenced": [82, 113], "the": [84, 98, 144,
+  165, 172, 176], "long": [85], "pooled": [86], "amplicons": [87], "method": [88],
+  "on": [89, 102], "Illumina": [90, 107], "platforms.": [91], "All": [92], "sequencing":
+  [93], "data": [94], "analysed": [96], "workflow": [99], "for": [100], "SARS-CoV-2":
+  [101], "CLC": [103], "genomics": [104], "workbench": [105], "Dragen": [108], "Covid":
+  [109], "application.": [110], "Among": [111], "those": [112], "samples,": [114],
+  "we": [115], "detected": [116], "case": [118], "AY.57/Omicron": [121, 131], "BA.1":
+  [122], "two": [125], "cases": [126], "infection": [128], "BA.2": [132], "recombinants":
+  [133], "nearly": [136], "identical": [137], "had": [139], "different": [140], "epidemiological":
+  [141], "characteristics.": [142], "Since": [143], "AY.57": [145], "lineage": [146],
+  "circulated": [147], "Vietnam,": [151], "these": [152], "results": [153], "strongly":
+  [154], "suggest": [155], "domestic": [156], "recombination.": [161], "These": [162],
+  "findings": [163], "highlight": [164], "strengths": [166], "surveillance": [169],
+  "monitoring": [171], "circulating": [173], "community": [177], "enabling": [178],
+  "rapid": [179], "identification": [180], "changes": [183], "that": [184], "may":
+  [185], "affect": [186], "properties": [188], "evolutionary": [190], "events.": [191]},
+  "counts_by_year": [{"year": 2026, "cited_by_count": 1}, {"year": 2025, "cited_by_count":
+  5}, {"year": 2024, "cited_by_count": 1}], "updated_date": "2026-10-14T16:39:01.820549",
+  "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W4404755442",
+  "doi": "https://doi.org/10.12688/wellcomeopenres.22498.1", "title": "Statistical
+  analysis plan for the LAST ACT clinical trial; a Leukotriene A4 hydrolase Stratified
+  non-inferiority Trial of Adjunctive Corticosteroids for HIV-negative adults with
+  Tuberculous meningitis", "display_name": "Statistical analysis plan for the LAST
+  ACT clinical trial; a Leukotriene A4 hydrolase Stratified non-inferiority Trial
+  of Adjunctive Corticosteroids for HIV-negative adults with Tuberculous meningitis",
   "publication_year": 2024, "publication_date": "2024-11-27", "ids": {"openalex":
   "https://openalex.org/W4404755442", "doi": "https://doi.org/10.12688/wellcomeopenres.22498.1",
   "pmid": "https://pubmed.ncbi.nlm.nih.gov/39911285"}, "language": "en", "primary_location":
@@ -9600,16 +9603,16 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   "host_organization_lineage_names": ["Wellcome"], "type": "journal"}, "license":
   "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version": "publishedVersion",
   "is_accepted": true, "is_published": true, "raw_source_name": "Wellcome Open Research",
-  "raw_type": "journal-article"}, "sustainable_development_goals": [{"score": 0.9940000176429749,
-  "id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being"}],
-  "sustainable_development_goals_aurora": [{"score": 0.8700000047683716, "id": "https://metadata.un.org/sdg/3",
-  "display_name": "Good health and well-being"}], "study_designs": [{"id": "https://openalex.org/study-designs/study-protocol",
+  "raw_type": "journal-article"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 0.9940000176429749}], "sustainable_development_goals_aurora":
+  [{"id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being",
+  "score": 0.8700000047683716}], "study_designs": [{"id": "https://openalex.org/study-designs/study-protocol",
   "display_name": "Study Protocol"}], "awards": [{"id": "https://openalex.org/G7076209523",
   "display_name": "Personalised adjunctive anti-inflammatory therapy to reduce deaths
   from tuberculosis.", "funder_award_id": "110179", "funder_id": "https://openalex.org/F4320311904",
   "funder_display_name": "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904",
   "display_name": "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content":
-  {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
+  {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
   19, "referenced_works": ["https://openalex.org/W313080928", "https://openalex.org/W1968632660",
   "https://openalex.org/W1986514504", "https://openalex.org/W1986607793", "https://openalex.org/W1992045522",
   "https://openalex.org/W1996016456", "https://openalex.org/W2123879591", "https://openalex.org/W2128471563",
@@ -10096,10 +10099,10 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   Central", "Springer Nature"], "type": "journal"}, "license": "cc-by", "license_id":
   "https://openalex.org/licenses/cc-by", "version": "publishedVersion", "is_accepted":
   true, "is_published": true, "raw_source_name": "BMC Infectious Diseases", "raw_type":
-  "journal-article"}, "sustainable_development_goals": [{"score": 1.0, "id": "https://metadata.un.org/sdg/3",
-  "display_name": "Good health and well-being"}], "sustainable_development_goals_aurora":
-  [{"score": 0.5600000023841858, "id": "https://metadata.un.org/sdg/3", "display_name":
-  "Good health and well-being"}], "study_designs": [{"id": "https://openalex.org/study-designs/observational-study",
+  "journal-article"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 1.0}], "sustainable_development_goals_aurora":
+  [{"id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being",
+  "score": 0.5600000023841858}], "study_designs": [{"id": "https://openalex.org/study-designs/observational-study",
   "display_name": "Observational Study"}], "awards": [{"id": "https://openalex.org/G1286880400",
   "display_name": null, "funder_award_id": "CL-2020-20-001", "funder_id": "https://openalex.org/F4320319990",
   "funder_display_name": "National Institute for Health and Care Research"}, {"id":
@@ -10127,7 +10130,7 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
   "Wellcome Trust", "ror": "https://ror.org/029chgv08"}, {"id": "https://openalex.org/F4320319990",
   "display_name": "National Institute for Health and Care Research", "ror": "https://ror.org/0187kwz08"}],
-  "has_content": {"pdf": true, "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4391574296.pdf",
+  "has_content": {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W4391574296.pdf",
   "grobid_xml": "https://content.openalex.org/works/W4391574296.grobid-xml"}, "referenced_works_count":
   22, "referenced_works": ["https://openalex.org/W1538600059", "https://openalex.org/W2014074083",
   "https://openalex.org/W2040536528", "https://openalex.org/W2051133080", "https://openalex.org/W2070635713",
@@ -10354,8 +10357,8 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   ["https://openalex.org/A5073343908"], "corresponding_institution_ids": ["https://openalex.org/I183935753",
   "https://openalex.org/I4210150114"], "apc_list": {"value": 2382, "currency": "USD",
   "value_usd": 2382}, "apc_paid": {"value": 2382, "currency": "USD", "value_usd":
-  2382}, "fwci": 1.737, "has_fulltext": true, "cited_by_count": 2, "citation_normalized_percentile":
-  {"value": 0.83061657, "is_in_top_1_percent": false, "is_in_top_10_percent": false},
+  2382}, "fwci": 1.7091, "has_fulltext": true, "cited_by_count": 2, "citation_normalized_percentile":
+  {"value": 0.827871, "is_in_top_1_percent": false, "is_in_top_10_percent": false},
   "cited_by_percentile_year": {"min": 94, "max": 96}, "biblio": {"volume": "20", "issue":
   "5", "first_page": "e0321655", "last_page": "e0321655"}, "is_retracted": false,
   "is_paratext": false, "is_xpac": false, "primary_topic": {"id": "https://openalex.org/T11381",
@@ -10423,12 +10426,17 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   Networks", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
   {"descriptor_ui": "D000098415", "descriptor_name": "Convolutional Neural Networks",
   "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui":
-  "D000328", "descriptor_name": "Adult", "qualifier_ui": null, "qualifier_name": null,
-  "is_major_topic": false}, {"descriptor_ui": "D000328", "descriptor_name": "Adult",
-  "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui":
-  "D000328", "descriptor_name": "Adult", "qualifier_ui": null, "qualifier_name": null,
-  "is_major_topic": false}, {"descriptor_ui": "D000328", "descriptor_name": "Adult",
-  "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui":
+  "D000098415", "descriptor_name": "Convolutional Neural Networks", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D000328",
+  "descriptor_name": "Adult", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
+  false}, {"descriptor_ui": "D000328", "descriptor_name": "Adult", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D000328",
+  "descriptor_name": "Adult", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
+  false}, {"descriptor_ui": "D000328", "descriptor_name": "Adult", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D000328",
+  "descriptor_name": "Adult", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
+  false}, {"descriptor_ui": "D001921", "descriptor_name": "Brain", "qualifier_ui":
+  "Q000000981", "qualifier_name": "diagnostic imaging", "is_major_topic": true}, {"descriptor_ui":
   "D001921", "descriptor_name": "Brain", "qualifier_ui": "Q000000981", "qualifier_name":
   "diagnostic imaging", "is_major_topic": true}, {"descriptor_ui": "D001921", "descriptor_name":
   "Brain", "qualifier_ui": "Q000000981", "qualifier_name": "diagnostic imaging", "is_major_topic":
@@ -10441,6 +10449,9 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005260", "descriptor_name":
   "Female", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
   {"descriptor_ui": "D005260", "descriptor_name": "Female", "qualifier_ui": null,
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D005260", "descriptor_name":
+  "Female", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
+  {"descriptor_ui": "D006801", "descriptor_name": "Humans", "qualifier_ui": null,
   "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D006801", "descriptor_name":
   "Humans", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
   {"descriptor_ui": "D006801", "descriptor_name": "Humans", "qualifier_ui": null,
@@ -10455,39 +10466,50 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   "qualifier_ui": "Q000379", "qualifier_name": "methods", "is_major_topic": true},
   {"descriptor_ui": "D008279", "descriptor_name": "Magnetic Resonance Imaging", "qualifier_ui":
   "Q000379", "qualifier_name": "methods", "is_major_topic": true}, {"descriptor_ui":
-  "D008297", "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name": null,
-  "is_major_topic": false}, {"descriptor_ui": "D008297", "descriptor_name": "Male",
-  "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui":
-  "D008297", "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name": null,
-  "is_major_topic": false}, {"descriptor_ui": "D008297", "descriptor_name": "Male",
-  "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui":
+  "D008279", "descriptor_name": "Magnetic Resonance Imaging", "qualifier_ui": "Q000379",
+  "qualifier_name": "methods", "is_major_topic": true}, {"descriptor_ui": "D008297",
+  "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
+  false}, {"descriptor_ui": "D008297", "descriptor_name": "Male", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D008297",
+  "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
+  false}, {"descriptor_ui": "D008297", "descriptor_name": "Male", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D008297",
+  "descriptor_name": "Male", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
+  false}, {"descriptor_ui": "D008875", "descriptor_name": "Middle Aged", "qualifier_ui":
+  null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D008875",
+  "descriptor_name": "Middle Aged", "qualifier_ui": null, "qualifier_name": null,
+  "is_major_topic": false}, {"descriptor_ui": "D008875", "descriptor_name": "Middle
+  Aged", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui":
   "D008875", "descriptor_name": "Middle Aged", "qualifier_ui": null, "qualifier_name":
   null, "is_major_topic": false}, {"descriptor_ui": "D008875", "descriptor_name":
   "Middle Aged", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
-  {"descriptor_ui": "D008875", "descriptor_name": "Middle Aged", "qualifier_ui": null,
-  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D008875", "descriptor_name":
-  "Middle Aged", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
   {"descriptor_ui": "D011379", "descriptor_name": "Prognosis", "qualifier_ui": null,
   "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D011379", "descriptor_name":
   "Prognosis", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
   {"descriptor_ui": "D011379", "descriptor_name": "Prognosis", "qualifier_ui": null,
   "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D011379", "descriptor_name":
   "Prognosis", "qualifier_ui": null, "qualifier_name": null, "is_major_topic": false},
-  {"descriptor_ui": "D014390", "descriptor_name": "Tuberculosis, Meningeal", "qualifier_ui":
-  "Q000000981", "qualifier_name": "diagnostic imaging", "is_major_topic": true}, {"descriptor_ui":
-  "D014390", "descriptor_name": "Tuberculosis, Meningeal", "qualifier_ui": "Q000000981",
-  "qualifier_name": "diagnostic imaging", "is_major_topic": true}, {"descriptor_ui":
-  "D014390", "descriptor_name": "Tuberculosis, Meningeal", "qualifier_ui": "Q000000981",
-  "qualifier_name": "diagnostic imaging", "is_major_topic": true}, {"descriptor_ui":
-  "D014390", "descriptor_name": "Tuberculosis, Meningeal", "qualifier_ui": "Q000000981",
-  "qualifier_name": "diagnostic imaging", "is_major_topic": true}, {"descriptor_ui":
-  "D014390", "descriptor_name": "Tuberculosis, Meningeal", "qualifier_ui": "Q000150",
-  "qualifier_name": "complications", "is_major_topic": true}, {"descriptor_ui": "D014390",
-  "descriptor_name": "Tuberculosis, Meningeal", "qualifier_ui": "Q000150", "qualifier_name":
-  "complications", "is_major_topic": true}, {"descriptor_ui": "D014390", "descriptor_name":
+  {"descriptor_ui": "D011379", "descriptor_name": "Prognosis", "qualifier_ui": null,
+  "qualifier_name": null, "is_major_topic": false}, {"descriptor_ui": "D014390", "descriptor_name":
+  "Tuberculosis, Meningeal", "qualifier_ui": "Q000000981", "qualifier_name": "diagnostic
+  imaging", "is_major_topic": true}, {"descriptor_ui": "D014390", "descriptor_name":
+  "Tuberculosis, Meningeal", "qualifier_ui": "Q000000981", "qualifier_name": "diagnostic
+  imaging", "is_major_topic": true}, {"descriptor_ui": "D014390", "descriptor_name":
+  "Tuberculosis, Meningeal", "qualifier_ui": "Q000000981", "qualifier_name": "diagnostic
+  imaging", "is_major_topic": true}, {"descriptor_ui": "D014390", "descriptor_name":
+  "Tuberculosis, Meningeal", "qualifier_ui": "Q000000981", "qualifier_name": "diagnostic
+  imaging", "is_major_topic": true}, {"descriptor_ui": "D014390", "descriptor_name":
+  "Tuberculosis, Meningeal", "qualifier_ui": "Q000000981", "qualifier_name": "diagnostic
+  imaging", "is_major_topic": true}, {"descriptor_ui": "D014390", "descriptor_name":
   "Tuberculosis, Meningeal", "qualifier_ui": "Q000150", "qualifier_name": "complications",
   "is_major_topic": true}, {"descriptor_ui": "D014390", "descriptor_name": "Tuberculosis,
   Meningeal", "qualifier_ui": "Q000150", "qualifier_name": "complications", "is_major_topic":
+  true}, {"descriptor_ui": "D014390", "descriptor_name": "Tuberculosis, Meningeal",
+  "qualifier_ui": "Q000150", "qualifier_name": "complications", "is_major_topic":
+  true}, {"descriptor_ui": "D014390", "descriptor_name": "Tuberculosis, Meningeal",
+  "qualifier_ui": "Q000150", "qualifier_name": "complications", "is_major_topic":
+  true}, {"descriptor_ui": "D014390", "descriptor_name": "Tuberculosis, Meningeal",
+  "qualifier_ui": "Q000150", "qualifier_name": "complications", "is_major_topic":
   true}, {"descriptor_ui": "D014390", "descriptor_name": "Tuberculosis, Meningeal",
   "qualifier_ui": "Q000401", "qualifier_name": "mortality", "is_major_topic": true},
   {"descriptor_ui": "D014390", "descriptor_name": "Tuberculosis, Meningeal", "qualifier_ui":
@@ -10495,21 +10517,28 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   "D014390", "descriptor_name": "Tuberculosis, Meningeal", "qualifier_ui": "Q000401",
   "qualifier_name": "mortality", "is_major_topic": true}, {"descriptor_ui": "D014390",
   "descriptor_name": "Tuberculosis, Meningeal", "qualifier_ui": "Q000401", "qualifier_name":
-  "mortality", "is_major_topic": true}, {"descriptor_ui": "D014744", "descriptor_name":
-  "Vietnam", "qualifier_ui": "Q000453", "qualifier_name": "epidemiology", "is_major_topic":
-  false}, {"descriptor_ui": "D014744", "descriptor_name": "Vietnam", "qualifier_ui":
-  "Q000453", "qualifier_name": "epidemiology", "is_major_topic": false}, {"descriptor_ui":
-  "D014744", "descriptor_name": "Vietnam", "qualifier_ui": "Q000453", "qualifier_name":
-  "epidemiology", "is_major_topic": false}, {"descriptor_ui": "D014744", "descriptor_name":
-  "Vietnam", "qualifier_ui": "Q000453", "qualifier_name": "epidemiology", "is_major_topic":
-  false}, {"descriptor_ui": "D015658", "descriptor_name": "HIV Infections", "qualifier_ui":
-  "Q000150", "qualifier_name": "complications", "is_major_topic": false}, {"descriptor_ui":
-  "D015658", "descriptor_name": "HIV Infections", "qualifier_ui": "Q000150", "qualifier_name":
+  "mortality", "is_major_topic": true}, {"descriptor_ui": "D014390", "descriptor_name":
+  "Tuberculosis, Meningeal", "qualifier_ui": "Q000401", "qualifier_name": "mortality",
+  "is_major_topic": true}, {"descriptor_ui": "D014744", "descriptor_name": "Vietnam",
+  "qualifier_ui": "Q000453", "qualifier_name": "epidemiology", "is_major_topic": false},
+  {"descriptor_ui": "D014744", "descriptor_name": "Vietnam", "qualifier_ui": "Q000453",
+  "qualifier_name": "epidemiology", "is_major_topic": false}, {"descriptor_ui": "D014744",
+  "descriptor_name": "Vietnam", "qualifier_ui": "Q000453", "qualifier_name": "epidemiology",
+  "is_major_topic": false}, {"descriptor_ui": "D014744", "descriptor_name": "Vietnam",
+  "qualifier_ui": "Q000453", "qualifier_name": "epidemiology", "is_major_topic": false},
+  {"descriptor_ui": "D014744", "descriptor_name": "Vietnam", "qualifier_ui": "Q000453",
+  "qualifier_name": "epidemiology", "is_major_topic": false}, {"descriptor_ui": "D015658",
+  "descriptor_name": "HIV Infections", "qualifier_ui": "Q000150", "qualifier_name":
   "complications", "is_major_topic": false}, {"descriptor_ui": "D015658", "descriptor_name":
   "HIV Infections", "qualifier_ui": "Q000150", "qualifier_name": "complications",
   "is_major_topic": false}, {"descriptor_ui": "D015658", "descriptor_name": "HIV Infections",
   "qualifier_ui": "Q000150", "qualifier_name": "complications", "is_major_topic":
-  false}, {"descriptor_ui": "D016571", "descriptor_name": "Neural Networks, Computer",
+  false}, {"descriptor_ui": "D015658", "descriptor_name": "HIV Infections", "qualifier_ui":
+  "Q000150", "qualifier_name": "complications", "is_major_topic": false}, {"descriptor_ui":
+  "D015658", "descriptor_name": "HIV Infections", "qualifier_ui": "Q000150", "qualifier_name":
+  "complications", "is_major_topic": false}, {"descriptor_ui": "D016571", "descriptor_name":
+  "Neural Networks, Computer", "qualifier_ui": null, "qualifier_name": null, "is_major_topic":
+  true}, {"descriptor_ui": "D016571", "descriptor_name": "Neural Networks, Computer",
   "qualifier_ui": null, "qualifier_name": null, "is_major_topic": true}, {"descriptor_ui":
   "D016571", "descriptor_name": "Neural Networks, Computer", "qualifier_ui": null,
   "qualifier_name": null, "is_major_topic": true}, {"descriptor_ui": "D016571", "descriptor_name":
@@ -10567,15 +10596,15 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   ["https://openalex.org/P4310315706"], "host_organization_lineage_names": ["Public
   Library of Science"], "type": "journal"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
   "version": "publishedVersion", "is_accepted": true, "is_published": true, "raw_source_name":
-  "PLOS One", "raw_type": "journal-article"}, "sustainable_development_goals": [{"score":
-  1.0, "id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being"}],
-  "sustainable_development_goals_aurora": [{"score": 0.8700000047683716, "id": "https://metadata.un.org/sdg/3",
-  "display_name": "Good health and well-being"}], "study_designs": [], "awards": [{"id":
-  "https://openalex.org/G1322964166", "display_name": "King''s College London Medical
-  Engineering Centre of Research Excellence", "funder_award_id": "203148/Z/16/Z",
-  "funder_id": "https://openalex.org/F4320311904", "funder_display_name": "Wellcome
-  Trust"}, {"id": "https://openalex.org/G1595280774", "display_name": "JADE: Joint
-  Academic Data science Endeavour - 2", "funder_award_id": "EP/T022205/1", "funder_id":
+  "PLOS One", "raw_type": "journal-article"}, "sustainable_development_goals": [{"id":
+  "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being", "score":
+  1.0}], "sustainable_development_goals_aurora": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 0.8700000047683716}], "study_designs":
+  [], "awards": [{"id": "https://openalex.org/G1322964166", "display_name": "King''s
+  College London Medical Engineering Centre of Research Excellence", "funder_award_id":
+  "203148/Z/16/Z", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
+  "Wellcome Trust"}, {"id": "https://openalex.org/G1595280774", "display_name": "JADE:
+  Joint Academic Data science Endeavour - 2", "funder_award_id": "EP/T022205/1", "funder_id":
   "https://openalex.org/F4320334627", "funder_display_name": "Engineering and Physical
   Sciences Research Council"}, {"id": "https://openalex.org/G2070688194", "display_name":
   "Innovative biomedical engineering and computational science to improve the management
@@ -10618,7 +10647,7 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   "https://openalex.org/F4320334627", "display_name": "Engineering and Physical Sciences
   Research Council", "ror": "https://ror.org/0439y7842"}, {"id": "https://openalex.org/F4320337314",
   "display_name": "Centre For Medical Engineering, King\u2019s College London", "ror":
-  "https://ror.org/04s9kfd63"}], "has_content": {"pdf": true, "grobid_xml": true},
+  "https://ror.org/04s9kfd63"}], "has_content": {"grobid_xml": true, "pdf": true},
   "content_urls": {"pdf": "https://content.openalex.org/works/W4410631163.pdf", "grobid_xml":
   "https://content.openalex.org/works/W4410631163.grobid-xml"}, "referenced_works_count":
   36, "referenced_works": ["https://openalex.org/W1965974931", "https://openalex.org/W2007537022",
@@ -10684,7 +10713,7 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   [278], "information": [279], "can": [280], "provide": [281], "added": [282], "unwanted":
   [286], "outcomes": [287], "TBM.": [289], "However,": [290], "confirm": [292], "this":
   [293], "finding,": [294], "larger": [296], "dataset": [297], "needed.": [299]},
-  "counts_by_year": [{"year": 2025, "cited_by_count": 2}], "updated_date": "2026-10-16T09:59:22.235173",
+  "counts_by_year": [{"year": 2025, "cited_by_count": 2}], "updated_date": "2026-10-22T09:42:04.148104",
   "created_date": "2025-10-10T00:00:00"}, {"id": "https://openalex.org/W7154964006",
   "doi": "https://doi.org/10.1186/s40635-026-00899-0", "title": "Predictive value
   of ventriculo-arterial coupling for hypotension after induction of anaesthesia:
@@ -10981,11 +11010,11 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version": "publishedVersion",
   "is_accepted": true, "is_published": true, "raw_source_name": "Intensive Care Medicine
   Experimental", "raw_type": "journal-article"}, "sustainable_development_goals":
-  [{"score": 1.0, "id": "https://metadata.un.org/sdg/3", "display_name": "Good health
-  and well-being"}], "sustainable_development_goals_aurora": [], "study_designs":
-  [{"id": "https://openalex.org/study-designs/observational-study", "display_name":
-  "Observational Study"}], "awards": [], "funders": [], "has_content": {"pdf": true,
-  "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W7154964006.pdf",
+  [{"id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being",
+  "score": 1.0}], "sustainable_development_goals_aurora": [], "study_designs": [{"id":
+  "https://openalex.org/study-designs/observational-study", "display_name": "Observational
+  Study"}], "awards": [], "funders": [], "has_content": {"grobid_xml": true, "pdf":
+  true}, "content_urls": {"pdf": "https://content.openalex.org/works/W7154964006.pdf",
   "grobid_xml": "https://content.openalex.org/works/W7154964006.grobid-xml"}, "referenced_works_count":
   40, "referenced_works": ["https://openalex.org/W73459521", "https://openalex.org/W1651614883",
   "https://openalex.org/W1777904247", "https://openalex.org/W1792854258", "https://openalex.org/W1948687818",
@@ -11253,14 +11282,14 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   "is_accepted": true, "is_published": true, "raw_source_name": "Clinical infectious
   diseases : an official publication of the Infectious Diseases Society of America",
   "raw_type": "Letter"}], "best_oa_location": null, "sustainable_development_goals":
-  [{"score": 0.9391000270843506, "id": "https://metadata.un.org/sdg/3", "display_name":
-  "Good health and well-being"}], "sustainable_development_goals_aurora": [], "study_designs":
+  [{"id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being",
+  "score": 0.9391000270843506}], "sustainable_development_goals_aurora": [], "study_designs":
   [], "awards": [{"id": "https://openalex.org/G4627523818", "display_name": "Improving
   the management and prevention of tetanus in Vietnam.", "funder_award_id": "107367/Z/15/Z",
   "funder_id": "https://openalex.org/F4320311904", "funder_display_name": "Wellcome
   Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": false,
-  "grobid_xml": false}, "content_urls": null, "referenced_works_count": 5, "referenced_works":
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
+  false, "pdf": false}, "content_urls": null, "referenced_works_count": 5, "referenced_works":
   ["https://openalex.org/W1503693879", "https://openalex.org/W1998638218", "https://openalex.org/W2154117702",
   "https://openalex.org/W2796402759", "https://openalex.org/W3194782510"], "related_works":
   ["https://openalex.org/W2348837382", "https://openalex.org/W746329893", "https://openalex.org/W4205872570",
@@ -11526,28 +11555,27 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   [], "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
   "license_id": "https://openalex.org/licenses/cc-by", "version": "acceptedVersion",
   "is_accepted": true, "is_published": false, "raw_source_name": "Research Square",
-  "raw_type": "posted-content"}, "sustainable_development_goals": [{"score": 1.0,
-  "id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being"}],
-  "sustainable_development_goals_aurora": [{"score": 0.8700000047683716, "id": "https://metadata.un.org/sdg/3",
-  "display_name": "Good health and well-being"}], "study_designs": [], "awards": [{"id":
-  "https://openalex.org/G1322964166", "display_name": "King''s College London Medical
-  Engineering Centre of Research Excellence", "funder_award_id": "203148/Z/16/Z",
+  "raw_type": "posted-content"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 1.0}], "sustainable_development_goals_aurora":
+  [{"id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being",
+  "score": 0.8700000047683716}], "study_designs": [], "awards": [{"id": "https://openalex.org/G1322964166",
+  "display_name": "King''s College London Medical Engineering Centre of Research Excellence",
+  "funder_award_id": "203148/Z/16/Z", "funder_id": "https://openalex.org/F4320311904",
+  "funder_display_name": "Wellcome Trust"}, {"id": "https://openalex.org/G1595280774",
+  "display_name": "JADE: Joint Academic Data science Endeavour - 2", "funder_award_id":
+  "EP/T022205/1", "funder_id": "https://openalex.org/F4320334627", "funder_display_name":
+  "Engineering and Physical Sciences Research Council"}, {"id": "https://openalex.org/G2884997024",
+  "display_name": "Translational Resource Award ''Flagship Translational Resource:
+  Critical Care/Fever", "funder_award_id": "217650", "funder_id": "https://openalex.org/F4320311904",
+  "funder_display_name": "Wellcome Trust"}, {"id": "https://openalex.org/G305152554",
+  "display_name": "Flagship Translational Resource: Critical Care/Fever", "funder_award_id":
+  "217650/Z/19/Z", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
+  "Wellcome Trust"}, {"id": "https://openalex.org/G3536065358", "display_name": "Vietnam
+  Africa Asia Programme Core Grant Renewal, 2022 to 2029", "funder_award_id": "225167",
   "funder_id": "https://openalex.org/F4320311904", "funder_display_name": "Wellcome
-  Trust"}, {"id": "https://openalex.org/G1595280774", "display_name": "JADE: Joint
-  Academic Data science Endeavour - 2", "funder_award_id": "EP/T022205/1", "funder_id":
-  "https://openalex.org/F4320334627", "funder_display_name": "Engineering and Physical
-  Sciences Research Council"}, {"id": "https://openalex.org/G2884997024", "display_name":
-  "Translational Resource Award ''Flagship Translational Resource: Critical Care/Fever",
-  "funder_award_id": "217650", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
-  "Wellcome Trust"}, {"id": "https://openalex.org/G305152554", "display_name": "Flagship
-  Translational Resource: Critical Care/Fever", "funder_award_id": "217650/Z/19/Z",
-  "funder_id": "https://openalex.org/F4320311904", "funder_display_name": "Wellcome
-  Trust"}, {"id": "https://openalex.org/G3536065358", "display_name": "Vietnam Africa
-  Asia Programme Core Grant Renewal, 2022 to 2029", "funder_award_id": "225167", "funder_id":
-  "https://openalex.org/F4320311904", "funder_display_name": "Wellcome Trust"}, {"id":
-  "https://openalex.org/G4906042428", "display_name": null, "funder_award_id": "EP/T022205/1",
-  "funder_id": "https://openalex.org/F4320337314", "funder_display_name": "Centre
-  For Medical Engineering, King\u2019s College London"}, {"id": "https://openalex.org/G5296857752",
+  Trust"}, {"id": "https://openalex.org/G4906042428", "display_name": null, "funder_award_id":
+  "EP/T022205/1", "funder_id": "https://openalex.org/F4320337314", "funder_display_name":
+  "Centre For Medical Engineering, King\u2019s College London"}, {"id": "https://openalex.org/G5296857752",
   "display_name": null, "funder_award_id": "203148/Z/16/Z", "funder_id": "https://openalex.org/F4320337314",
   "funder_display_name": "Centre For Medical Engineering, King\u2019s College London"},
   {"id": "https://openalex.org/G5907639349", "display_name": "King''s College London
@@ -11570,7 +11598,7 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   "https://openalex.org/F4320334627", "display_name": "Engineering and Physical Sciences
   Research Council", "ror": "https://ror.org/0439y7842"}, {"id": "https://openalex.org/F4320337314",
   "display_name": "Centre For Medical Engineering, King\u2019s College London", "ror":
-  "https://ror.org/04s9kfd63"}], "has_content": {"pdf": true, "grobid_xml": true},
+  "https://ror.org/04s9kfd63"}], "has_content": {"grobid_xml": true, "pdf": true},
   "content_urls": {"pdf": "https://content.openalex.org/works/W4391578951.pdf", "grobid_xml":
   "https://content.openalex.org/works/W4391578951.grobid-xml"}, "referenced_works_count":
   21, "referenced_works": ["https://openalex.org/W1965974931", "https://openalex.org/W2007537022",
@@ -12348,52 +12376,51 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   Central", "Springer Nature"], "type": "journal"}, "license": "cc-by", "license_id":
   "https://openalex.org/licenses/cc-by", "version": "publishedVersion", "is_accepted":
   true, "is_published": true, "raw_source_name": "BMC Medical Ethics", "raw_type":
-  "journal-article"}, "sustainable_development_goals": [{"score": 0.8560000061988831,
-  "id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being"}],
-  "sustainable_development_goals_aurora": [{"score": 0.42751845717430115, "id": "https://metadata.un.org/sdg/3",
-  "display_name": "Good health and well-being"}], "study_designs": [], "awards": [],
-  "funders": [{"id": "https://openalex.org/F4320320290", "display_name": "University
-  of Oxford", "ror": "https://ror.org/052gg0110"}], "has_content": {"pdf": false,
-  "grobid_xml": false}, "content_urls": null, "referenced_works_count": 24, "referenced_works":
-  ["https://openalex.org/W1566125242", "https://openalex.org/W1989224082", "https://openalex.org/W2045853031",
-  "https://openalex.org/W2148183484", "https://openalex.org/W2485540656", "https://openalex.org/W2887820101",
-  "https://openalex.org/W2983441955", "https://openalex.org/W3007382231", "https://openalex.org/W3012027760",
-  "https://openalex.org/W3021879836", "https://openalex.org/W3022831664", "https://openalex.org/W3033188368",
-  "https://openalex.org/W3113586810", "https://openalex.org/W3135257712", "https://openalex.org/W3186337014",
-  "https://openalex.org/W3211504662", "https://openalex.org/W4200489294", "https://openalex.org/W4200593587",
-  "https://openalex.org/W4205349685", "https://openalex.org/W4221064315", "https://openalex.org/W4223983216",
-  "https://openalex.org/W4230180911", "https://openalex.org/W4230274187", "https://openalex.org/W4319350288"],
-  "related_works": [], "abstract_inverted_index": {"BACKGROUND:": [0], "What": [1],
-  "does": [2], "it": [3, 263], "mean": [4], "to": [5, 22, 48, 104, 141, 153, 225,
-  334], "be": [6, 247, 265], "vulnerable": [7, 33, 244], "in": [8, 39, 57, 65, 77,
-  90, 155, 160, 291], "a": [9, 143, 230], "pandemic?": [10], "COVID-19": [11, 154],
-  "and": [12, 19, 24, 42, 63, 75, 79, 87, 101, 114, 149, 158, 170, 176, 199, 202,
-  286, 289, 296, 314, 338], "its": [13], "complex": [14], "ramifications": [15], "have":
-  [16], "challenged": [17], "policymakers": [18], "researchers": [20], "worldwide":
-  [21], "redefine": [23], "reassess": [25], "vulnerability.": [26, 109, 299], "This":
-  [27], "paper": [28], "presents": [29], "experiences": [30, 166, 233, 238], "of":
-  [31, 108, 129, 145, 151, 183, 252, 279, 295, 322, 327, 340], "being": [32], "during":
-  [34], "the": [35, 133, 156, 168, 178, 211, 250, 260, 277, 293, 328, 336], "pandemic":
-  [36, 134, 169], "among": [37], "communities": [38, 56, 100, 198], "Indonesia,":
-  [40], "Nepal": [41], "Vietnam.": [43, 91], "METHODS:": [44], "From": [45], "November":
-  [46], "2020": [47], "April": [49], "2021,": [50], "we": [51, 189, 215], "conducted":
-  [52], "qualitative": [53], "research": [54], "with": [55, 95, 167, 192, 207], "13":
-  [58], "locations": [59], "including": [60, 281], "Jakarta,": [61], "Bandung": [62],
-  "Sumba": [64], "Indonesia;": [66], "Morang": [67], "&": [68], "Sunsari,": [69],
-  "Kathmandu,": [70], "Bhaktapur,": [71], "Sindulpalchowk,": [72], "Lower": [73],
-  "Mustang": [74], "Kapilvastu": [76], "Nepal;": [78], "Hanoi,": [80], "Ho": [81],
-  "Chi": [82], "Minh": [83], "City,": [84], "Nam": [85], "Dinh": [86], "Dak": [88],
-  "Lak": [89], "We": [92, 174], "held": [93, 190], "discussions": [94, 113, 191],
-  "key": [96, 194], "informants": [97, 195], "from": [98, 116, 132, 196], "local":
-  [99, 106, 197, 282, 315, 329], "healthcare": [102, 200], "systems": [103, 201],
-  "explore": [105], "ideas": [107], "Based": [110], "on": [111, 259, 320], "these":
-  [112], "findings": [115, 274], "our": [117], "media": [118], "monitoring": [119],
-  "at": [120, 126], "all": [121], "study": [122], "locations,": [123], "community":
-  [124, 157, 208], "members": [125], "high": [127], "risk": [128], "adverse": [130],
-  "impacts": [131], "were": [135, 138], "identified.": [136], "Participants": [137],
-  "purposively": [139], "sampled": [140], "represent": [142], "range": [144], "age":
-  [146], "groups,": [147], "occupations": [148], "levels": [150], "exposure": [152],
-  "enrolled": [159], "semi-structured": [161], "in-depth": [162, 205], "interviews":
+  "journal-article"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 0.8560000061988831}], "sustainable_development_goals_aurora":
+  [{"id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being",
+  "score": 0.42751845717430115}], "study_designs": [], "awards": [], "funders": [{"id":
+  "https://openalex.org/F4320320290", "display_name": "University of Oxford", "ror":
+  "https://ror.org/052gg0110"}], "has_content": {"grobid_xml": false, "pdf": false},
+  "content_urls": null, "referenced_works_count": 24, "referenced_works": ["https://openalex.org/W1566125242",
+  "https://openalex.org/W1989224082", "https://openalex.org/W2045853031", "https://openalex.org/W2148183484",
+  "https://openalex.org/W2485540656", "https://openalex.org/W2887820101", "https://openalex.org/W2983441955",
+  "https://openalex.org/W3007382231", "https://openalex.org/W3012027760", "https://openalex.org/W3021879836",
+  "https://openalex.org/W3022831664", "https://openalex.org/W3033188368", "https://openalex.org/W3113586810",
+  "https://openalex.org/W3135257712", "https://openalex.org/W3186337014", "https://openalex.org/W3211504662",
+  "https://openalex.org/W4200489294", "https://openalex.org/W4200593587", "https://openalex.org/W4205349685",
+  "https://openalex.org/W4221064315", "https://openalex.org/W4223983216", "https://openalex.org/W4230180911",
+  "https://openalex.org/W4230274187", "https://openalex.org/W4319350288"], "related_works":
+  [], "abstract_inverted_index": {"BACKGROUND:": [0], "What": [1], "does": [2], "it":
+  [3, 263], "mean": [4], "to": [5, 22, 48, 104, 141, 153, 225, 334], "be": [6, 247,
+  265], "vulnerable": [7, 33, 244], "in": [8, 39, 57, 65, 77, 90, 155, 160, 291],
+  "a": [9, 143, 230], "pandemic?": [10], "COVID-19": [11, 154], "and": [12, 19, 24,
+  42, 63, 75, 79, 87, 101, 114, 149, 158, 170, 176, 199, 202, 286, 289, 296, 314,
+  338], "its": [13], "complex": [14], "ramifications": [15], "have": [16], "challenged":
+  [17], "policymakers": [18], "researchers": [20], "worldwide": [21], "redefine":
+  [23], "reassess": [25], "vulnerability.": [26, 109, 299], "This": [27], "paper":
+  [28], "presents": [29], "experiences": [30, 166, 233, 238], "of": [31, 108, 129,
+  145, 151, 183, 252, 279, 295, 322, 327, 340], "being": [32], "during": [34], "the":
+  [35, 133, 156, 168, 178, 211, 250, 260, 277, 293, 328, 336], "pandemic": [36, 134,
+  169], "among": [37], "communities": [38, 56, 100, 198], "Indonesia,": [40], "Nepal":
+  [41], "Vietnam.": [43, 91], "METHODS:": [44], "From": [45], "November": [46], "2020":
+  [47], "April": [49], "2021,": [50], "we": [51, 189, 215], "conducted": [52], "qualitative":
+  [53], "research": [54], "with": [55, 95, 167, 192, 207], "13": [58], "locations":
+  [59], "including": [60, 281], "Jakarta,": [61], "Bandung": [62], "Sumba": [64],
+  "Indonesia;": [66], "Morang": [67], "&": [68], "Sunsari,": [69], "Kathmandu,": [70],
+  "Bhaktapur,": [71], "Sindulpalchowk,": [72], "Lower": [73], "Mustang": [74], "Kapilvastu":
+  [76], "Nepal;": [78], "Hanoi,": [80], "Ho": [81], "Chi": [82], "Minh": [83], "City,":
+  [84], "Nam": [85], "Dinh": [86], "Dak": [88], "Lak": [89], "We": [92, 174], "held":
+  [93, 190], "discussions": [94, 113, 191], "key": [96, 194], "informants": [97, 195],
+  "from": [98, 116, 132, 196], "local": [99, 106, 197, 282, 315, 329], "healthcare":
+  [102, 200], "systems": [103, 201], "explore": [105], "ideas": [107], "Based": [110],
+  "on": [111, 259, 320], "these": [112], "findings": [115, 274], "our": [117], "media":
+  [118], "monitoring": [119], "at": [120, 126], "all": [121], "study": [122], "locations,":
+  [123], "community": [124, 157, 208], "members": [125], "high": [127], "risk": [128],
+  "adverse": [130], "impacts": [131], "were": [135, 138], "identified.": [136], "Participants":
+  [137], "purposively": [139], "sampled": [140], "represent": [142], "range": [144],
+  "age": [146], "groups,": [147], "occupations": [148], "levels": [150], "exposure":
+  [152], "enrolled": [159], "semi-structured": [161], "in-depth": [162, 205], "interviews":
   [163, 206], "about": [164], "their": [165, 256], "public": [171, 222, 311, 341],
   "health": [172, 223, 312, 342], "responses.": [173], "analyzed": [175], "framed":
   [177], "results": [179], "using": [180], "Luna\u2019s": [181], "metaphor": [182],
@@ -12643,20 +12670,20 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   ["https://openalex.org/I4210132348"], "host_organization_lineage_names": [], "type":
   "repository"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
   "version": null, "is_accepted": false, "is_published": false, "raw_source_name":
-  null, "raw_type": "Collection"}, "sustainable_development_goals": [{"score": 1.0,
-  "id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being"}],
-  "sustainable_development_goals_aurora": [], "study_designs": [], "awards": [], "funders":
-  [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
-  0, "referenced_works": [], "related_works": [], "abstract_inverted_index": {"Abstract":
-  [0], "Background": [1], "Post-induction": [2], "hypotension": [3], "(PIH)": [4],
-  "is": [5], "associated": [6, 140, 252], "with": [7, 61, 141, 214, 253], "acute":
-  [8], "perioperative": [9], "organ": [10], "injury.": [11], "We": [12], "quantified":
-  [13], "the": [14, 26, 70, 106, 118, 121, 168, 194, 215, 269, 278], "added": [15],
-  "value": [16, 102], "of": [17, 28, 73, 108, 157, 164, 189, 219, 265, 272, 281],
-  "echocardiographic": [18, 165, 266], "parameters": [19, 166, 267], "and": [20, 40,
-  83, 115, 179, 205, 249, 277], "ventriculo-arterial": [21, 50], "coupling": [22,
-  51], "(VAC)-related": [23], "variables": [24, 191, 221, 283], "for": [25, 96], "prediction":
-  [27, 275], "PIH.": [29], "Methods": [30], "A": [31], "prospective": [32], "observational":
+  null, "raw_type": "Collection"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 1.0}], "sustainable_development_goals_aurora":
+  [], "study_designs": [], "awards": [], "funders": [], "has_content": {"grobid_xml":
+  false, "pdf": false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
+  [], "related_works": [], "abstract_inverted_index": {"Abstract": [0], "Background":
+  [1], "Post-induction": [2], "hypotension": [3], "(PIH)": [4], "is": [5], "associated":
+  [6, 140, 252], "with": [7, 61, 141, 214, 253], "acute": [8], "perioperative": [9],
+  "organ": [10], "injury.": [11], "We": [12], "quantified": [13], "the": [14, 26,
+  70, 106, 118, 121, 168, 194, 215, 269, 278], "added": [15], "value": [16, 102],
+  "of": [17, 28, 73, 108, 157, 164, 189, 219, 265, 272, 281], "echocardiographic":
+  [18, 165, 266], "parameters": [19, 166, 267], "and": [20, 40, 83, 115, 179, 205,
+  249, 277], "ventriculo-arterial": [21, 50], "coupling": [22, 51], "(VAC)-related":
+  [23], "variables": [24, 191, 221, 283], "for": [25, 96], "prediction": [27, 275],
+  "PIH.": [29], "Methods": [30], "A": [31], "prospective": [32], "observational":
   [33], "cohort": [34], "study": [35], "conducted": [36], "between": [37, 80], "July":
   [38], "2023": [39], "November": [41], "2024": [42], "enrolled": [43], "adults":
   [44], "undergoing": [45], "elective": [46], "non-cardiac": [47], "surgery.": [48],
@@ -12898,33 +12925,32 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   ["https://openalex.org/I4210132348"], "host_organization_lineage_names": [], "type":
   "repository"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
   "version": null, "is_accepted": false, "is_published": false, "raw_source_name":
-  null, "raw_type": "JournalArticle"}, "sustainable_development_goals": [{"score":
-  0.9763000011444092, "id": "https://metadata.un.org/sdg/3", "display_name": "Good
-  health and well-being"}], "sustainable_development_goals_aurora": [{"score": 0.5143677592277527,
-  "id": "https://metadata.un.org/sdg/2", "display_name": "Zero hunger"}], "study_designs":
-  [], "awards": [], "funders": [], "has_content": {"pdf": false, "grobid_xml": false},
-  "content_urls": null, "referenced_works_count": 0, "referenced_works": [], "related_works":
-  [], "abstract_inverted_index": {"Supplementary": [0], "Material": [1], "1.": [2]},
-  "counts_by_year": [], "updated_date": "2026-10-08T09:06:37.294493", "created_date":
-  "2026-04-23T00:00:00"}, {"id": "https://openalex.org/W7155236017", "doi": "https://doi.org/10.6084/m9.figshare.32070915",
-  "title": "Additional file 2 of Predictive value of ventriculo-arterial coupling
-  for hypotension after induction of anaesthesia: a prospective observational cohort
-  study", "display_name": "Additional file 2 of Predictive value of ventriculo-arterial
-  coupling for hypotension after induction of anaesthesia: a prospective observational
-  cohort study", "publication_year": 2026, "publication_date": "2026-04-21", "ids":
-  {"openalex": "https://openalex.org/W7155236017", "doi": "https://doi.org/10.6084/m9.figshare.32070915"},
-  "language": null, "primary_location": {"id": "doi:10.6084/m9.figshare.32070915",
-  "doi": "https://doi.org/10.6084/m9.figshare.32070915", "is_oa": true, "landing_page_url":
-  "https://doi.org/10.6084/m9.figshare.32070915", "pdf_url": null, "source": {"id":
-  "https://openalex.org/S4377196282", "display_name": "Figshare", "issn_l": null,
-  "issn": null, "is_oa": false, "is_in_doaj": false, "is_core": false, "listed_in":
-  [], "host_organization": "https://openalex.org/I4210132348", "host_organization_name":
-  "Figshare (United Kingdom)", "host_organization_lineage": ["https://openalex.org/I4210132348"],
-  "host_organization_lineage_names": [], "type": "repository"}, "license": "cc-by",
-  "license_id": "https://openalex.org/licenses/cc-by", "version": null, "is_accepted":
-  false, "is_published": false, "raw_source_name": null, "raw_type": "Image"}, "volume":
-  null, "type": "other", "indexed_in": ["datacite"], "open_access": {"is_oa": true,
-  "oa_status": "green", "oa_url": "https://doi.org/10.6084/m9.figshare.32070915",
+  null, "raw_type": "JournalArticle"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 0.9763000011444092}], "sustainable_development_goals_aurora":
+  [{"id": "https://metadata.un.org/sdg/2", "display_name": "Zero hunger", "score":
+  0.5143677592277527}], "study_designs": [], "awards": [], "funders": [], "has_content":
+  {"grobid_xml": false, "pdf": false}, "content_urls": null, "referenced_works_count":
+  0, "referenced_works": [], "related_works": [], "abstract_inverted_index": {"Supplementary":
+  [0], "Material": [1], "1.": [2]}, "counts_by_year": [], "updated_date": "2026-10-08T09:06:37.294493",
+  "created_date": "2026-04-23T00:00:00"}, {"id": "https://openalex.org/W7155236017",
+  "doi": "https://doi.org/10.6084/m9.figshare.32070915", "title": "Additional file
+  2 of Predictive value of ventriculo-arterial coupling for hypotension after induction
+  of anaesthesia: a prospective observational cohort study", "display_name": "Additional
+  file 2 of Predictive value of ventriculo-arterial coupling for hypotension after
+  induction of anaesthesia: a prospective observational cohort study", "publication_year":
+  2026, "publication_date": "2026-04-21", "ids": {"openalex": "https://openalex.org/W7155236017",
+  "doi": "https://doi.org/10.6084/m9.figshare.32070915"}, "language": null, "primary_location":
+  {"id": "doi:10.6084/m9.figshare.32070915", "doi": "https://doi.org/10.6084/m9.figshare.32070915",
+  "is_oa": true, "landing_page_url": "https://doi.org/10.6084/m9.figshare.32070915",
+  "pdf_url": null, "source": {"id": "https://openalex.org/S4377196282", "display_name":
+  "Figshare", "issn_l": null, "issn": null, "is_oa": false, "is_in_doaj": false, "is_core":
+  false, "listed_in": [], "host_organization": "https://openalex.org/I4210132348",
+  "host_organization_name": "Figshare (United Kingdom)", "host_organization_lineage":
+  ["https://openalex.org/I4210132348"], "host_organization_lineage_names": [], "type":
+  "repository"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
+  "version": null, "is_accepted": false, "is_published": false, "raw_source_name":
+  null, "raw_type": "Image"}, "volume": null, "type": "other", "indexed_in": ["datacite"],
+  "open_access": {"is_oa": true, "oa_status": "green", "oa_url": "https://doi.org/10.6084/m9.figshare.32070915",
   "any_repository_has_fulltext": true}, "authorships": [{"author_position": "first",
   "author": {"id": "https://openalex.org/A5114157194", "display_name": "H\u1ed3ng
   Ch\u00ednh L\u00ea", "orcid": "https://orcid.org/0000-0001-7827-1140", "observed_orcids":
@@ -13109,12 +13135,12 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   ["https://openalex.org/I4210132348"], "host_organization_lineage_names": [], "type":
   "repository"}, "license": "cc-by", "license_id": "https://openalex.org/licenses/cc-by",
   "version": null, "is_accepted": false, "is_published": false, "raw_source_name":
-  null, "raw_type": "Image"}, "sustainable_development_goals": [{"score": 0.9763000011444092,
-  "id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being"}],
-  "sustainable_development_goals_aurora": [], "study_designs": [], "awards": [], "funders":
-  [], "has_content": {"pdf": false, "grobid_xml": false}, "content_urls": null, "referenced_works_count":
-  0, "referenced_works": [], "related_works": [], "abstract_inverted_index": {"Supplementary":
-  [0], "Material": [1], "2.": [2]}, "counts_by_year": [], "updated_date": "2026-10-08T09:06:37.294493",
+  null, "raw_type": "Image"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 0.9763000011444092}], "sustainable_development_goals_aurora":
+  [], "study_designs": [], "awards": [], "funders": [], "has_content": {"grobid_xml":
+  false, "pdf": false}, "content_urls": null, "referenced_works_count": 0, "referenced_works":
+  [], "related_works": [], "abstract_inverted_index": {"Supplementary": [0], "Material":
+  [1], "2.": [2]}, "counts_by_year": [], "updated_date": "2026-10-08T09:06:37.294493",
   "created_date": "2026-04-23T00:00:00"}, {"id": "https://openalex.org/W7165029375",
   "doi": "https://doi.org/10.1016/j.jinf.2026.106796", "title": "A randomised comparison
   of management strategies for drug-induced liver injury associated with tuberculous
@@ -13569,16 +13595,15 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   "host_organization_lineage_names": ["Elsevier BV"], "type": "journal"}, "license":
   "cc-by", "license_id": "https://openalex.org/licenses/cc-by", "version": "publishedVersion",
   "is_accepted": true, "is_published": true, "raw_source_name": "Journal of Infection",
-  "raw_type": "journal-article"}, "sustainable_development_goals": [{"score": 1.0,
-  "id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being"}],
-  "sustainable_development_goals_aurora": [{"score": 0.8647307753562927, "id": "https://metadata.un.org/sdg/3",
-  "display_name": "Good health and well-being"}], "study_designs": [], "awards": [{"id":
-  "https://openalex.org/G8855775527", "display_name": "Personalised adjunctive anti-inflammatory
-  therapy to reduce deaths from tuberculosis.", "funder_award_id": "110179/Z/15/Z",
-  "funder_id": "https://openalex.org/F4320311904", "funder_display_name": "Wellcome
-  Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": true,
-  "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W7165029375.pdf",
+  "raw_type": "journal-article"}, "sustainable_development_goals": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 1.0}], "sustainable_development_goals_aurora":
+  [{"id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being",
+  "score": 0.8647307753562927}], "study_designs": [], "awards": [{"id": "https://openalex.org/G8855775527",
+  "display_name": "Personalised adjunctive anti-inflammatory therapy to reduce deaths
+  from tuberculosis.", "funder_award_id": "110179/Z/15/Z", "funder_id": "https://openalex.org/F4320311904",
+  "funder_display_name": "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904",
+  "display_name": "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content":
+  {"grobid_xml": true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W7165029375.pdf",
   "grobid_xml": "https://content.openalex.org/works/W7165029375.grobid-xml"}, "referenced_works_count":
   20, "referenced_works": ["https://openalex.org/W1951724000", "https://openalex.org/W1986607793",
   "https://openalex.org/W2001811916", "https://openalex.org/W2020976497", "https://openalex.org/W2150492824",
@@ -13958,16 +13983,16 @@ body: '{"meta": {"notice": "No API key, so this request shares one free daily bu
   University Press", "University of Oxford"], "type": "journal"}, "license": "cc-by",
   "license_id": "https://openalex.org/licenses/cc-by", "version": "publishedVersion",
   "is_accepted": true, "is_published": true, "raw_source_name": "Open Forum Infectious
-  Diseases", "raw_type": "journal-article"}, "sustainable_development_goals": [{"score":
-  1.0, "id": "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being"}],
-  "sustainable_development_goals_aurora": [{"score": 0.883516252040863, "id": "https://metadata.un.org/sdg/3",
-  "display_name": "Good health and well-being"}], "study_designs": [], "awards": [{"id":
-  "https://openalex.org/G8855775527", "display_name": "Personalised adjunctive anti-inflammatory
-  therapy to reduce deaths from tuberculosis.", "funder_award_id": "110179/Z/15/Z",
-  "funder_id": "https://openalex.org/F4320311904", "funder_display_name": "Wellcome
-  Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
-  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"pdf": true,
-  "grobid_xml": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W7205003995.pdf",
+  Diseases", "raw_type": "journal-article"}, "sustainable_development_goals": [{"id":
+  "https://metadata.un.org/sdg/3", "display_name": "Good health and well-being", "score":
+  1.0}], "sustainable_development_goals_aurora": [{"id": "https://metadata.un.org/sdg/3",
+  "display_name": "Good health and well-being", "score": 0.883516252040863}], "study_designs":
+  [], "awards": [{"id": "https://openalex.org/G8855775527", "display_name": "Personalised
+  adjunctive anti-inflammatory therapy to reduce deaths from tuberculosis.", "funder_award_id":
+  "110179/Z/15/Z", "funder_id": "https://openalex.org/F4320311904", "funder_display_name":
+  "Wellcome Trust"}], "funders": [{"id": "https://openalex.org/F4320311904", "display_name":
+  "Wellcome Trust", "ror": "https://ror.org/029chgv08"}], "has_content": {"grobid_xml":
+  true, "pdf": true}, "content_urls": {"pdf": "https://content.openalex.org/works/W7205003995.pdf",
   "grobid_xml": "https://content.openalex.org/works/W7205003995.grobid-xml"}, "referenced_works_count":
   0, "referenced_works": [], "related_works": [], "abstract_inverted_index": {"High-dose":
   [0], "corticosteroids": [1], "may": [2], "cause": [3], "reactivation": [4, 44],
