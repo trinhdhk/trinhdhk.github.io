@@ -1,4 +1,4 @@
-generated_at: '2026-11-02T22:32:47Z'
+generated_at: '2026-11-09T23:12:16Z'
 items:
 - title: 'Xpert MTB/RIF Ultra versus Xpert MTB/RIF for the diagnosis of tuberculous
     meningitis: a prospective, randomised, diagnostic accuracy study'
@@ -11,6 +11,7 @@ items:
   - Scholar
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: Adjunctive dexamethasone for tuberculous meningitis in HIV-positive adults
   authors: J Donovan, ND Bang, D Imran, HDT Nghia, E Burhan, DTT Huong, ...
   venue: New England Journal of Medicine 389 (15), 1357-1367, 2023
@@ -27,9 +28,7 @@ items:
   year: '2023'
   citations: '72'
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:Y0pCki6q_DkC
-  sources:
-  - Scholar
-  - OpenAlex
+  sources: Scholar
 - title: 'Effectiveness of continuous endotracheal cuff pressure control for the prevention
     of ventilator-associated respiratory infections: an open-label randomized, controlled
     trial'
@@ -80,6 +79,7 @@ items:
   - Scholar
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: Computer-aided prognosis of tuberculous meningitis combining imaging and
     non-imaging data
   authors: LS Canas, THK Dong, D Beasley, J Donovan, JO Cleary, R Brown, ...
@@ -91,6 +91,7 @@ items:
   - Scholar
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: 'Severe dengue in adults: Clinical features from the 2022 dengue outbreak
     at a Vietnamese tertiary hospital'
   authors: OK Pham, TB Duong, TV Phan, TN Truong, DTH Ha, HV Nguyen, ...
@@ -102,6 +103,7 @@ items:
   - Scholar
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: A novel diagnostic model for tuberculous meningitis using Bayesian latent
     class analysis
   authors: THK Dong, J Donovan, NM Ngoc, DDA Thu, HDT Nghia, PKN Oanh, ...
@@ -113,6 +115,7 @@ items:
   - Scholar
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: A statistical analysis plan for the Adjunctive Corticosteroids for Tuberculous
     meningitis in HIV-positive adults (ACT HIV) clinical trial
   authors: J Donovan, TDH Khanh, GE Thwaites, RB Geskus
@@ -123,6 +126,7 @@ items:
   sources:
   - Scholar
   - orcid
+  - SemanticScholar
 - title: Statistical analysis plan for the LAST ACT clinical trial; a leukotriene
     A4 hydrolase stratified non-inferiority trial of adjunctive corticosteroids for
     HIV-negative adults …
@@ -143,6 +147,7 @@ items:
   - Scholar
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: Risk of hepatitis B reactivation following corticosteroids for tuberculous
     meningitis
   authors: J Donovan, NTA Thu, HDT Nghia, ND Bang, DHK Trinh, LHB Ngoc, ...
@@ -153,6 +158,7 @@ items:
   sources:
   - Scholar
   - OpenAlex
+  - SemanticScholar
 - title: A randomised comparison of management strategies for drug-induced liver injury
     associated with tuberculous meningitis treatment
   authors: J Donovan, TT Hung, NTT Hiep, HDT Nghia, LHB Ngoc, ND Bang, ...
@@ -163,6 +169,7 @@ items:
   sources:
   - Scholar
   - OpenAlex
+  - SemanticScholar
 - title: 'Tuberculous meningitis: understanding and improving diagnosis and prognosis
     using novel tools and approaches'
   authors: DHK Trinh
@@ -186,7 +193,9 @@ items:
   year: '2021'
   citations: '0'
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:qjMakFHDy7sC
-  sources: Scholar
+  sources:
+  - Scholar
+  - SemanticScholar
 - title: Human monoclonal antibodies from convalescent H7N9 patients in China and
     Taiwan
   authors: P Rijal, K Huang, L Schimanski, T Powell, B Wang, T Dong, X Li, ...
@@ -219,6 +228,7 @@ items:
   sources:
   - orcid
   - OpenAlex
+  - SemanticScholar
 - title: 'Acceptance and User Experiences of a Wearable Device for the Management
     of Hospitalized Patients in COVID-19-Designated Wards in Ho Chi Minh City, Vietnam:
     Action Learning Project'
@@ -289,7 +299,9 @@ items:
   year: '2024'
   citations: '7'
   url: https://doi.org/10.1038/s41598-024-64898-5
-  sources: OpenAlex
+  sources:
+  - OpenAlex
+  - SemanticScholar
 - title: 'Exploring layers of vulnerability during COVID-19: qualitative research
     with communities in Indonesia, Nepal, and Vietnam'
   authors: Thao Phuong Tran, Manish Duwal, Diana Timoria, Ida Ayu Sutrisni, Yen Thi
@@ -341,4 +353,33 @@ items:
   year: '2026'
   citations: '0'
   url: https://doi.org/10.6084/m9.figshare.32070915
+  sources: OpenAlex
+- title: Clinical Benefit of AI–Assisted Lung Ultrasound in a Resource–Limited ICU
+  authors: Phung Tran Huy Nhat, Nguyễn Văn Hảo, Phan Vinh Tho, Hamideh Kerdegari,
+    Luigi Pisani, Le Ngoc Minh Thu, Le Thanh Phuong, Ha Thi Hai Duong, Duong Bich
+    Thuy, Angela McBride, Miguel P. Xochicale, Marcus Josephus Schultz, Reza Razavi,
+    Andrew Peter King, Louise Thwaites, Nguyễn Văn Vĩnh Châu, Sophie Yacoub, Dang
+    Phuong Thao, Dang Trung Kien, Doan Bui Xuan Thy, Dong Huu Khanh Trinh, Du Hong
+    Duc, Ronald Bertus Geskus, Ho Bich Hai, Ho Quang Chanh, Ho Van Hien, Huynh Trung
+    Trieu, Evelyne Kestelyn, Lam Minh Yen, Le Dinh Van Khoa, Le Thanh Phuong, Le Thuy
+    Thuy Khanh, Luu Hoai Bao Tran, Luu Phuoc An, Angela McBride, Nguyen Lam Vuong,
+    Nguyễn Quang Huy, Nguyen Than Ha Quyen, Nguyễn Thanh Ngọc, Nguyen Thi Giang, Nguyen
+    Thi Diem Trinh, Nguyen Thi Le Thanh, Nguyễn Thị Phương Dung, Nguyễn Thị Phương
+    Thảo, Ninh Thi Thanh Van, Pham Tieu Kieu, Phan Nguyen Quoc Khanh, Phung Khanh
+    Lam, Phung Tran Huy Nhat, Guy Thwaites, Louise Thwaites, Duc Minh Tran, Trinh
+    Manh Hung, Hugo C. Turner, Jennifer Ilo Van Nuil, Vo Tan Hoang, Vu Ngo Thanh Huyen,
+    Sophie Yacoub, Cao Thi Tam, Duong Bich Thuy, Ha Thi Hai Duong, Ho Dang Trung Nghia,
+    Le Buu Chau, Le Mau Toan, Le Ngoc Minh Thu, Le Thi Mai Thao, Luong Thi Hue Tai,
+    Nguyen Hoan Phu, Nguyễn Quốc Việt, Nguyen Thanh Dung, Nguyen Thanh Nguyen, Nguyễn
+    Thanh Phong, Nguyễn Thị Kim Ánh, Nguyễn Văn Hảo, Nguyen Van Thanh Duoc, Pham Kieu
+    Nguyet Oanh, Phan Thi Hong Van, Phan Tu Qui, Phan Vinh Tho, Truong Thi Phuong
+    Thao, Natasha Ali, David Andrew Clifton, Mike English, Jannis Hagenah, Ping Lü,
+    Jacob McKnight, Chris Paton, Tingting Zhu, Pantelis Georgiou, Bernard Hernandez
+    Perez, Kerri Hill-Cawthorne, Alison Helen Holmes, Stefan Karolcik, Damien Keng
+    Yen Ming, Nicolas Moser, Jesús Rodríguez-Manzano, Liane S. Canas, Alberto Gómez,
+    Hamideh Kerdegari, Andrew King
+  venue: Critical Care
+  year: '2022'
+  citations: '61'
+  url: https://doi.org/10.1186/s13054-023-04548-w
   sources: OpenAlex
