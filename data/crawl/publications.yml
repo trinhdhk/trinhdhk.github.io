@@ -1,4 +1,4 @@
-generated_at: '2026-11-16T23:04:51Z'
+generated_at: '2026-11-24T01:20:33Z'
 items:
 - title: 'Xpert MTB/RIF Ultra versus Xpert MTB/RIF for the diagnosis of tuberculous
     meningitis: a prospective, randomised, diagnostic accuracy study'
@@ -10,6 +10,7 @@ items:
   sources:
   - Scholar
   - orcid
+  - OpenAlex
   - SemanticScholar
 - title: Adjunctive dexamethasone for tuberculous meningitis in HIV-positive adults
   authors: J Donovan, ND Bang, D Imran, HDT Nghia, E Burhan, DTT Huong, ...
@@ -41,6 +42,7 @@ items:
   sources:
   - Scholar
   - orcid
+  - OpenAlex
   - SemanticScholar
 - title: Direct medical costs of tetanus, dengue, and sepsis patients in an intensive
     care unit in Vietnam
@@ -66,7 +68,9 @@ items:
   year: '2024'
   citations: '20'
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:Tyk-4Ss8FVUC
-  sources: Scholar
+  sources:
+  - Scholar
+  - OpenAlex
 - title: 'Genotype-stratified adjunctive dexamethasone for tuberculous meningitis
     in HIV-negative adults: a randomized controlled phase 3 trial'
   authors: J Donovan, N Duc Bang, HKT Dong, DTN Ho, TAT Nguyen, TTH Nguyen, ...
@@ -77,6 +81,7 @@ items:
   sources:
   - Scholar
   - orcid
+  - OpenAlex
   - SemanticScholar
 - title: Computer-aided prognosis of tuberculous meningitis combining imaging and
     non-imaging data
@@ -88,6 +93,7 @@ items:
   sources:
   - Scholar
   - orcid
+  - OpenAlex
   - SemanticScholar
 - title: 'Severe dengue in adults: Clinical features from the 2022 dengue outbreak
     at a Vietnamese tertiary hospital'
@@ -99,6 +105,7 @@ items:
   sources:
   - Scholar
   - orcid
+  - OpenAlex
   - SemanticScholar
 - title: A novel diagnostic model for tuberculous meningitis using Bayesian latent
     class analysis
@@ -110,6 +117,7 @@ items:
   sources:
   - Scholar
   - orcid
+  - OpenAlex
   - SemanticScholar
 - title: A statistical analysis plan for the Adjunctive Corticosteroids for Tuberculous
     meningitis in HIV-positive adults (ACT HIV) clinical trial
@@ -141,6 +149,7 @@ items:
   sources:
   - Scholar
   - orcid
+  - OpenAlex
   - SemanticScholar
 - title: Risk of hepatitis B reactivation following corticosteroids for tuberculous
     meningitis
@@ -151,6 +160,7 @@ items:
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:hqOjcs7Dif8C
   sources:
   - Scholar
+  - OpenAlex
   - SemanticScholar
 - title: A randomised comparison of management strategies for drug-induced liver injury
     associated with tuberculous meningitis treatment
@@ -161,6 +171,7 @@ items:
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:UebtZRa9Y70C
   sources:
   - Scholar
+  - OpenAlex
   - SemanticScholar
 - title: 'Tuberculous meningitis: understanding and improving diagnosis and prognosis
     using novel tools and approaches'
@@ -176,7 +187,9 @@ items:
   year: '2022'
   citations: '0'
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8VPRg4kAAAAJ&citation_for_view=8VPRg4kAAAAJ:u-x6o8ySG0sC
-  sources: Scholar
+  sources:
+  - Scholar
+  - OpenAlex
 - title: Reply to Dr. Kataoka
   authors: VQ Dat, RB Geskus, DHK Trinh, B Nadjm
   venue: Clinical Infectious Diseases
@@ -203,7 +216,9 @@ items:
   year: '2026'
   citations: '1'
   url: https://doi.org/10.1186/s40635-026-00899-0
-  sources: orcid
+  sources:
+  - orcid
+  - OpenAlex
 - title: Statistical analysis plan for the LAST ACT clinical trial; a Leukotriene
     A4 hydrolase Stratified non-inferiority Trial of Adjunctive Corticosteroids for
     HIV-negative adults with Tuberculous meningitis
@@ -215,6 +230,7 @@ items:
   url: http://dx.doi.org/10.12688/wellcomeopenres.22498.1
   sources:
   - orcid
+  - OpenAlex
   - SemanticScholar
 - title: 'Acceptance and User Experiences of a Wearable Device for the Management
     of Hospitalized Patients in COVID-19-Designated Wards in Ho Chi Minh City, Vietnam:

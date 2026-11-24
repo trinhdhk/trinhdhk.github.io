@@ -306,11 +306,11 @@ body: "<!DOCTYPE html>\r\n<html id=\"nav-close\" lang=\"en\" xml:lang=\"en\" xml
   \   \t\t<div class=\"overlay\"></div>\r\n\t\t\t\t\t\r\n      \t  <!-- START Header
   Image - check for listing item background, else use Section Background -->\r\n      \t
   \ \r\n      \t  <img class=\"overlayImage headerHero\" src=\"https://pxl-nclacuk.terminalfour.net/prod01/channel_3/mediav8/fms/images/header-people.jpg\"
-  role=\"presentation\" aria-hidden=\"true\" />\r\n      \t  \r\n\t    \t\t<!-- END
-  Header Image -->\r\n\t\t\t\t\t\r\n\t        <div class=\"row content\">\r\n              <div
-  class=\"headerContent\">\r\n                   <!-- Check for title override on
-  listing detail page -->\r\n                   \r\n                   <h1>Staff Profile</h1>\r\n
-  \                  \r\n\r\n                   \r\n             </div>\r\n\t\t\t\t\t</div>\r\n
+  role=\"presentation\" aria-hidden=\"true\" alt=\"\" />\r\n      \t  \r\n\t    \t\t<!--
+  END Header Image -->\r\n\t\t\t\t\t\r\n\t        <div class=\"row content\">\r\n
+  \             <div class=\"headerContent\">\r\n                   <!-- Check for
+  title override on listing detail page -->\r\n                   \r\n                   <h1>Staff
+  Profile</h1>\r\n                   \r\n\r\n                   \r\n             </div>\r\n\t\t\t\t\t</div>\r\n
   \         \r\n          \r\n\t    </header>\r\n\t    <!-- HEADER WITH NO CTAS AND
   IMAGE - END -->\r\n      <!-- ANNOUNCEMENT BANNER -->\r\n      \r\n\t\t\t\r\n      <section
   class=\"breadcrumb\">\r\n        <div class=\"row\">\r\n          <ul id=\"menu-breadcrumb\">\r\n
